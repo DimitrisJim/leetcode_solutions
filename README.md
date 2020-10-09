@@ -8,8 +8,8 @@ At least, that's my naive first stab at it.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)|0-100%|0-100%|72-7962%|32-45.31%|
-| Mem Usage (MB-%)|5.8-14.33%|0-100%|38.6-8.88%|14.1-99.95%|
+| Runtime (ms-%)| 0 - 100% | 0 - 100%| 72 - 79.62%|32 - 45.31%|
+| Mem Usage (MB-%)|5.8 - 14.33%|0 - 100%|38.6 - 8.88%|14.1 - 99.95%|
 
 ## [1431. Kids with greatest number of candies][1431]
 
@@ -62,9 +62,22 @@ Repeat this until we reach the end.
 We could always use some combination of group-by's, len to 
 move the explicit for loop in the backround.
 
+## [1528. Shuffle String][1528]
+
+Create a new array and fill it in, basically. 
+`O(N)` time *and* `O(N)` space. I'm sure there should be a 
+way for inplace swaps.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 88.85% | 0 - 100.00% | 76 - 97.38% | 56 - 65.00%|
+| Mem Usage (MB-%)| 6.2 - 100.00% | 2 - 100.00% | 40.3 - 10.15% |14.1 - 99.95%|
+
+
+
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1470]: https://leetcode.com/problems/shuffle-the-array/
 [1480]: https://leetcode.com/problems/running-sum-of-1d-array/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
-
+[1528]: https://leetcode.com/problems/shuffle-string/
