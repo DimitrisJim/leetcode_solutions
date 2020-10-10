@@ -11,6 +11,16 @@ At least, that's my naive first stab at it.
 | Runtime (ms-%)| 0 - 100% | 0 - 100%| 72 - 79.62%|32 - 45.31%|
 | Mem Usage (MB-%)|5.8 - 14.33%|0 - 100%|38.6 - 8.88%|14.1 - 99.95%|
 
+## [1281. Subtract the Product and Sum of Digits of an Integer][1281] 
+
+Continuously reduce `n` by `// 10` and add/multiply its modulo 
+`10` (the rightmost digit).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00%  | 0 - 100.00% | 72 - 86.84% | 20 - 98.44%|
+| Mem Usage (MB-%)| 5.7 - 14.29% | 2 - 100.00% | 38.5 - 20.85% | 14.1 - 99.96%|
+
 ## [1365. How Many Numbers Are Smaller Than the Current Number][1365]
 
 By sorting the array we can find the # of elements faster in 
@@ -97,6 +107,7 @@ way for inplace swaps.
 
 
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
+[1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1470]: https://leetcode.com/problems/shuffle-the-array/
