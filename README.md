@@ -11,6 +11,27 @@ At least, that's my naive first stab at it.
 | Runtime (ms-%)| 0 - 100% | 0 - 100%| 72 - 79.62%|32 - 45.31%|
 | Mem Usage (MB-%)|5.8 - 14.33%|0 - 100%|38.6 - 8.88%|14.1 - 99.95%|
 
+## [1365. How Many Numbers Are Smaller Than the Current Number][1365]
+
+By sorting the array we can find the # of elements faster in 
+one pass through the array since we know that all consequent 
+elements will be larger (or smaller, depending on sort type).
+
+Using a Map we can then keep track of the occurences of elements already seen and set that as the value for an element.
+
+Finally we can go through the nums array and for every element
+get the occurence for it and place it in the final resulting 
+array.
+
+We use quite the extra space but avoid O(N^2) this way 
+(and instead result in O(nlogn)).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 16 - 77.53%  | 0ms 100.00% | 92 - 76.99% |44 - 99.38%|
+| Mem Usage (MB-%)| 7.4 - 64.10% | 2.2 - 100.00% | 40.9 - 9.53% |14 - 100.00%|
+
+
 ## [1431. Kids with greatest number of candies][1431]
 
 Find max, compare values and return.
@@ -76,6 +97,7 @@ way for inplace swaps.
 
 
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
+[1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1470]: https://leetcode.com/problems/shuffle-the-array/
 [1480]: https://leetcode.com/problems/running-sum-of-1d-array/
