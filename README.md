@@ -1,3 +1,16 @@
+# LeetCode problems. 
+
+Some small notes:
+ 
+ - Rust seems to optimize very well and uniformly, leading 
+   to `100%` execution/memory consistently.
+ - This leads me to believe that these metrics are hoarser 
+   than would be expected. Take them with a grain of salt.
+ - I usually try to write the big-Oh for worse cases, but 
+   I'm not very consistent I believe.
+ - Search for `TODO: Improve` for places where I think I've 
+   messed up slightly.
+
 ## [1108. Defanging an IP Address][1108]
 
 Instead of calling a replace function continuously, its 
@@ -20,6 +33,22 @@ Continuously reduce `n` by `// 10` and add/multiply its modulo
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00%  | 0 - 100.00% | 72 - 86.84% | 20 - 98.44%|
 | Mem Usage (MB-%)| 5.7 - 14.29% | 2 - 100.00% | 38.5 - 20.85% | 14.1 - 99.96%|
+
+## [1313. Decompress Run-Length encoded List][1313]
+
+**TODO: Improve**
+
+I feel I haven't found best solution here, need to look into 
+it, especially the mem usage in Python bothers me.
+(Yea, C code is also mediocre, there's 
+definitely something better here.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 32 - 81.07% | 4 - 100.00%  | 92 - 85.55% | 64 - 89.35%|
+| Mem Usage (MB-%)| 10.4 | 2.1 - 100.00% | 42.3 - 5.85% | 14.5 - 13.10%|
+
+
 
 ## [1365. How Many Numbers Are Smaller Than the Current Number][1365]
 
@@ -108,6 +137,7 @@ way for inplace swaps.
 
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
+[1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1470]: https://leetcode.com/problems/shuffle-the-array/
