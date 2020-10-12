@@ -70,6 +70,12 @@ We use quite the extra space but avoid O(N^2) this way
 | Runtime (ms-%)| 16 - 77.53%  | 0ms 100.00% | 92 - 76.99% |44 - 99.38%|
 | Mem Usage (MB-%)| 7.4 - 64.10% | 2.2 - 100.00% | 40.9 - 9.53% |14 - 100.00%|
 
+## [1389. Create Target Array in the Given Order][1389]
+
+**TODO: See again.**
+
+Can't think of a better than O(N^2) solution yet. Come back to this at 
+some point.
 
 ## [1431. Kids with greatest number of candies][1431]
 
@@ -77,7 +83,7 @@ Find max, compare values and return.
 
 ## [1470. Shuffle the Array][1470]
 
-TODO: Come back to this.
+**TODO: Come back to this.**
 
 `C`: Go through the array and select appropriate place to grab 
 from based on if the index if odd or even. 
@@ -96,6 +102,20 @@ back to this after further practice.
 
 Basically add as we go through the array. 
 Also, basically the same as `itertools.accumulate`.
+
+## [1486. XOR Operation in an Array][1486]
+
+Just go through the 'array' (we don't need to build it obviously)
+and reduce using xor. 
+In Python, we take advantage of `functools.reduce` being implemented in `C`, in the others we just loop through.
+
+Again with some memory issues in `C` and `JS` though. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00% | 0 - 100.00% | 72 - 86.39% | 28 - 78.99%|
+| Mem Usage (MB-%)| 5.7 - 22.45% | 2.2 - 100.00% | 38.2 - 5.14% |14.2 - 100.00%|
+
 
 ## [1512. Number of Good Pairs][1512]
 
@@ -139,8 +159,10 @@ way for inplace swaps.
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
+[1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1470]: https://leetcode.com/problems/shuffle-the-array/
 [1480]: https://leetcode.com/problems/running-sum-of-1d-array/
+[1486]: https://leetcode.com/problems/xor-operation-in-an-array/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
 [1528]: https://leetcode.com/problems/shuffle-string/
