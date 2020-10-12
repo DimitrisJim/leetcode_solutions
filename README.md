@@ -109,7 +109,9 @@ Just go through the 'array' (we don't need to build it obviously)
 and reduce using xor. 
 In Python, we take advantage of `functools.reduce` being implemented in `C`, in the others we just loop through.
 
-Again with some memory issues in `C` and `JS` though. 
+Again with some memory issues in `C` and `JS` though. I'm pretty 
+sure a XOR-trick for sequences should exist (appart from the 
+common `x ^ x = 0` and `x ^ 0 = x`; can't seem to find it though.) 
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
@@ -153,6 +155,15 @@ way for inplace swaps.
 | Runtime (ms-%)| 4 - 88.85% | 0 - 100.00% | 76 - 97.38% | 56 - 65.00%|
 | Mem Usage (MB-%)| 6.2 - 100.00% | 2 - 100.00% | 40.3 - 10.15% |14.1 - 99.95%|
 
+## [1603. Design Parking System][1603]
+
+Mostly an OOP problem really.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 56 - 89.80% | 16 - 100.00% | 148 - 81.63% | 136 - 75.59% |
+| Mem Usage (MB-%)| 20.8 - 100.00% | 2.4 - 45.00% | 46 - 26.12% | 14.6 74.11% |
+
 
 
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
@@ -166,3 +177,4 @@ way for inplace swaps.
 [1486]: https://leetcode.com/problems/xor-operation-in-an-array/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
 [1528]: https://leetcode.com/problems/shuffle-string/
+[1603]: https://leetcode.com/problems/design-parking-system/
