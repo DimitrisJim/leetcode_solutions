@@ -1,24 +1,50 @@
-// Definition for a binary tree node.
-// #[derive(Debug, PartialEq, Eq)]
-// pub struct TreeNode {
-//   pub val: i32,
-//   pub left: Option<Rc<RefCell<TreeNode>>>,
-//   pub right: Option<Rc<RefCell<TreeNode>>>,
-// }
-// 
-// impl TreeNode {
-//   #[inline]
-//   pub fn new(val: i32) -> Self {
-//     TreeNode {
-//       val,
-//       left: None,
-//       right: None
-//     }
-//   }
-// }
 use std::rc::Rc;
 use std::cell::RefCell;
 
+use std::rc::Rc;
+use std::cell::RefCell;
+
+/// Use this in playground to mess around with how you can 
+/// get the commented out part of range_sum_bst to work. 
+/// 
+/// Basically, don't know how to assign root = root.left when 
+/// trying to reduce the root to a better position.
+#[derive(Debug, PartialEq, Eq)]
+pub struct TreeNode {
+  pub val: i32,
+  pub left: Option<Rc<RefCell<TreeNode>>>,
+  pub right: Option<Rc<RefCell<TreeNode>>>,
+}
+ 
+impl TreeNode {
+  #[inline]
+  pub fn new(val: i32, l: Option<i32>, r: Option<i32>) -> Self {
+    let (left, right) = match (l, r) {
+        (Some(x), Some(y)) => {
+            (
+                Some(Rc::new(RefCell::new(TreeNode::new(x, None, None)))), 
+                Some(Rc::new(RefCell::new(TreeNode::new(y, None, None))))
+            )
+        }
+        (None, Some(y)) => {
+            (
+                None, 
+                Some(Rc::new(RefCell::new(TreeNode::new(y, None, None))))
+            )
+        }
+        (Some(x), None) =>{ 
+            (
+                Some(Rc::new(RefCell::new(TreeNode::new(x, None, None)))), 
+                None
+            )
+        }
+        (None, None) => (None, None)
+    };
+    TreeNode {
+      val, left, right
+    }
+  }
+}
 
 impl Solution {
     pub fn inorder(node: Option<&Rc<RefCell<TreeNode>>>, l: i32, r: i32) -> i32 {
@@ -38,7 +64,7 @@ impl Solution {
         }
         sum
     }
-    
+
     pub fn range_sum_bst(mut root: Option<Rc<RefCell<TreeNode>>>, l: i32, r: i32) -> i32 {
         if l == r {
             return l;
@@ -46,28 +72,30 @@ impl Solution {
         if root.is_none() {
             return 0;
         }
-        /*
+
         // We know it's Some now.
-        let mut node = &root;
-        let mut rval = node.as_ref().expect("").borrow().val;
-        
+        let mut node : Rc<RefCell<TreeNode>> = Rc::clone(&root.expect("The unexpected."));
+        let mut rval = node.borrow().val;
+
+        // Can't get this to work yet, unfortunately..
+        /*
         while !((l <= rval) && (rval <= r)){
             if l > rval {
-                node = &node.as_ref().expect("The unexpected").borrow().right;
+                let node = node.borrow().right.as_ref().expect("");
             }
             if rval > r {
-                node = &node.as_ref().expect("The unexpected").borrow().left;
-            }
-            rval = node.as_ref().expect("The unexpected.").borrow().val;
-        }
-        
-        if rval == l{
-            return rval + Solution::inorder(node.as_ref(), l, r);
-        }
-        if rval == r {
-            return rval + Solution::inorder(node.as_ref(), l, r);
+                let node = node.borrow().left.as_ref().expect("The unexpected.");                           }
+            rval = node.borrow().val;
         }
         */
-        Solution::inorder(root.as_ref(), l, r)
+
+        if rval == l{
+            return rval + Solution::inorder(node.borrow().right.as_ref(), l, r);
+        }
+        if rval == r {
+            return rval + Solution::inorder(node.borrow().left.as_ref(), l, r);
+        }
+
+        Solution::inorder(Some(&Rc::clone(&node)), l, r)
     }
 }
