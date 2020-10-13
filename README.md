@@ -11,6 +11,21 @@ Some small notes:
  - Search for `TODO: Improve` for places where I think I've 
    messed up slightly.
 
+## [938. Range Sum of BST][938]
+
+**TODO: Improve Rust, don't know Ref/RefCell good enough 
+to readjust root correctly.**
+
+Do an inorder traversal and sum the items. We can 
+cut execution time considerably by adjusting the root 
+before we begin the traversal. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 72 - 99.00% | 12 - 100.00% | 204 - 98.44% |184 - 99.93%|
+| Mem Usage (MB-%)| 42.8 - 20.00% | 4.3 - 100.00% | 67.7 - 11.10% |22.3 - 99.95%|
+
+
 ## [1108. Defanging an IP Address][1108]
 
 Instead of calling a replace function continuously, its 
@@ -165,7 +180,7 @@ Mostly an OOP problem really.
 | Mem Usage (MB-%)| 20.8 - 100.00% | 2.4 - 45.00% | 46 - 26.12% | 14.6 74.11% |
 
 
-
+[938]: https://leetcode.com/problems/range-sum-of-bst/submissions/
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
