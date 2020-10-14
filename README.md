@@ -14,7 +14,8 @@ Some small notes:
 ## [938. Range Sum of BST][938]
 
 **TODO: Improve Rust, don't know Ref/RefCell good enough 
-to readjust root correctly.**
+to readjust root correctly. I've added a minimal 
+Tree impl to work with in playground. **
 
 Do an inorder traversal and sum the items. We can 
 cut execution time considerably by adjusting the root 
@@ -169,6 +170,21 @@ way for inplace swaps.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 4 - 88.85% | 0 - 100.00% | 76 - 97.38% | 56 - 65.00%|
 | Mem Usage (MB-%)| 6.2 - 100.00% | 2 - 100.00% | 40.3 - 10.15% |14.1 - 99.95%|
+
+## [1588. Sum of All Odd Length Subarrays][1588]
+
+TODO: Explain the clusterfuck of the thing you call logic. 
+
+Note: Javascript perf is quite bad. Not sure what I'm doing 
+wrong or if another better trick exists. Surely, the mults array
+doesn't *need* to be stored, we can compute it on the fly as 
+we go through indexes. Maybe I'll fix that in the future.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00% | 0 - 100.00% | 84 - 50.48% | 36ms  - 94.20%|
+| Mem Usage (MB-%)| 6 - 93.55% | 2 - 100.00% | 39 - 7.44% | 14 - 100.00%|
+
 
 ## [1603. Design Parking System][1603]
 
