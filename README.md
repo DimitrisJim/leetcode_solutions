@@ -15,7 +15,7 @@ Some small notes:
 
 **TODO: Improve Rust, don't know Ref/RefCell good enough 
 to readjust root correctly. I've added a minimal 
-Tree impl to work with in playground. **
+Tree impl to work with in playground.**
 
 Do an inorder traversal and sum the items. We can 
 cut execution time considerably by adjusting the root 
@@ -49,6 +49,16 @@ Continuously reduce `n` by `// 10` and add/multiply its modulo
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00%  | 0 - 100.00% | 72 - 86.84% | 20 - 98.44%|
 | Mem Usage (MB-%)| 5.7 - 14.29% | 2 - 100.00% | 38.5 - 20.85% | 14.1 - 99.96%|
+
+## [1290. Convert Binary Number in a Linked List to Integer][1290]
+
+Traverse the list adding the sum as we go. `O(N)` necessarily. 
+`O(1)` space when adding the sum as we go.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00% | 0 - 100.00% | 76 - 50.45% | 20 - 98.93%|
+| Mem Usage (MB-%)| 5.6 | 1.9 - 100.00% | 38.6 - 25.42% | 14.2 - 100.00%|
 
 ## [1313. Decompress Run-Length encoded List][1313]
 
@@ -199,6 +209,7 @@ Mostly an OOP problem really.
 [938]: https://leetcode.com/problems/range-sum-of-bst/submissions/
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
+[1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
