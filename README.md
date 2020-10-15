@@ -11,6 +11,16 @@ Some small notes:
  - Search for `TODO: Improve` for places where I think I've 
    messed up slightly.
 
+## [709. To lower case][709]
+
+The `C` version is probably the most interesting. The rest 
+just use the language provided conversion methods.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 53.05 | 20 - 97.94%|
+| Mem Usage (MB-%)| 5.7 - 20.65 | 2 - 100.00 | 38.4 - 8.75 |14.1 - 99.88%|
+
 ## [938. Range Sum of BST][938]
 
 **TODO: Improve Rust, don't know Ref/RefCell good enough 
@@ -244,7 +254,8 @@ Mostly an OOP problem really.
 | Mem Usage (MB-%)| 20.8 - 100.00% | 2.4 - 45.00% | 46 - 26.12% | 14.6 74.11% |
 
 
-[938]: https://leetcode.com/problems/range-sum-of-bst/submissions/
+[709]: https://leetcode.com/problems/to-lower-case/
+[938]: https://leetcode.com/problems/range-sum-of-bst/
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
@@ -258,6 +269,6 @@ Mostly an OOP problem really.
 [1486]: https://leetcode.com/problems/xor-operation-in-an-array/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
 [1528]: https://leetcode.com/problems/shuffle-string/
-[1534]: https://leetcode.com/problemset/algorithms/?difficulty=Easy
+[1534]: https://leetcode.com/problems/count-good-triplets 
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
 [1603]: https://leetcode.com/problems/design-parking-system/
