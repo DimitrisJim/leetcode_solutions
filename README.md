@@ -197,6 +197,28 @@ way for inplace swaps.
 | Runtime (ms-%)| 4 - 88.85% | 0 - 100.00% | 76 - 97.38% | 56 - 65.00%|
 | Mem Usage (MB-%)| 6.2 - 100.00% | 2 - 100.00% | 40.3 - 10.15% |14.1 - 99.95%|
 
+## [1534. Count Good Triplets][1534]    
+
+Not good. Can't think of a way to reduce the combinatorial 
+explosion by removing elements from the array that will never 
+satisfy the conditions. 
+
+I thought maybe some elements can be disqualified beforehand but, that doesn't seem to be the case (running the code with test data shows that all elements can appear).  As such, I don't know how 
+to reduce the complexity. 
+
+**Update:** Remembered the 3-way set disjointness problem I had 
+encountered. We enter the third inner loop only if one of the 
+inequalities is satisfied (for which we need two inner loops to 
+check, see code). This way, we can skip many of the combinations 
+that don't match and reduce the overall explosion.  
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 100.00 | 0 - 100.00 | 76 - 97.33 | 288 - 98.17 |
+| Mem Usage (MB-%)| 5.8 - 87.04 | 2 - 5.41 | 38.7 - 5.34 | 14 - 5.03 |
+
+
+
 ## [1588. Sum of All Odd Length Subarrays][1588]
 
 TODO: Explain the clusterfuck of the thing you call logic. 
@@ -236,4 +258,6 @@ Mostly an OOP problem really.
 [1486]: https://leetcode.com/problems/xor-operation-in-an-array/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
 [1528]: https://leetcode.com/problems/shuffle-string/
+[1534]: https://leetcode.com/problemset/algorithms/?difficulty=Easy
+[1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
 [1603]: https://leetcode.com/problems/design-parking-system/
