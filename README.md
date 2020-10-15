@@ -60,6 +60,22 @@ Traverse the list adding the sum as we go. `O(N)` necessarily.
 | Runtime (ms-%)| 0 - 100.00% | 0 - 100.00% | 76 - 50.45% | 20 - 98.93%|
 | Mem Usage (MB-%)| 5.6 | 1.9 - 100.00% | 38.6 - 25.42% | 14.2 - 100.00%|
 
+## [1295. Find Numbers with Even Number of Digits][1295]
+
+See the Python (1295.py) for the more generic approach in which
+we continuously divide by ten and use a toggle to check whether 
+our divisions are odd or even until reaching zero (ok, until
+reaching [10, 100] as a minor opt).
+
+Hardcoding the ranges, though specific, is fastest.\*
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00% | 0 - 100.00% | 72 - | 36  - 99.95% |
+| Mem Usage (MB-%)| 6.3 - 99.58% | 2 - 8.96% | 38.2 - 6.75% | 14.3 100.00% |
+
+\* I've used the fastest times for the table.
+
 ## [1313. Decompress Run-Length encoded List][1313]
 
 **TODO: Improve**
@@ -210,6 +226,7 @@ Mostly an OOP problem really.
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
+[1295]: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
