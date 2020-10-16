@@ -238,7 +238,18 @@ that don't match and reduce the overall explosion.
 | Runtime (ms-%)| 8 - 100.00 | 0 - 100.00 | 76 - 97.33 | 288 - 98.17 |
 | Mem Usage (MB-%)| 5.8 - 87.04 | 2 - 5.41 | 38.7 - 5.34 | 14 - 5.03 |
 
+## [1572. Matrix Diagonal Sum][1572]
 
+Go through the array and concurrently sum both diagonals. Remove 
+the middle element (to handle double counting) if the matrix has 
+an odd length. `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 12 - 100.00 | 0 - 100.00 | 68 - 97.94 | 96 - 99.21 |
+| Mem Usage (MB-%)| 6.6 | 2.1 - 100.00 | 40.6 - 25.18 | 14.2 - 100.00 |
+
+ 
 
 ## [1588. Sum of All Odd Length Subarrays][1588]
 
@@ -282,5 +293,6 @@ Mostly an OOP problem really.
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
 [1528]: https://leetcode.com/problems/shuffle-string/
 [1534]: https://leetcode.com/problems/count-good-triplets 
+[1572]: https://leetcode.com/problems/matrix-diagonal-sum/
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
 [1603]: https://leetcode.com/problems/design-parking-system/
