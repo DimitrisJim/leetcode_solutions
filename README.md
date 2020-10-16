@@ -50,6 +50,17 @@ At least, that's my naive first stab at it.
 | Runtime (ms-%)| 0 - 100% | 0 - 100%| 72 - 79.62%|32 - 45.31%|
 | Mem Usage (MB-%)|5.8 - 14.33%|0 - 100%|38.6 - 8.88%|14.1 - 99.95%|
 
+## [1266. Minimum Time Visiting All Points][1266]
+
+Move as much as you can diagonally and then move horizontically or 
+vertically according to the case. `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 98.64 | 0 - 100.00 | 76 - 89.95 | 52 - 96.32% |
+| Mem Usage (MB-%)| 6.4 - 13.61 | 2.1 - 100.00 | 40 - 5.60 | 14.1 - 100.00|
+
+
 ## [1281. Subtract the Product and Sum of Digits of an Integer][1281] 
 
 Continuously reduce `n` by `// 10` and add/multiply its modulo 
@@ -257,6 +268,7 @@ Mostly an OOP problem really.
 [709]: https://leetcode.com/problems/to-lower-case/
 [938]: https://leetcode.com/problems/range-sum-of-bst/
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
+[1266]: https://leetcode.com/problems/minimum-time-visiting-all-points/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
 [1295]: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
