@@ -36,6 +36,16 @@ before we begin the traversal.
 | Runtime (ms-%)| 72 - 99.00% | 12 - 100.00% | 204 - 98.44% |184 - 99.93%|
 | Mem Usage (MB-%)| 42.8 - 20.00% | 4.3 - 100.00% | 67.7 - 11.10% |22.3 - 99.95%|
 
+## [1021. Remove Outermost Parentheses][1021]
+
+Go through string and build resulting string with the help of a 
+depth counter tracking how many parentheses we've seen.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 90.17 | 28 - 98.78 |
+| Mem Usage (MB-%)| 6 - 5.77 | 2.2 - 100.00 | 41 - 6.21 | 14.3 - 100.00 |
+
 
 ## [1108. Defanging an IP Address][1108]
 
@@ -278,6 +288,7 @@ Mostly an OOP problem really.
 
 [709]: https://leetcode.com/problems/to-lower-case/
 [938]: https://leetcode.com/problems/range-sum-of-bst/
+[1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1266]: https://leetcode.com/problems/minimum-time-visiting-all-points/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
