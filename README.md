@@ -60,6 +60,31 @@ At least, that's my naive first stab at it.
 | Runtime (ms-%)| 0 - 100% | 0 - 100%| 72 - 79.62%|32 - 45.31%|
 | Mem Usage (MB-%)|5.8 - 14.33%|0 - 100%|38.6 - 8.88%|14.1 - 99.95%|
 
+## [1252. Cells with Odd Values in a Matrix][1252] 
+
+**TODO: Describe algorithm better.**
+
+The tldr; of the algorithm boils down to this. If both `m` and `n`
+are `> 2`; the sum of all odd elements in the matrix can be 
+calculated by solely knowing the number of odd rows and odd 
+columns. 
+
+Since we toggle between odd and even numbers we can keep track 
+of which rows and which columns are left in an odd state and 
+then sum of the cells according to a relatively (after some hours
+and many printed arrays later) simple formula:
+
+```python
+(m - num_odd_cols) * num_odd_rows + (n - num_odd_rows) * num_odd_cols
+```
+
+The minor edge cases `n or m <= 2` can be handled separately.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.98 | 20 - 100.00|
+| Mem Usage (MB-%)| 6 - 98.61% | 2 - 100.00 | 39.1 - 5.66 |14 - 7.53|
+
 ## [1266. Minimum Time Visiting All Points][1266]
 
 Move as much as you can diagonally and then move horizontically or 
@@ -290,6 +315,7 @@ Mostly an OOP problem really.
 [938]: https://leetcode.com/problems/range-sum-of-bst/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
+[1252]: https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
 [1266]: https://leetcode.com/problems/minimum-time-visiting-all-points/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
