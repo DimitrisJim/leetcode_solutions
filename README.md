@@ -1,15 +1,15 @@
 # LeetCode problems. 
 
 Some small notes:
- 
- - Rust seems to optimize very well and uniformly, leading 
-   to `100%` execution/memory consistently.
- - This leads me to believe that these metrics are hoarser 
-   than would be expected. Take them with a grain of salt.
- - I usually try to write the big-Oh for worse cases, but 
-   I'm not very consistent I believe.
- - Search for `TODO: Improve` for places where I think I've 
-   messed up slightly.
+
+- Rust seems to optimize very well and uniformly, leading 
+to `100%` execution/memory consistently.
+- This leads me to believe that these metrics are hoarser 
+than would be expected. Take them with a grain of salt.
+- I usually try to write the big-Oh for worse cases, but 
+I'm not very consistent I believe.
+- Search for `TODO: Improve` for places where I think I've 
+messed up slightly.
 
 ## [709. To lower case][709]
 
@@ -63,6 +63,8 @@ At least, that's my naive first stab at it.
 ## [1252. Cells with Odd Values in a Matrix][1252] 
 
 **TODO: Describe algorithm better.**
+
+Note: Peeked at hints for this problem.
 
 The tldr; of the algorithm boils down to this. If both `m` and `n`
 are `> 2`; the sum of all odd elements in the matrix can be 
@@ -146,7 +148,22 @@ definitely something better here.)
 | Runtime (ms-%)| 32 - 81.07% | 4 - 100.00%  | 92 - 85.55% | 64 - 89.35%|
 | Mem Usage (MB-%)| 10.4 | 2.1 - 100.00% | 42.3 - 5.85% | 14.5 - 13.10%|
 
+## [1323. Maximum 69 Number][1323]
 
+**TODO: Improve. I don't think this is best solution.**
+
+After finding the largest 10 multiple `d`  of 9 that has the same 
+number of digits as the number, we continuously divide until 
+we can't anymore (signifying a `6`, consider `669 // 900`). 
+
+When we reach that point we simply add `d // 3` to our original
+number (again, consider `669 // 900`, we need `900 // 3 == 300` 
+to reach our desired result `969`).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 47.88 | 20 - 98.80 |
+| Mem Usage (MB-%)| 5.4 - 29.69 | 1.9 - 100.00 | 38.8 - 32.54 | 14.1 - 99.85 |
 
 ## [1365. How Many Numbers Are Smaller Than the Current Number][1365]
 
@@ -321,6 +338,7 @@ Mostly an OOP problem really.
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
 [1295]: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
+[1323]: https://leetcode.com/problems/maximum-69-number/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
