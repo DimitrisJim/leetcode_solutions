@@ -21,6 +21,19 @@ just use the language provided conversion methods.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 53.05 | 20 - 97.94%|
 | Mem Usage (MB-%)| 5.7 - 20.65 | 2 - 100.00 | 38.4 - 8.75 |14.1 - 99.88%|
 
+## [905. Sort Array By Parity.][905]
+
+The two ways I've done this is either by simply sorting with the 
+appropriate key function or by using a deque.
+
+Sorting takes `O(nlogn)` and `O(1)` space while using a deque 
+results in `O(n)` runtime complexity and `O(n)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 28 - 77.42 | 0 - 100.00 | 96 - 72.31 | 60 - 99.98%|
+| Mem Usage (MB-%)| 9.3 - 97.35 | 2.1 - 100.00 | 40.6 - 10.20 | 14.6 - 36.39%|
+
 ## [938. Range Sum of BST][938]
 
 **TODO: Improve Rust, don't know Ref/RefCell good enough 
@@ -329,6 +342,7 @@ Mostly an OOP problem really.
 
 
 [709]: https://leetcode.com/problems/to-lower-case/
+[905]: https://leetcode.com/problems/sort-array-by-parity/
 [938]: https://leetcode.com/problems/range-sum-of-bst/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
