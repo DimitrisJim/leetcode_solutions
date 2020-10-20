@@ -21,6 +21,17 @@ just use the language provided conversion methods.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 53.05 | 20 - 97.94%|
 | Mem Usage (MB-%)| 5.7 - 20.65 | 2 - 100.00 | 38.4 - 8.75 |14.1 - 99.88%|
 
+## [804. Unique Morse Code Words.][804]
+
+Build the morse code words and add them to a set. After adding 
+all words just return the length of the, now, unique set of 
+morse code words.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 86.43 | 24 - 99.14%|
+| Mem Usage (MB-%)| 6.1 - 13.33 | 2 - 100.00 | 39.4 - 6.79 | 14.1 - 100.00 |
+
 ## [905. Sort Array By Parity.][905]
 
 The two ways I've done this is either by simply sorting with the 
@@ -342,6 +353,7 @@ Mostly an OOP problem really.
 
 
 [709]: https://leetcode.com/problems/to-lower-case/
+[804]: https://leetcode.com/problems/unique-morse-code-words/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [938]: https://leetcode.com/problems/range-sum-of-bst/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
