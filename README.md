@@ -27,6 +27,17 @@ just use the language provided conversion methods.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 53.05 | 20 - 97.94%|
 | Mem Usage (MB-%)| 5.7 - 20.65 | 2 - 100.00 | 38.4 - 8.75 |14.1 - 99.88%|
 
+## [771. Jewels and Stones]  
+
+Add the values of J to a set and count number of jewels by 
+using the set membership test to quickly establish if a 
+character is a jewel.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 73.22 | 24 - 93.75%|
+| Mem Usage (MB-%)| 5.8 - 25.51 | 2.1 - 100.00 | 40.4 - 11.66 |14.2 - 99.99%|
+
 ## [804. Unique Morse Code Words.][804]
 
 Build the morse code words and add them to a set. After adding 
@@ -422,6 +433,7 @@ Mostly an OOP problem really.
 
 
 [709]: https://leetcode.com/problems/to-lower-case/
+[771]: https://leetcode.com/problems/jewels-and-stones/ 
 [804]: https://leetcode.com/problems/unique-morse-code-words/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [938]: https://leetcode.com/problems/range-sum-of-bst/
