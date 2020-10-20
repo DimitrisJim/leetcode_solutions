@@ -164,6 +164,39 @@ Hardcoding the ranges, though specific, is fastest.\*
 
 \* I've used the fastest times for the table.
 
+## [1309. Decrypt String from Alphabet to Integer Mapping][1309]
+
+In both cases that follow, we go from one character or set of 
+characters to another. Since we can work with characters using 
+their code points, we can calculate the correct mapping just by 
+adding the appropriate numbers. The offset from going from `'1'` 
+to `'a'` is `48`. That is, the code point for `'1'` (`49`) plus 
+the offset of `48` leads to `97` which is the code point for `a`.
+As such, whatever the case, we know we need to cover the offset 
+of `48` by adding it.
+
+First we through the characters in the string and check two cases:
+
+ 1. The second character from the one we're looking at is a `'#'`.
+ 2. It isn't. In this simpler case, we just convert into the 
+    appropriate character using their code point value. 
+
+In the first case, we then look at the following character 
+from the one we're currently at. If it is a `1` we know we're 
+looking at the set of the *ten* next characters in the mapping. 
+As such, we acount for these by adding `10` to the offset of `48`
+before adding the value for the code point. 
+
+Similarly, if the following character is a `2`, we are looking 
+at the final remaining 7 characters. As such, we add `20` to 
+the offset to get to the correct output character.  
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 88.44 | 20 - 99.29 |
+| Mem Usage (MB-%)| 5.8 - 9.46 | 2 - 100.00 | 38.9 - 5.19 | 14.2 - 100.00 |
+
+
 ## [1313. Decompress Run-Length encoded List][1313]
 
 **TODO: Improve**
@@ -399,6 +432,7 @@ Mostly an OOP problem really.
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
 [1295]: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+[1309]: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
 [1323]: https://leetcode.com/problems/maximum-69-number/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
