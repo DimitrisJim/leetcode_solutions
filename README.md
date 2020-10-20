@@ -220,6 +220,17 @@ some point.
 
 Find max, compare values and return.
 
+## [1450. Number of Students Doing Homework at a Given Time][1450]
+
+Go through first vector (start times) and for every start time 
+that is smaller equal to the queryTime, check the second vector 
+(end times) to see if we fall in range.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 86.58 | 28 - 97.73% |
+| Mem Usage (MB-%)| 5.8 - 80.17 | 2.2 - 100.00 | 38.3 - 29.39 | 14.2 - 100.00%|
+
 ## [1470. Shuffle the Array][1470]
 
 **TODO: Come back to this.**
@@ -251,7 +262,6 @@ In Python, we take advantage of `functools.reduce` being implemented in `C`, in 
 Again with some memory issues in `C` and `JS` though. I'm pretty 
 sure a XOR-trick for sequences should exist (appart from the 
 common `x ^ x = 0` and `x ^ 0 = x`; can't seem to find it though.) 
-
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00% | 0 - 100.00% | 72 - 86.39% | 28 - 78.99%|
@@ -368,6 +378,7 @@ Mostly an OOP problem really.
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
+[1450]: https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/
 [1470]: https://leetcode.com/problems/shuffle-the-array/
 [1480]: https://leetcode.com/problems/running-sum-of-1d-array/
 [1486]: https://leetcode.com/problems/xor-operation-in-an-array/
