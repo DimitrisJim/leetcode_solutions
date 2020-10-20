@@ -239,6 +239,16 @@ to reach our desired result `969`).
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 47.88 | 20 - 98.80 |
 | Mem Usage (MB-%)| 5.4 - 29.69 | 1.9 - 100.00 | 38.8 - 32.54 | 14.1 - 99.85 |
 
+## [1342. Number of Steps to Reduce a Number to Zero][1342] 
+
+Xor with 1 if even (to drop the 1) and right shift by 1 to divide by two. Count.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 78.28 | 28 - 78.69 |
+| Mem Usage (MB-%)| 5.5 - 27.87 | 2 - 100.00 | 38.8 - 29.88 | 14.1 - 99.98 |
+
+
 ## [1365. How Many Numbers Are Smaller Than the Current Number][1365]
 
 By sorting the array we can find the # of elements faster in 
@@ -447,6 +457,7 @@ Mostly an OOP problem really.
 [1309]: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
 [1323]: https://leetcode.com/problems/maximum-69-number/
+[1342]: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
