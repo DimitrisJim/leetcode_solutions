@@ -2,12 +2,18 @@
 
 Some small notes:
 
+- I usually use the best execution/memory numbers I can achieve.
+  Sometimes this makes me write code which is what you would call
+  premature optimization (especially in Python.)
 - Rust seems to optimize very well and uniformly, leading 
 to `100%` execution/memory consistently.
 - This leads me to believe that these metrics are hoarser 
-than would be expected. Take them with a grain of salt.
+than would be expected. Take them with a grain of salt (Especially
+the metrics on memory).
 - I usually try to write the big-Oh for worse cases, but 
 I'm not very consistent I believe.
+- I'm using Firefox, not sure if this has any impact on the 
+  timings for Javascript.
 - Search for `TODO: Improve` for places where I think I've 
 messed up slightly.
 
@@ -231,6 +237,26 @@ that is smaller equal to the queryTime, check the second vector
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 86.58 | 28 - 97.73% |
 | Mem Usage (MB-%)| 5.8 - 80.17 | 2.2 - 100.00 | 38.3 - 29.39 | 14.2 - 100.00%|
 
+## [1464. Maximum Product of Two Elements in an Array][1464]
+
+Though sorting the array and grabbing the last two elements seems
+like the best way to do this, it's better even to find the max 
+value, then remove it from the array/vector and then call max 
+again.
+
+Sorting alone is `O(nlogn)`.
+Max, remove(1) and max is `O(N) + O(N) + O(N) => O(N)`.
+
+(1): remove can also be done in O(1) if we have the index of the 
+first maximum. We don't remove it but instead replace its value 
+with a minimum value thereby removing it from consideration when 
+we find the next max.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 92.82 | 0 - 100.00 | 76 - 84.17 | 40 - 98.94% |
+| Mem Usage (MB-%)| 6 - 99.52 | 2.3 - 100.00 | 38.6 - 6.57 | 14.2 - 100.00%|
+
 ## [1470. Shuffle the Array][1470]
 
 **TODO: Come back to this.**
@@ -379,6 +405,7 @@ Mostly an OOP problem really.
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1450]: https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/
+[1464]: https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array
 [1470]: https://leetcode.com/problems/shuffle-the-array/
 [1480]: https://leetcode.com/problems/running-sum-of-1d-array/
 [1486]: https://leetcode.com/problems/xor-operation-in-an-array/
