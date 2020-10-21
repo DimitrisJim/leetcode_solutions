@@ -280,6 +280,17 @@ some point.
 
 Find max, compare values and return.
 
+## [1436. Destination City.][1436]
+
+Use two sets, sources and destinations, and return the result 
+of the difference between destinations and sources (We know 
+that it will contain only one result due to the constraints.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 95.41 | 0 - 100.00 | 80 - 78.81 | 44 - 98.44 |
+| Mem Usage (MB-%)| 7.6 - 48.62 | 2.4 - 100.00 | 41.7 - 5.08 | 14.1 - 100.00|
+
 ## [1450. Number of Students Doing Homework at a Given Time][1450]
 
 Go through first vector (start times) and for every start time 
@@ -289,7 +300,7 @@ that is smaller equal to the queryTime, check the second vector
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 86.58 | 28 - 97.73% |
-| Mem Usage (MB-%)| 5.8 - 80.17 | 2.2 - 100.00 | 38.3 - 29.39 | 14.2 - 100.00%|
+| Mem Usage (MB-%)| 5.8 - 80.17 | 2.2 - 100.00 | 38.3 - 29.39 | 14.2 - 100.00|
 
 ## [1464. Maximum Product of Two Elements in an Array][1464]
 
@@ -470,6 +481,7 @@ space `O(1)`.
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
+[1436]: https://leetcode.com/problems/destination-city/
 [1450]: https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/
 [1464]: https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array
 [1470]: https://leetcode.com/problems/shuffle-the-array/
