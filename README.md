@@ -438,9 +438,18 @@ Mostly an OOP problem really.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 56 - 89.80% | 16 - 100.00% | 148 - 81.63% | 136 - 75.59% |
-| Mem Usage (MB-%)| 20.8 - 100.00% | 2.4 - 45.00% | 46 - 26.12% | 14.6 74.11% |
+| Runtime (ms-%)| 56 - 89.80 | 16 - 100.00 | 148 - 81.63 | 136 - 75.59 |
+| Mem Usage (MB-%)| 20.8 - 100.00 | 2.4 - 45.00 | 46 - 26.12 | 14.6 - 74.11 |
 
+## [1614. Maximum Nesting Depth of the Parentheses][1614]
+
+Traverse string while keeping count of depth. Runtime `O(n)` and 
+space `O(1)`. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.16 | 24 - 95.18 |
+| Mem Usage (MB-%)| 5.7 - 85.33 | 2.2 - 100.00 | 39.2 - 76.73 | 14.1 - 100.00 |
 
 [709]: https://leetcode.com/problems/to-lower-case/
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
@@ -472,3 +481,4 @@ Mostly an OOP problem really.
 [1572]: https://leetcode.com/problems/matrix-diagonal-sum/
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
 [1603]: https://leetcode.com/problems/design-parking-system/
+[1614]: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses
