@@ -46,8 +46,20 @@ morse code words.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 86.43 | 24 - 99.14%|
-| Mem Usage (MB-%)| 6.1 - 13.33 | 2 - 100.00 | 39.4 - 6.79 | 14.1 - 100.00 |
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 86.43 | 24 - 99.14|
+| Mem usage (mb-%)| 6.1 - 13.33 | 2 - 100.00 | 39.4 - 6.79 | 14.1 - 100.00 |
+
+## [832. Flipping an Image][832]
+
+Go through matrix and reverse/invert. Python/Rust/JS use a functional 
+approach. C iterates through elements.
+
+**TODO: Write version for C where pointer arithmetic is used.**
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 12 - 67.03 | 0 - 100.00 | 80 - 86.11 | 40 - 99.08|
+| Mem usage (mb-%)| 7.2 - 72.54 | 2.1 - 100.00 | 40.2 - 18.30 | 13.9 - 100.00 |
 
 ## [905. Sort Array By Parity.][905]
 
@@ -465,6 +477,7 @@ space `O(1)`.
 [709]: https://leetcode.com/problems/to-lower-case/
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
 [804]: https://leetcode.com/problems/unique-morse-code-words/
+[832]: https://leetcode.com/problems/flipping-an-image/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [938]: https://leetcode.com/problems/range-sum-of-bst/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
