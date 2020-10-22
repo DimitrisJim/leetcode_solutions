@@ -27,7 +27,7 @@ just use the language provided conversion methods.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 53.05 | 20 - 97.94%|
 | Mem Usage (MB-%)| 5.7 - 20.65 | 2 - 100.00 | 38.4 - 8.75 |14.1 - 99.88%|
 
-## [771. Jewels and Stones]  
+## [771. Jewels and Stones][771] 
 
 Add the values of J to a set and count number of jewels by 
 using the set membership test to quickly establish if a 
@@ -292,6 +292,27 @@ We use quite the extra space but avoid O(N^2) this way
 | Runtime (ms-%)| 16 - 77.53  | 0 - 100.00 | 92 - 76.99 |44 - 99.38|
 | Mem Usage (MB-%)| 7.4 - 64.10 | 2.2 - 100.00 | 40.9 - 9.53 |14 - 100.00|
 
+## [1370. Increasing Decreasing String.][1370]
+
+Create three supporting structures:
+
+ - A sorted list of distinct characters. 
+ - A reverse sorted list of distinct characters.
+ - A count of the # of occurences for each character.
+
+Then, by toggling between the sorted and the reverse sorted list,
+we decrease the counts of the counts mapping. This is done until 
+we reach 1. We then break and add all remaining elements. (Of 
+course, we could add them and *then* break but meh.)
+
+**TODO: C Version. Will be a slight clusterfuck due to needing 
+filtering and a map.** 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 4 - 90.00 | 100 - 80.77 | 44 - 100 |
+| Mem Usage (MB-%)| | 2.3 - 100.00 | 45.8 - 8.24 | 14.1 - 100.00|
+
 ## [1374. Generate a String With Characters That Have Odd Counts][1374]
 
 Basically, two cases:
@@ -516,6 +537,7 @@ space `O(1)`.
 [1323]: https://leetcode.com/problems/maximum-69-number/
 [1342]: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
+[1370]: https://leetcode.com/problems/increasing-decreasing-string/
 [1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
