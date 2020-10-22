@@ -289,8 +289,20 @@ We use quite the extra space but avoid O(N^2) this way
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 16 - 77.53%  | 0ms 100.00% | 92 - 76.99% |44 - 99.38%|
-| Mem Usage (MB-%)| 7.4 - 64.10% | 2.2 - 100.00% | 40.9 - 9.53% |14 - 100.00%|
+| Runtime (ms-%)| 16 - 77.53  | 0 - 100.00 | 92 - 76.99 |44 - 99.38|
+| Mem Usage (MB-%)| 7.4 - 64.10 | 2.2 - 100.00 | 40.9 - 9.53 |14 - 100.00|
+
+## [1374. Generate a String With Characters That Have Odd Counts][1374]
+
+Basically, two cases:
+
+ - `n` is odd: Repeat one character `n-2` times and add two others.
+ - `n` is even: Repeat one character `n-1` times and add one other. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 87.27 | 20 - 98.14 |
+| Mem Usage (MB-%)| 6.2 - 74.04 | 2.2 - 100.00 | 39 - 19.09 | 14.3 - 100.00 |
 
 ## [1389. Create Target Array in the Given Order][1389]
 
@@ -504,6 +516,7 @@ space `O(1)`.
 [1323]: https://leetcode.com/problems/maximum-69-number/
 [1342]: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
+[1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1436]: https://leetcode.com/problems/destination-city/
