@@ -182,10 +182,21 @@ Hardcoding the ranges, though specific, is fastest.\*
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 0 - 100.00% | 0 - 100.00% | 72 - | 36  - 99.95% |
-| Mem Usage (MB-%)| 6.3 - 99.58% | 2 - 8.96% | 38.2 - 6.75% | 14.3 100.00% |
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 | 36  - 99.95 |
+| Mem Usage (MB-%)| 6.3 - 99.58 | 2 - 8.96 | 38.2 - 6.75 | 14.3 100.00 |
 
 \* I've used the fastest times for the table.
+
+## [1304. Find N Unique Integers Sum up to Zero][1304]
+
+Fill the array up from the range `[i, (n/2) + 1)` with `i` and 
+`-i` values. If the array is odd `n & 1 == 1`, add a `0` to 
+complete it.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 94.87 | 0 - 100.00 | 76 - 88.60 | 24 - 97.78 |
+| Mem Usage (MB-%)| 6.8 - 27.35 | 2 - 8.33 | 39.1 - 9.00 | 14.3 - 100.00 |
 
 ## [1309. Decrypt String from Alphabet to Integer Mapping][1309]
 
@@ -487,6 +498,7 @@ space `O(1)`.
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
 [1295]: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+[1304]: https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero
 [1309]: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
 [1323]: https://leetcode.com/problems/maximum-69-number/
