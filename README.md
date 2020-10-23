@@ -305,13 +305,13 @@ we decrease the counts of the counts mapping. This is done until
 we reach 1. We then break and add all remaining elements. (Of 
 course, we could add them and *then* break but meh.)
 
-**TODO: C Version. Will be a slight clusterfuck due to needing 
-filtering and a map.** 
+**TODO for C: Create a generic map that's correct and can be re-used. Add it 
+to folder so I can re-use it when needed.** 
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| | 4 - 90.00 | 100 - 80.77 | 44 - 100 |
-| Mem Usage (MB-%)| | 2.3 - 100.00 | 45.8 - 8.24 | 14.1 - 100.00|
+| Runtime (ms-%)| 12 - 13.46 | 4 - 90.00 | 100 - 80.77 | 44 - 100 |
+| Mem Usage (MB-%)| 8.8 - 100.00 | 2.3 - 100.00 | 45.8 - 8.24 | 14.1 - 100.00|
 
 ## [1374. Generate a String With Characters That Have Odd Counts][1374]
 
