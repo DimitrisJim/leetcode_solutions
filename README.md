@@ -275,11 +275,18 @@ Xor with 1 if even (to drop the 1) and right shift by 1 to divide by two. Count.
 
 **TODO: Describe logic. Overview of steps as seen in 1351.py**
 
+The main idea is by going to the edges of the matrix (top-right 
+corner and bottom-left) we can bulk count negative numbers by 
+using the fact that the matrix is row and column sorted. 
+
+If we find negative cells, we count everything after it. After 
+doing that, we adjust our points to move around the matrix 
+looking for the next negative cell.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| | | | 104 - 99.49 |
-| Mem Usage (MB-%)| | | | 14.9 - 99.62 |
+| Runtime (ms-%)| 16 - 97.86 | 0 - 100.00 | 76 - 85.01 | 104 - 99.49 |
+| Mem Usage (MB-%)| 7.1 - 77.14 | 2.3 - 100.00 | 39.9 - 7.13 | 14.9 - 99.62 |
 
 ## [1365. How Many Numbers Are Smaller Than the Current Number][1365]
 
