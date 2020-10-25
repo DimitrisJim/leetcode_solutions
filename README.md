@@ -271,6 +271,15 @@ Xor with 1 if even (to drop the 1) and right shift by 1 to divide by two. Count.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 78.28 | 28 - 78.69 |
 | Mem Usage (MB-%)| 5.5 - 27.87 | 2 - 100.00 | 38.8 - 29.88 | 14.1 - 99.98 |
 
+## [1351. Count Negative Numbers in a Sorted Matrix][1351]
+
+**TODO: Describe logic. Overview of steps as seen in 1351.py**
+
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | | | 104 - 99.49 |
+| Mem Usage (MB-%)| | | | 14.9 - 99.62 |
 
 ## [1365. How Many Numbers Are Smaller Than the Current Number][1365]
 
@@ -536,6 +545,7 @@ space `O(1)`.
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
 [1323]: https://leetcode.com/problems/maximum-69-number/
 [1342]: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
+[1351]: https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1370]: https://leetcode.com/problems/increasing-decreasing-string/
 [1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
