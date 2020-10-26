@@ -411,6 +411,18 @@ I flatten and then return `[index, index+n]` sublists.
 `Rust`: Tricky doing this in a functional way. Need to come 
 back to this after further practice.
 
+## [1475. Final Prices With a Special Discount in a Shop][1475]
+
+Brute force this. For each element of the array loop through
+the rest of the array looking for the min element.
+
+Can, at least, re-use the array we're given.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 98.68 | 0 - 100.00 | 80 - 91.33 | 44 - 97.07 |
+| Mem Usage (MB-%)| 6.6 - 56.58 | 2.2 - 100.00 | 40.2 - 5.61 |14.3 - 100.00|
+
 ## [1480. Running Sum of 1d Array][1480]
 
 Basically add as we go through the array. 
@@ -427,8 +439,8 @@ sure a XOR-trick for sequences should exist (appart from the
 common `x ^ x = 0` and `x ^ 0 = x`; can't seem to find it though.) 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 0 - 100.00% | 0 - 100.00% | 72 - 86.39% | 28 - 78.99%|
-| Mem Usage (MB-%)| 5.7 - 22.45% | 2.2 - 100.00% | 38.2 - 5.14% |14.2 - 100.00%|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 86.39 | 28 - 78.99|
+| Mem Usage (MB-%)| 5.7 - 22.45 | 2.2 - 100.00 | 38.2 - 5.14 |14.2 - 100.00|
 
 
 ## [1512. Number of Good Pairs][1512]
@@ -562,6 +574,7 @@ space `O(1)`.
 [1450]: https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/
 [1464]: https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array
 [1470]: https://leetcode.com/problems/shuffle-the-array/
+[1475]: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
 [1480]: https://leetcode.com/problems/running-sum-of-1d-array/
 [1486]: https://leetcode.com/problems/xor-operation-in-an-array/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
