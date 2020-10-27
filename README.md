@@ -201,6 +201,15 @@ Hardcoding the ranges, though specific, is fastest.\*
 
 \* I've used the fastest times for the table.
 
+## [1299. Replace Elements with Greatest Element on Right Side][1299]
+
+Go backwards, continously updating the maximum value seen as we go through.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 52 - 90.45 | 4 - 96.67 | 88 - 96.36 | 104 - 99.74 |
+| Mem Usage (MB-%)| 12.7 - 48.64 | 2.2 - 100.00 | 42.1 - 5.56 | 15.3 - 6.78 |
+
 ## [1304. Find N Unique Integers Sum up to Zero][1304]
 
 Fill the array up from the range `[i, (n/2) + 1)` with `i` and 
@@ -574,6 +583,7 @@ space `O(1)`.
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
 [1295]: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+[1299]: https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
 [1304]: https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero
 [1309]: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
