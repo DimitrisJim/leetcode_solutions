@@ -17,6 +17,22 @@ I'm not very consistent I believe.
 - Search for `TODO: Improve` for places where I think I've 
 messed up slightly.
 
+## [617. Merge Two Binary Trees][617]
+
+Don't recurse. Breadth first traversal using a queue. 
+Add branches immediately when we can.
+
+Pending: 
+
+ - `C` because I need to make a small queue first.
+ - `Rust`: Got to sit down and learn `Rc`s and `RefCell`s better.
+ - `Javascript`: File added, timings need to improve.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | | | 80 - 96.68 |
+| Mem Usage (MB-%)| | | | 14.9 - 99.93 |
+
 ## [709. To lower case][709]
 
 The `C` version is probably the most interesting. The rest 
@@ -569,6 +585,7 @@ space `O(1)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.16 | 24 - 95.18 |
 | Mem Usage (MB-%)| 5.7 - 85.33 | 2.2 - 100.00 | 39.2 - 76.73 | 14.1 - 100.00 |
 
+[617]: https://leetcode.com/problems/merge-two-binary-trees/
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
 [771]: https://leetcode.com/problems/jewels-and-stones/ 

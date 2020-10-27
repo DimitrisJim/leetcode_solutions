@@ -1,6 +1,7 @@
 /**
  * Created by jim.
  *
+ * Note: Noticed they offer a hash table so, don't really use this.
 */
 #include <limits.h>
 #include <stddef.h>
