@@ -25,13 +25,13 @@ Add branches immediately when we can.
 Pending: 
 
  - `C` because I need to make a small queue first.
- - `Rust`: Got to sit down and learn `Rc`s and `RefCell`s better.
+ - `Rust`: Got to sit down and learn `Rc`s and `RefCell`s better. [OK, more familiar now].
  - `Javascript`: File added, timings need to improve.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| | | | 80 - 96.68 |
-| Mem Usage (MB-%)| | | | 14.9 - 99.93 |
+| Runtime (ms-%)| | 4 - 100.00 | | 80 - 96.68 |
+| Mem Usage (MB-%)| | 2.2 - 100.00 | | 14.9 - 99.93 |
 
 ## [709. To lower case][709]
 
