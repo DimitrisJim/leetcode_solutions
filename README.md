@@ -585,6 +585,22 @@ space `O(1)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.16 | 24 - 95.18 |
 | Mem Usage (MB-%)| 5.7 - 85.33 | 2.2 - 100.00 | 39.2 - 76.73 | 14.1 - 100.00 |
 
+## [1640. Check Array Formation Through Concatenation][1640]
+
+Build a set-like supporting structure for fast O(1) look-ups.
+Go through each element in second array:
+ 
+ -  If the sub-array has a single element, check if its contained
+    in the set-like structure and bail if not.
+ -  If the sub-array has more than one elements. Find index of 
+    subarray[0] in original array and try and match the rest of 
+    the values in the sub-array.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 92.31 | 0 - 100.00 | 80 - 67.57 | 36 - 93.55 |
+| Mem Usage (MB-%)| 6.7 - 100.00 | 2.2 - 100.00 | 38.8 - 5.11 | 14.1 - 100.00 |
+
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
@@ -626,3 +642,4 @@ space `O(1)`.
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
 [1603]: https://leetcode.com/problems/design-parking-system/
 [1614]: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses
+[1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
