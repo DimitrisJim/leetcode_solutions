@@ -33,6 +33,16 @@ Pending:
 | Runtime (ms-%)| | 4 - 100.00 | | 80 - 96.68 |
 | Mem Usage (MB-%)| | 2.2 - 100.00 | | 14.9 - 99.93 |
 
+## [657. Robot Return to Origin][657]
+
+Count occurences and compare. If number of 'D's matches number 
+of 'U's and number of 'L's matches number of 'R's, we're good.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 95.76 | 0 - 100.00 | 80 - 90.34 | 32 - 94.10 |
+| Mem Usage (MB-%)| 6 - 57.63 | 1.9 - 100.00 | 39.7 - 61.54 | 14.2 - 67.31 |
+
 ## [709. To lower case][709]
 
 The `C` version is probably the most interesting. The rest 
@@ -615,6 +625,7 @@ Go through each element in second array:
 | Mem Usage (MB-%)| 6.7 - 100.00 | 2.2 - 100.00 | 38.8 - 5.11 | 14.1 - 100.00 |
 
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
+[657]: https://leetcode.com/problems/robot-return-to-origin/
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
