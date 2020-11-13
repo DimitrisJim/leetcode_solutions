@@ -116,8 +116,21 @@ before we begin the traversal.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 72 - 99.00% | 12 - 100.00% | 204 - 98.44% |184 - 99.93%|
-| Mem Usage (MB-%)| 42.8 - 20.00% | 4.3 - 100.00% | 67.7 - 11.10% |22.3 - 99.95%|
+| Runtime (ms-%)| 72 - 99.00 | 12 - 100.00 | 204 - 98.44 |184 - 99.93|
+| Mem Usage (MB-%)| 42.8 - 20.00 | 4.3 - 100.00 | 67.7 - 11.10 |22.3 - 99.95|
+
+## [961. N repeated elements in size 2N Array][961]
+
+Two ways to go about this:
+
+ 1. Build a set with 'seen' values. Break the moment we find a value we have already seen. Rust and Python use this.
+ 2. Iterate through the array and check triplets. Since we know 
+that N-1 of the elements are the same, we're bound to bump into a triplet with two elements being equal. Edge case is 2N = 4, were the elements are in the beginning and end respectively.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 20 - 100.00 | 0 - 100.00 | 80 - 88.70 | 188 - 93.66%|
+| Mem Usage (MB-%)| 7.2 - 73.91 | 2.1 - 100.00 | 41.9 - 76.92 | 15.3 - 65.97|
 
 ## [1021. Remove Outermost Parentheses][1021]
 
@@ -609,6 +622,7 @@ Go through each element in second array:
 [832]: https://leetcode.com/problems/flipping-an-image/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [938]: https://leetcode.com/problems/range-sum-of-bst/
+[961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1252]: https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
