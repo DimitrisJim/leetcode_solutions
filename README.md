@@ -140,6 +140,21 @@ before we begin the traversal.
 | Runtime (ms-%)| 72 - 99.00 | 12 - 100.00 | 204 - 98.44 |184 - 99.93|
 | Mem Usage (MB-%)| 42.8 - 20.00 | 4.3 - 100.00 | 67.7 - 11.10 |22.3 - 99.95|
 
+## [942. DI String Match][942]
+
+Initialize counters, i to zero and j to the length of the string.
+Iterate through characters of string and add i if character is 
+'I' and j if char is 'D'. Increase and decrease the counters 
+respectively afterwards.
+
+Append either i or j at the end (they should be equal) to 
+complete the sequence.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 32 - 98.51 | 4 - 71.43 | 100 - 65.91 | 56 - 94.27|
+| Mem Usage (MB-%)| 11.6 - 34.33 | 2.2 - 28.57 | 43.1 - 21.59 | 14.9 - 83.63|
+
 ## [961. N repeated elements in size 2N Array][961]
 
 Two ways to go about this:
