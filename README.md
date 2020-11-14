@@ -43,6 +43,17 @@ of 'U's and number of 'L's matches number of 'R's, we're good.
 | Runtime (ms-%)| 4 - 95.76 | 0 - 100.00 | 80 - 90.34 | 32 - 94.10 |
 | Mem Usage (MB-%)| 6 - 57.63 | 1.9 - 100.00 | 39.7 - 61.54 | 14.2 - 67.31 |
 
+## [700. Search in a BST][700]
+
+Straight-forward. Perform binary search. `C` code also contains 
+a tail-recursive version, didn't seem to make much difference
+in runtime/memory timings.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 20 - 89.04 | 4 - 100.00 | 44 - 98.93 | 64 - 97.56|
+| Mem Usage (MB-%)| 15.1 - 73.25 | 2.6 - 57.14 | 44.4 - 76.63 | 15.8 - 94.95|
+
 ## [709. To lower case][709]
 
 The `C` version is probably the most interesting. The rest 
