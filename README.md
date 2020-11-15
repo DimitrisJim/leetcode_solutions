@@ -36,8 +36,8 @@ Option for Rust isn't available yet unfortunately.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| | N/A | 92 - 89.63 | 48 - 81.31 |
-| Mem Usage (MB-%)| | N/A | 43.1 - 13.39 | 15.6 - 86.89 |
+| Runtime (ms-%)| 12 - 82.00 | N/A | 92 - 89.63 | 48 - 81.31 |
+| Mem Usage (MB-%)| 19.9 - 24.00 | N/A | 43.1 - 13.39 | 15.6 - 86.89 |
 
 ## [590. N-Ary tree post order traversal][590]
 
