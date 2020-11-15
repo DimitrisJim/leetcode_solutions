@@ -30,6 +30,24 @@ solution here.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 82.30 | 28 - 76.20 |
 | Mem Usage (MB-%)| 5.5 - 67.52 | 2 - 100.00 | 38.5 - 71.22 | 14.1 - 61.18 |
 
+## [589. N-Ary tree pre-order traversal][589]
+
+Option for Rust isn't available yet unfortunately.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | N/A | 92 - 89.63 | 48 - 81.31 |
+| Mem Usage (MB-%)| | N/A | 43.1 - 13.39 | 15.6 - 86.89 |
+
+## [590. N-Ary tree post order traversal][590]
+
+Option for Rust isn't available yet unfortunately.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | N/A | 100 - 55.56 | 32 - 100.00 |
+| Mem Usage (MB-%)| | N/A | 43.7 - 9.69 | 15.8 - 57.01 |
+
 ## [617. Merge Two Binary Trees][617]
 
 Don't recurse. Breadth first traversal using a queue. 
@@ -664,6 +682,8 @@ Go through each element in second array:
 | Mem Usage (MB-%)| 6.7 - 100.00 | 2.2 - 100.00 | 38.8 - 5.11 | 14.1 - 100.00 |
 
 [461]: https://leetcode.com/problems/hamming-distance/
+    [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
+[590]: https://leetcode.com/problems/n-ary-tree-postorder-traversal
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [657]: https://leetcode.com/problems/robot-return-to-origin/
 [709]: https://leetcode.com/problems/to-lower-case/
