@@ -17,6 +17,19 @@ I'm not very consistent I believe.
 - Search for `TODO: Improve` for places where I think I've 
 messed up slightly.
 
+## [461. Hamming Distance][461]
+
+Get the xor of the two numbers (where bits differ) and then 
+count set bits.
+
+I'm under the impression I'm missing some other obvious 
+solution here.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 82.30 | 28 - 76.20 |
+| Mem Usage (MB-%)| 5.5 - 67.52 | 2 - 100.00 | 38.5 - 71.22 | 14.1 - 61.18 |
+
 ## [617. Merge Two Binary Trees][617]
 
 Don't recurse. Breadth first traversal using a queue. 
@@ -650,6 +663,7 @@ Go through each element in second array:
 | Runtime (ms-%)| 4 - 92.31 | 0 - 100.00 | 80 - 67.57 | 36 - 93.55 |
 | Mem Usage (MB-%)| 6.7 - 100.00 | 2.2 - 100.00 | 38.8 - 5.11 | 14.1 - 100.00 |
 
+[461]: https://leetcode.com/problems/hamming-distance/
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [657]: https://leetcode.com/problems/robot-return-to-origin/
 [709]: https://leetcode.com/problems/to-lower-case/
