@@ -30,6 +30,16 @@ solution here.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 82.30 | 28 - 76.20 |
 | Mem Usage (MB-%)| 5.5 - 67.52 | 2 - 100.00 | 38.5 - 71.22 | 14.1 - 61.18 |
 
+## [561. Array Partition I][561]
+
+Sort the array in reverse order and sum every second 
+element.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 52 - 80.25 | 8 - 96.15 | 120 - 93.30 | 244 - 97.34 |
+| Mem Usage (MB-%)| 8.5 - 27.16 | 2.2 - 100.00 | 44 - 79.12 | 16.5 - 81.43 |
+
 ## [589. N-Ary tree pre-order traversal][589]
 
 Option for Rust isn't available yet unfortunately.
@@ -696,6 +706,7 @@ Go through each element in second array:
 
 [461]: https://leetcode.com/problems/hamming-distance/
     [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
+[561]: https://leetcode.com/problems/array-partition-i/
 [590]: https://leetcode.com/problems/n-ary-tree-postorder-traversal
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [657]: https://leetcode.com/problems/robot-return-to-origin/
@@ -728,6 +739,7 @@ Go through each element in second array:
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1436]: https://leetcode.com/problems/destination-city/
 [1450]: https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/
+[1460]: https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/
 [1464]: https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array
 [1470]: https://leetcode.com/problems/shuffle-the-array/
 [1475]: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
