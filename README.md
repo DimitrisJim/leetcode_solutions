@@ -493,8 +493,18 @@ that is smaller equal to the queryTime, check the second vector
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 86.58 | 28 - 97.73% |
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 86.58 | 28 - 97.73 |
 | Mem Usage (MB-%)| 5.8 - 80.17 | 2.2 - 100.00 | 38.3 - 29.39 | 14.2 - 100.00|
+
+## [1460. Make Two Arrays Equal by Reversing Sub-Arrays][1460]
+
+Sort and compare element-wise.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 97.78 | 0 - 100.00 | 72 - 99.53 | 64 - 99.47 |
+| Mem Usage (MB-%)| 6.6 - 26.67 | 2.1 - 50.00 | 40.6 - 46.34 | 14.3 - 79.93 |
+
 
 ## [1464. Maximum Product of Two Elements in an Array][1464]
 
