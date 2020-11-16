@@ -41,12 +41,15 @@ Option for Rust isn't available yet unfortunately.
 
 ## [590. N-Ary tree post order traversal][590]
 
+All using iterative versions (probably partly explains why 
+timings show sluggishness).
+
 Option for Rust isn't available yet unfortunately.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| | N/A | 100 - 55.56 | 32 - 100.00 |
-| Mem Usage (MB-%)| | N/A | 43.7 - 9.69 | 15.8 - 57.01 |
+| Runtime (ms-%)| 20 - 14.63 | N/A | 100 - 55.56 | 32 - 100.00 |
+| Mem Usage (MB-%)| 24.4 - 9.76 | N/A | 43.7 - 9.69 | 15.8 - 57.01 |
 
 ## [617. Merge Two Binary Trees][617]
 
