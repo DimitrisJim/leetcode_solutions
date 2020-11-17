@@ -156,6 +156,16 @@ approach. C iterates through elements.
 | Runtime (ms-%)| 12 - 67.03 | 0 - 100.00 | 80 - 86.11 | 40 - 99.08|
 | Mem usage (mb-%)| 7.2 - 72.54 | 2.1 - 100.00 | 40.2 - 18.30 | 13.9 - 100.00 |
 
+## [897. Increasing Order Search Tree][897]
+
+Inorder traversal to gather nodes and then re-attaching 
+accordingly.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.18 | 24 - 94.91|
+| Mem usage (mb-%)| 6.2 - 59.26 | 2.2 - 100.00 | 38.9 - 61.82 | 14 - 77.72 |
+
 ## [905. Sort Array By Parity.][905]
 
 The two ways I've done this is either by simply sorting with the 
@@ -715,6 +725,7 @@ Go through each element in second array:
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
 [804]: https://leetcode.com/problems/unique-morse-code-words/
 [832]: https://leetcode.com/problems/flipping-an-image/
+[897]: https://leetcode.com/problems/increasing-order-search-tree/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [938]: https://leetcode.com/problems/range-sum-of-bst/
 [961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
