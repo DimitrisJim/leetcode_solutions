@@ -156,6 +156,16 @@ approach. C iterates through elements.
 | Runtime (ms-%)| 12 - 67.03 | 0 - 100.00 | 80 - 86.11 | 40 - 99.08|
 | Mem usage (mb-%)| 7.2 - 72.54 | 2.1 - 100.00 | 40.2 - 18.30 | 13.9 - 100.00 |
 
+## [852. Peak index in a Mountain Array.][852]
+
+A binary search throug the semi-sorted array. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 89.84 | 0 - 100.00 | 72 - 91.56 | 64 - 97.11 |
+| Mem usage (mb-%)| 6.6 - 30.47 | 2.1 - 75.00 | 39.1 - 77.91 | 15 - 88.20 |
+
+
 ## [897. Increasing Order Search Tree][897]
 
 Inorder traversal to gather nodes and then re-attaching 
@@ -750,6 +760,7 @@ Go through each element in second array:
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
 [804]: https://leetcode.com/problems/unique-morse-code-words/
 [832]: https://leetcode.com/problems/flipping-an-image/
+[852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
 [897]: https://leetcode.com/problems/increasing-order-search-tree/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [933]: https://leetcode.com/problems/number-of-recent-calls
