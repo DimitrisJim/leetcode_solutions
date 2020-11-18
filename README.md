@@ -222,6 +222,16 @@ that N-1 of the elements are the same, we're bound to bump into a triplet with t
 | Runtime (ms-%)| 20 - 100.00 | 0 - 100.00 | 80 - 88.70 | 188 - 93.66%|
 | Mem Usage (MB-%)| 7.2 - 73.91 | 2.1 - 100.00 | 41.9 - 76.92 | 15.3 - 65.97|
 
+## [977. Squares of a Sorted Array][977]
+
+Though a more convoluted way were we don't sort is 
+possible, I don't think it's of much worth.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 100 - 96.55 | 8 - 98.46 | 116 - 84.11 | 184 - 99.84 |
+| Mem Usage (MB-%)| 20.3 - 33.10 | 2.2 - 78.46 | 45.4 - 39.09 | 16.1 - 34.75 |
+
 ## [1021. Remove Outermost Parentheses][1021]
 
 Go through string and build resulting string with the help of a 
@@ -729,6 +739,7 @@ Go through each element in second array:
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [938]: https://leetcode.com/problems/range-sum-of-bst/
 [961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
+[977]: https://leetcode.com/problems/squares-of-a-sorted-array/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1252]: https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
