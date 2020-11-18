@@ -15,3 +15,6 @@ Sessionx.vim
 .netrwhist
 *~
 session/
+
+# Ignore uthash folder.
+C/Algorithms/uthash/

@@ -749,8 +749,23 @@ Go through each element in second array:
 | Runtime (ms-%)| 4 - 92.31 | 0 - 100.00 | 80 - 67.57 | 36 - 93.55 |
 | Mem Usage (MB-%)| 6.7 - 100.00 | 2.2 - 100.00 | 38.8 - 5.11 | 14.1 - 100.00 |
 
+## [1656. Design An Ordered Stream][1656]
+
+There's probably a different way for this. I've created a 
+mapping to hold id-value pairs and after every insert I 
+simply create the resulting array by increasing ptr and 
+checking if a key with that value exists in the mapping.
+
+Pretty sure there's got to be a simpler way.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 84 - 62.50  | 20 - 93.33 | 184 - 89.38 | 200 - 98.57 |
+| Mem Usage (MB-%)| 33.5 - 12.50 | 2.9 - 40.00 | 49.5 - 100.00 | 14.7 - 75.25 |
+
+
 [461]: https://leetcode.com/problems/hamming-distance/
-    [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
+[589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
 [561]: https://leetcode.com/problems/array-partition-i/
 [590]: https://leetcode.com/problems/n-ary-tree-postorder-traversal
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
@@ -802,3 +817,4 @@ Go through each element in second array:
 [1603]: https://leetcode.com/problems/design-parking-system/
 [1614]: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses
 [1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
+[1656]: https://leetcode.com/problems/design-an-ordered-stream/
