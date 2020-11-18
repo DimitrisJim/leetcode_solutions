@@ -176,8 +176,23 @@ results in `O(n)` runtime complexity and `O(n)` space.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 28 - 77.42 | 0 - 100.00 | 96 - 72.31 | 60 - 99.98%|
-| Mem Usage (MB-%)| 9.3 - 97.35 | 2.1 - 100.00 | 40.6 - 10.20 | 14.6 - 36.39%|
+| Runtime (ms-%)| 28 - 77.42 | 0 - 100.00 | 96 - 72.31 | 60 - 99.98|
+| Mem Usage (MB-%)| 9.3 - 97.35 | 2.1 - 100.00 | 40.6 - 10.20 | 14.6 - 36.39|
+
+## [933. Number of Recent Calls][933]
+
+Keep t's in a Queue/Deque and using that find the correct 
+amount of pings. Keeping the last ping around in a 
+separate variable allows us to quickly answer with 1 and 
+clear the Queue/Deque.
+
+**TODO: Need to implement a Queue for C for it to run. Code 
+is currently written as if using a Queue.**
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 32 - 94.22 | 228 - 72.72 | 260 - 99.58 |
+| Mem Usage (MB-%)| | 5.6 - 84.39 | 50.2 - 29.84 | 18.7 - 91.13|
 
 ## [938. Range Sum of BST][938]
 
@@ -737,6 +752,7 @@ Go through each element in second array:
 [832]: https://leetcode.com/problems/flipping-an-image/
 [897]: https://leetcode.com/problems/increasing-order-search-tree/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
+[933]: https://leetcode.com/problems/number-of-recent-calls
 [938]: https://leetcode.com/problems/range-sum-of-bst/
 [961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
