@@ -300,6 +300,19 @@ are filtered, we've got duplicates.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 94.09 | 28 - 94.97 |
 | Mem Usage (MB-%)| 6.5 - 23.94 | 2.1 - 80.00 | 38.6 - 80.38 | 14.2 - 83.42|
 
+## [1217. Minimum cost to move chips to the same position.][1217]
+
+Count evens and odds. Answer is the minimum between those two
+since all values of `max{evens, odds}` can be moved to one pile
+via 2-steps (with zero cost) leaving the `min{evens, odds}` as
+the cost we need to count (note that no matter their distance.
+
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 74.31 | 24 - 95.45 |
+| Mem Usage (MB-%)| 5.8 - 63.86 | 2 - 94.23 | 37.8 - 96.26 | 14.1 - 78.87|
+
 ## [1252. Cells with Odd Values in a Matrix][1252] 
 
 **TODO: Describe algorithm better.**
@@ -834,6 +847,7 @@ Pretty sure there's got to be a simpler way.
 [1051]: https://leetcode.com/problems/height-checker
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1207]: https://leetcode.com/problems/unique-number-of-occurrences/
+[1217]: https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
 [1252]: https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
 [1266]: https://leetcode.com/problems/minimum-time-visiting-all-points/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
