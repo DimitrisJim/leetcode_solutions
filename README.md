@@ -665,6 +665,18 @@ common `x ^ x = 0` and `x ^ 0 = x`; can't seem to find it though.)
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 86.39 | 28 - 78.99|
 | Mem Usage (MB-%)| 5.7 - 22.45 | 2.2 - 100.00 | 38.2 - 5.14 |14.2 - 100.00|
 
+## [1502. Can make arithmetic progression from sequence.][1486]
+
+Sort the array and find the step by subtracting first two 
+elements. Go through the array and check that step is 
+present through-out.
+
+Worse-case `O(NlogN)` due to sorting.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 89.04 | 0 - 100.00 | 76 - 88.50 | 32 - 95.03 |
+| Mem Usage (MB-%)| 6.1 - 76.71 | 1.9 - 100.00 | 38.7 - 86.58 | 14.1 - 89.94 |
 
 ## [1512. Number of Good Pairs][1512]
 
@@ -848,6 +860,7 @@ Pretty sure there's got to be a simpler way.
 [1475]: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
 [1480]: https://leetcode.com/problems/running-sum-of-1d-array/
 [1486]: https://leetcode.com/problems/xor-operation-in-an-array/
+[1502]: https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
 [1528]: https://leetcode.com/problems/shuffle-string/
 [1534]: https://leetcode.com/problems/count-good-triplets 
