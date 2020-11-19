@@ -544,6 +544,23 @@ Basically, two cases:
 Can't think of a better than O(N^2) solution yet. Come back to this at 
 some point.
 
+## [1403. Minimum Sequence in non increasing order,][1403]
+
+Get the sum of the sequence and then sort it (ideally 
+descending). Initialize a value for counting the sum of 
+the subsequence seen so far. Then for every value in the 
+sequence:
+
+ 1. sum the current value to the subsequence sum. 
+ 2. subtrack the current value from the sum of the sequence.
+ 3. if the sum from 1 is strictly larger than that of 2, we     are done and we return the slice until that point. Else 
+  we continue through the values.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 96.00 | 0 - 100.00 | 84 - 92.78 | 52 - 97.26 |
+| Mem Usage (MB-%)| 6.5 - 88.00 | 2 - 75.00 | 39.7 - 91.67 | 14.2 - 63.63 |
+
 ## [1431. Kids with greatest number of candies][1431]
 
 Find max, compare values and return.
@@ -821,6 +838,7 @@ Pretty sure there's got to be a simpler way.
 [1370]: https://leetcode.com/problems/increasing-decreasing-string/
 [1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
+[1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1436]: https://leetcode.com/problems/destination-city/
 [1450]: https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/
