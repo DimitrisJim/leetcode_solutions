@@ -287,8 +287,18 @@ At least, that's my naive first stab at it.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 0 - 100% | 0 - 100%| 72 - 79.62%|32 - 45.31%|
-| Mem Usage (MB-%)|5.8 - 14.33%|0 - 100%|38.6 - 8.88%|14.1 - 99.95%|
+| Runtime (ms-%)| 0 - 100 | 0 - 100| 72 - 79.62|32 - 45.31|
+| Mem Usage (MB-%)|5.8 - 14.33|0 - 100|38.6 - 8.88|14.1 - 99.95|
+
+## [1207. Unique number of occurences.][1207] 
+
+Create counts for each value. If, by using a Set, any values 
+are filtered, we've got duplicates.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 94.09 | 28 - 94.97 |
+| Mem Usage (MB-%)| 6.5 - 23.94 | 2.1 - 80.00 | 38.6 - 80.38 | 14.2 - 83.42|
 
 ## [1252. Cells with Odd Values in a Matrix][1252] 
 
@@ -794,6 +804,7 @@ Pretty sure there's got to be a simpler way.
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1051]: https://leetcode.com/problems/height-checker
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
+[1207]: https://leetcode.com/problems/unique-number-of-occurrences/
 [1252]: https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
 [1266]: https://leetcode.com/problems/minimum-time-visiting-all-points/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
