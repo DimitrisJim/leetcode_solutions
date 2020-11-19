@@ -267,6 +267,15 @@ depth counter tracking how many parentheses we've seen.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 90.17 | 28 - 98.78 |
 | Mem Usage (MB-%)| 6 - 5.77 | 2.2 - 100.00 | 41 - 6.21 | 14.3 - 100.00 |
 
+## [1051. Height Checker][1051]
+
+Create a sorted target array and go through both arrays 
+counting their differences.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.33 | 16 - 100.00 |
+| Mem Usage (MB-%)| 5.7 - 70.92 | 2 - 40.00 | 38.4 - 81.16 | 14.1 - 69.05 |
 
 ## [1108. Defanging an IP Address][1108]
 
@@ -783,6 +792,7 @@ Pretty sure there's got to be a simpler way.
 [961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
+[1051]: https://leetcode.com/problems/height-checker
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1252]: https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
 [1266]: https://leetcode.com/problems/minimum-time-visiting-all-points/
