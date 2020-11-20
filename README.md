@@ -561,6 +561,21 @@ Basically, two cases:
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 87.27 | 20 - 98.14 |
 | Mem Usage (MB-%)| 6.2 - 74.04 | 2.2 - 100.00 | 39 - 19.09 | 14.3 - 100.00 |
 
+## [1380. Lucky numbers in a Matrix][1380]
+
+Build a set to hold minimum values of each row and a 
+list/array to hold maximum values for each column. 
+
+After iterating through each row and filling the previous 
+structures us, return any elements in the array/list that 
+are also present in the set. 
+
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 16 - 100.00 | 0 - 100.00 | 76 - 96.19 | 116 - 95.12 |
+| Mem Usage (MB-%)| 7 - 17.65 | 2.1 - 100.00 | 40.7 - 87.20 | 14.3 - 49.67 |
+
 ## [1389. Create Target Array in the Given Order][1389]
 
 **TODO: See again.**
@@ -874,6 +889,7 @@ Pretty sure there's got to be a simpler way.
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1370]: https://leetcode.com/problems/increasing-decreasing-string/
 [1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
+[1380]: https://leetcode.com/problems/lucky-numbers-in-a-matrix/
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
