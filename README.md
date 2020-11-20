@@ -30,6 +30,17 @@ solution here.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 82.30 | 28 - 76.20 |
 | Mem Usage (MB-%)| 5.5 - 67.52 | 2 - 100.00 | 38.5 - 71.22 | 14.1 - 61.18 |
 
+## [557. Reverse Words in a String III][561]
+
+C mutates the string in-place because it's allowable there. 
+The rest split on `' '`, iterate through the chunks and 
+reverse them.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 93.81 | 0 - 100.00 | 88 - 74.93 | 24 - 97.41 |
+| Mem Usage (MB-%)| 6.9 - 72.57 | 2.3 - 72.73 | 44.6 - 85.18 | 14.6 - 84.18 |
+
 ## [561. Array Partition I][561]
 
 Sort the array in reverse order and sum every second 
