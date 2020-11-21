@@ -245,6 +245,16 @@ complete the sequence.
 | Runtime (ms-%)| 32 - 98.51 | 4 - 71.43 | 100 - 65.91 | 56 - 94.27|
 | Mem Usage (MB-%)| 11.6 - 34.33 | 2.2 - 28.57 | 43.1 - 21.59 | 14.9 - 83.63|
 
+## [944. Delete Columns to Make Sorted.][944]
+
+I cannot see the best solution here. I'm definitely sure 
+mine isn't the one.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 16 - 90.91 | 8 - 100.00 | 88 - 82.50 | 112 - 81.53 |
+| Mem Usage (MB-%)| 8.3 - 40.91 | 2.3 - 100.00 | 42.5 - 76.67 | 14.4 - 84.557|
+
 ## [961. N repeated elements in size 2N Array][961]
 
 Two ways to go about this:
@@ -885,6 +895,8 @@ Pretty sure there's got to be a simpler way.
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [933]: https://leetcode.com/problems/number-of-recent-calls
 [938]: https://leetcode.com/problems/range-sum-of-bst/
+[942]: https://leetcode.com/problems/di-string-match/
+[944]: https://leetcode.com/problems/delete-columns-to-make-sorted
 [961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
