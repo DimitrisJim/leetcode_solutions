@@ -278,6 +278,24 @@ depth counter tracking how many parentheses we've seen.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 90.17 | 28 - 98.78 |
 | Mem Usage (MB-%)| 6 - 5.77 | 2.2 - 100.00 | 41 - 6.21 | 14.3 - 100.00 |
 
+## [1022. Sum of root to leaf binary numbers][1022]
+
+As we DFS our way to the bottom, we alter each node's value 
+to add what we've already seen (parent's value). This can 
+be done directly by using:
+
+```python
+node.val = (parent.val << 1) | node.val
+```
+
+When we reach a leaf, we add the value to an array which we 
+sum when we've visited every node.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 85.42 | 0 - 100.00 | 84 - 80.08 | 28 - 97.19 |
+| Mem Usage (MB-%)| 7.2 - 14.58 | 2.1 - 100.00 | 41.2 - 16.26 | 14.8 - 13.95 |
+
 ## [1051. Height Checker][1051]
 
 Create a sorted target array and go through both arrays 
@@ -870,6 +888,7 @@ Pretty sure there's got to be a simpler way.
 [961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
+[1022]: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers
 [1051]: https://leetcode.com/problems/height-checker
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1207]: https://leetcode.com/problems/unique-number-of-occurrences/
