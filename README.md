@@ -155,6 +155,16 @@ morse code words.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 86.43 | 24 - 99.14|
 | Mem usage (mb-%)| 6.1 - 13.33 | 2 - 100.00 | 39.4 - 6.79 | 14.1 - 100.00 |
 
+## [811. Subdomain visit count.][811]
+
+Hold domains/subdomains in a Counter and count values after 
+splitting domain up.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 16 - 71.43 | 4 - 100.00 | 92 - 93.28 | 44 - 95.94|
+| Mem usage (mb-%)| 9.6 - 28.57 | 2.2 - 25.00 | 43.4 - 70.71 | 14.4 - 26.05 |
+
 ## [832. Flipping an Image][832]
 
 Go through matrix and reverse/invert. Python/Rust/JS use a functional 
@@ -889,6 +899,7 @@ Pretty sure there's got to be a simpler way.
 [728]: https://leetcode.com/problems/self-dividing-numbers
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
 [804]: https://leetcode.com/problems/unique-morse-code-words/
+[811]: https://leetcode.com/problems/subdomain-visit-count/
 [832]: https://leetcode.com/problems/flipping-an-image/
 [852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
 [897]: https://leetcode.com/problems/increasing-order-search-tree/
