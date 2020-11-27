@@ -888,6 +888,16 @@ Pretty sure there's got to be a simpler way.
 | Runtime (ms-%)| 84 - 62.50  | 20 - 93.33 | 184 - 89.38 | 200 - 98.57 |
 | Mem Usage (MB-%)| 33.5 - 12.50 | 2.9 - 40.00 | 49.5 - 100.00 | 14.7 - 75.25 |
 
+## [1662. Check if two string arrays are equivalent.][1662]
+
+Go through characters and check, alternatively, build resulting string and 
+compare the string.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 91.70 | 24 - 97.07 |
+| Mem Usage (MB-%)| 5.9 - 91.49 | 2 - 80.00 | 38 - 99.79 | 14 - 96.79 |
+
 
 [461]: https://leetcode.com/problems/hamming-distance/
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
@@ -953,3 +963,4 @@ Pretty sure there's got to be a simpler way.
 [1614]: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses
 [1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
 [1656]: https://leetcode.com/problems/design-an-ordered-stream/
+[1662]: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent
