@@ -210,6 +210,18 @@ results in `O(n)` runtime complexity and `O(n)` space.
 | Runtime (ms-%)| 28 - 77.42 | 0 - 100.00 | 96 - 72.31 | 60 - 99.98|
 | Mem Usage (MB-%)| 9.3 - 97.35 | 2.1 - 100.00 | 40.6 - 10.20 | 14.6 - 36.39|
 
+## [922. Sort Array By Parity II][922]
+
+Preallocate resulting array. Then go through input array and using two
+variables to denote the positions of the odds and evens, fill the 
+array.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 64 - 93.81 | 8 - 100.00 | 88 - 100.00 | 196 - 92.39 |
+| Mem Usage (MB-%)| 13.5 - 51.55 | 2.1 - 77.78 | 44.4 - 74.18 | 16.8 - 15.40 |
+
+
 ## [933. Number of Recent Calls][933]
 
 Keep t's in a Queue/Deque and using that find the correct 
