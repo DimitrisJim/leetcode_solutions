@@ -384,6 +384,20 @@ the cost we need to count (note that no matter their distance.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 74.31 | 24 - 95.45 |
 | Mem Usage (MB-%)| 5.8 - 63.86 | 2 - 94.23 | 37.8 - 96.26 | 14.1 - 78.87|
 
+## [1237. Find positive integer solution for equation.][1237]
+
+Use the fact that the function is increasing to bail early in second 
+loop.
+
+Note: Though this is wrong, output values only range in [1, 100] range. This 
+basically allows us to skip many iterations by only going through that 
+range. This is wrong and I should feel wrong.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 98.17 | 28 - 97.04 |
+| Mem Usage (MB-%)| 6 - 96.15 | 2 - 100.00 | 38.8 - 71.34 | 14 - 83.57|
+
 ## [1252. Cells with Odd Values in a Matrix][1252] 
 
 **TODO: Describe algorithm better.**
@@ -949,6 +963,7 @@ compare the string.
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1207]: https://leetcode.com/problems/unique-number-of-occurrences/
 [1217]: https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
+[1237]: https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/
 [1252]: https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
 [1266]: https://leetcode.com/problems/minimum-time-visiting-all-points/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
