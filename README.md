@@ -556,6 +556,16 @@ to reach our desired result `969`).
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 47.88 | 20 - 98.80 |
 | Mem Usage (MB-%)| 5.4 - 29.69 | 1.9 - 100.00 | 38.8 - 32.54 | 14.1 - 99.85 |
 
+## [1337. The k-weakest rows in a matrix][1337]
+
+Sum each row and enumerate it, sort and then grab `k` first.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 12 - 100.00 | 0 - 100.00 | 76 - 95.42 | 96 - 98.53 |
+| Mem Usage (MB-%)| 6.8 - 55.56 | 2.1 - 50.00 | 40 - 81.67 | 14.5 - 57.69 |
+
+
 ## [1342. Number of Steps to Reduce a Number to Zero][1342] 
 
 Xor with 1 if even (to drop the 1) and right shift by 1 to divide by two. Count.
@@ -974,6 +984,7 @@ compare the string.
 [1309]: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
 [1323]: https://leetcode.com/problems/maximum-69-number/
+[1337]: https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
 [1342]: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 [1351]: https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
