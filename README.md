@@ -328,6 +328,16 @@ sum when we've visited every node.
 | Runtime (ms-%)| 4 - 85.42 | 0 - 100.00 | 84 - 80.08 | 28 - 97.19 |
 | Mem Usage (MB-%)| 7.2 - 14.58 | 2.1 - 100.00 | 41.2 - 16.26 | 14.8 - 13.95 |
 
+## [1047. Remove All Adjacent Duplicate Strings][1047]
+
+Use a stack to filter out adjacent elements.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 94.52 | 0 - 100.00  | 84 - 95.59 | 48 - 99.13 |
+| Mem Usage (MB-%)| 8.1 - 9.59 | 2.2 - 60.00 | 47.1 - 42.68 | 14.7 - 21.89 |
+
+
 ## [1051. Height Checker][1051]
 
 Create a sorted target array and go through both arrays 
@@ -934,6 +944,7 @@ compare the string.
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1022]: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers
+[1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 [1051]: https://leetcode.com/problems/height-checker
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1207]: https://leetcode.com/problems/unique-number-of-occurrences/
