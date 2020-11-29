@@ -716,6 +716,18 @@ that it will contain only one result due to the constraints.)
 | Runtime (ms-%)| 8 - 95.41 | 0 - 100.00 | 80 - 78.81 | 44 - 98.44 |
 | Mem Usage (MB-%)| 7.6 - 48.62 | 2.4 - 100.00 | 41.7 - 5.08 | 14.1 - 100.00|
 
+## [1441. Build an Array with stack operations][1441]
+
+Go through values of the target and build the operations. We build the 
+sequence of "Push" and "Pop"s for missing elements by finding the difference
+of the current value of the target with its previous value.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 92.27 | 24 - 96.01 |
+| Mem Usage (MB-%)| 6.2 - 70.00 | 2 - 100.00 | 38.5 - 82.73 | 14.1 - 84.41 |
+
+
 ## [1450. Number of Students Doing Homework at a Given Time][1450]
 
 Go through first vector (start times) and for every start time 
@@ -1014,6 +1026,7 @@ compare the string.
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1436]: https://leetcode.com/problems/destination-city/
+[1441]: https://leetcode.com/problems/build-an-array-with-stack-operations/
 [1450]: https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/
 [1460]: https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/
 [1464]: https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array
