@@ -842,6 +842,15 @@ common `x ^ x = 0` and `x ^ 0 = x`; can't seem to find it though.)
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 86.39 | 28 - 78.99|
 | Mem Usage (MB-%)| 5.7 - 22.45 | 2.2 - 100.00 | 38.2 - 5.14 |14.2 - 100.00|
 
+## [1491. Average Salary excluding the min and max][1491]
+
+Sort and then just sum and divide.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.32 | 24 - 94.65 |
+| Mem Usage (MB-%)| 5.8 - 70.69 | 1.9 - 75.00 | 38.3 - 83.59 | 14.1 - 80.75  |
+
 ## [1502. Can make arithmetic progression from sequence.][1486]
 
 Sort the array and find the step by subtracting first two 
@@ -1061,6 +1070,7 @@ compare the string.
 [1475]: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
 [1480]: https://leetcode.com/problems/running-sum-of-1d-array/
 [1486]: https://leetcode.com/problems/xor-operation-in-an-array/
+[1491]: https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary
 [1502]: https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
 [1528]: https://leetcode.com/problems/shuffle-string/
