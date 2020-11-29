@@ -50,6 +50,19 @@ reverse them.
 | Runtime (ms-%)| 4 - 93.81 | 0 - 100.00 | 88 - 74.93 | 24 - 97.41 |
 | Mem Usage (MB-%)| 6.9 - 72.57 | 2.3 - 72.73 | 44.6 - 85.18 | 14.6 - 84.18 |
 
+## [559. Maximum depth of N-Ary Tree][559]
+
+Common recursive approach (call depth on all children.)
+
+Note: For some reason, `maxDepth` in `C` is defined as returning `int *`.
+Note: Rust case not applicable, they don't allow the option yet.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00  | N/A | 84 - 95.55 | 40 - 91.04 |
+| Mem Usage (MB-%)| 7.3 - 8.70 | N/A | 42.1 - 33.27 | 16.2 - 7.06 |
+
+
 ## [561. Array Partition I][561]
 
 Sort the array in reverse order and sum every second 
@@ -989,6 +1002,7 @@ compare the string.
 [344]: https://leetcode.com/problems/reverse-string/
 [461]: https://leetcode.com/problems/hamming-distance/
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
+[559]: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
 [561]: https://leetcode.com/problems/array-partition-i/
 [590]: https://leetcode.com/problems/n-ary-tree-postorder-traversal
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
