@@ -609,6 +609,18 @@ looking for the next negative cell.
 | Runtime (ms-%)| 16 - 97.86 | 0 - 100.00 | 76 - 85.01 | 104 - 99.49 |
 | Mem Usage (MB-%)| 7.1 - 77.14 | 2.3 - 100.00 | 39.9 - 7.13 | 14.9 - 99.62 |
 
+## [1356. Sort integers by the number of 1 bits][1356]
+
+Sort initially to get them in correct order. Then sort by count. The second sort 
+*must* be stable. In `C` this is done by creating a new array holding required 
+information while in `Javascript` we use `lodash`. `Rust` and `Python` offer 
+stable sorts.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 20 - 89.87 | 0 - 100.00 | 96 - 82.93 | 56 - 97.11 |
+| Mem Usage (MB-%)| 8.3 - 16.46 | 2 - 92.59 | 42.3 - 40.85 | 14.1 - 92.41 |
+
 ## [1365. How Many Numbers Are Smaller Than the Current Number][1365]
 
 By sorting the array we can find the # of elements faster in 
@@ -1018,6 +1030,7 @@ compare the string.
 [1337]: https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
 [1342]: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 [1351]: https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix
+[1356]: https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1370]: https://leetcode.com/problems/increasing-decreasing-string/
 [1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
