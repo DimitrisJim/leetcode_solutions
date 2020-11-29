@@ -195,6 +195,14 @@ A binary search throug the semi-sorted array.
 | Runtime (ms-%)| 8 - 89.84 | 0 - 100.00 | 72 - 91.56 | 64 - 97.11 |
 | Mem usage (mb-%)| 6.6 - 30.47 | 2.1 - 75.00 | 39.1 - 77.91 | 15 - 88.20 |
 
+## [876. Middle of the Linked List][876]
+
+Traverse the list while keeping a reference to the middle element.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.27 | 20 - 98.87 |
+| Mem usage (mb-%)| 5.8 - 68.20 | 2 - 80.00 | 38.2 - 89.15 | 14 - 73.76 |
 
 ## [897. Increasing Order Search Tree][897]
 
@@ -968,6 +976,7 @@ compare the string.
 [811]: https://leetcode.com/problems/subdomain-visit-count/
 [832]: https://leetcode.com/problems/flipping-an-image/
 [852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
+[876]: https://leetcode.com/problems/middle-of-the-linked-list/
 [897]: https://leetcode.com/problems/increasing-order-search-tree/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [933]: https://leetcode.com/problems/number-of-recent-calls
