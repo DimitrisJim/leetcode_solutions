@@ -17,6 +17,15 @@ I'm not very consistent I believe.
 - Search for `TODO: Improve` for places where I think I've 
 messed up slightly.
 
+## [344. Reverse String][344]
+
+Typical swapping.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 44 - 96.89 | 16 - 94.12 | 100 - 96.48 | 184 - 96.43 |
+| Mem Usage (MB-%)| 12.4 - 74.64 | 5.4 - 98.82 | 45.5 - 79.32 | 18.7 - 14.37 |
+
 ## [461. Hamming Distance][461]
 
 Get the xor of the two numbers (where bits differ) and then 
@@ -945,6 +954,7 @@ compare the string.
 | Mem Usage (MB-%)| 5.9 - 91.49 | 2 - 80.00 | 38 - 99.79 | 14 - 96.79 |
 
 
+[344]: https://leetcode.com/problems/reverse-string/
 [461]: https://leetcode.com/problems/hamming-distance/
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
 [561]: https://leetcode.com/problems/array-partition-i/
