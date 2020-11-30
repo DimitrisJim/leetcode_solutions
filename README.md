@@ -330,6 +330,15 @@ possible, I don't think it's of much worth.
 | Runtime (ms-%)| 100 - 96.55 | 8 - 98.46 | 116 - 84.11 | 184 - 99.84 |
 | Mem Usage (MB-%)| 20.3 - 33.10 | 2.2 - 78.46 | 45.4 - 39.09 | 16.1 - 34.75 |
 
+## [1002. Find common characters][1002]
+
+Build counts and go through values of string and find common characters.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 4 - 45.45 | 88 - 81.43 | 36 - 97.01 |
+| Mem Usage (MB-%)| | 2 - 100.00 | 42.7 - 55.97 | 14 - 98.23 |
+
 ## [1021. Remove Outermost Parentheses][1021]
 
 Go through string and build resulting string with the help of a 
@@ -1032,6 +1041,7 @@ compare the string.
 [944]: https://leetcode.com/problems/delete-columns-to-make-sorted
 [961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
+[1002]: https://leetcode.com/problems/find-common-characters/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1022]: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers
 [1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
