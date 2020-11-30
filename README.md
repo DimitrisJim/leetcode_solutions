@@ -332,12 +332,15 @@ possible, I don't think it's of much worth.
 
 ## [1002. Find common characters][1002]
 
+**TODO: See again.**
+
 Build counts and go through values of string and find common characters.
+This probably isn't the best way to go about it. 
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| | 4 - 45.45 | 88 - 81.43 | 36 - 97.01 |
-| Mem Usage (MB-%)| | 2 - 100.00 | 42.7 - 55.97 | 14 - 98.23 |
+| Runtime (ms-%)| 12 - 8.33 | 4 - 45.45 | 88 - 81.43 | 36 - 97.01 |
+| Mem Usage (MB-%)| 12.1 - 5.56 | 2 - 100.00 | 42.7 - 55.97 | 14 - 98.23 |
 
 ## [1021. Remove Outermost Parentheses][1021]
 
