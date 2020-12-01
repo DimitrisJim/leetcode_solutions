@@ -217,6 +217,21 @@ Traverse the list while keeping a reference to the middle element.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.27 | 20 - 98.87 |
 | Mem usage (mb-%)| 5.8 - 68.20 | 2 - 80.00 | 38.2 - 89.15 | 14 - 73.76 |
 
+## [883. Projection Area of 3d Shapes][883]
+
+Length of rows is the same.
+
+View from Z axis is simply a count of all non-zero values.
+
+View from X axis is the max of each row/cell. 
+
+View from Y axis is the max of each column.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 100.00 | 0 - 100.00 | 68 - 100.00 | 60 - 97.64 |
+| Mem usage (mb-%)| 6 - 100.00 | 2 - 50.00 | 39 - 58.82 | 14.1 - 77.88 |
+
 ## [897. Increasing Order Search Tree][897]
 
 Inorder traversal to gather nodes and then re-attaching 
@@ -1036,6 +1051,7 @@ compare the string.
 [832]: https://leetcode.com/problems/flipping-an-image/
 [852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
 [876]: https://leetcode.com/problems/middle-of-the-linked-list/
+[883]: https://leetcode.com/problems/projection-area-of-3d-shapes/
 [897]: https://leetcode.com/problems/increasing-order-search-tree/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [933]: https://leetcode.com/problems/number-of-recent-calls
