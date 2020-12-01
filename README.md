@@ -418,6 +418,19 @@ At least, that's my naive first stab at it.
 | Runtime (ms-%)| 0 - 100 | 0 - 100| 72 - 79.62|32 - 45.31|
 | Mem Usage (MB-%)|5.8 - 14.33|0 - 100|38.6 - 8.88|14.1 - 99.95|
 
+## [1122. Relative sort array.][1122]
+
+Create a dictionary holding the order in which elements should be
+sorted. For elements not contained in the second array, we
+use their value + 1000 to place in correct ascending order
+(most dictionaries allow indexing that doesn't contain a key
+to return a default value.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 88.20 | 0 - 100.00 | 72 - 97.44 |28 - 97.20|
+| Mem Usage (MB-%)| 6.2 - 51.22 | 2 - 81.25 | 38.5 - 90.28 | 14.3 - 58.12|
+
 ## [1207. Unique number of occurences.][1207] 
 
 Create counts for each value. If, by using a Set, any values 
@@ -1066,6 +1079,7 @@ compare the string.
 [1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 [1051]: https://leetcode.com/problems/height-checker
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
+[1122]: https://leetcode.com/problems/relative-sort-array/
 [1207]: https://leetcode.com/problems/unique-number-of-occurrences/
 [1217]: https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
 [1237]: https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/
