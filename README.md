@@ -335,6 +335,16 @@ that N-1 of the elements are the same, we're bound to bump into a triplet with t
 | Runtime (ms-%)| 20 - 100.00 | 0 - 100.00 | 80 - 88.70 | 188 - 93.66%|
 | Mem Usage (MB-%)| 7.2 - 73.91 | 2.1 - 100.00 | 41.9 - 76.92 | 15.3 - 65.97|
 
+## [965. Univalued Binary Tree][965]
+
+Traverse tree and bail when we find value that doesn't match root value. Iterative
+this way we can bail fast.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 93.95 | 28 - 83.02%|
+| Mem Usage (MB-%)| 6 - 45.00 | 2 - 100.00 | 39 - 44.59 | 14 - 95.67|
+
 ## [977. Squares of a Sorted Array][977]
 
 Though a more convoluted way were we don't sort is 
@@ -1072,6 +1082,7 @@ compare the string.
 [942]: https://leetcode.com/problems/di-string-match/
 [944]: https://leetcode.com/problems/delete-columns-to-make-sorted
 [961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
+[965]: https://leetcode.com/problems/univalued-binary-tree/
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
 [1002]: https://leetcode.com/problems/find-common-characters/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
