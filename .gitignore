@@ -7,6 +7,9 @@
 [._]ss[a-gi-z]
 [._]sw[a-p]
 
+# Coc-settings kept in .vim 
+.vim/
+
 # Session
 Session.vim
 Sessionx.vim

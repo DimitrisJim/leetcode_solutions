@@ -187,6 +187,17 @@ splitting domain up.
 | Runtime (ms-%)| 16 - 71.43 | 4 - 100.00 | 92 - 93.28 | 44 - 95.94|
 | Mem usage (mb-%)| 9.6 - 28.57 | 2.2 - 25.00 | 43.4 - 70.71 | 14.4 - 26.05 |
 
+## [821. Shortest Distance to a Character.][821]
+
+By keeping around the positions the character is found and the previous position
+found, we can easily build the ranges after taking care of some special
+cases.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 99.41 | 28 - 98.30 |
+| Mem usage (mb-%)| 6 - 100.00 | 2 - 100.00 | 41 - 28.99 | 14.1 - 97.67 |
+
 ## [832. Flipping an Image][832]
 
 Go through matrix and reverse/invert. Python/Rust/JS use a functional 
@@ -1071,6 +1082,7 @@ compare the string.
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
 [804]: https://leetcode.com/problems/unique-morse-code-words/
 [811]: https://leetcode.com/problems/subdomain-visit-count/
+[821]: https://leetcode.com/problems/shortest-distance-to-a-character/
 [832]: https://leetcode.com/problems/flipping-an-image/
 [852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
 [876]: https://leetcode.com/problems/middle-of-the-linked-list/
