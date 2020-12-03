@@ -287,6 +287,15 @@ array.
 | Runtime (ms-%)| 64 - 93.81 | 8 - 100.00 | 88 - 100.00 | 196 - 92.39 |
 | Mem Usage (MB-%)| 13.5 - 51.55 | 2.1 - 77.78 | 44.4 - 74.18 | 16.8 - 15.40 |
 
+## [929. Unique Email Address.][929]
+
+Either step through the characters directly (see `C` and `Python` and `Rust` files)
+or use string facilities that do that for you (see `Python` and `Javascript`).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 98.31 | 0 - 100.00 | 88 - 91.97 | 44 - 91.99 |
+| Mem Usage (MB-%)| 8.1 - 10.17 | 2.1 - 93.33 | 44 - 41.89 | 14.4 - 7.90 |
 
 ## [933. Number of Recent Calls][933]
 
@@ -1020,8 +1029,6 @@ an odd length. `O(N)`.
 | Runtime (ms-%)| 12 - 100.00 | 0 - 100.00 | 68 - 97.94 | 96 - 99.21 |
 | Mem Usage (MB-%)| 6.6 | 2.1 - 100.00 | 40.6 - 25.18 | 14.2 - 100.00 |
 
- 
-
 ## [1588. Sum of All Odd Length Subarrays][1588]
 
 TODO: Explain the clusterfuck of the thing you call logic. 
@@ -1126,6 +1133,7 @@ Max of the sum of the entries.
 [883]: https://leetcode.com/problems/projection-area-of-3d-shapes/
 [897]: https://leetcode.com/problems/increasing-order-search-tree/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
+[929]: https://leetcode.com/problems/unique-email-addresses/
 [933]: https://leetcode.com/problems/number-of-recent-calls
 [938]: https://leetcode.com/problems/range-sum-of-bst/
 [942]: https://leetcode.com/problems/di-string-match/
