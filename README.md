@@ -17,6 +17,16 @@ I'm not very consistent I believe.
 - Search for `TODO: Improve` for places where I think I've 
 messed up slightly.
 
+## [104. Maximum depth of Binary Tree][104]
+
+Rust contains both iterative and recursive approaches. C/Javascript use 
+recursive, Python uses iterative.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 92.16 | 0 -100.00 | 80 - 94.64 | 36 - 89.43 |
+| Mem Usage (MB-%)| 8.1 - 50.63 | 2.5 - 94.87 | 41 - 96.55 | 15.2 - 91.21 |
+
 ## [344. Reverse String][344]
 
 Typical swapping.
@@ -1095,6 +1105,7 @@ Max of the sum of the entries.
 | Runtime (ms-%)| 4 - 100.00 | 0- 100.00 | 72 - 92.65 | 48 - 95.26 |
 | Mem Usage (MB-%)| 6.1 - 94.74 | 2 - 66.67 | 38.4 - 83.19 | 14.1 - 86.41 |
 
+[104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [344]: https://leetcode.com/problems/reverse-string/
 [461]: https://leetcode.com/problems/hamming-distance/
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
