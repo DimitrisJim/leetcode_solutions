@@ -1086,6 +1086,14 @@ compare the string.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 91.70 | 24 - 97.07 |
 | Mem Usage (MB-%)| 5.9 - 91.49 | 2 - 80.00 | 38 - 99.79 | 14 - 96.79 |
 
+## [1672. Richest customer wealth.][1672]
+
+Max of the sum of the entries.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0- 100.00 | 72 - 92.65 | 48 - 95.26 |
+| Mem Usage (MB-%)| 6.1 - 94.74 | 2 - 66.67 | 38.4 - 83.19 | 14.1 - 86.41 |
 
 [344]: https://leetcode.com/problems/reverse-string/
 [461]: https://leetcode.com/problems/hamming-distance/
@@ -1166,3 +1174,4 @@ compare the string.
 [1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
 [1656]: https://leetcode.com/problems/design-an-ordered-stream/
 [1662]: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent
+[1672]: https://leetcode.com/problems/richest-customer-wealth
