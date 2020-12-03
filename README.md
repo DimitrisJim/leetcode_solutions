@@ -49,6 +49,16 @@ solution here.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 82.30 | 28 - 76.20 |
 | Mem Usage (MB-%)| 5.5 - 67.52 | 2 - 100.00 | 38.5 - 71.22 | 14.1 - 61.18 |
 
+## [509. Fibonacci Number][509]
+
+Calculate it iteratively.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.37 | 20 - 98.15 |
+| Mem Usage (MB-%)| 5.4 - 86.96 | 2 - 48.78 | 38.3 - 56.54 | 14.1 - 34.89 |
+
+
 ## [557. Reverse Words in a String III][561]
 
 C mutates the string in-place because it's allowable there. 
@@ -1115,6 +1125,7 @@ Max of the sum of the entries.
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [344]: https://leetcode.com/problems/reverse-string/
 [461]: https://leetcode.com/problems/hamming-distance/
+[509]: https://leetcode.com/problems/fibonacci-number/
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
 [559]: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
 [561]: https://leetcode.com/problems/array-partition-i/
