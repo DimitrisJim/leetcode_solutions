@@ -452,6 +452,24 @@ to return a default value.)
 | Runtime (ms-%)| 4 - 88.20 | 0 - 100.00 | 72 - 97.44 |28 - 97.20|
 | Mem Usage (MB-%)| 6.2 - 51.22 | 2 - 81.25 | 38.5 - 90.28 | 14.3 - 58.12|
 
+## [1160. Find Words That can be Formed by Characters.][1160]
+
+**TODO: See again.**
+
+Similar to problem [Find common characters][1002]. I, again, can't seem to see 
+what is better than building a Counter. Maybe a reg-exp solution? Not sure, I'll
+might need to check the Discussions if I can't think of anything else.
+
+*Maybe*, seeing results for Javascript now, I was overreacting previously. 
+
+**Pending**: `C` version (Which I'm suspecting will re-affirm initial 
+suspicion).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 8 - 100.00 | 92 - 97.14 | 92 - 87.95 |
+| Mem Usage (MB-%)| | 2.1 - 100.00 | 46.1 - 78.91 | 14.7 - 11.99 |
+
 ## [1207. Unique number of occurences.][1207] 
 
 Create counts for each value. If, by using a Set, any values 
