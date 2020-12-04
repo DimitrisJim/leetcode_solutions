@@ -435,6 +435,30 @@ sum when we've visited every node.
 | Runtime (ms-%)| 4 - 85.42 | 0 - 100.00 | 84 - 80.08 | 28 - 97.19 |
 | Mem Usage (MB-%)| 7.2 - 14.58 | 2.1 - 100.00 | 41.2 - 16.26 | 14.8 - 13.95 |
 
+## [1030. Matrix Cells in Distance Order.][1030]
+
+The main gist is that we create a bunch of distances in ascending order, this can
+be done by taking two ranges that are based on the following comparisons:
+
+```python
+limR = max(R-r0, r0) + 1
+limC = max(C-c0, c0) + 1
+```
+
+and then combining them. By taking those ranges and not a combination of the
+full range from `[0-R)` and `[0-C)` we eliminate many iterations that we
+*know* will fall outside of the acceptable bounds. (I.e if `R` is `50` and
+`r0` is `25` it doesn't make any sense to check for distance values `> 25`.) 
+
+Then we loop through them and try and apply them to the 
+initial point. If we fall in acceptable ranges `[0, R)` and `[0, C)` we can
+keep it. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 104 - 100.00 | 12 - 100.00 | 140 - 83.33 | 144 - 98.49 |
+| Mem Usage (MB-%)| 23 - 12.50 | 2.7 - 75.00 | 47.5 - 40.00 | 16.2 - 41.04 |
+
 ## [1047. Remove All Adjacent Duplicate Strings][1047]
 
 Use a stack to filter out adjacent elements.
@@ -1155,6 +1179,7 @@ Max of the sum of the entries.
 [1002]: https://leetcode.com/problems/find-common-characters/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1022]: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers
+[1030]: https://leetcode.com/problems/matrix-cells-in-distance-order/
 [1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 [1051]: https://leetcode.com/problems/height-checker
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
