@@ -533,6 +533,17 @@ suspicion).
 | Runtime (ms-%)| | 8 - 100.00 | 92 - 97.14 | 92 - 87.95 |
 | Mem Usage (MB-%)| | 2.1 - 100.00 | 46.1 - 78.91 | 14.7 - 11.99 |
 
+## [1200. Minimum Absolute Difference.][1200] 
+
+Sort the array and then go through it and add the minimum distances to our
+result (minimum difference might change while iterating, in which case we
+dump all previous contents of result array and start fresh.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 84 - 100.00 | 16 - 80.00 | 160 - 88.54 | 296 - 99.61 |
+| Mem Usage (MB-%)| 16.3 - 88.24 | 3.1 - 100.00 | 48.7 - 100.00 | 28.1 - 33.97|
+
 ## [1207. Unique number of occurences.][1207] 
 
 Create counts for each value. If, by using a Set, any values 
@@ -843,6 +854,16 @@ are also present in the set.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 16 - 100.00 | 0 - 100.00 | 76 - 96.19 | 116 - 95.12 |
 | Mem Usage (MB-%)| 7 - 17.65 | 2.1 - 100.00 | 40.7 - 87.20 | 14.3 - 49.67 |
+
+## [1385. Find the distance between two arrays.][1385]
+
+Go through fist array and for each value make top and bottom bounds for 
+values of second array to satisfy in order for `| arr1[i] - arr2[j] <= d |`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 85.71 | 0 - 100.00 | 88 - 87.00 | 76 - 89.36 |
+| Mem Usage (MB-%)| 6.1 - 64.29 | 2.1 - 100.00 | 39.2 - 99.00 | 14.1 - 98.84 |
 
 ## [1389. Create Target Array in the Given Order][1389]
 
@@ -1195,6 +1216,7 @@ Max of the sum of the entries.
 [1051]: https://leetcode.com/problems/height-checker
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1122]: https://leetcode.com/problems/relative-sort-array/
+[1200]: https://leetcode.com/problems/minimum-absolute-difference/
 [1207]: https://leetcode.com/problems/unique-number-of-occurrences/
 [1217]: https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
 [1237]: https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/
@@ -1216,6 +1238,7 @@ Max of the sum of the entries.
 [1370]: https://leetcode.com/problems/increasing-decreasing-string/
 [1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
 [1380]: https://leetcode.com/problems/lucky-numbers-in-a-matrix/
+[1385]: https://leetcode.com/problems/find-the-distance-value-between-two-arrays
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
