@@ -395,6 +395,16 @@ possible, I don't think it's of much worth.
 | Runtime (ms-%)| 100 - 96.55 | 8 - 98.46 | 116 - 84.11 | 184 - 99.84 |
 | Mem Usage (MB-%)| 20.3 - 33.10 | 2.2 - 78.46 | 45.4 - 39.09 | 16.1 - 34.75 |
 
+## [999. Available Captures for Rook.][999]
+
+Find the position of the rook and then just check it's row and column. (But from
+the rooks position outwards.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 87.42 | 20  - 99.12 |
+| Mem Usage (MB-%)| 5.6 - 76.47  | 2.1 - 75.00 | 37.6 - 99.34 | 14.1 - 83.77 |
+
 ## [1002. Find common characters][1002]
 
 **TODO: See again.**
@@ -1176,6 +1186,7 @@ Max of the sum of the entries.
 [961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 [965]: https://leetcode.com/problems/univalued-binary-tree/
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
+[999]: https://leetcode.com/problems/available-captures-for-rook
 [1002]: https://leetcode.com/problems/find-common-characters/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1022]: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers
