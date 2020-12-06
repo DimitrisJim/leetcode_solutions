@@ -1108,7 +1108,6 @@ we go through indexes. Maybe I'll fix that in the future.
 | Runtime (ms-%)| 0 - 100.00% | 0 - 100.00% | 84 - 50.48% | 36ms  - 94.20%|
 | Mem Usage (MB-%)| 6 - 93.55% | 2 - 100.00% | 39 - 7.44% | 14 - 100.00%|
 
-
 ## [1603. Design Parking System][1603]
 
 Mostly an OOP problem really.
@@ -1127,6 +1126,27 @@ space `O(1)`.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.16 | 24 - 95.18 |
 | Mem Usage (MB-%)| 5.7 - 85.33 | 2.2 - 100.00 | 39.2 - 76.73 | 14.1 - 100.00 |
+
+## [1636. Sort Array by Increasing Frequency.][1636]
+
+Need to build counts and then perform a two-way sort. First we sort by 
+value (stability isn't a concern) and then by frequency. 
+
+Stability when sorting by frequency is a concern because we want to reverse 
+the order of elements with the same frequency. To do this we need to
+add a tie-braker (the position after the first sort) to use when sorting
+again by position. 
+
+Since the second sort results in the array being reversed, we need to add
+elements from the end towards the front.
+
+**TODO: JS sort happens to be implemented as stable (this isn't guaranteed
+though, need to use same tie-braking mechanism as C there.*
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 84 - 98.23 | 40 - 98.75 |
+| Mem Usage (MB-%)| 7.3 - 28.00 | 2 - 71.43 | 41.8 - 23.89 | 13.9 - 97.38 |
 
 ## [1640. Check Array Formation Through Concatenation][1640]
 
@@ -1260,6 +1280,7 @@ Max of the sum of the entries.
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
 [1603]: https://leetcode.com/problems/design-parking-system/
 [1614]: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses
+[1636]: https://leetcode.com/problems/sort-array-by-increasing-frequency/
 [1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
 [1656]: https://leetcode.com/problems/design-an-ordered-stream/
 [1662]: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent
