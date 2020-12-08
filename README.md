@@ -27,6 +27,17 @@ recursive, Python uses iterative.
 | Runtime (ms-%)| 4 - 92.16 | 0 -100.00 | 80 - 94.64 | 36 - 89.43 |
 | Mem Usage (MB-%)| 8.1 - 50.63 | 2.5 - 94.87 | 41 - 96.55 | 15.2 - 91.21 |
 
+## [226. Invert Binary Tree][226]
+
+Most (`C`, `Javascript` and `Rust` (because I hate myself, apparently)) 
+use recursion to swap the nodes. Python uses an iterative approach by
+utilizing a stack.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.23 | 20 - 99.04 |
+| Mem Usage (MB-%)| 5.8 - 99.02 | 2 - 88.89 | 38.9 - 55.11 | 14.2 - 39.78 |
+
 ## [344. Reverse String][344]
 
 Typical swapping.
@@ -1209,6 +1220,7 @@ For C, we can alter the input string instead of creating a new one.
 
 
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+[226]: https://leetcode.com/problems/invert-binary-tree/
 [344]: https://leetcode.com/problems/reverse-string/
 [461]: https://leetcode.com/problems/hamming-distance/
 [509]: https://leetcode.com/problems/fibonacci-number/
