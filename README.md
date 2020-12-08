@@ -229,6 +229,15 @@ cases.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 99.41 | 28 - 98.30 |
 | Mem usage (mb-%)| 6 - 100.00 | 2 - 100.00 | 41 - 28.99 | 14.1 - 97.67 |
 
+## [824. Goat Latin.][824]
+
+Not much to break down here. Just do what the problem states.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 94.85 | 24 - 93.52 |
+| Mem usage (mb-%)| 5.9 - 84.21 | 2 - 87.50 | 38.8 - 59.56 | 13.9 - 97.34 |
+
 ## [832. Flipping an Image][832]
 
 Go through matrix and reverse/invert. Python/Rust/JS use a functional 
@@ -1236,6 +1245,7 @@ For C, we can alter the input string instead of creating a new one.
 [804]: https://leetcode.com/problems/unique-morse-code-words/
 [811]: https://leetcode.com/problems/subdomain-visit-count/
 [821]: https://leetcode.com/problems/shortest-distance-to-a-character/
+[824]: https://leetcode.com/problems/goat-latin/
 [832]: https://leetcode.com/problems/flipping-an-image/
 [852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
 [876]: https://leetcode.com/problems/middle-of-the-linked-list/
