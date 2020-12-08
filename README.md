@@ -1141,7 +1141,7 @@ Since the second sort results in the array being reversed, we need to add
 elements from the end towards the front.
 
 **TODO: JS sort happens to be implemented as stable (this isn't guaranteed
-though, need to use same tie-braking mechanism as C there.*
+though, need to use same tie-braking mechanism as C there.**
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
@@ -1196,6 +1196,17 @@ Max of the sum of the entries.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 4 - 100.00 | 0- 100.00 | 72 - 92.65 | 48 - 95.26 |
 | Mem Usage (MB-%)| 6.1 - 94.74 | 2 - 66.67 | 38.4 - 83.19 | 14.1 - 86.41 |
+
+## [1678. Goal Parser Interpretation.][1678]
+
+Go through the string via index which we increase based on the chunk we've seen.
+For C, we can alter the input string instead of creating a new one.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 100.00 | 24 - 98.37 |
+| Mem Usage (MB-%)| 5.8 - 70.00 | 2 - 100.00 | 38.5 - 26.43 | 14.1 - 72.89 |
+
 
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [344]: https://leetcode.com/problems/reverse-string/
@@ -1285,3 +1296,4 @@ Max of the sum of the entries.
 [1656]: https://leetcode.com/problems/design-an-ordered-stream/
 [1662]: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent
 [1672]: https://leetcode.com/problems/richest-customer-wealth
+[1678]: https://leetcode.com/problems/goal-parser-interpretation/
