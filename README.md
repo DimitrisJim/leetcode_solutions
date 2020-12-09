@@ -1157,6 +1157,15 @@ space `O(1)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.16 | 24 - 95.18 |
 | Mem Usage (MB-%)| 5.7 - 85.33 | 2.2 - 100.00 | 39.2 - 76.73 | 14.1 - 100.00 |
 
+## [1619. Mean of Array after removing some elements.][1619]
+
+Sort, slice and return mean.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 97.64 | 48 - 97.10 |
+| Mem Usage (MB-%)| 6.1 - 91.67 | 2.1 - 85.19 | 40.3 - 29.06 | 14.1 - 95.31 |
+
 ## [1636. Sort Array by Increasing Frequency.][1636]
 
 Need to build counts and then perform a two-way sort. First we sort by 
@@ -1324,6 +1333,7 @@ For C, we can alter the input string instead of creating a new one.
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
 [1603]: https://leetcode.com/problems/design-parking-system/
 [1614]: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses
+[1619]: https://leetcode.com/problems/mean-of-array-after-removing-some-elements/
 [1636]: https://leetcode.com/problems/sort-array-by-increasing-frequency/
 [1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
 [1656]: https://leetcode.com/problems/design-an-ordered-stream/
