@@ -475,6 +475,16 @@ sum when we've visited every node.
 | Runtime (ms-%)| 4 - 85.42 | 0 - 100.00 | 84 - 80.08 | 28 - 97.19 |
 | Mem Usage (MB-%)| 7.2 - 14.58 | 2.1 - 100.00 | 41.2 - 16.26 | 14.8 - 13.95 |
 
+## [1025. Divisor Game][1025]
+
+Apparently, optimal move is dividing by one. Return answer based on if N
+is odd or even.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 87.19 | 24 - 92.61 |
+| Mem Usage (MB-%)| 5.4 - 98.95 | 2 - 92.00 | 38.4 - 57.93 | 14.1 - 78.14 |
+
 ## [1030. Matrix Cells in Distance Order.][1030]
 
 The main gist is that we create a bunch of distances in ascending order, this can
@@ -1284,6 +1294,7 @@ For C, we can alter the input string instead of creating a new one.
 [1002]: https://leetcode.com/problems/find-common-characters/
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1022]: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers
+[1025]: https://leetcode.com/problems/divisor-game/
 [1030]: https://leetcode.com/problems/matrix-cells-in-distance-order/
 [1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 [1051]: https://leetcode.com/problems/height-checker
