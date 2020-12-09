@@ -316,6 +316,18 @@ results in `O(n)` runtime complexity and `O(n)` space.
 | Runtime (ms-%)| 28 - 77.42 | 0 - 100.00 | 96 - 72.31 | 60 - 99.98|
 | Mem Usage (MB-%)| 9.3 - 97.35 | 2.1 - 100.00 | 40.6 - 10.20 | 14.6 - 36.39|
 
+## [908. Smallest Range I.][908]
+
+Find min and max of the array. IF `max - K - min` falls in the range `[-K, K]` we
+can use any value of that range to reduce the difference to `0`. If it doesn't,
+then, if `max - K - min` is positive, subtract `K` from it (to minimize the
+difference) or, if negative, add `K` to it.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 12 - 88.89 | 0 - 100.00 | 72 - 96.74 | 96 - 100.00 |
+| Mem Usage (MB-%)| 6.5 - 100.00 | 2 - 100.00 | 39.8 - 85.87 | 15.2 - 97.14 |
+
 ## [922. Sort Array By Parity II][922]
 
 Preallocate resulting array. Then go through input array and using two
@@ -1282,6 +1294,7 @@ For C, we can alter the input string instead of creating a new one.
 [883]: https://leetcode.com/problems/projection-area-of-3d-shapes/
 [897]: https://leetcode.com/problems/increasing-order-search-tree/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
+[908]: https://leetcode.com/problems/smallest-range-i/
 [929]: https://leetcode.com/problems/unique-email-addresses/
 [933]: https://leetcode.com/problems/number-of-recent-calls
 [938]: https://leetcode.com/problems/range-sum-of-bst/
