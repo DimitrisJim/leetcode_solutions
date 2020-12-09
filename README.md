@@ -27,6 +27,16 @@ recursive, Python uses iterative.
 | Runtime (ms-%)| 4 - 92.16 | 0 -100.00 | 80 - 94.64 | 36 - 89.43 |
 | Mem Usage (MB-%)| 8.1 - 50.63 | 2.5 - 94.87 | 41 - 96.55 | 15.2 - 91.21 |
 
+## [136. Single Number][136]
+
+Pretty well known xor trick. Based on the property that xor of two equal
+numbers is zero.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 12 - 99.30 | 0 - 100.00 | 80 - 92.47 | 112 - 99.63 |
+| Mem Usage (MB-%)| 7.1 - 99.80 | 2.1 - 81.55 | 39.9 - 98.51 | 16.7 - 29.16 |
+
 ## [226. Invert Binary Tree][226]
 
 Most (`C`, `Javascript` and `Rust` (because I hate myself, apparently)) 
@@ -1229,6 +1239,7 @@ For C, we can alter the input string instead of creating a new one.
 
 
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+[136]: https://leetcode.com/problems/single-number
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [344]: https://leetcode.com/problems/reverse-string/
 [461]: https://leetcode.com/problems/hamming-distance/
