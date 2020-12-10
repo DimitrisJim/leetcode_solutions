@@ -48,6 +48,16 @@ utilizing a stack.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.23 | 20 - 99.04 |
 | Mem Usage (MB-%)| 5.8 - 99.02 | 2 - 88.89 | 38.9 - 55.11 | 14.2 - 39.78 |
 
+## [237. Delete node in a Linked List][237]
+
+Swap contents of `node` with contents of `node.next`. Rust version not
+available.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 95.10 | N/A | 80 - 94.74 | 20 - 100.00 |
+| Mem Usage (MB-%)| 6.3 - 99.87 | N/A | 40.2 - 84.74 | 14.7 - 19.26 |
+
 ## [344. Reverse String][344]
 
 Typical swapping.
@@ -1282,6 +1292,7 @@ For C, we can alter the input string instead of creating a new one.
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [136]: https://leetcode.com/problems/single-number
 [226]: https://leetcode.com/problems/invert-binary-tree/
+[237]: https://leetcode.com/problems/delete-node-in-a-linked-list
 [344]: https://leetcode.com/problems/reverse-string/
 [461]: https://leetcode.com/problems/hamming-distance/
 [509]: https://leetcode.com/problems/fibonacci-number/
