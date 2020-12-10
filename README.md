@@ -206,6 +206,14 @@ not sure.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 84 - 65.67 | 44 - 81.10 |
 | Mem Usage (MB-%)| 6.2 - 14.75 | 2.2 - 100.00 | 38.8 - 11.69 | 14.1 - 100.00 |
 
+## [766. Toeplitz Matrix][766]
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 98.44 | 0 - 100.00 | 84 - 91.64 | 80 - 86.38 |
+| Mem Usage (MB-%)| 6 - 98.44 | 2 - 75.00 | 40.5 - 40.68 | 14.1 - 90.26 |
+
+
 ## [771. Jewels and Stones][771] 
 
 Add the values of J to a set and count number of jewels by 
@@ -1304,6 +1312,7 @@ For C, we can alter the input string instead of creating a new one.
 [657]: https://leetcode.com/problems/robot-return-to-origin/
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
+[766]: https://leetcode.com/problems/toeplitz-matrix/
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
 [804]: https://leetcode.com/problems/unique-morse-code-words/
 [811]: https://leetcode.com/problems/subdomain-visit-count/
