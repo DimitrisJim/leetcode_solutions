@@ -1153,6 +1153,15 @@ that don't match and reduce the overall explosion.
 | Runtime (ms-%)| 8 - 100.00 | 0 - 100.00 | 76 - 97.33 | 288 - 98.17 |
 | Mem Usage (MB-%)| 5.8 - 87.04 | 2 - 5.41 | 38.7 - 5.34 | 14 - 5.03 |
 
+## [1550. Three Consecutive odds.][1550]
+
+Not many options here, go through array and count odds. Bail when you find them.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.43 | 40 - 89.59 |
+| Mem Usage (MB-%)| 5.9 - 60.71 | 1.9 - 100.00 | 38.7 - 49.52 | 14.3 - 65.73 |
+
 ## [1572. Matrix Diagonal Sum][1572]
 
 Go through the array and concurrently sum both diagonals. Remove 
@@ -1383,6 +1392,7 @@ For C, we can alter the input string instead of creating a new one.
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
 [1528]: https://leetcode.com/problems/shuffle-string/
 [1534]: https://leetcode.com/problems/count-good-triplets 
+[1550]: https://leetcode.com/problems/three-consecutive-odds
 [1572]: https://leetcode.com/problems/matrix-diagonal-sum/
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
 [1603]: https://leetcode.com/problems/design-parking-system/
