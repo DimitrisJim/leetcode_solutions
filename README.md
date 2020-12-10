@@ -1225,6 +1225,16 @@ Go through each element in second array:
 | Runtime (ms-%)| 4 - 92.31 | 0 - 100.00 | 80 - 67.57 | 36 - 93.55 |
 | Mem Usage (MB-%)| 6.7 - 100.00 | 2.2 - 100.00 | 38.8 - 5.11 | 14.1 - 100.00 |
 
+## [1652. Defuse the bomb.][1652]
+
+Use modular arithmetic (dividing by array lenght) to add correct elements.
+In Python, use `deque` to rotate around instead.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 97.14 | 0 - 100.00 | 72 - 98.31 | 36 - 84.77 |
+| Mem Usage (MB-%)| 6.1 - 85.71 | 2 - 100.00 | 38.6 - 84.46 | 14.1 - 89.93 |
+
 ## [1656. Design An Ordered Stream][1656]
 
 There's probably a different way for this. I've created a 
@@ -1360,6 +1370,7 @@ For C, we can alter the input string instead of creating a new one.
 [1619]: https://leetcode.com/problems/mean-of-array-after-removing-some-elements/
 [1636]: https://leetcode.com/problems/sort-array-by-increasing-frequency/
 [1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
+[1652]: https://leetcode.com/problems/defuse-the-bomb/
 [1656]: https://leetcode.com/problems/design-an-ordered-stream/
 [1662]: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent
 [1672]: https://leetcode.com/problems/richest-customer-wealth
