@@ -970,6 +970,16 @@ values of second array to satisfy in order for `| arr1[i] - arr2[j] <= d |`.
 Can't think of a better than O(N^2) solution yet. Come back to this at 
 some point.
 
+## [1399. Count largest group.][1399]
+
+Build a Counter, sort it and find the length of the group with the largest
+values.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 55.56 | 4 - 100.00 | 84 - 93.48 | 80 - 90.56 |
+| Mem Usage (MB-%)| 6 - 11.11 | 2 - 100.00 | 40.9 - 55.43 | 14.1 - 86.40 |
+
 ## [1403. Minimum Sequence in non increasing order,][1403]
 
 Get the sum of the sequence and then sort it (ideally 
@@ -1407,6 +1417,7 @@ For C, we can alter the input string instead of creating a new one.
 [1380]: https://leetcode.com/problems/lucky-numbers-in-a-matrix/
 [1385]: https://leetcode.com/problems/find-the-distance-value-between-two-arrays
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
+[1399]: https://leetcode.com/problems/count-largest-group/
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1436]: https://leetcode.com/problems/destination-city/
