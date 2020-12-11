@@ -80,6 +80,16 @@ solution here.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 82.30 | 28 - 76.20 |
 | Mem Usage (MB-%)| 5.5 - 67.52 | 2 - 100.00 | 38.5 - 71.22 | 14.1 - 61.18 |
 
+## [500. Keyboard Row][500]
+
+Make sets out of rows on keyboard and check if input strings are contained
+in the sets.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.03 | 24 - 92.53 |
+| Mem Usage (MB-%)| 5.8 - 20.69 | 2 - 100.00 | 38.6 - 33.83 | 14.1 - 44.11 |
+
 ## [509. Fibonacci Number][509]
 
 Calculate it iteratively.
@@ -88,7 +98,6 @@ Calculate it iteratively.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.37 | 20 - 98.15 |
 | Mem Usage (MB-%)| 5.4 - 86.96 | 2 - 48.78 | 38.3 - 56.54 | 14.1 - 34.89 |
-
 
 ## [557. Reverse Words in a String III][561]
 
@@ -1331,6 +1340,7 @@ For C, we can alter the input string instead of creating a new one.
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
 [344]: https://leetcode.com/problems/reverse-string/
 [461]: https://leetcode.com/problems/hamming-distance/
+[500]: https://leetcode.com/problems/keyboard-row
 [509]: https://leetcode.com/problems/fibonacci-number/
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
 [559]: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
