@@ -223,7 +223,6 @@ not sure.
 | Runtime (ms-%)| 8 - 98.44 | 0 - 100.00 | 84 - 91.64 | 80 - 86.38 |
 | Mem Usage (MB-%)| 6 - 98.44 | 2 - 75.00 | 40.5 - 40.68 | 14.1 - 90.26 |
 
-
 ## [771. Jewels and Stones][771] 
 
 Add the values of J to a set and count number of jewels by 
@@ -245,6 +244,16 @@ morse code words.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 86.43 | 24 - 99.14|
 | Mem usage (mb-%)| 6.1 - 13.33 | 2 - 100.00 | 39.4 - 6.79 | 14.1 - 100.00 |
+
+## [806. Number of lines to write string.][806]
+
+Build a mapping from lowercase english characters to their width in the `widths`
+array. Then, gradually find the lines needed.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 90.28 | 20 - 99.40 |
+| Mem usage (mb-%)| 5.8 - 44.44 | 2 - 66.67 | 39.4 - 12.50 | 14.2 - 48.64 |
 
 ## [811. Subdomain visit count.][811]
 
@@ -1335,6 +1344,7 @@ For C, we can alter the input string instead of creating a new one.
 [766]: https://leetcode.com/problems/toeplitz-matrix/
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
 [804]: https://leetcode.com/problems/unique-morse-code-words/
+[806]: https://leetcode.com/problems/number-of-lines-to-write-string/
 [811]: https://leetcode.com/problems/subdomain-visit-count/
 [821]: https://leetcode.com/problems/shortest-distance-to-a-character/
 [824]: https://leetcode.com/problems/goat-latin/
