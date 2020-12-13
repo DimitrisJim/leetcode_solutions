@@ -997,6 +997,17 @@ sequence:
 | Runtime (ms-%)| 8 - 96.00 | 0 - 100.00 | 84 - 92.78 | 52 - 97.26 |
 | Mem Usage (MB-%)| 6.5 - 88.00 | 2 - 75.00 | 39.7 - 91.67 | 14.2 - 63.63 |
 
+## [1413. Minimum Value to get positive step by step sum.][1413]
+
+Start with an initial minimum guess of `1` and go through the values of the
+array. When we fall under `1` after summing values, we adjust the minimum value
+in order to not be under `1`. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 82.35 | 24 - 96.60 |
+| Mem Usage (MB-%)| 5.8 - 100.00 | 2 - 100.00 | 37.9 - 97.39 | 14 - 96.50|
+
 ## [1431. Kids with greatest number of candies][1431]
 
 Find max, compare values and return.
@@ -1419,6 +1430,7 @@ For C, we can alter the input string instead of creating a new one.
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1399]: https://leetcode.com/problems/count-largest-group/
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
+[1413]: https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1436]: https://leetcode.com/problems/destination-city/
 [1441]: https://leetcode.com/problems/build-an-array-with-stack-operations/
