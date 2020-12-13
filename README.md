@@ -80,6 +80,13 @@ solution here.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 82.30 | 28 - 76.20 |
 | Mem Usage (MB-%)| 5.5 - 67.52 | 2 - 100.00 | 38.5 - 71.22 | 14.1 - 61.18 |
 
+## [476. Number Complement.][476]
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 85.35 | 24 - 94.21 |
+| Mem Usage (MB-%)| 5.6 - 63.49 | 2 - 80.00 | 38.1 - 94.27 | 14 - 95.98 |
+
 ## [500. Keyboard Row][500]
 
 Make sets out of rows on keyboard and check if input strings are contained
@@ -1361,6 +1368,7 @@ For C, we can alter the input string instead of creating a new one.
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
 [344]: https://leetcode.com/problems/reverse-string/
 [461]: https://leetcode.com/problems/hamming-distance/
+[476]: https://leetcode.com/problems/number-complement/
 [500]: https://leetcode.com/problems/keyboard-row
 [509]: https://leetcode.com/problems/fibonacci-number/
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
