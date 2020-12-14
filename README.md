@@ -512,6 +512,10 @@ This probably isn't the best way to go about it.
 | Runtime (ms-%)| 12 - 8.33 | 4 - 45.45 | 88 - 81.43 | 36 - 97.01 |
 | Mem Usage (MB-%)| 12.1 - 5.56 | 2 - 100.00 | 42.7 - 55.97 | 14 - 98.23 |
 
+## [1009. Complement of a base-10 integer.][1009]
+
+[Same as problem.][476]
+
 ## [1021. Remove Outermost Parentheses][1021]
 
 Go through string and build resulting string with the help of a 
@@ -1404,6 +1408,7 @@ For C, we can alter the input string instead of creating a new one.
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
 [999]: https://leetcode.com/problems/available-captures-for-rook
 [1002]: https://leetcode.com/problems/find-common-characters/
+[1009]: https://leetcode.com/problems/complement-of-base-10-integer/ 
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1022]: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers
 [1025]: https://leetcode.com/problems/divisor-game/
