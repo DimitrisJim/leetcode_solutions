@@ -1045,7 +1045,6 @@ of the current value of the target with its previous value.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 92.27 | 24 - 96.01 |
 | Mem Usage (MB-%)| 6.2 - 70.00 | 2 - 100.00 | 38.5 - 82.73 | 14.1 - 84.41 |
 
-
 ## [1450. Number of Students Doing Homework at a Given Time][1450]
 
 Go through first vector (start times) and for every start time 
@@ -1056,6 +1055,16 @@ that is smaller equal to the queryTime, check the second vector
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 86.58 | 28 - 97.73 |
 | Mem Usage (MB-%)| 5.8 - 80.17 | 2.2 - 100.00 | 38.3 - 29.39 | 14.2 - 100.00|
+
+## [1455. Check if a word occurs as a prefix of any word in a sentence.][1455]
+
+Straight-forward approach. Split and use string functions for `Rust`, `Python`
+and `Javascript`. Compare characters in `C`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 95.51 | 20 - 98.95 |
+| Mem Usage (MB-%)| 5.5 - 100.00 | 2 - 100.00 | 38.4 - 42.31 | 14.1 - 41.63|
 
 ## [1460. Make Two Arrays Equal by Reversing Sub-Arrays][1460]
 
@@ -1448,6 +1457,7 @@ For C, we can alter the input string instead of creating a new one.
 [1436]: https://leetcode.com/problems/destination-city/
 [1441]: https://leetcode.com/problems/build-an-array-with-stack-operations/
 [1450]: https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/
+[1455]: https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/
 [1460]: https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/
 [1464]: https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array
 [1470]: https://leetcode.com/problems/shuffle-the-array/
