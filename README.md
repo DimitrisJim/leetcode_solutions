@@ -612,7 +612,6 @@ Use a stack to filter out adjacent elements.
 | Runtime (ms-%)| 4 - 94.52 | 0 - 100.00  | 84 - 95.59 | 48 - 99.13 |
 | Mem Usage (MB-%)| 8.1 - 9.59 | 2.2 - 60.00 | 47.1 - 42.68 | 14.7 - 21.89 |
 
-
 ## [1051. Height Checker][1051]
 
 Create a sorted target array and go through both arrays 
@@ -622,6 +621,16 @@ counting their differences.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.33 | 16 - 100.00 |
 | Mem Usage (MB-%)| 5.7 - 70.92 | 2 - 40.00 | 38.4 - 81.16 | 14.1 - 69.05 |
+
+## [1078. Occurences after Bigram.][1078]
+
+Split the string and go through the words comparing. Use a while loop to skip over
+chunks as needed. Similarly in `C` but with a significant ammount of boilerplate.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 98.41 | 20 - 98.86 |
+| Mem Usage (MB-%)| 5.8 - 100.00 | 2 - 100.00 | 38.4 - 69.84 | 14.3 - 23.63 |
 
 ## [1108. Defanging an IP Address][1108]
 
@@ -1450,6 +1459,7 @@ For C, we can alter the input string instead of creating a new one.
 [1030]: https://leetcode.com/problems/matrix-cells-in-distance-order/
 [1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 [1051]: https://leetcode.com/problems/height-checker
+[1078]: https://leetcode.com/problems/occurrences-after-bigram
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1122]: https://leetcode.com/problems/relative-sort-array/
 [1200]: https://leetcode.com/problems/minimum-absolute-difference/
