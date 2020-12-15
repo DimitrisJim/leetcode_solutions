@@ -347,6 +347,17 @@ A binary search throug the semi-sorted array.
 | Runtime (ms-%)| 8 - 89.84 | 0 - 100.00 | 72 - 91.56 | 64 - 97.11 |
 | Mem usage (mb-%)| 6.6 - 30.47 | 2.1 - 75.00 | 39.1 - 77.91 | 15 - 88.20 |
 
+## [872. Leaf similar trees.][872]
+
+For Python: recursion delegating to sub-generators. Helpful.
+For the rest: function that receives stack and returns leaves as we encounter
+them.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 97.33 | 20 - 99.00 |
+| Mem usage (mb-%)| 6.3 - 90.20 | 2 - 66.67 | 40.3 - 73.66 | 14.3 - 17.11 |
+
 ## [876. Middle of the Linked List][876]
 
 Traverse the list while keeping a reference to the middle element.
@@ -1437,6 +1448,7 @@ For C, we can alter the input string instead of creating a new one.
 [824]: https://leetcode.com/problems/goat-latin/
 [832]: https://leetcode.com/problems/flipping-an-image/
 [852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
+[872]: https://leetcode.com/problems/leaf-similar-trees/
 [876]: https://leetcode.com/problems/middle-of-the-linked-list/
 [883]: https://leetcode.com/problems/projection-area-of-3d-shapes/
 [897]: https://leetcode.com/problems/increasing-order-search-tree/
