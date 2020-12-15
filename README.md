@@ -87,6 +87,31 @@ solution here.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 85.35 | 24 - 94.21 |
 | Mem Usage (MB-%)| 5.6 - 63.49 | 2 - 80.00 | 38.1 - 94.27 | 14 - 95.98 |
 
+## [496. Next greater element I.][496]
+
+Python has three solutions, brute force, with a bit of supporting structures and
+with a lot. Last is used and in the others and described here.
+
+We initialize the resulting array to all -1's and create a mapping from values to
+their indices. We go through each element in `nums2` and for each:
+
+ 1. If it is contained in our mapping, we add it to a set that keeps track of values
+	seen. 
+ 2. We iterate through the values of seen, if, for any value of seen, we find that
+	it is smaller than the element of `nums2` we're iterating through, we add it
+	to the result array (where we add it is found by using the mapping). 
+
+For any values not in `nums1` and for any values in `nums1` for which no larger
+element exists on the right, the initial value of `-1` stays. The trick here is
+that for each element of `nums2` we only iterate over a very small subset of
+`nums1` (the ones in `seen`). This way we can reduce the overall iterations
+performed.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 97.12 | 36 - 98.72 |
+| Mem Usage (MB-%)| 10.4 - 6.67 | 2 - 100.00 | 40.5 - 42.45 | 14.6 - 18.78 |
+
 ## [500. Keyboard Row][500]
 
 Make sets out of rows on keyboard and check if input strings are contained
@@ -1382,6 +1407,7 @@ For C, we can alter the input string instead of creating a new one.
 [344]: https://leetcode.com/problems/reverse-string/
 [461]: https://leetcode.com/problems/hamming-distance/
 [476]: https://leetcode.com/problems/number-complement/
+[496]: https://leetcode.com/problems/next-greater-element-
 [500]: https://leetcode.com/problems/keyboard-row
 [509]: https://leetcode.com/problems/fibonacci-number/
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
