@@ -233,6 +233,18 @@ in runtime/memory timings.
 | Runtime (ms-%)| 20 - 89.04 | 4 - 100.00 | 44 - 98.93 | 64 - 97.56|
 | Mem Usage (MB-%)| 15.1 - 73.25 | 2.6 - 57.14 | 44.4 - 76.63 | 15.8 - 94.95|
 
+## [705. Design HashSet][705]
+
+Python contains implementations for both separate chaining and open addressing.
+
+The most trustworthy timings will probably be for C where (unless one uses `uthash`,
+no built-in set objects exist).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 16 - 100.00 | | 196 - 57.80 |
+| Mem Usage (MB-%)| | 5.6 - 66 | | 18.9 - 53.31 |
+
 ## [709. To lower case][709]
 
 The `C` version is probably the most interesting. The rest 
