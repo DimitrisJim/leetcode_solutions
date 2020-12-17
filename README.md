@@ -37,6 +37,18 @@ numbers is zero.
 | Runtime (ms-%)| 12 - 99.30 | 0 - 100.00 | 80 - 92.47 | 112 - 99.63 |
 | Mem Usage (MB-%)| 7.1 - 99.80 | 2.1 - 81.55 | 39.9 - 98.51 | 16.7 - 29.16 |
 
+## [206. Reverse Linked List][206]
+
+`C` contains both iterative and recursive. The rest use iterative.
+
+Note: Needless to say, Rust timings seem a bit off! Check again if you see
+this in the future, future me.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 81.03 | 280 - 100.00 | 80 - 84.82 | 32 - 85.73 |
+| Mem Usage (MB-%)| 6.2 - 98.35 | 2.5 - 51.56 | 40 - 94.38 | 15.4 - 69.73 |
+
 ## [226. Invert Binary Tree][226]
 
 Most (`C`, `Javascript` and `Rust` (because I hate myself, apparently)) 
@@ -1435,6 +1447,7 @@ For C, we can alter the input string instead of creating a new one.
 
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [136]: https://leetcode.com/problems/single-number
+[206]: https://leetcode.com/problems/reverse-linked-list/
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
 [344]: https://leetcode.com/problems/reverse-string/
