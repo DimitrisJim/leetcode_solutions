@@ -235,15 +235,16 @@ in runtime/memory timings.
 
 ## [705. Design HashSet][705]
 
-Python contains implementations for both separate chaining and open addressing.
+Python contains implementations for both separate chaining and open addressing, so
+does `Rust` (well, an attempt at separate chaining, at least).
 
-The most trustworthy timings will probably be for C where (unless one uses `uthash`,
-no built-in set objects exist).
+Have some odd bug in Javascript which I'll give up on trying to track down for now.
+Adding code so far.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| | 16 - 100.00 | | 196 - 57.80 |
-| Mem Usage (MB-%)| | 5.6 - 66 | | 18.9 - 53.31 |
+| Runtime (ms-%)| 76 - 100.00 | 16 - 100.00 | N/A | 196 - 57.80 |
+| Mem Usage (MB-%)| 26.1 - 96.83 | 5.6 - 66 | N/A | 18.9 - 53.31 |
 
 ## [709. To lower case][709]
 
@@ -1449,6 +1450,7 @@ For C, we can alter the input string instead of creating a new one.
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [657]: https://leetcode.com/problems/robot-return-to-origin/
 [682]: https://leetcode.com/problems/baseball-game/
+[705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
 [766]: https://leetcode.com/problems/toeplitz-matrix/
