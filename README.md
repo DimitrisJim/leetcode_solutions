@@ -214,6 +214,24 @@ Pending:
 | Runtime (ms-%)| | 4 - 100.00 | | 80 - 96.68 |
 | Mem Usage (MB-%)| | 2.2 - 100.00 | | 14.9 - 99.93 |
 
+## [637. Average of Levels in Binary Tree][637]
+
+Python, Rust use iterative approach: we use a deque that holds a special
+marker (i.e `None`) which we use to track on which level we are on. Until we
+reach that marker, we add the values and count the nodes. When we reach the
+marker, we take the average and add it to the result array.
+
+The iteration stops when for a given level, the number of Nodes we've counted
+is zero.
+
+`C` and `Javascript` use a recursive approach whereby each level of the tree
+is represented by a `level` parameter of the recursive function. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 84 - 97.80 | 36 - 99.85 |
+| Mem Usage (MB-%)| 20.7 - 5.36 | 3 - 50.00 | 45 - 18.13 | 16.5 - 60.71 |
+
 ## [657. Robot Return to Origin][657]
 
 Count occurences and compare. If number of 'D's matches number 
@@ -1470,6 +1488,7 @@ For C, we can alter the input string instead of creating a new one.
 [561]: https://leetcode.com/problems/array-partition-i/
 [590]: https://leetcode.com/problems/n-ary-tree-postorder-traversal
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
+[637]: https://leetcode.com/problems/average-of-levels-in-binary-tree/
 [657]: https://leetcode.com/problems/robot-return-to-origin/
 [682]: https://leetcode.com/problems/baseball-game/
 [705]: https://leetcode.com/problems/design-hashset
