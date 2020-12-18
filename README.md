@@ -79,6 +79,15 @@ Typical swapping.
 | Runtime (ms-%)| 44 - 96.89 | 16 - 94.12 | 100 - 96.48 | 184 - 96.43 |
 | Mem Usage (MB-%)| 12.4 - 74.64 | 5.4 - 98.82 | 45.5 - 79.32 | 18.7 - 14.37 |
 
+## [349. Intersection of two arrays.][349]
+
+Build sets and get intersection (or write it for `C` and `JS` cases.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 98.18 | 32 - 99.40 |
+| Mem Usage (MB-%)| 7.7 - 12.87 | 2.1 - 77.78 | 40.5 - 28.27 | 14.4 - 22.10 |
+
 ## [461. Hamming Distance][461]
 
 Get the xor of the two numbers (where bits differ) and then 
@@ -1478,6 +1487,7 @@ For C, we can alter the input string instead of creating a new one.
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
 [344]: https://leetcode.com/problems/reverse-string/
+[349]: https://leetcode.com/problems/intersection-of-two-arrays/
 [461]: https://leetcode.com/problems/hamming-distance/
 [476]: https://leetcode.com/problems/number-complement/
 [496]: https://leetcode.com/problems/next-greater-element-
