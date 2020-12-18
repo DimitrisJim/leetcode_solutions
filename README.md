@@ -1326,6 +1326,15 @@ we go through indexes. Maybe I'll fix that in the future.
 | Runtime (ms-%)| 0 - 100.00% | 0 - 100.00% | 84 - 50.48% | 36ms  - 94.20%|
 | Mem Usage (MB-%)| 6 - 93.55% | 2 - 100.00% | 39 - 7.44% | 14 - 100.00%|
 
+## [1598. Crawler Log Folder][1598]
+
+Pretty straight-forward implementation of problem statement.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 90.48 | 0 - 100.00 | 76 - 91.88 | 40 - 90.93 |
+| Mem Usage (MB-%)| 6.4 - 85.71 | 2.1 - 90.48 | 39 - 60.00 | 14.2 - 92.01 |
+
 ## [1603. Design Parking System][1603]
 
 Mostly an OOP problem really.
@@ -1547,6 +1556,7 @@ For C, we can alter the input string instead of creating a new one.
 [1550]: https://leetcode.com/problems/three-consecutive-odds
 [1572]: https://leetcode.com/problems/matrix-diagonal-sum/
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
+[1598]: https://leetcode.com/problems/crawler-log-folder/
 [1603]: https://leetcode.com/problems/design-parking-system/
 [1614]: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses
 [1619]: https://leetcode.com/problems/mean-of-array-after-removing-some-elements/
