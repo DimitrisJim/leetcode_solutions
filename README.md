@@ -1339,6 +1339,16 @@ an odd length. `O(N)`.
 | Runtime (ms-%)| 12 - 100.00 | 0 - 100.00 | 68 - 97.94 | 96 - 99.21 |
 | Mem Usage (MB-%)| 6.6 | 2.1 - 100.00 | 40.6 - 25.18 | 14.2 - 100.00 |
 
+## [1582. Special Positions in a Binary Matrix.][1582]
+
+Use a set to hold already occupied previously seen columns. Then iterate
+through the rows looking for candidates.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 20 - 100.00 | 0 - 100.00 | 68 - 100.00 | 148 - 97.80 |
+| Mem Usage (MB-%)| 7.5 - 5.26 | 2.1 - 83.33 | 40.4 - 91.67 | 14.4 - 92.64 |
+
 ## [1588. Sum of All Odd Length Subarrays][1588]
 
 TODO: Explain the clusterfuck of the thing you call logic. 
@@ -1584,6 +1594,7 @@ For C, we can alter the input string instead of creating a new one.
 [1534]: https://leetcode.com/problems/count-good-triplets 
 [1550]: https://leetcode.com/problems/three-consecutive-odds
 [1572]: https://leetcode.com/problems/matrix-diagonal-sum/
+[1582]: https://leetcode.com/problems/special-positions-in-a-binary-matrix
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
 [1598]: https://leetcode.com/problems/crawler-log-folder/
 [1603]: https://leetcode.com/problems/design-parking-system/
