@@ -88,6 +88,17 @@ Build sets and get intersection (or write it for `C` and `JS` cases.)
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 98.18 | 32 - 99.40 |
 | Mem Usage (MB-%)| 7.7 - 12.87 | 2.1 - 77.78 | 40.5 - 28.27 | 14.4 - 22.10 |
 
+## [412. Fizz-buzz.][412]
+
+Straight-forward translation of statement, only trick is not performing `i % 3` and
+`i % 5` twice do see if a number is a multiple of both `5` and `3`. We can use the
+result of `i / 3` and see if that is divided by `5`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 69.37 | 0 - 100.00 | 76 - 96.82 | 34 - 92.74 |
+| Mem Usage (MB-%)| 7 - 86.04 | 2.6 - 95.24 | 41.4 - 5.36 | 15 - 73.21 |
+
 ## [461. Hamming Distance][461]
 
 Get the xor of the two numbers (where bits differ) and then 
@@ -308,13 +319,6 @@ not sure.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 84 - 65.67 | 44 - 81.10 |
 | Mem Usage (MB-%)| 6.2 - 14.75 | 2.2 - 100.00 | 38.8 - 11.69 | 14.1 - 100.00 |
-
-## [762. Prime Number of Set bits in binary representation.][762]
-
-There's a trick here and I can't find it, yet. I do notice there's a slight relation
-between the difference and their number but can't find what. So..
-
-**TODO: Check again in a while.**
 
 ## [766. Toeplitz Matrix][766]
 
@@ -1094,13 +1098,6 @@ values of second array to satisfy in order for `| arr1[i] - arr2[j] <= d |`.
 | Runtime (ms-%)| 8 - 85.71 | 0 - 100.00 | 88 - 87.00 | 76 - 89.36 |
 | Mem Usage (MB-%)| 6.1 - 64.29 | 2.1 - 100.00 | 39.2 - 99.00 | 14.1 - 98.84 |
 
-## [1389. Create Target Array in the Given Order][1389]
-
-**TODO: See again.**
-
-Can't think of a better than O(N^2) solution yet. Come back to this at 
-some point.
-
 ## [1399. Count largest group.][1399]
 
 Build a Counter, sort it and find the length of the group with the largest
@@ -1521,6 +1518,7 @@ For C, we can alter the input string instead of creating a new one.
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
 [344]: https://leetcode.com/problems/reverse-string/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
+[412]: https://leetcode.com/problems/fizz-buzz/
 [461]: https://leetcode.com/problems/hamming-distance/
 [476]: https://leetcode.com/problems/number-complement/
 [496]: https://leetcode.com/problems/next-greater-element-
@@ -1537,7 +1535,6 @@ For C, we can alter the input string instead of creating a new one.
 [705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
-[762]: https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/
 [766]: https://leetcode.com/problems/toeplitz-matrix/
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
 [804]: https://leetcode.com/problems/unique-morse-code-words/
@@ -1597,7 +1594,6 @@ For C, we can alter the input string instead of creating a new one.
 [1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
 [1380]: https://leetcode.com/problems/lucky-numbers-in-a-matrix/
 [1385]: https://leetcode.com/problems/find-the-distance-value-between-two-arrays
-[1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1399]: https://leetcode.com/problems/count-largest-group/
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
 [1413]: https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum
