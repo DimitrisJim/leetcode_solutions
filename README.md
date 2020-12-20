@@ -309,6 +309,13 @@ not sure.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 84 - 65.67 | 44 - 81.10 |
 | Mem Usage (MB-%)| 6.2 - 14.75 | 2.2 - 100.00 | 38.8 - 11.69 | 14.1 - 100.00 |
 
+## [762. Prime Number of Set bits in binary representation.][762]
+
+There's a trick here and I can't find it, yet. I do notice there's a slight relation
+between the difference and their number but can't find what. So..
+
+**TODO: Check again in a while.**
+
 ## [766. Toeplitz Matrix][766]
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
@@ -433,6 +440,22 @@ View from Y axis is the max of each column.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 8 - 100.00 | 0 - 100.00 | 68 - 100.00 | 60 - 97.64 |
 | Mem usage (mb-%)| 6 - 100.00 | 2 - 50.00 | 39 - 58.82 | 14.1 - 77.88 |
+
+## [884. Uncommon words from two sentences.][884]
+
+Create two sets for each String, a set of seen words and a set of words
+unique in each String.
+
+Then we take the difference of the unique words in string `A` and the
+seen words in `B` (to only keep unique words not in the other string). We
+do the same thing for the unique words of `B`.
+
+Then we can take their union.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.65 | 24 - 94.61|
+| Mem usage (mb-%)| 7.3 - 16.67 | 2.1 - 66.67 | 39.1 - 33.97 | 14.1 - 88.96 |
 
 ## [897. Increasing Order Search Tree][897]
 
@@ -1514,6 +1537,7 @@ For C, we can alter the input string instead of creating a new one.
 [705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
+[762]: https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/
 [766]: https://leetcode.com/problems/toeplitz-matrix/
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
 [804]: https://leetcode.com/problems/unique-morse-code-words/
@@ -1526,6 +1550,7 @@ For C, we can alter the input string instead of creating a new one.
 [872]: https://leetcode.com/problems/leaf-similar-trees/
 [876]: https://leetcode.com/problems/middle-of-the-linked-list/
 [883]: https://leetcode.com/problems/projection-area-of-3d-shapes/
+[884]: https://leetcode.com/problems/uncommon-words-from-two-sentences/
 [897]: https://leetcode.com/problems/increasing-order-search-tree/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [908]: https://leetcode.com/problems/smallest-range-i/
