@@ -693,6 +693,20 @@ keep it.
 | Runtime (ms-%)| 104 - 100.00 | 12 - 100.00 | 140 - 83.33 | 144 - 98.49 |
 | Mem Usage (MB-%)| 23 - 12.50 | 2.7 - 75.00 | 47.5 - 40.00 | 16.2 - 41.04 |
 
+## [1046. Last stone weight.][1046]
+
+This is the job for a heap that helps us retain sorted order after each pop/push.
+`Python`, `JS` and `Rust` for which a heap or Priority Queue is available use the
+heap approach.
+
+For `C`, for which I will not write a heap now, uses the poor-mans solution of keeping
+the invariant (sort-order) by continuously calling `qsort` after each loop.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 83.61 | 20 - 99.17 |
+| Mem Usage (MB-%)| 5.5 - 100.00 | 2 - 83.33 | 39.2 - 75.82 | 14.2 - 29.54 |
+
 ## [1047. Remove All Adjacent Duplicate Strings][1047]
 
 Use a stack to filter out adjacent elements.
@@ -1575,6 +1589,7 @@ For C, we can alter the input string instead of creating a new one.
 [1022]: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers
 [1025]: https://leetcode.com/problems/divisor-game/
 [1030]: https://leetcode.com/problems/matrix-cells-in-distance-order/
+[1046]: https://leetcode.com/problems/last-stone-weight/
 [1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 [1051]: https://leetcode.com/problems/height-checker
 [1078]: https://leetcode.com/problems/occurrences-after-bigram
