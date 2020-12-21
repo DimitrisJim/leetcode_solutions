@@ -1098,6 +1098,15 @@ values of second array to satisfy in order for `| arr1[i] - arr2[j] <= d |`.
 | Runtime (ms-%)| 8 - 85.71 | 0 - 100.00 | 88 - 87.00 | 76 - 89.36 |
 | Mem Usage (MB-%)| 6.1 - 64.29 | 2.1 - 100.00 | 39.2 - 99.00 | 14.1 - 98.84 |
 
+## [1394. Find lucky integer in Array.][1394]
+
+Build a counter and return the largest pair for which `key == value`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 97.56 | 0 - 100.00 | 68 - 100.00 | 48 - 96.34 |
+| Mem Usage (MB-%)| 6.4 - 31.71 | 2 - 33.33 | 40 - 50.62 | 14.1 - 97.03 |
+
 ## [1399. Count largest group.][1399]
 
 Build a Counter, sort it and find the length of the group with the largest
@@ -1594,6 +1603,7 @@ For C, we can alter the input string instead of creating a new one.
 [1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
 [1380]: https://leetcode.com/problems/lucky-numbers-in-a-matrix/
 [1385]: https://leetcode.com/problems/find-the-distance-value-between-two-arrays
+[1394]: https://leetcode.com/problems/find-lucky-integer-in-an-array/
 [1399]: https://leetcode.com/problems/count-largest-group/
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
 [1413]: https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum
