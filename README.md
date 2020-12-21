@@ -1148,6 +1148,16 @@ sequence:
 | Runtime (ms-%)| 8 - 96.00 | 0 - 100.00 | 84 - 92.78 | 52 - 97.26 |
 | Mem Usage (MB-%)| 6.5 - 88.00 | 2 - 75.00 | 39.7 - 91.67 | 14.2 - 63.63 |
 
+## [1408 String matching in an Arrat,][1408]
+
+Sort array from smallest string to largest. Go through it comparing smaller with
+larger strings. Bail when you find a match.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 91.22 | 28 - 97.24 |
+| Mem Usage (MB-%)| 6 - 100.00 | 2 - 100.00 | 38.2 - 99.62 | 14.2 - 67.69 |
+
 ## [1413. Minimum Value to get positive step by step sum.][1413]
 
 Start with an initial minimum guess of `1` and go through the values of the
@@ -1621,6 +1631,7 @@ For C, we can alter the input string instead of creating a new one.
 [1394]: https://leetcode.com/problems/find-lucky-integer-in-an-array/
 [1399]: https://leetcode.com/problems/count-largest-group/
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
+[1408]: https://leetcode.com/problems/string-matching-in-an-array/
 [1413]: https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1436]: https://leetcode.com/problems/destination-city/
