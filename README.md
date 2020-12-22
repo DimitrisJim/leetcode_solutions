@@ -1543,6 +1543,19 @@ For C, we can alter the input string instead of creating a new one.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 100.00 | 24 - 98.37 |
 | Mem Usage (MB-%)| 5.8 - 70.00 | 2 - 100.00 | 38.5 - 26.43 | 14.1 - 72.89 |
 
+## [1684. Count the number of consistent strings.][1684]
+
+Create a set of the allowed characters and go through array checking if each
+character of each word is inside the set.
+
+Feel (mainly due to `C` timings) that there must be something I'm not taking
+advantage of here.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 48 - 69.33 | 12 - 97.06 | 108 - 93.83 | 224 - 85.91 |
+| Mem Usage (MB-%)| 12.3 - 36.00 | 2.7 - 17.65 | 47.8 - 80.74 | 16 - 95.99 |
+
 ## [1688. Count of matches in tournament.][1688]
 
 Add the divmod of `n` by `2` continuously until `n` reaches `1` (last match). 
@@ -1687,5 +1700,6 @@ files.
 [1662]: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent
 [1672]: https://leetcode.com/problems/richest-customer-wealth
 [1678]: https://leetcode.com/problems/goal-parser-interpretation/
+[1684]: https://leetcode.com/problems/count-the-number-of-consistent-strings/
 [1688]: https://leetcode.com/problems/count-of-matches-in-tournament/
 [1694]: https://leetcode.com/problems/reformat-phone-number
