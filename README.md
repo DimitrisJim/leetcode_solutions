@@ -1543,6 +1543,15 @@ For C, we can alter the input string instead of creating a new one.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 100.00 | 24 - 98.37 |
 | Mem Usage (MB-%)| 5.8 - 70.00 | 2 - 100.00 | 38.5 - 26.43 | 14.1 - 72.89 |
 
+## [1688. Count of matches in tournament.][1688]
+
+Add the divmod of `n` by `2` continuously until `n` reaches `1` (last match). 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 85.89 | 16 - 99.96 |
+| Mem Usage (MB-%)| 5.5 - 78.38 | 2 - 91.18 | 38.5 - 76.57 | 14.2 - 45.53 |
+
 ## [1694. Reformat phone numbers.][1694]
 
 For `Python` and `Rust`: First remove all `'-'` and `' '` characters from the
@@ -1678,4 +1687,5 @@ files.
 [1662]: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent
 [1672]: https://leetcode.com/problems/richest-customer-wealth
 [1678]: https://leetcode.com/problems/goal-parser-interpretation/
+[1688]: https://leetcode.com/problems/count-of-matches-in-tournament/
 [1694]: https://leetcode.com/problems/reformat-phone-number
