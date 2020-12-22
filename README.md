@@ -1543,6 +1543,20 @@ For C, we can alter the input string instead of creating a new one.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 100.00 | 24 - 98.37 |
 | Mem Usage (MB-%)| 5.8 - 70.00 | 2 - 100.00 | 38.5 - 26.43 | 14.1 - 72.89 |
 
+## [1694. Reformat phone numbers.][1694]
+
+For `Python` and `Rust`: First remove all `'-'` and `' '` characters from the
+string and then iterate through chunks which we save to a result array. Then
+we return the array joined on `'-'`.
+
+For `C` and `JavaScript`: Go through character by character carefully collecting
+numbers and placing the `'-'` character where needed, see comments in source
+files.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 91.67 | 28 - 93.41 |
+| Mem Usage (MB-%)| 5.7 - 83.33 | 2 - 100.00 | 40.1 - 8.33 | 14.2 - 94.48 |
 
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [136]: https://leetcode.com/problems/single-number
@@ -1664,3 +1678,4 @@ For C, we can alter the input string instead of creating a new one.
 [1662]: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent
 [1672]: https://leetcode.com/problems/richest-customer-wealth
 [1678]: https://leetcode.com/problems/goal-parser-interpretation/
+[1694]: https://leetcode.com/problems/reformat-phone-number
