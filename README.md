@@ -986,6 +986,22 @@ to reach our desired result `969`).
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 47.88 | 20 - 98.80 |
 | Mem Usage (MB-%)| 5.4 - 29.69 | 1.9 - 100.00 | 38.8 - 32.54 | 14.1 - 99.85 |
 
+## [1332. Remove palindromic subsequences.][1332]
+
+**Big** note to self: *Pay attention to the description*. It asks for
+**subsequences**, not **substrings**.
+
+Number of removals can be found quickly since we have subsequences:
+ - Empty string => 0 ops.
+ - A full palindrome => 1 op.
+ - Else: create set, it's size will be number of ops. (i.e first op remove all a's
+   and on second op remove all b's.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 96.10 | 20 - 98.28 |
+| Mem Usage (MB-%)| 5.5 - 100.00 | 2 - 100.00 | 39.8 - 6.49 | 14 - 95.81 |
+
 ## [1337. The k-weakest rows in a matrix][1337]
 
 Sum each row and enumerate it, sort and then grab `k` first.
@@ -994,7 +1010,6 @@ Sum each row and enumerate it, sort and then grab `k` first.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 12 - 100.00 | 0 - 100.00 | 76 - 95.42 | 96 - 98.53 |
 | Mem Usage (MB-%)| 6.8 - 55.56 | 2.1 - 50.00 | 40 - 81.67 | 14.5 - 57.69 |
-
 
 ## [1342. Number of Steps to Reduce a Number to Zero][1342] 
 
@@ -1655,6 +1670,7 @@ files.
 [1309]: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
 [1323]: https://leetcode.com/problems/maximum-69-number/
+[1332]: https://leetcode.com/problems/remove-palindromic-subsequences/
 [1337]: https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
 [1342]: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 [1351]: https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix
