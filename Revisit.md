@@ -20,11 +20,5 @@ For example, `145` should ideally fit maximally into a list of 5 elements with v
 
 I'm either tired or too daft to get it.
 
-## [1389. Create Target Array in the Given Order][1389]
-
-Can't think of a better than O(N^2) solution yet. Come back to this at 
-some point.
-
 [762]: https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/
 [1103]: https://leetcode.com/problems/distribute-candies-to-people/
-[1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/

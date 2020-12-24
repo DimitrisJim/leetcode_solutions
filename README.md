@@ -1127,6 +1127,16 @@ values of second array to satisfy in order for `| arr1[i] - arr2[j] <= d |`.
 | Runtime (ms-%)| 8 - 85.71 | 0 - 100.00 | 88 - 87.00 | 76 - 89.36 |
 | Mem Usage (MB-%)| 6.1 - 64.29 | 2.1 - 100.00 | 39.2 - 99.00 | 14.1 - 98.84 |
 
+## [1389. Create target array in the given order.][1389]
+
+O(N^2) is actually best option here, no secret fancy solutions. Continuously
+insert in target position.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 91.95 | 28 - 91.36 |
+| Mem Usage (MB-%)| 5.9 - 94.44 | 2.1 - 27.78 | 40.2 - 9.52 | 14 - 88.59 |
+
 ## [1394. Find lucky integer in Array.][1394]
 
 Build a counter and return the largest pair for which `key == value`.
@@ -1680,6 +1690,7 @@ files.
 [1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
 [1380]: https://leetcode.com/problems/lucky-numbers-in-a-matrix/
 [1385]: https://leetcode.com/problems/find-the-distance-value-between-two-arrays
+[1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1394]: https://leetcode.com/problems/find-lucky-integer-in-an-array/
 [1399]: https://leetcode.com/problems/count-largest-group/
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
