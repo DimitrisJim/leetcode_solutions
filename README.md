@@ -736,6 +736,32 @@ chunks as needed. Similarly in `C` but with a significant ammount of boilerplate
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 98.41 | 20 - 98.86 |
 | Mem Usage (MB-%)| 5.8 - 100.00 | 2 - 100.00 | 38.4 - 69.84 | 14.3 - 23.63 |
 
+## [1103. Distribute candies to people.][1103]
+
+Finally realized how n increases! The main trick here is to realize that
+we can find the sum directly after `k` times filling the array. 
+
+For each `i` slot of our array, we increase each and every single time we
+reach the end by `n`. After `k` steps, in the slot `i` for our result
+array we will have:
+
+```python
+value_for_i * k + (n + 2n + 3n + 4n + ... + kn) ==
+value_for_i * k + (1 + 2 + 3 + ... + k) * i     ==
+value_for_i * k + (k * ((k + 1) / 2)) * i
+```
+
+where `value_for_i` is `1, 2, 3, 4` depending on our index.
+
+Using this (along with a small function to increase `k` until we reach close to
+`candies`) we can find the next sum of the array values that is larger than
+candies and stop. We then take the previous sum and fill in what's left.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 100.00 | 32 - 91.00 |
+| Mem Usage (MB-%)| 5.9 - 79.17 | 2 - 83.33 | 38.3 - 88.75 | 14.1 - 97.00 |
+
 ## [1108. Defanging an IP Address][1108]
 
 Instead of calling a replace function continuously, its 
@@ -1664,6 +1690,7 @@ files.
 [1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 [1051]: https://leetcode.com/problems/height-checker
 [1078]: https://leetcode.com/problems/occurrences-after-bigram
+[1103]: https://leetcode.com/problems/distribute-candies-to-people/
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1122]: https://leetcode.com/problems/relative-sort-array/
 [1200]: https://leetcode.com/problems/minimum-absolute-difference/
