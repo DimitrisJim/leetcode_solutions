@@ -1648,6 +1648,19 @@ files.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 91.67 | 28 - 93.41 |
 | Mem Usage (MB-%)| 5.7 - 83.33 | 2 - 100.00 | 40.1 - 8.33 | 14.2 - 94.48 |
 
+## [1700. Number of students unable to eat lunch.][1700]
+
+Use a (de)Queue to efficiently pop from the left and rotate. With it, the
+implementation is straight-forward.
+
+For `C`: When I (finally) build a little Queue object.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| N/A | 0 - 100.00 | 80 - 100.00 | 28 - 100.00 |
+| Mem Usage (MB-%)| N/A | 2.3 - 100.00 | 40 - 100.00 | 14.2 - 100.00 |
+
+
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [136]: https://leetcode.com/problems/single-number
 [206]: https://leetcode.com/problems/reverse-linked-list/
@@ -1775,3 +1788,4 @@ files.
 [1684]: https://leetcode.com/problems/count-the-number-of-consistent-strings/
 [1688]: https://leetcode.com/problems/count-of-matches-in-tournament/
 [1694]: https://leetcode.com/problems/reformat-phone-number
+[1700]: https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
