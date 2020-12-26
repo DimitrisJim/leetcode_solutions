@@ -262,6 +262,23 @@ of 'U's and number of 'L's matches number of 'R's, we're good.
 | Runtime (ms-%)| 4 - 95.76 | 0 - 100.00 | 80 - 90.34 | 32 - 94.10 |
 | Mem Usage (MB-%)| 6 - 57.63 | 1.9 - 100.00 | 39.7 - 61.54 | 14.2 - 67.31 |
 
+## [669. Trim a binary Search Tree.][669]
+
+Initially we need to see where our root value lies. If it isn't inside the
+acceptable range, we need to adjust it until it is. This is done by setting
+the root to right or left depending if the value of root is smaller than
+`low` or larger than `high` respectively.
+
+After we have found a new root, we continuously recurse on children and, by
+keeping a reference to their parent, trim any node not inside the range by
+re-assigning pointers/attributes. Recursion is terminated when we reach
+all leaves.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 12 - 76.47 | 0 - 100.00 | 88 - 86.70 | 40 - 97.47 |
+| Mem Usage (MB-%)| 10.6 - 64.71 | 2.9 - 87.50 | 44.2 - 83.74 | 14.1 - 46.08 |
+
 ## [682. Baseball Game][682]
 
 While loop your way through the operations, make sure you skip performing an
@@ -1651,6 +1668,7 @@ files.
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [637]: https://leetcode.com/problems/average-of-levels-in-binary-tree/
 [657]: https://leetcode.com/problems/robot-return-to-origin/
+[669]: https://leetcode.com/problems/trim-a-binary-search-tree/
 [682]: https://leetcode.com/problems/baseball-game/
 [705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
