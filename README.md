@@ -427,6 +427,15 @@ A binary search throug the semi-sorted array.
 | Runtime (ms-%)| 8 - 89.84 | 0 - 100.00 | 72 - 91.56 | 64 - 97.11 |
 | Mem usage (mb-%)| 6.6 - 30.47 | 2.1 - 75.00 | 39.1 - 77.91 | 15 - 88.20 |
 
+## [867. Transpose Matrix.][867]
+
+Straight-forward transpose.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 24 - 97.44 | 0 - 100.00 | 80 - 97.45 | 68 - 96.25 |
+| Mem usage (mb-%)| 10.1 - 20.51 | 2.2 - 50.00 | 40.7 - 79.27 | 14.9 - 44.26 |
+
 ## [872. Leaf similar trees.][872]
 
 For Python: recursion delegating to sub-generators. Helpful.
@@ -1695,6 +1704,7 @@ For `C`: When I (finally) build a little Queue object.
 [824]: https://leetcode.com/problems/goat-latin/
 [832]: https://leetcode.com/problems/flipping-an-image/
 [852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
+[867]: https://leetcode.com/problems/transpose-matrix/
 [872]: https://leetcode.com/problems/leaf-similar-trees/
 [876]: https://leetcode.com/problems/middle-of-the-linked-list/
 [883]: https://leetcode.com/problems/projection-area-of-3d-shapes/
