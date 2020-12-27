@@ -186,7 +186,6 @@ Note: Rust case not applicable, they don't allow the option yet.
 | Runtime (ms-%)| 0 - 100.00  | N/A | 84 - 95.55 | 40 - 91.04 |
 | Mem Usage (MB-%)| 7.3 - 8.70 | N/A | 42.1 - 33.27 | 16.2 - 7.06 |
 
-
 ## [561. Array Partition I][561]
 
 Sort the array in reverse order and sum every second 
@@ -196,6 +195,16 @@ element.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 52 - 80.25 | 8 - 96.15 | 120 - 93.30 | 244 - 97.34 |
 | Mem Usage (MB-%)| 8.5 - 27.16 | 2.2 - 100.00 | 44 - 79.12 | 16.5 - 81.43 |
+
+## [575. Distribute Candies][575]
+
+Use a set and compare its size with the ammount prescribed (Goes south for `C`
+though, which might mean there's a different better way at it.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 224 - 21.43 | 24 - 100.00 | 128 - 90.75 | 764 - 92.56 |
+| Mem Usage (MB-%)| 68.3 - 7.14 | 2.2 - 86.67 | 52.7 - 35.24 | 16.5 - 8.60 |
 
 ## [589. N-Ary tree pre-order traversal][589]
 
@@ -1693,6 +1702,7 @@ For `C`: When I (finally) build a little Queue object.
 [496]: https://leetcode.com/problems/next-greater-element-
 [500]: https://leetcode.com/problems/keyboard-row
 [509]: https://leetcode.com/problems/fibonacci-number/
+[575]: https://leetcode.com/problems/distribute-candies
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
 [559]: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
 [561]: https://leetcode.com/problems/array-partition-i/
