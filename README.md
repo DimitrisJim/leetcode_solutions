@@ -832,6 +832,16 @@ suspicion).
 | Runtime (ms-%)| | 8 - 100.00 | 92 - 97.14 | 92 - 87.95 |
 | Mem Usage (MB-%)| | 2.1 - 100.00 | 46.1 - 78.91 | 14.7 - 11.99 |
 
+## [1185. Day of the week.][1185] 
+
+These all use Pythons `datetime.date.weekday` algorithm for finding
+the day name.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.82 | 24 - 93.06 |
+| Mem Usage (MB-%)| 5.5 - 92.86 | 1.9 - 50.00 | 38.3 - 93.81 | 14.2 - 41.01 |
+
 ## [1200. Minimum Absolute Difference.][1200] 
 
 Sort the array and then go through it and add the minimum distances to our
@@ -1734,6 +1744,7 @@ For `C`: When I (finally) build a little Queue object.
 [1103]: https://leetcode.com/problems/distribute-candies-to-people/
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1122]: https://leetcode.com/problems/relative-sort-array/
+[1185]: https://leetcode.com/problems/day-of-the-week/
 [1200]: https://leetcode.com/problems/minimum-absolute-difference/
 [1207]: https://leetcode.com/problems/unique-number-of-occurrences/
 [1217]: https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
