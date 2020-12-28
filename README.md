@@ -937,6 +937,19 @@ The minor edge cases `n or m <= 2` can be handled separately.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.98 | 20 - 100.00|
 | Mem Usage (MB-%)| 6 - 98.61% | 2 - 100.00 | 39.1 - 5.66 |14 - 7.53|
 
+## [1260. Shift 2d grid.][1260]
+
+By taking the value of `k mod cols` we can easily find how many rows/columns
+we need to skip and bail early on certain cases.
+
+With Python and Rust, we can just utilize a deque's `rotate` method after
+flattening the array.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 60 - 100.00 | 8 - 100.00 | 104 - 84.38 | 144 - 97.29 |
+| Mem Usage (MB-%)| 14.3 - 89.19 | 2.3 - 33.33 | 46.1 - 10.42 | 14.4 - 81.01 |
+
 ## [1266. Minimum Time Visiting All Points][1266]
 
 Move as much as you can diagonally and then move horizontically or 
@@ -944,9 +957,8 @@ vertically according to the case. `O(N)`.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 4 - 98.64 | 0 - 100.00 | 76 - 89.95 | 52 - 96.32% |
+| Runtime (ms-%)| 4 - 98.64 | 0 - 100.00 | 76 - 89.95 | 52 - 96.32 |
 | Mem Usage (MB-%)| 6.4 - 13.61 | 2.1 - 100.00 | 40 - 5.60 | 14.1 - 100.00|
-
 
 ## [1281. Subtract the Product and Sum of Digits of an Integer][1281] 
 
@@ -1797,6 +1809,7 @@ For `C`: When I (finally) build a little Queue object.
 [1217]: https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
 [1237]: https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/
 [1252]: https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
+[1260]: https://leetcode.com/problems/shift-2d-grid/
 [1266]: https://leetcode.com/problems/minimum-time-visiting-all-points/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
