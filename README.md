@@ -1291,6 +1291,15 @@ of the current value of the target with its previous value.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 92.27 | 24 - 96.01 |
 | Mem Usage (MB-%)| 6.2 - 70.00 | 2 - 100.00 | 38.5 - 82.73 | 14.1 - 84.41 |
 
+## [1446. Consecutive Characters,][1446]
+
+Go through characters and count.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 96.99 | 24 - 99.90 |
+| Mem Usage (MB-%)| 5.8 - 98.72 | 2 - 98.78 | 39.3 - 64.05 | 14.3 - 12.21 |
+
 ## [1450. Number of Students Doing Homework at a Given Time][1450]
 
 Go through first vector (start times) and for every start time 
@@ -1804,6 +1813,7 @@ For `C`: When I (finally) build a little Queue object.
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1436]: https://leetcode.com/problems/destination-city/
 [1441]: https://leetcode.com/problems/build-an-array-with-stack-operations/
+[1446]: https://leetcode.com/problems/consecutive-characters
 [1450]: https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/
 [1455]: https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/
 [1460]: https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/
