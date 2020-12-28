@@ -1530,6 +1530,22 @@ Mostly an OOP problem really.
 | Runtime (ms-%)| 56 - 89.80 | 16 - 100.00 | 148 - 81.63 | 136 - 75.59 |
 | Mem Usage (MB-%)| 20.8 - 100.00 | 2.4 - 45.00 | 46 - 26.12 | 14.6 - 74.11 |
 
+## [1608. Special Array with X elements greater than or equal to X.][1608]
+
+For each candidate special number (`1..array.length() + 1`) go through
+the elements of the array and see if we have a matching number of elements
+`>=` to it.
+
+We can limit the iterations/comparisons made by breaking early when:
+
+ - matches are `>` than the special number.
+ - the remaining elements in the array aren't enough to reach the special number.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 97.50 | 36 - 74.54 |
+| Mem Usage (MB-%)| 5.8 - 88.24 | 2 - 85.71 | 38.8 - 53.33 | 14 - 97.45 |
+
 ## [1614. Maximum Nesting Depth of the Parentheses][1614]
 
 Traverse string while keeping count of depth. Runtime `O(n)` and 
@@ -1807,6 +1823,7 @@ For `C`: When I (finally) build a little Queue object.
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
 [1598]: https://leetcode.com/problems/crawler-log-folder/
 [1603]: https://leetcode.com/problems/design-parking-system/
+[1608]: https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/
 [1614]: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses
 [1619]: https://leetcode.com/problems/mean-of-array-after-removing-some-elements/
 [1636]: https://leetcode.com/problems/sort-array-by-increasing-frequency/
