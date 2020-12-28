@@ -851,6 +851,17 @@ the day name.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.82 | 24 - 93.06 |
 | Mem Usage (MB-%)| 5.5 - 92.86 | 1.9 - 50.00 | 38.3 - 93.81 | 14.2 - 41.01 |
 
+## [1189. Maximum number of balloons.][1189] 
+
+Create a counter out of the characters in the string and then continously
+reduce count of characters composing 'balloon' until we can't anymore (or
+we find that a character doesn't exist in the counter).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 96.63 | 28 - 91.08 |
+| Mem Usage (MB-%)| 5.9 - 27.12 | 2.1 - 75.00 | 40.6 - 44.17 | 14.4 - 13.09 |
+
 ## [1200. Minimum Absolute Difference.][1200] 
 
 Sort the array and then go through it and add the minimum distances to our
@@ -1780,6 +1791,7 @@ For `C`: When I (finally) build a little Queue object.
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1122]: https://leetcode.com/problems/relative-sort-array/
 [1185]: https://leetcode.com/problems/day-of-the-week/
+[1189]: https://leetcode.com/problems/maximum-number-of-balloons/
 [1200]: https://leetcode.com/problems/minimum-absolute-difference/
 [1207]: https://leetcode.com/problems/unique-number-of-occurrences/
 [1217]: https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
