@@ -1767,6 +1767,19 @@ For `C`: When I (finally) build a little Queue object.
 | Runtime (ms-%)| N/A | 0 - 100.00 | 80 - 100.00 | 28 - 100.00 |
 | Mem Usage (MB-%)| N/A | 2.3 - 100.00 | 40 - 100.00 | 14.2 - 100.00 |
 
+## [1704. Determine if string halves are alike.][1704]
+
+Build a count of vowels until the midpoint of the string. Then go through the string
+from the midpoint until the end and reduce the count. If at any point it becomes
+negative, we're done, else, return result of `count == 0`.
+
+A set is mostly used to hold the vowels, except for `C` in which we keep them in an
+array and iterate through it.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.53 | 24 - 99.54 |
+| Mem Usage (MB-%)| 6 - 41.38 | 2 - 100.00 | 38.9 - 81.04 | 14.1 - 89.35 |
 
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [136]: https://leetcode.com/problems/single-number
@@ -1906,3 +1919,4 @@ For `C`: When I (finally) build a little Queue object.
 [1688]: https://leetcode.com/problems/count-of-matches-in-tournament/
 [1694]: https://leetcode.com/problems/reformat-phone-number
 [1700]: https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
+[1704]: https://leetcode.com/problems/determine-if-string-halves-are-alike/
