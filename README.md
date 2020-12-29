@@ -1479,6 +1479,17 @@ Repeat this until we reach the end.
 We could always use some combination of group-by's, len to 
 move the explicit for loop in the backround.
 
+## [1518. Water Bottles.][1518]
+
+Continuously reduce `num_bottles` by dividing it by `num_exchange`, the quotentis added to the total number of drinks we can consume and `num_bottles` is
+reassigned to `quotent + remainder` and the same steps are taken again until
+the quotent becomes zero.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.06 | 24 - 93.26 |
+| Mem Usage (MB-%)| 5.4 - 100.00 | 1.9 - 95.24 | 38.7 - 16.67 | 13.9 - 99.70 |
+
 ## [1528. Shuffle String][1528]
 
 Create a new array and fill it in, basically. 
@@ -1487,8 +1498,8 @@ way for inplace swaps.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 4 - 88.85% | 0 - 100.00% | 76 - 97.38% | 56 - 65.00%|
-| Mem Usage (MB-%)| 6.2 - 100.00% | 2 - 100.00% | 40.3 - 10.15% |14.1 - 99.95%|
+| Runtime (ms-%)| 4 - 88.85 | 0 - 100.00 | 76 - 97.38 | 56 - 65.00|
+| Mem Usage (MB-%)| 6.2 - 100.00 | 2 - 100.00 | 40.3 - 10.15 |14.1 - 99.95|
 
 ## [1534. Count Good Triplets][1534]    
 
@@ -1861,6 +1872,7 @@ For `C`: When I (finally) build a little Queue object.
 [1491]: https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary
 [1502]: https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
+[1518]: https://leetcode.com/problems/water-bottles/
 [1528]: https://leetcode.com/problems/shuffle-string/
 [1534]: https://leetcode.com/problems/count-good-triplets 
 [1550]: https://leetcode.com/problems/three-consecutive-odds
