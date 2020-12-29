@@ -455,6 +455,16 @@ Straight-forward transpose.
 | Runtime (ms-%)| 24 - 97.44 | 0 - 100.00 | 80 - 97.45 | 68 - 96.25 |
 | Mem usage (mb-%)| 10.1 - 20.51 | 2.2 - 50.00 | 40.7 - 79.27 | 14.9 - 44.26 |
 
+## [868. Binary Gap.][868]
+
+Go through each bit of `n` (via `n >>= 1`) and count the distance between
+two ones. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 97.12 | 20 - 98.78 |
+| Mem usage (mb-%)| 5.6 - 46.88 | 2 - 100.00 | 38.8 - 50.00 | 14.2 - 57.69 |
+
 ## [872. Leaf similar trees.][872]
 
 For Python: recursion delegating to sub-generators. Helpful.
@@ -1795,6 +1805,7 @@ For `C`: When I (finally) build a little Queue object.
 [832]: https://leetcode.com/problems/flipping-an-image/
 [852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
 [867]: https://leetcode.com/problems/transpose-matrix/
+[868]: https://leetcode.com/problems/binary-gap/
 [872]: https://leetcode.com/problems/leaf-similar-trees/
 [876]: https://leetcode.com/problems/middle-of-the-linked-list/
 [883]: https://leetcode.com/problems/projection-area-of-3d-shapes/
