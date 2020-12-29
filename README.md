@@ -196,6 +196,16 @@ element.
 | Runtime (ms-%)| 52 - 80.25 | 8 - 96.15 | 120 - 93.30 | 244 - 97.34 |
 | Mem Usage (MB-%)| 8.5 - 27.16 | 2.2 - 100.00 | 44 - 79.12 | 16.5 - 81.43 |
 
+## [566. Reshape the matrix.][566]
+
+Check that new dimensions can hold elements and then go through each
+element in `nums` and place it in new position based on `r` and `c`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 36 - 100.00 | 0 - 100.00 | 96 - 96.50 | 84 - 99.31 |
+| Mem Usage (MB-%)| 11.4 - 100.00 | 2.3 - 100.00 | 44.6 - 51.05 | 15.2 - 59.61 |
+
 ## [575. Distribute Candies][575]
 
 Use a set and compare its size with the ammount prescribed (Goes south for `C`
@@ -1750,6 +1760,7 @@ For `C`: When I (finally) build a little Queue object.
 [496]: https://leetcode.com/problems/next-greater-element-
 [500]: https://leetcode.com/problems/keyboard-row
 [509]: https://leetcode.com/problems/fibonacci-number/
+[566]: https://leetcode.com/problems/reshape-the-matrix/
 [575]: https://leetcode.com/problems/distribute-candies
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
 [559]: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
