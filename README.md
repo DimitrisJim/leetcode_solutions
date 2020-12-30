@@ -660,6 +660,23 @@ possible, I don't think it's of much worth.
 | Runtime (ms-%)| 100 - 96.55 | 8 - 98.46 | 116 - 84.11 | 184 - 99.84 |
 | Mem Usage (MB-%)| 20.3 - 33.10 | 2.2 - 78.46 | 45.4 - 39.09 | 16.1 - 34.75 |
 
+## [985. Sum of even numbers after queries.][985]
+
+Main trick here is to notice that, after finding the initial total sum of all even
+values in the array,  we have all information needed during each iteration to
+update the sum and keep it up to date.
+
+Whatever the case, if after updating a specific index we find that the new value is
+even, we need to add it to the sum of evens. Then, if our value before updating was
+even, we need to now remove it from the sum. It's like a switch of those two values.
+In cases where the old/new value is odd, we can just ignore it. (since it didn't
+contribute in any way to our sum). 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 148 - 100.00 | 12 - 100.00 | 112 - 99.16 | 484 - 98.95 |
+| Mem Usage (MB-%)| 21.6 - 56.52 | 2.7 - 100.00 | 47.1 - 24.37 | 19 - 97.14 |
+
 ## [999. Available Captures for Rook.][999]
 
 Find the position of the rook and then just check it's row and column. (But from
@@ -1834,6 +1851,7 @@ array and iterate through it.
 [961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 [965]: https://leetcode.com/problems/univalued-binary-tree/
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
+[985]: https://leetcode.com/problems/sum-of-even-numbers-after-queries
 [999]: https://leetcode.com/problems/available-captures-for-rook
 [1002]: https://leetcode.com/problems/find-common-characters/
 [1009]: https://leetcode.com/problems/complement-of-base-10-integer/ 
