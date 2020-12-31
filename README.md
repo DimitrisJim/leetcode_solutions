@@ -1004,8 +1004,19 @@ Continuously reduce `n` by `// 10` and add/multiply its modulo
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 0 - 100.00%  | 0 - 100.00% | 72 - 86.84% | 20 - 98.44%|
-| Mem Usage (MB-%)| 5.7 - 14.29% | 2 - 100.00% | 38.5 - 20.85% | 14.1 - 99.96%|
+| Runtime (ms-%)| 0 - 100.00  | 0 - 100.00 | 72 - 86.84 | 20 - 98.44 |
+| Mem Usage (MB-%)| 5.7 - 14.29 | 2 - 100.00 | 38.5 - 20.85 | 14.1 - 99.96 |
+
+## [1287. Element appearing more than 25% in sorted array.][1287]
+
+Calculate the threshold 25% corresponds to and go through the array counting lengths
+of equal items. If at any point during our counting we exceed the threshold, we return
+immediately.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 100.00 | 0 - 100.00 | 76 - 92.64 | 68 - 99.84 |
+| Mem Usage (MB-%)| 6.4 - 65.31 | 2.1 - 100.00 | 39.5 - 82.68 | 15.42 - 35.05 |
 
 ## [1290. Convert Binary Number in a Linked List to Integer][1290]
 
@@ -1886,6 +1897,7 @@ array and iterate through it.
 [1260]: https://leetcode.com/problems/shift-2d-grid/
 [1266]: https://leetcode.com/problems/minimum-time-visiting-all-points/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
+[1287]: https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
 [1295]: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
 [1299]: https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
