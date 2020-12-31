@@ -308,6 +308,16 @@ operation if it is followed by a `"C"`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 92.51 | 32 - 96.73|
 | Mem Usage (MB-%)| 6.2 - 55.17 | 2.1 - 100.00 | 38.9 - 90.64 | 14.4 - 53.20 |
 
+## [693. Binary Number with alternating bits.][693]
+
+Check adjacent bits until we reach end. If at any point a pair of adjacent bits is the
+same, return False.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 95.92 | 20 - 99.27 |
+| Mem Usage (MB-%)| 5.5 - 55.67 | 1.9 - 66.67 | 38.6 - 53.06 | 14.4 - 5.57 |
+
 ## [700. Search in a BST][700]
 
 Straight-forward. Perform binary search. `C` code also contains 
@@ -1843,6 +1853,7 @@ array and iterate through it.
 [657]: https://leetcode.com/problems/robot-return-to-origin/
 [669]: https://leetcode.com/problems/trim-a-binary-search-tree/
 [682]: https://leetcode.com/problems/baseball-game/
+[693]: https://leetcode.com/problems/binary-number-with-alternating-bits/
 [705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
