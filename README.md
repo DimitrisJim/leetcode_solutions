@@ -1468,7 +1468,7 @@ Sort and then just sum and divide.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.32 | 24 - 94.65 |
 | Mem Usage (MB-%)| 5.8 - 70.69 | 1.9 - 75.00 | 38.3 - 83.59 | 14.1 - 80.75  |
 
-## [1502. Can make arithmetic progression from sequence.][1486]
+## [1502. Can make arithmetic progression from sequence.][1502]
 
 Sort the array and find the step by subtracting first two 
 elements. Go through the array and check that step is 
@@ -1480,6 +1480,16 @@ Worse-case `O(NlogN)` due to sorting.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 4 - 89.04 | 0 - 100.00 | 76 - 88.50 | 32 - 95.03 |
 | Mem Usage (MB-%)| 6.1 - 76.71 | 1.9 - 100.00 | 38.7 - 86.58 | 14.1 - 89.94 |
+
+## [1507. Reformat date.][1507]
+
+Split, and re-build. The main issue is taking care the starting `'0'` character needs
+to be added on days `< 9` and months `< 9`. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 91.22 | 24 - 94.80 |
+| Mem Usage (MB-%)| 5.5 - 88.89 | 2 - 50.00 | 38.5 - 72.97 | 14.2 - 61.80 |
 
 ## [1512. Number of Good Pairs][1512]
 
@@ -1913,6 +1923,7 @@ array and iterate through it.
 [1486]: https://leetcode.com/problems/xor-operation-in-an-array/
 [1491]: https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary
 [1502]: https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
+[1507]: https://leetcode.com/problems/reformat-date/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
 [1518]: https://leetcode.com/problems/water-bottles/
 [1528]: https://leetcode.com/problems/shuffle-string/
