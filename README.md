@@ -907,6 +907,19 @@ suspicion).
 | Runtime (ms-%)| | 8 - 100.00 | 92 - 97.14 | 92 - 87.95 |
 | Mem Usage (MB-%)| | 2.1 - 100.00 | 46.1 - 78.91 | 14.7 - 11.99 |
 
+## [1170. Compare strings by frequency of the smallest character.][1170] 
+
+The basic trick we can use is a cache holding, for every string in `queries` seen
+so far, the ammount of strings that have a value for `f` larger than the query.
+
+When we find another query with the same frequency we can then check the cache without
+needing to go through the `words` array to count the words again.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 12 - 92.31 | 0 - 100.00 | 96 - 91.96 | 64 - 92.86 |
+| Mem Usage (MB-%)| 7.7 - 46.15 | 2.5 - 33.33 | 46.2 - 25.00 | 14.9 - 10.41 |
+
 ## [1185. Day of the week.][1185] 
 
 These all use Pythons `datetime.date.weekday` algorithm for finding
@@ -1918,6 +1931,7 @@ array and iterate through it.
 [1103]: https://leetcode.com/problems/distribute-candies-to-people/
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1122]: https://leetcode.com/problems/relative-sort-array/
+[1170]: https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/
 [1185]: https://leetcode.com/problems/day-of-the-week/
 [1189]: https://leetcode.com/problems/maximum-number-of-balloons/
 [1200]: https://leetcode.com/problems/minimum-absolute-difference/
