@@ -26,11 +26,12 @@ I can't really understand how exactly some of these cases are handled. For examp
 
 These have as a result the values `12, 0, 6` respectively.
 
-<p align="middle" float="left">
-	<img src="misc/images/1_0_1__0_1.png" width="360" height="240"/>
-	<img src="misc/images/plot_0_1.png" width="360" height="240"/>
-	<img src="misc/images/plot_all_zeroes.png" width="360" height="240"/>
+<p align="left" float="left">
+	<img src="misc/images/1_0_1__0_1.png" width="350" height="230"/>
+	<img src="misc/images/plot_0_1.png" width="250" height="200"/>
+	<img src="misc/images/plot_all_zeroes.png" width="250" height="200"/>
 </p>
+
 
 I cannot, yet, understand why these values are what they are, I'm not entirely sure how 'surface area' is defined. 
 

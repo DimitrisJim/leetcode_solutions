@@ -27,6 +27,25 @@ recursive, Python uses iterative.
 | Runtime (ms-%)| 4 - 92.16 | 0 -100.00 | 80 - 94.64 | 36 - 89.43 |
 | Mem Usage (MB-%)| 8.1 - 50.63 | 2.5 - 94.87 | 41 - 96.55 | 15.2 - 91.21 |
 
+## [108. Convert Sorted Array to BST.][108]
+
+Need to balance resulting tree (i.e max difference of height between two children of 
+a given node to equal 1).
+
+Since we have a sorted array, we know we can separate the array in a triplet consisting
+of `(lower_than_mid, mid, higher_than_mid)`. Using this we can then use:
+
+ - `mid`: as our new node.
+ - `lower_than_mid`: as our left branch.
+ - `higher_than_mid`: as our right branch.
+
+Recursively solving this is straight-forward.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 94.69 | 0 - 100.00 | 84 - 95.62 | 56 - 99.93 |
+| Mem Usage (MB-%)| 18 - 59.59 | 2.9 - 71.43 | 41.7 - 93.78 | 16.6 - 22.27 |
+
 ## [136. Single Number][136]
 
 Pretty well known xor trick. Based on the property that xor of two equal
@@ -1830,6 +1849,7 @@ array and iterate through it.
 | Mem Usage (MB-%)| 6 - 41.38 | 2 - 100.00 | 38.9 - 81.04 | 14.1 - 89.35 |
 
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+[108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 [136]: https://leetcode.com/problems/single-number
 [206]: https://leetcode.com/problems/reverse-linked-list/
 [226]: https://leetcode.com/problems/invert-binary-tree/
