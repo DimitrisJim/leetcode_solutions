@@ -1708,6 +1708,16 @@ Sort, slice and return mean.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 97.64 | 48 - 97.10 |
 | Mem Usage (MB-%)| 6.1 - 91.67 | 2.1 - 85.19 | 40.3 - 29.06 | 14.1 - 95.31 |
 
+## [1629. Slowest Key.][1629]
+
+Find and keep all indices that have max `releaseTimes[i] - releaseTimes[i-1]` in a list.
+Then go through that array and find the max character to return.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 92.16 | 0 - 100.00 | 76 - 92.58 | 48 - 96.71 |
+| Mem Usage (MB-%)| 6.2 - 96.08 | 2.1 - 72.22 | 39.9 - 54.42 | 14.6 - 22.01 |
+
 ## [1636. Sort Array by Increasing Frequency.][1636]
 
 Need to build counts and then perform a two-way sort. First we sort by 
@@ -1994,6 +2004,7 @@ array and iterate through it.
 [1608]: https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/
 [1614]: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses
 [1619]: https://leetcode.com/problems/mean-of-array-after-removing-some-elements/
+[1629]: https://leetcode.com/problems/slowest-key/
 [1636]: https://leetcode.com/problems/sort-array-by-increasing-frequency/
 [1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
 [1652]: https://leetcode.com/problems/defuse-the-bomb/
