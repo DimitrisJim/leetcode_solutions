@@ -1708,6 +1708,16 @@ Sort, slice and return mean.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 97.64 | 48 - 97.10 |
 | Mem Usage (MB-%)| 6.1 - 91.67 | 2.1 - 85.19 | 40.3 - 29.06 | 14.1 - 95.31 |
 
+## [1624. Largest substring between two equal characters.][1624]
+
+Create a map holding min and max value for a given character in `s`. Then, go
+through the map values and find the max distance.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 91.62 | 24 - 95.74 |
+| Mem Usage (MB-%)| 6 - 10.36 | 2 - 100.00 | 39.5 - 22.16 | 14.3 - 10.05 |
+
 ## [1629. Slowest Key.][1629]
 
 Find and keep all indices that have max `releaseTimes[i] - releaseTimes[i-1]` in a list.
@@ -2004,6 +2014,7 @@ array and iterate through it.
 [1608]: https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/
 [1614]: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses
 [1619]: https://leetcode.com/problems/mean-of-array-after-removing-some-elements/
+[1624]: https://leetcode.com/problems/largest-substring-between-two-equal-characters
 [1629]: https://leetcode.com/problems/slowest-key/
 [1636]: https://leetcode.com/problems/sort-array-by-increasing-frequency/
 [1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
