@@ -10,12 +10,12 @@ to `100%` execution/memory consistently.
 - This leads me to believe that these metrics are hoarser 
 than would be expected. Take them with a grain of salt (Especially
 the metrics on memory).
-- I usually try to write the big-Oh for worse cases, but 
-I'm not very consistent I believe.
 - I'm using Firefox, not sure if this has any impact on the 
   timings for Javascript.
 - Search for `TODO: Improve` for places where I think I've 
 messed up slightly.
+- Problems that are new have skewed timings because of the initial low
+  number of submissions.
 
 ## [104. Maximum depth of Binary Tree][104]
 
@@ -433,6 +433,28 @@ splitting domain up.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 16 - 71.43 | 4 - 100.00 | 92 - 93.28 | 44 - 95.94|
 | Mem usage (mb-%)| 9.6 - 28.57 | 2.2 - 25.00 | 43.4 - 70.71 | 14.4 - 26.05 |
+
+## [812. Largest Triangle Area.][812]
+
+Initially I tried to see if we can skip taking all combinations by trying to find
+two points that are maximally appart and using those as the two initial points.
+Unfortunately, this isn't correct.
+
+After this I tried using Heron's formula to find the area based on the length of the
+sides of the trianges (found using Euclidean distance). While working, this wasn't
+very efficient.
+
+Thankfully, after some digging around was able to find the Shoelace formula which made
+my life easier because I only uses the three points of the triangle to calculate the
+area.
+
+Still, algorithm is dominated by the fact that we have to go through all combinations
+(and I can't think of a way to reduce the iteration space).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 87.50 | 0 - 100.00 | 80 - 93.33 | 96 - 94.12 |
+| Mem usage (mb-%)| 5.8 - 100.00 | 2 - 100.00 | 39 - 60.00 | 14.3 - 48.90 |
 
 ## [821. Shortest Distance to a Character.][821]
 
@@ -1881,6 +1903,16 @@ array and iterate through it.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.53 | 24 - 99.54 |
 | Mem Usage (MB-%)| 6 - 41.38 | 2 - 100.00 | 38.9 - 81.04 | 14.1 - 89.35 |
 
+## [1710. Maximum Units on a Truck.][1710]
+
+Greedy solution, we continuously select boxes with maximum units until no more boxes
+can fit inside the truck.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 28 - 100.00 | 4 - 100.00 | 96 - 100.00 | 144 - 100.00 |
+| Mem Usage (MB-%)| 7.7 - 100.00 | 2.2 - 100.00 | 42.1 - 100.00 | 14.9 - 100.00 |
+
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 [136]: https://leetcode.com/problems/single-number
@@ -1915,6 +1947,7 @@ array and iterate through it.
 [804]: https://leetcode.com/problems/unique-morse-code-words/
 [806]: https://leetcode.com/problems/number-of-lines-to-write-string/
 [811]: https://leetcode.com/problems/subdomain-visit-count/
+[812]: https://leetcode.com/problems/largest-triangle-area/
 [821]: https://leetcode.com/problems/shortest-distance-to-a-character/
 [824]: https://leetcode.com/problems/goat-latin/
 [832]: https://leetcode.com/problems/flipping-an-image/
@@ -2028,3 +2061,4 @@ array and iterate through it.
 [1694]: https://leetcode.com/problems/reformat-phone-number
 [1700]: https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
 [1704]: https://leetcode.com/problems/determine-if-string-halves-are-alike/
+[1710]: https://leetcode.com/problems/maximum-units-on-a-truck/
