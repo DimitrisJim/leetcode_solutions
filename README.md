@@ -567,6 +567,27 @@ Then we can take their union.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.65 | 24 - 94.61|
 | Mem usage (mb-%)| 7.3 - 16.67 | 2.1 - 66.67 | 39.1 - 33.97 | 14.1 - 88.96 |
 
+## [888. Fair Candy Swap.][888]
+
+Brute force approach is going through each pair and checking. 
+
+A sligtly better option is to filter values based on if they bring us in the right
+range (which can be found by adding the sums and dividing by two).
+
+The best approach in the end is to use a set for one of the arrays. Then, knowing what
+the difference between the two sums is in the beginning, we can go through the elements
+of one array and find what the value should be in order to fill the difference between
+the initial sums. If the value found is inside the set created for the other array, we've
+found our element (which is guaranteed to exist).
+
+**NOTE: C timings indicate either that uthash is slow or that a better option exists
+that I haven't seen yet.**
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 88 - 48.16 | 8 - 100.00 | 100 - 97.93 | 332 - 99.56 |
+| Mem usage (mb-%)| 26.6 - 11.11 | 2.5 - 100.00 | 48.1 - 28.28 | 16.6 - 41.79 |
+
 ## [897. Increasing Order Search Tree][897]
 
 Inorder traversal to gather nodes and then re-attaching 
@@ -1958,6 +1979,7 @@ can fit inside the truck.
 [876]: https://leetcode.com/problems/middle-of-the-linked-list/
 [883]: https://leetcode.com/problems/projection-area-of-3d-shapes/
 [884]: https://leetcode.com/problems/uncommon-words-from-two-sentences/
+[888]: https://leetcode.com/problems/fair-candy-swap/
 [897]: https://leetcode.com/problems/increasing-order-search-tree/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [908]: https://leetcode.com/problems/smallest-range-i/
