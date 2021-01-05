@@ -1721,6 +1721,19 @@ Not many options here, go through array and count odds. Bail when you find them.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.43 | 40 - 89.59 |
 | Mem Usage (MB-%)| 5.9 - 60.71 | 1.9 - 100.00 | 38.7 - 49.52 | 14.3 - 65.73 |
 
+## [1556. Thousand Separator.][1556]
+
+Make an array to hold result and a string out of the number (or, in `C`'s case,
+simply a string). Then go through it backwards and insert separator
+`'.'` as indicated by a counter that keeps track of numbers added.
+
+`C` version is probably the more interesting.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 92.14 | 20 - 99.24 |
+| Mem Usage (MB-%)| 5.5 - 87.50 | 2 - 88.89 | 38.5 - 71.43 | 14.1 - 86.04 |
+
 ## [1572. Matrix Diagonal Sum][1572]
 
 Go through the array and concurrently sum both diagonals. Remove 
@@ -2124,6 +2137,7 @@ can fit inside the truck.
 [1528]: https://leetcode.com/problems/shuffle-string/
 [1534]: https://leetcode.com/problems/count-good-triplets 
 [1550]: https://leetcode.com/problems/three-consecutive-odds
+[1556]: https://leetcode.com/problems/thousand-separator/
 [1572]: https://leetcode.com/problems/matrix-diagonal-sum/
 [1582]: https://leetcode.com/problems/special-positions-in-a-binary-matrix
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
