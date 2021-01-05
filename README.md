@@ -89,6 +89,17 @@ available.
 | Runtime (ms-%)| 4 - 95.10 | N/A | 80 - 94.74 | 20 - 100.00 |
 | Mem Usage (MB-%)| 6.3 - 99.87 | N/A | 40.2 - 84.74 | 14.7 - 19.26 |
 
+## [258. Add digits,][258]
+
+This is one of those cases where you need to examine what the results are in order
+to realize the solution. After running mucho input cases, notice that the result
+is `num % 9` with special cases if `num == 0` and `num % 9 == 0`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 99.49 | 20 - 99.19 |
+| Mem Usage (MB-%)| 5.7 - 39.50 | 2 - 100.00 | 39.9 - 84.01 | 14.2 - 36.59 |
+
 ## [283. Move zeroes.][283]
 
 In order to minimize the comparisons made, our `run` variable always begins scanning
@@ -1987,6 +1998,7 @@ can fit inside the truck.
 [206]: https://leetcode.com/problems/reverse-linked-list/
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
+[258]: https://leetcode.com/problems/add-digits
 [283]: https://leetcode.com/problems/move-zeroes
 [344]: https://leetcode.com/problems/reverse-string/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
