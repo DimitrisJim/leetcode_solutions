@@ -732,6 +732,20 @@ this way we can bail fast.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 93.95 | 28 - 83.02%|
 | Mem Usage (MB-%)| 6 - 45.00 | 2 - 100.00 | 39 - 44.59 | 14 - 95.67|
 
+## [976. Largest perimeter triangle.][976]
+
+Becomes easy when you find out about the 
+[triangle inequalities][https://en.wikipedia.org/wiki/Triangle_inequality] for when
+a triangle with non zero (only `>` in the inequalities) can be formed.
+
+Then, we sort our input array by size and start with maximum sides available. When the
+inequality holds, we return the perimeter.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 28 - 100.00 | 4 - 100.00 | 96 - 98.61 | 172 - 98.82 |
+| Mem Usage (MB-%)| 8 - 13.64 | 2.1 - 75.00 | 42.3 - 16.67 | 15.6 - 21.68 |
+
 ## [977. Squares of a Sorted Array][977]
 
 Though a more convoluted way were we don't sort is 
@@ -2001,6 +2015,7 @@ can fit inside the truck.
 [944]: https://leetcode.com/problems/delete-columns-to-make-sorted
 [961]: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 [965]: https://leetcode.com/problems/univalued-binary-tree/
+[976]: https://leetcode.com/problems/largest-perimeter-triangle/
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
 [985]: https://leetcode.com/problems/sum-of-even-numbers-after-queries
 [999]: https://leetcode.com/problems/available-captures-for-rook
