@@ -89,6 +89,19 @@ available.
 | Runtime (ms-%)| 4 - 95.10 | N/A | 80 - 94.74 | 20 - 100.00 |
 | Mem Usage (MB-%)| 6.3 - 99.87 | N/A | 40.2 - 84.74 | 14.7 - 19.26 |
 
+## [283. Move zeroes.][283]
+
+In order to minimize the comparisons made, our `run` variable always begins scanning
+from the position in which a non-zero value was last found (which is zero in the
+beginning). This way we only see each element in the nums array twice (once for the
+`on_zero` variable tracking zeroes and once for the `run` variable tracking non-zero
+values).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 100.00 | 0 - 100.00 | 76 - 98.15 | 32 - 99.97 |
+| Mem Usage (MB-%)| 7.6 - 89.22 | 2.1 - 97.87 | 40.3 - 51.81 | 15.2 - 68.67 |
+
 ## [344. Reverse String][344]
 
 Typical swapping.
@@ -735,7 +748,7 @@ this way we can bail fast.
 ## [976. Largest perimeter triangle.][976]
 
 Becomes easy when you find out about the 
-[triangle inequalities][https://en.wikipedia.org/wiki/Triangle_inequality] for when
+[triangle inequalities](https://en.wikipedia.org/wiki/Triangle_inequality) for when
 a triangle with non zero (only `>` in the inequalities) can be formed.
 
 Then, we sort our input array by size and start with maximum sides available. When the
@@ -1964,6 +1977,7 @@ can fit inside the truck.
 [206]: https://leetcode.com/problems/reverse-linked-list/
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
+[283]: https://leetcode.com/problems/move-zeroes
 [344]: https://leetcode.com/problems/reverse-string/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
 [412]: https://leetcode.com/problems/fizz-buzz/
