@@ -195,6 +195,16 @@ Calculate it iteratively.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.37 | 20 - 98.15 |
 | Mem Usage (MB-%)| 5.4 - 86.96 | 2 - 48.78 | 38.3 - 56.54 | 14.1 - 34.89 |
 
+## [521. Longest Uncommon Subsequence.][521]
+
+If the strings are equal, all subsequences are the same, return -1.
+Else, return the largest among the strings.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 95.35 | 24 - 93.63 |
+| Mem Usage (MB-%)| 5.4 - 100.00 | 2 - 100.00 | 38.4 - 61.63 | 14 - 98.24 |
+
 ## [557. Reverse Words in a String III][561]
 
 C mutates the string in-place because it's allowable there. 
@@ -1986,6 +1996,7 @@ can fit inside the truck.
 [496]: https://leetcode.com/problems/next-greater-element-
 [500]: https://leetcode.com/problems/keyboard-row
 [509]: https://leetcode.com/problems/fibonacci-number/
+[521]: https://leetcode.com/problems/longest-uncommon-subsequence-i/
 [566]: https://leetcode.com/problems/reshape-the-matrix/
 [575]: https://leetcode.com/problems/distribute-candies
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
