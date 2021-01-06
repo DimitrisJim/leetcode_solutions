@@ -361,6 +361,19 @@ operation if it is followed by a `"C"`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 92.51 | 32 - 96.73|
 | Mem Usage (MB-%)| 6.2 - 55.17 | 2.1 - 100.00 | 38.9 - 90.64 | 14.4 - 53.20 |
 
+## [690. Employee Importance][690]
+
+Transform employees into a dictionary keyed by the id. Then we can build a list of
+all subordinates by continuously keying the dictionary and build up the overall
+importance.
+
+*NOTE: Rust and C versions not available.* 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| N/A | N/A | 80 - 97.80 | 144 - 98.93 |
+| Mem Usage (MB-%)| N/A | N/A | 44.2 - 17.56 | 15.5 - 53.57 |
+
 ## [693. Binary Number with alternating bits.][693]
 
 Check adjacent bits until we reach end. If at any point a pair of adjacent bits is the
@@ -2033,6 +2046,7 @@ can fit inside the truck.
 [657]: https://leetcode.com/problems/robot-return-to-origin/
 [669]: https://leetcode.com/problems/trim-a-binary-search-tree/
 [682]: https://leetcode.com/problems/baseball-game/
+[690]: https://leetcode.com/problems/employee-importance
 [693]: https://leetcode.com/problems/binary-number-with-alternating-bits/
 [705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
