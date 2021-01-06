@@ -649,6 +649,19 @@ that I haven't seen yet.**
 | Runtime (ms-%)| 88 - 48.16 | 8 - 100.00 | 100 - 97.93 | 332 - 99.56 |
 | Mem usage (mb-%)| 26.6 - 11.11 | 2.5 - 100.00 | 48.1 - 28.28 | 16.6 - 41.79 |
 
+## [896. Monotonic Array.][896]
+
+Note that equal elements can't be ignored.
+
+Find first non-equal pair in array, this initializes a flag that indicates the
+direction the rest of the elements should be in in order for the array to be
+monotonic. As soon as a pair isn't in the right direction, return `false`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 56 - 94.29 | 4 - 100.00 | 88 - 93.66 | 448 - 91.01 |
+| Mem usage (mb-%)| 9.4 - 100.00 | 2.4 - 92.31 | 45 - 61.09 | 20.5 - 53.08 |
+
 ## [897. Increasing Order Search Tree][897]
 
 Inorder traversal to gather nodes and then re-attaching 
@@ -2083,6 +2096,7 @@ can fit inside the truck.
 [883]: https://leetcode.com/problems/projection-area-of-3d-shapes/
 [884]: https://leetcode.com/problems/uncommon-words-from-two-sentences/
 [888]: https://leetcode.com/problems/fair-candy-swap/
+[896]: https://leetcode.com/problems/monotonic-array
 [897]: https://leetcode.com/problems/increasing-order-search-tree/
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [908]: https://leetcode.com/problems/smallest-range-i/
