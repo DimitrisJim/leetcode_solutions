@@ -46,6 +46,20 @@ Recursively solving this is straight-forward.
 | Runtime (ms-%)| 8 - 94.69 | 0 - 100.00 | 84 - 95.62 | 56 - 99.93 |
 | Mem Usage (MB-%)| 18 - 59.59 | 2.9 - 71.43 | 41.7 - 93.78 | 16.6 - 22.27 |
 
+## [122. Best time to buy and sell stock II.][122]
+
+Buy on local minimums and sell on local maximums. This can be done by going through
+the prices in pairs and buying only if the price of the previous day was smaller
+than that of the next day and only selling if the price of the previous day is larger
+than that for the next.
+
+A toggle for the action is used to differentiate the cases (buying/selling).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 97.15 | 0 - 100.00 | 76 - 92.04 | 52 - 96.93 |
+| Mem Usage (MB-%)| 6.9 - 46.64 | 2.1 - 76.47 | 39.2 - 72.89 | 15.1 - 54.54 |
+
 ## [136. Single Number][136]
 
 Pretty well known xor trick. Based on the property that xor of two equal
@@ -2020,6 +2034,7 @@ can fit inside the truck.
 
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+[122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [136]: https://leetcode.com/problems/single-number
 [206]: https://leetcode.com/problems/reverse-linked-list/
 [226]: https://leetcode.com/problems/invert-binary-tree/
