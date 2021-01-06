@@ -41,6 +41,13 @@ Finally, for `3. [[1, 1, 1, 1]]` I would count `18`.
 
 Whatever the case, needs revisiting at some point when I've forgotten about it a bit and I'm able to see it again with fresh eyes.
 
+## [1331. Rank Transform of an Array.][1331]
+
+Solved but I'm currently at `O(nlogn)` due to sorting, which is bad according to
+timings. Seems like an `O(N)` must be hiding here somewhere.
+
+
 [169]: https://leetcode.com/problems/majority-element/
 [762]: https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/
 [892]: https://leetcode.com/problems/surface-area-of-3d-shapes/
+[1331]: https://leetcode.com/problems/rank-transform-of-an-array/
