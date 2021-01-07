@@ -158,6 +158,15 @@ Build sets and get intersection (or write it for `C` and `JS` cases.)
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 98.18 | 32 - 99.40 |
 | Mem Usage (MB-%)| 7.7 - 12.87 | 2.1 - 77.78 | 40.5 - 28.27 | 14.4 - 22.10 |
 
+## [389. Find the difference.][389]
+
+Xor trick, different problem statement.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 98.01 | 28 - 92.43 |
+| Mem Usage (MB-%)| 5.7 - 96.92 | 2 - 100.00 | 39 - 96.03 | 14.1 - 94.66 |
+
 ## [412. Fizz-buzz.][412]
 
 Straight-forward translation of statement, only trick is not performing `i % 3` and
@@ -2069,6 +2078,7 @@ can fit inside the truck.
 [283]: https://leetcode.com/problems/move-zeroes
 [344]: https://leetcode.com/problems/reverse-string/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
+[389]: https://leetcode.com/problems/find-the-difference/
 [412]: https://leetcode.com/problems/fizz-buzz/
 [461]: https://leetcode.com/problems/hamming-distance/
 [476]: https://leetcode.com/problems/number-complement/
