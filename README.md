@@ -468,6 +468,17 @@ not sure.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 84 - 65.67 | 44 - 81.10 |
 | Mem Usage (MB-%)| 6.2 - 14.75 | 2.2 - 100.00 | 38.8 - 11.69 | 14.1 - 100.00 |
 
+## [748. Shortest completing word][748]
+
+To be frank, don't think things are good here. Might need to place this problem in
+the revisited section. I won't much bother with `C` with the current solution that
+uses a host of maps/sets.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 4 - 66.67 | 96 - 75.76 | 60 - 97.43 |
+| Mem Usage (MB-%)| | 2.1 - 66.67 | 43.7 - 51.51 | 14.6 - 24.70 |
+
 ## [766. Toeplitz Matrix][766]
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
@@ -2102,6 +2113,7 @@ can fit inside the truck.
 [705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
+[748]: https://leetcode.com/problems/shortest-completing-word/
 [766]: https://leetcode.com/problems/toeplitz-matrix/
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
 [804]: https://leetcode.com/problems/unique-morse-code-words/
