@@ -103,6 +103,19 @@ available.
 | Runtime (ms-%)| 4 - 95.10 | N/A | 80 - 94.74 | 20 - 100.00 |
 | Mem Usage (MB-%)| 6.3 - 99.87 | N/A | 40.2 - 84.74 | 14.7 - 19.26 |
 
+## [242. Valid anagram.][242]
+
+All except for C use a counter. No idea why `Rust` can't go lower than `4` though
+I believe I could get it there with the same hack as in `C`.
+
+Note: `C` case just seems hacky as hell, read comments (which do a pretty poor job
+of explaining). 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 4 - 61.40 | 84 - 95.92 | 28 - 99.36 |
+| Mem Usage (MB-%)| 5.8 - 85.24 | 2.1 - 100.00 | 40.9 - 64.49 | 14.5 - 69.02 |
+
 ## [258. Add digits,][258]
 
 This is one of those cases where you need to examine what the results are in order
