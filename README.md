@@ -494,8 +494,19 @@ character is a jewel.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 73.22 | 24 - 93.75%|
-| Mem Usage (MB-%)| 5.8 - 25.51 | 2.1 - 100.00 | 40.4 - 11.66 |14.2 - 99.99%|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 73.22 | 24 - 93.75 |
+| Mem Usage (MB-%)| 5.8 - 25.51 | 2.1 - 100.00 | 40.4 - 11.66 |14.2 - 99.99 |
+
+## [788. Rotated Digits][788]
+
+I'll probably need to write this up in a separate `.md` file. Until then,
+see the source code for the Python case where I prototyped and added
+most comments.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 94.16 | 20 - 99.86 |
+| Mem Usage (MB-%)| 5.7 - 45.71 | 2 - 66.67 | 38 - 100.00 | 14.1 - 90.83 |
 
 ## [804. Unique Morse Code Words.][804]
 
@@ -2116,6 +2127,7 @@ can fit inside the truck.
 [748]: https://leetcode.com/problems/shortest-completing-word/
 [766]: https://leetcode.com/problems/toeplitz-matrix/
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
+[788]: https://leetcode.com/problems/rotated-digits
 [804]: https://leetcode.com/problems/unique-morse-code-words/
 [806]: https://leetcode.com/problems/number-of-lines-to-write-string/
 [811]: https://leetcode.com/problems/subdomain-visit-count/
