@@ -420,6 +420,18 @@ same, return False.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 95.92 | 20 - 99.27 |
 | Mem Usage (MB-%)| 5.5 - 55.67 | 1.9 - 66.67 | 38.6 - 53.06 | 14.4 - 5.57 |
 
+## [696. Count binary substrings.][696]
+
+Go through each character and build count of adjacent groups by using a couple
+of flags. Count of adjacent groups can then be found easily.
+
+Note: Rust :(
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 93.75 | 4 - 60.00 | 84 - 93.42 | 112 - 96.53 |
+| Mem Usage (MB-%)| 6.7 - 100.00 | 2 - 100.00 | 41.8 - 92.11 | 14.5 - 88.91 |
+
 ## [700. Search in a BST][700]
 
 Straight-forward. Perform binary search. `C` code also contains 
@@ -2121,6 +2133,7 @@ can fit inside the truck.
 [682]: https://leetcode.com/problems/baseball-game/
 [690]: https://leetcode.com/problems/employee-importance
 [693]: https://leetcode.com/problems/binary-number-with-alternating-bits/
+[696]: https://leetcode.com/problems/count-binary-substrings/
 [705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
