@@ -1335,7 +1335,6 @@ the offset to get to the correct output character.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 88.44 | 20 - 99.29 |
 | Mem Usage (MB-%)| 5.8 - 9.46 | 2 - 100.00 | 38.9 - 5.19 | 14.2 - 100.00 |
 
-
 ## [1313. Decompress Run-Length encoded List][1313]
 
 **TODO: Improve**
@@ -1347,8 +1346,18 @@ definitely something better here.)
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 32 - 81.07% | 4 - 100.00%  | 92 - 85.55% | 64 - 89.35%|
-| Mem Usage (MB-%)| 10.4 | 2.1 - 100.00% | 42.3 - 5.85% | 14.5 - 13.10%|
+| Runtime (ms-%)| 32 - 81.07 | 4 - 100.00 | 92 - 85.55 | 64 - 89.35|
+| Mem Usage (MB-%)| 10.4 | 2.1 - 100.00 | 42.3 - 5.85 | 14.5 - 13.10|
+
+## [1317. Convert integer to the sum of the two non-zero integers.][1317]
+
+Start from the largest, smallest pair possible `(n-1, 1)` and either increase the 
+smallest if their sum is smaller than `n` or decrease largest if sum larger than `n`. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 92.63 | 24 - 94.60 |
+| Mem Usage (MB-%)| 5.5 - 50.00 | 2 - 100.00 | 38.4 - 96.84 | 14.2 - 66.61 |
 
 ## [1323. Maximum 69 Number][1323]
 
@@ -2203,6 +2212,7 @@ can fit inside the truck.
 [1304]: https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero
 [1309]: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
+[1317]: https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/
 [1323]: https://leetcode.com/problems/maximum-69-number/
 [1332]: https://leetcode.com/problems/remove-palindromic-subsequences/
 [1337]: https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
