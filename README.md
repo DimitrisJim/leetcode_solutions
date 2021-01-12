@@ -96,6 +96,18 @@ this in the future, future me.
 | Runtime (ms-%)| 4 - 81.03 | 280 - 100.00 | 80 - 84.82 | 32 - 85.73 |
 | Mem Usage (MB-%)| 6.2 - 98.35 | 2.5 - 51.56 | 40 - 94.38 | 15.4 - 69.73 |
 
+## [217. Contains Duplicate.][217]
+
+Can use a set and check if we've seen an element before (or, build a full set and
+compare its size against that of the size of the original array.)
+
+(`C` and `uthash` again seem slow)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 24 - 41.52 | 0 - 100.00 | 76 - 98.14 | 108 - 96.99 |
+| Mem Usage (MB-%)| 17 - 10.73 | 2.7 - 84.62 | 45 - 54.84 | 20.1 - 81.21 |
+
 ## [226. Invert Binary Tree][226]
 
 Most (`C`, `Javascript` and `Rust` (because I hate myself, apparently)) 
@@ -2176,6 +2188,7 @@ values simply by xor-ing the new values.
 [136]: https://leetcode.com/problems/single-number
 [171]: https://leetcode.com/problems/excel-sheet-column-number/
 [206]: https://leetcode.com/problems/reverse-linked-list/
+[217]: https://leetcode.com/problems/contains-duplicate/
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
 [258]: https://leetcode.com/problems/add-digits
