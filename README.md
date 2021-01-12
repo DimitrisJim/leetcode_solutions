@@ -70,6 +70,20 @@ numbers is zero.
 | Runtime (ms-%)| 12 - 99.30 | 0 - 100.00 | 80 - 92.47 | 112 - 99.63 |
 | Mem Usage (MB-%)| 7.1 - 99.80 | 2.1 - 81.55 | 39.9 - 98.51 | 16.7 - 29.16 |
 
+## [171. Excel Sheet column number][171]
+
+To find the column number we can follow the following formula where `s` is the input
+string and `n` is its length:
+
+```
+col = sum((charCodePoint - 64) * (pow(26, i)) for i in [0..n])
+```
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 88 - 95.33 | 24 - 96.97 |
+| Mem Usage (MB-%)| 5.6 - 69.08 | 2 - 100.00 | 39.8 - 84.74 | 14.2 - 66.98 |
+
 ## [206. Reverse Linked List][206]
 
 `C` contains both iterative and recursive. The rest use iterative.
@@ -2160,6 +2174,7 @@ values simply by xor-ing the new values.
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [136]: https://leetcode.com/problems/single-number
+[171]: https://leetcode.com/problems/excel-sheet-column-number/
 [206]: https://leetcode.com/problems/reverse-linked-list/
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
