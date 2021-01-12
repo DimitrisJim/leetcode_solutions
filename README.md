@@ -1839,6 +1839,33 @@ simply a string). Then go through it backwards and insert separator
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 92.14 | 20 - 99.24 |
 | Mem Usage (MB-%)| 5.5 - 87.50 | 2 - 88.89 | 38.5 - 71.43 | 14.1 - 86.04 |
 
+## [1560. Most visited sector in a circular track.][1560]
+
+The idea here is that we don't need to count everything. There may be many cycles
+through the track which don't give us any information about which of the sections
+was the most visited.
+
+Instead, we need to look at the beginning and the end of the array to see where
+we start and end.
+
+If we start at 1 or end at `N`, all sections have been visited the same number
+of times.
+
+If start `!= 1` we start from an odd section. We keep track of these odd sections
+(until `N` or until the array is exhausted) since they contribute `+1` to the
+sections.
+
+If end `!=N`, we end at an odd section, similarly to start, we keep track of
+all sections from `1` until the end since they also contribute `+1` to the 
+number of sections.
+
+Joining these two together, we can find our final result.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 97.12 | 36 - 96.11 |
+| Mem Usage (MB-%)| 6.2 - 100.00 | 2.1 - 100.00 | 40.9 - 27.88 | 14.1 - 94.91 |
+
 ## [1572. Matrix Diagonal Sum][1572]
 
 Go through the array and concurrently sum both diagonals. Remove 
@@ -2251,6 +2278,7 @@ can fit inside the truck.
 [1534]: https://leetcode.com/problems/count-good-triplets 
 [1550]: https://leetcode.com/problems/three-consecutive-odds
 [1556]: https://leetcode.com/problems/thousand-separator/
+[1560]: https://leetcode.com/problems/most-visited-sector-in-a-circular-track/
 [1572]: https://leetcode.com/problems/matrix-diagonal-sum/
 [1582]: https://leetcode.com/problems/special-positions-in-a-binary-matrix
 [1588]: https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
