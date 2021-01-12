@@ -2137,6 +2137,15 @@ can fit inside the truck.
 | Runtime (ms-%)| 28 - 100.00 | 4 - 100.00 | 96 - 100.00 | 144 - 100.00 |
 | Mem Usage (MB-%)| 7.7 - 100.00 | 2.2 - 100.00 | 42.1 - 100.00 | 14.9 - 100.00 |
 
+## [1716. Calculate Money in Leetcode Bank.][1716]
+
+Can go through `n` in weeks and then add left-over days. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.12 | 24 - 98.92 |
+| Mem Usage (MB-%)| 5.5 - 84.44 | 2 - 100.00 | 38.3 - 61.79 | 14.2 - 71.27 |
+
 ## [1720. Decode xored array.][1720]
 
 Based on xor-swap algorithm. Can find the original value used to get the xor'ed
@@ -2312,4 +2321,5 @@ values simply by xor-ing the new values.
 [1700]: https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
 [1704]: https://leetcode.com/problems/determine-if-string-halves-are-alike/
 [1710]: https://leetcode.com/problems/maximum-units-on-a-truck/
+[1716]: https://leetcode.com/problems/calculate-money-in-leetcode-bank/
 [1720]: https://leetcode.com/problems/decode-xored-array/
