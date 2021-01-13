@@ -1124,6 +1124,16 @@ to return a default value.)
 | Runtime (ms-%)| 4 - 88.20 | 0 - 100.00 | 72 - 97.44 |28 - 97.20|
 | Mem Usage (MB-%)| 6.2 - 51.22 | 2 - 81.25 | 38.5 - 90.28 | 14.3 - 58.12|
 
+## [1137. N-th tribonacci number.][1137]
+
+Not at all different from the normal fibonacci case. Iterative implementations,
+we just keep track of three values during each iteration.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.31 | 24 - 93.78 |
+| Mem Usage (MB-%)| 5.3 - 100.00 | 2 - 88.89 | 38.3 - 79.62 | 14.1 - 69.63 |
+
 ## [1160. Find Words That can be Formed by Characters.][1160]
 
 **TODO: See again.**
@@ -2281,6 +2291,7 @@ values simply by xor-ing the new values.
 [1103]: https://leetcode.com/problems/distribute-candies-to-people/
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1122]: https://leetcode.com/problems/relative-sort-array/
+[1137]: https://leetcode.com/problems/n-th-tribonacci-number/
 [1170]: https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/
 [1185]: https://leetcode.com/problems/day-of-the-week/
 [1189]: https://leetcode.com/problems/maximum-number-of-balloons/
