@@ -17,6 +17,18 @@ messed up slightly.
 - Problems that are new have skewed timings because of the initial low
   number of submissions.
 
+## [13. Roman to Integer.][13]
+
+Keep a set of the special cases and go through each character in `s`. If the character
+we've currently looking at and its next one are in the special cases, handle the case
+and increase our counter to then look at the next character two positions over. Else,
+just add the character seen.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 89.64 | 0 - 100.00 | 152 - 95.49 | 36 - 97.76 |
+| Mem Usage (MB-%)| 5.7 - 98.67 | 2 - 92.20 | 44.4 - 92.17 | 14 - 94.68 |
+
 ## [104. Maximum depth of Binary Tree][104]
 
 Rust contains both iterative and recursive approaches. C/Javascript use 
@@ -2182,6 +2194,7 @@ values simply by xor-ing the new values.
 | Runtime (ms-%)| 100 - 100.00 | 8 - 100.00 | 112 - 94.12 | 216 - 98.72 |
 | Mem Usage (MB-%)| 20.7 - 62.50 | 2.2 - 100.00 | 45 - 65.55 | 15.7 - 98.32 |
 
+[13]: https://leetcode.com/problems/roman-to-integer/
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
