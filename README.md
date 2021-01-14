@@ -216,6 +216,18 @@ result of `i / 3` and see if that is divided by `5`.
 | Runtime (ms-%)| 8 - 69.37 | 0 - 100.00 | 76 - 96.82 | 34 - 92.74 |
 | Mem Usage (MB-%)| 7 - 86.04 | 2.6 - 95.24 | 41.4 - 5.36 | 15 - 73.21 |
 
+## [448. Find all numbers disappeared in an array.][448]
+
+Couldn't see (yet) how to do it with `O(1)` space. For now, I use `O(N)` space
+in the form of a vector or set in order to find disappeared numbers.
+
+*TODO: Revisit but not urgently.*
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 92 - 98.94 | 8 - 98.04 | 96 - 99.71 | 312 - 99.29 |
+| Mem Usage (MB-%)| 18.4 - 18.62 | 2.6 - 43.14 | 47.4 - 47.02 | 24.7 - 17.49 |
+
 ## [461. Hamming Distance][461]
 
 Get the xor of the two numbers (where bits differ) and then 
@@ -2220,6 +2232,7 @@ values simply by xor-ing the new values.
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
 [389]: https://leetcode.com/problems/find-the-difference/
 [412]: https://leetcode.com/problems/fizz-buzz/
+[448]: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 [461]: https://leetcode.com/problems/hamming-distance/
 [476]: https://leetcode.com/problems/number-complement/
 [496]: https://leetcode.com/problems/next-greater-element-
