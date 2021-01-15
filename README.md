@@ -17,6 +17,16 @@ messed up slightly.
 - Problems that are new have skewed timings because of the initial low
   number of submissions.
 
+## [1. Two Sum.][1]
+
+Similar to other Two Sum problems. We again use a cache in the form of a mapping
+that keeps track of the appropriate index to use when we finally find the match.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 96.96 | 0 - 100.00 | 72 - 94.33 | 28 - 99.99 |
+| Mem Usage (MB-%)| 6 - 68.00 | 2.3 - 68.01 | 38.4 - 91.28 | 14.4 - 47.87 |
+
 ## [13. Roman to Integer.][13]
 
 Keep a set of the special cases and go through each character in `s`. If the character
@@ -2226,6 +2236,7 @@ values simply by xor-ing the new values.
 | Runtime (ms-%)| 100 - 100.00 | 8 - 100.00 | 112 - 94.12 | 216 - 98.72 |
 | Mem Usage (MB-%)| 20.7 - 62.50 | 2.2 - 100.00 | 45 - 65.55 | 15.7 - 98.32 |
 
+[1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
