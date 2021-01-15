@@ -82,6 +82,16 @@ numbers is zero.
 | Runtime (ms-%)| 12 - 99.30 | 0 - 100.00 | 80 - 92.47 | 112 - 99.63 |
 | Mem Usage (MB-%)| 7.1 - 99.80 | 2.1 - 81.55 | 39.9 - 98.51 | 16.7 - 29.16 |
 
+## [167. Two sum II input array is sorted.][167]
+
+Array is sorted, use two counters (start, end) and increase, reduce respectively
+until we reach our target sum.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 99.02 | 0 - 100.00 | 72 - 97.24 | 56 - 95.51 |
+| Mem Usage (MB-%)| 6.6 - 99.02 | 2.1 - 60.71 | 38.8 - 71.96 | 14.5 - 91.92 |
+
 ## [171. Excel Sheet column number][171]
 
 To find the column number we can follow the following formula where `s` is the input
@@ -2221,6 +2231,7 @@ values simply by xor-ing the new values.
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [136]: https://leetcode.com/problems/single-number
+[167]: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 [171]: https://leetcode.com/problems/excel-sheet-column-number/
 [206]: https://leetcode.com/problems/reverse-linked-list/
 [217]: https://leetcode.com/problems/contains-duplicate/
