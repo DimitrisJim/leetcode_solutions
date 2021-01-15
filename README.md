@@ -430,6 +430,16 @@ is represented by a `level` parameter of the recursive function.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 84 - 97.80 | 36 - 99.85 |
 | Mem Usage (MB-%)| 20.7 - 5.36 | 3 - 50.00 | 45 - 18.13 | 16.5 - 60.71 |
 
+## [653. Two Sum IV - Input is a BST.][653]
+
+Use a set to hold the values and traverse tree. For each node see if `k - node.value`
+is present inside the set, if so, done.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 98.11 | 0 - 100.00 | 104 - 97.44 | 68 - 97.46 |
+| Mem Usage (MB-%)| 25.6 - 18.87 | 3.3 - 80.00 | 48.7 - 22.16 | 16.3 - 94.07 |
+
 ## [657. Robot Return to Origin][657]
 
 Count occurences and compare. If number of 'D's matches number 
@@ -2286,6 +2296,7 @@ values simply by xor-ing the new values.
 [590]: https://leetcode.com/problems/n-ary-tree-postorder-traversal
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [637]: https://leetcode.com/problems/average-of-levels-in-binary-tree/
+[653]: https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
 [657]: https://leetcode.com/problems/robot-return-to-origin/
 [669]: https://leetcode.com/problems/trim-a-binary-search-tree/
 [682]: https://leetcode.com/problems/baseball-game/
