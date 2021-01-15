@@ -1664,6 +1664,23 @@ in order to not be under `1`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 82.35 | 24 - 96.60 |
 | Mem Usage (MB-%)| 5.8 - 100.00 | 2 - 100.00 | 37.9 - 97.39 | 14 - 96.50|
 
+## [1422. Maximum Score After splitting a string.][1422]
+
+Start from position 1 and count all ones to the right. Add one to the count if
+position `0` has the character `'0'`. 
+
+Go through the strings with the count as the current max. If a `'1'` is seen, we
+subtract one from the count, if `'0'` is seen, we add one (this is because left
+hand string counts zeroes and right hand string counts ones. 
+
+After each iteration we check if the new count is larger than the max, if so, keep 
+it. After iterating through the string, we will have kept the largest value for max.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 97.73 | 28 - 92.27 |
+| Mem Usage (MB-%)| 5.6 - 94.74 | 2 - 100.00 | 38.7 - 86.36 | 14 - 91.17 |
+
 ## [1431. Kids with greatest number of candies][1431]
 
 Find max, compare values and return.
@@ -2363,6 +2380,7 @@ values simply by xor-ing the new values.
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
 [1408]: https://leetcode.com/problems/string-matching-in-an-array/
 [1413]: https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum
+[1422]: https://leetcode.com/problems/maximum-score-after-splitting-a-string/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1436]: https://leetcode.com/problems/destination-city/
 [1441]: https://leetcode.com/problems/build-an-array-with-stack-operations/
