@@ -1687,6 +1687,17 @@ in order to not be under `1`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 82.35 | 24 - 96.60 |
 | Mem Usage (MB-%)| 5.8 - 100.00 | 2 - 100.00 | 37.9 - 97.39 | 14 - 96.50|
 
+## [1417. Reformat the string.][1417]
+
+Build a list of characters and numbers. If their lengths don't differ by a maximum
+of `1`, we cannot reformat the string as needed. If they do, we just interleave
+them (taking care on which we interleave first/second etc).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 98.72 | 28 - 100.00 |
+| Mem Usage (MB-%)| 6.1 - 42.31 | 2.1 - 60.00 | 42.5 - 89.10 | 14.1 - 86.07 |
+
 ## [1422. Maximum Score After splitting a string.][1422]
 
 Start from position 1 and count all ones to the right. Add one to the count if
@@ -2418,6 +2429,7 @@ values simply by xor-ing the new values.
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
 [1408]: https://leetcode.com/problems/string-matching-in-an-array/
 [1413]: https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum
+[1417]: https://leetcode.com/problems/reformat-the-string/
 [1422]: https://leetcode.com/problems/maximum-score-after-splitting-a-string/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 [1436]: https://leetcode.com/problems/destination-city/
