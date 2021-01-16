@@ -1847,6 +1847,19 @@ Sort and then just sum and divide.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.32 | 24 - 94.65 |
 | Mem Usage (MB-%)| 5.8 - 70.69 | 1.9 - 75.00 | 38.3 - 83.59 | 14.1 - 80.75  |
 
+## [1496. Path Crossing.][1496]
+
+Hold previous points visited in a set, after moving to a new point, check if it is
+contained in the set.
+
+`C` case: Quite frankly, not up for create a uthash structure with a compound key
+today.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| N/A | 0 - 100.00 | 72 - 94.74 | 20 - 98.76 |
+| Mem Usage (MB-%)| N/A | 2 - 100.00 | 38.5 - 74.34 | 14.4 - 60.40 |
+
 ## [1502. Can make arithmetic progression from sequence.][1502]
 
 Sort the array and find the step by subtracting first two 
@@ -2419,6 +2432,7 @@ values simply by xor-ing the new values.
 [1480]: https://leetcode.com/problems/running-sum-of-1d-array/
 [1486]: https://leetcode.com/problems/xor-operation-in-an-array/
 [1491]: https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary
+[1496]: https://leetcode.com/problems/path-crossing/
 [1502]: https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
 [1507]: https://leetcode.com/problems/reformat-date/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
