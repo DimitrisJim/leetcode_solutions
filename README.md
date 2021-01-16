@@ -39,6 +39,19 @@ just add the character seen.
 | Runtime (ms-%)| 4 - 89.64 | 0 - 100.00 | 152 - 95.49 | 36 - 97.76 |
 | Mem Usage (MB-%)| 5.7 - 98.67 | 2 - 92.20 | 44.4 - 92.17 | 14 - 94.68 |
 
+## [21. Merge two sorted lists.][21]
+
+For `Rust`, go through both linked lists and build vector of values, then, build
+resulting vector.
+
+For others, go through nodes of linked list and incrementally build resulting linked
+list.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 4 - 100.00 | 84 - 92.62 | 32 - 91.62 |
+| Mem Usage (MB-%)| 6.3 - 47.94 | 2 - 83.19 | 40.1 - 91.86 | 14.1 - 83.79 |
+
 ## [104. Maximum depth of Binary Tree][104]
 
 Rust contains both iterative and recursive approaches. C/Javascript use 
@@ -2265,6 +2278,7 @@ values simply by xor-ing the new values.
 
 [1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
+[21]: https://leetcode.com/problems/merge-two-sorted-lists
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
