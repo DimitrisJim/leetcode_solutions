@@ -1961,6 +1961,21 @@ that don't match and reduce the overall explosion.
 | Runtime (ms-%)| 8 - 100.00 | 0 - 100.00 | 76 - 97.33 | 288 - 98.17 |
 | Mem Usage (MB-%)| 5.8 - 87.04 | 2 - 5.41 | 38.7 - 5.34 | 14 - 5.03 |
 
+## [1539. Kth Missing Positive Number.][1539]
+
+Go through array with a counter initialized to 1. If we encounter a value that
+is equal to our counter (which denotes the strictly increasing sequence), we just
+increment the counter, if we encounter a value larger than the counter, we adjust
+`k` to account for the total gap between our counter and the value, and set our
+counter to denote the next value after the value just encountered.
+
+Complexity is `O(N)`, we perform constant operations for each element of the array.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 90.52 | 0 - 100.00 | 72 - 96.39 | 36 - 99.78 |
+| Mem Usage (MB-%)| 6.1 - 97.71 | 2 - 96.67 | 38.1 - 99.78 | 14.3 - 69.55 |
+
 ## [1550. Three Consecutive odds.][1550]
 
 Not many options here, go through array and count odds. Bail when you find them.
@@ -2451,6 +2466,7 @@ values simply by xor-ing the new values.
 [1518]: https://leetcode.com/problems/water-bottles/
 [1528]: https://leetcode.com/problems/shuffle-string/
 [1534]: https://leetcode.com/problems/count-good-triplets 
+[1539]: https://leetcode.com/problems/kth-missing-positive-number/
 [1550]: https://leetcode.com/problems/three-consecutive-odds
 [1556]: https://leetcode.com/problems/thousand-separator/
 [1560]: https://leetcode.com/problems/most-visited-sector-in-a-circular-track/
