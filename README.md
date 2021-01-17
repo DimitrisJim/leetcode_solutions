@@ -2315,6 +2315,30 @@ values simply by xor-ing the new values.
 | Runtime (ms-%)| 100 - 100.00 | 8 - 100.00 | 112 - 94.12 | 216 - 98.72 |
 | Mem Usage (MB-%)| 20.7 - 62.50 | 2.2 - 100.00 | 45 - 65.55 | 15.7 - 98.32 |
 
+## [1725. Number of Rectangles that can form the largest square.][1725]
+
+Note that the largest square has a side that is equal to the maximum between the minimum
+of the pairs inside the array.
+
+To find the count, we hold a max value and count value initialized to zero. For each
+pair inside the array, if the minimum of the pair is equal to max, we just increase
+the count (signifying that we've found another square with `side == max`).
+
+If the minimum of the pair is larger than the current max we've currently counted,
+we need to reset our counter to 1 (to count the current square with side `> max`) 
+and set `max` to the new maximum. 
+
+At the end, we have the count of the squares with sides equal to the maximum value
+possible.
+
+Runtime is `O(N)` since we perform constant operations for each iteration through the
+array. Space complexity is `O(1)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 36 - 100.00 | 4 - 100.00 | 92 - 100.00 | 172 - 100.00 |
+| Mem Usage (MB-%)| 8 - 100.00 | 2.2 - 100.00 | 41.5 - 100.00 | 14.8 - 100.00 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
@@ -2495,3 +2519,4 @@ values simply by xor-ing the new values.
 [1710]: https://leetcode.com/problems/maximum-units-on-a-truck/
 [1716]: https://leetcode.com/problems/calculate-money-in-leetcode-bank/
 [1720]: https://leetcode.com/problems/decode-xored-array/
+[1725]: https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/
