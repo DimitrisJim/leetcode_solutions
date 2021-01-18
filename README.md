@@ -1930,6 +1930,18 @@ the quotent becomes zero.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.06 | 24 - 93.26 |
 | Mem Usage (MB-%)| 5.4 - 100.00 | 1.9 - 95.24 | 38.7 - 16.67 | 13.9 - 99.70 |
 
+## [1523. Count Odd numbers in an interval range.][1523]
+
+Can find odds by dividing the range by 2 and then adding one if at least one
+of the bounds was odd. (Note: yes, you got this to work, but why +1?).
+
+Space/time complexity is `O(1)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.72 | 24 - 94.69|
+| Mem Usage (MB-%)| 5.3 - 100.00 | 2 - 75.00 | 38.3 - 70.59 | 14.2 - 42.51 |
+
 ## [1528. Shuffle String][1528]
 
 Create a new array and fill it in, basically. 
@@ -2488,6 +2500,7 @@ array. Space complexity is `O(1)`.
 [1507]: https://leetcode.com/problems/reformat-date/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
 [1518]: https://leetcode.com/problems/water-bottles/
+[1523]: https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/
 [1528]: https://leetcode.com/problems/shuffle-string/
 [1534]: https://leetcode.com/problems/count-good-triplets 
 [1539]: https://leetcode.com/problems/kth-missing-positive-number/
