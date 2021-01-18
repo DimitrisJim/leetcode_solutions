@@ -1988,6 +1988,26 @@ Complexity is `O(N)`, we perform constant operations for each element of the arr
 | Runtime (ms-%)| 4 - 90.52 | 0 - 100.00 | 72 - 96.39 | 36 - 99.78 |
 | Mem Usage (MB-%)| 6.1 - 97.71 | 2 - 96.67 | 38.1 - 99.78 | 14.3 - 69.55 |
 
+## [1544. Make the string great.][1544]
+
+We go through the string checking pairs. If a pair is bad (found by checking the
+difference of their code point) we skip it, if not, we keep the first element
+of the pair.
+
+When we encounter a bad pair we need to take care to remove any bad pairs that
+are created by the next character in the string and the last element we kept.
+We therefore check if a bad pair exists between those two characters and, if not,
+we simply break, if yes, we skip the character in the skip and remove the last
+kept character. We continue this operation until the pair isn't bad.
+
+Space and time complexity is O(N). Even while removing bad pairs, we skip characters
+in the string.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 84 - 93.68 | 28 - 97.16 |
+| Mem Usage (MB-%)| 5.8 - 44.44 | 2 - 83.33 | 41 - 38.42 | 14.1 - 77.79 |
+
 ## [1550. Three Consecutive odds.][1550]
 
 Not many options here, go through array and count odds. Bail when you find them.
@@ -2504,6 +2524,7 @@ array. Space complexity is `O(1)`.
 [1528]: https://leetcode.com/problems/shuffle-string/
 [1534]: https://leetcode.com/problems/count-good-triplets 
 [1539]: https://leetcode.com/problems/kth-missing-positive-number/
+[1544]: https://leetcode.com/problems/make-the-string-great
 [1550]: https://leetcode.com/problems/three-consecutive-odds
 [1556]: https://leetcode.com/problems/thousand-separator/
 [1560]: https://leetcode.com/problems/most-visited-sector-in-a-circular-track/
