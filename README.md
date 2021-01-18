@@ -211,6 +211,24 @@ values).
 | Runtime (ms-%)| 8 - 100.00 | 0 - 100.00 | 76 - 98.15 | 32 - 99.97 |
 | Mem Usage (MB-%)| 7.6 - 89.22 | 2.1 - 97.87 | 40.3 - 51.81 | 15.2 - 68.67 |
 
+## [292. Nim Game,][292]
+
+After some experimenting, we can see that the losing starting position is a multiple
+of `4`. This makes sense, if we are on a multiple of `4`, our opponent can always
+make the total stones decrease by `4` when playing optimally. This will lead to a
+final count of `4` with us having to play and not being able to win the game.
+
+In all other positions we can do the same, taking the correct ammount initially in
+order to leave our opponent to make their first move with a number of rocks that is 
+a multiple of `4`.
+
+Space/Time complexity is `O(1)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.79 | 20 - 98.68 |
+| Mem Usage (MB-%)| 5.5 - 41.79 | 1.9 - 75.00 | 38.2 - 76.88 | 13.9 - 97.16 |
+
 ## [344. Reverse String][344]
 
 Typical swapping.
@@ -2421,6 +2439,7 @@ array. Space complexity is `O(1)`.
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
 [258]: https://leetcode.com/problems/add-digits
 [283]: https://leetcode.com/problems/move-zeroes
+[292]: https://leetcode.com/problems/nim-game/
 [344]: https://leetcode.com/problems/reverse-string/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
 [389]: https://leetcode.com/problems/find-the-difference/
