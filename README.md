@@ -335,6 +335,20 @@ Else, return the largest among the strings.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 95.35 | 24 - 93.63 |
 | Mem Usage (MB-%)| 5.4 - 100.00 | 2 - 100.00 | 38.4 - 61.63 | 14 - 98.24 |
 
+## [530. Minimum absolute difference in bst.][530]
+
+C and Rust both traverse the bst and build a sorted vector. Python and Javascript
+use a generator to yield back values. Whatever the case, we then traverse through
+the value and find the minimum.
+
+Note: Javascript would probably be faster if I didn't use generators. Problem is,
+I really like generators so I don't care.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 97.44 | 0 - 100.00 | 128 - 14.84 | 48 - 96.33 |
+| Mem Usage (MB-%)| 10.8 - 20.51 | 2.9 - 25.00 | 46.2 - 9.03 | 16.3 - 32.45 |
+
 ## [557. Reverse Words in a String III][561]
 
 C mutates the string in-place because it's allowable there. 
@@ -601,6 +615,10 @@ character is a jewel.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 73.22 | 24 - 93.75 |
 | Mem Usage (MB-%)| 5.8 - 25.51 | 2.1 - 100.00 | 40.4 - 11.66 |14.2 - 99.99 |
+
+## [783. Minimum Distance between bst nodes.][783] 
+
+Same as problem [530. Minimum absolute difference in bst][530], see there.
 
 ## [788. Rotated Digits][788]
 
@@ -2397,6 +2415,7 @@ array. Space complexity is `O(1)`.
 [500]: https://leetcode.com/problems/keyboard-row
 [509]: https://leetcode.com/problems/fibonacci-number/
 [521]: https://leetcode.com/problems/longest-uncommon-subsequence-i/
+[530]: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 [566]: https://leetcode.com/problems/reshape-the-matrix/
 [575]: https://leetcode.com/problems/distribute-candies
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
@@ -2418,6 +2437,7 @@ array. Space complexity is `O(1)`.
 [748]: https://leetcode.com/problems/shortest-completing-word/
 [766]: https://leetcode.com/problems/toeplitz-matrix/
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
+[783]: https://leetcode.com/problems/minimum-distance-between-bst-nodes/
 [788]: https://leetcode.com/problems/rotated-digits
 [804]: https://leetcode.com/problems/unique-morse-code-words/
 [806]: https://leetcode.com/problems/number-of-lines-to-write-string/
