@@ -423,6 +423,23 @@ Option for Rust isn't available yet unfortunately.
 | Runtime (ms-%)| 20 - 14.63 | N/A | 100 - 55.56 | 32 - 100.00 |
 | Mem Usage (MB-%)| 24.4 - 9.76 | N/A | 43.7 - 9.69 | 15.8 - 57.01 |
 
+## [606. Construct string from binary tree.][606]
+
+Preorder traversal through the tree and build the string. If we don't have a left
+subchild but do have a right one, we need to add the extra `'()'` as stated in
+the problem statement.
+
+For C, couldn't be buggered, really. Need to recurse through the tree with a
+pointer to `char *` array and add things to it. Then, join them all together
+at the end. Might do some point in the future, for now, nope.
+
+Time complexity is `O(N)`, space complexity is probably the same.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 0 - 100.00 | 84 - 97.62 | 40 - 98.24 |
+| Mem Usage (MB-%)| - | 3.1 - 100.00 | 48.6 - 5.56 | 16.5 - 10.29 |
+
 ## [617. Merge Two Binary Trees][617]
 
 Don't recurse. Breadth first traversal using a queue. 
@@ -2422,6 +2439,7 @@ array. Space complexity is `O(1)`.
 [559]: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
 [561]: https://leetcode.com/problems/array-partition-i/
 [590]: https://leetcode.com/problems/n-ary-tree-postorder-traversal
+[606]: https://leetcode.com/problems/construct-string-from-binary-tree/
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [637]: https://leetcode.com/problems/average-of-levels-in-binary-tree/
 [653]: https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
