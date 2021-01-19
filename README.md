@@ -108,6 +108,16 @@ iterations, though, I believe it must be around `O(n^2)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.32 | 24 - 95.43 |
 | Mem Usage (MB-%)| 5.9 - 95.86 | 2.3 - 6.67 | 38.6 - 21.82 | 14.3 - 59.05 |
 
+## [119. Pascal's triangle II.][119]
+
+Becomes easy once you look up on Pascal's Triangle and find the [formula for
+finding a row](https://en.wikipedia.org/wiki/Pascal%27s_triangle#Calculating_a_row_or_diagonal_by_itself).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.83 | 24 - 96.72 |
+| Mem Usage (MB-%)| 5.9 - 65.63 | 2.4 - 5.00 | 38.3 - 82.37 | 14.3 - 54.93 |
+
 ## [122. Best time to buy and sell stock II.][122]
 
 Buy on local minimums and sell on local maximums. This can be done by going through
@@ -2458,6 +2468,7 @@ array. Space complexity is `O(1)`.
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 [118]: https://leetcode.com/problems/pascals-triangle/
+[119]: https://leetcode.com/problems/pascals-triangle-ii/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [136]: https://leetcode.com/problems/single-number
 [167]: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
