@@ -1346,6 +1346,45 @@ needing to go through the `words` array to count the words again.
 | Runtime (ms-%)| 12 - 92.31 | 0 - 100.00 | 96 - 91.96 | 64 - 92.86 |
 | Mem Usage (MB-%)| 7.7 - 46.15 | 2.5 - 33.33 | 46.2 - 25.00 | 14.9 - 10.41 |
 
+## [1184. Distance between Bus Stops.][1184] 
+
+This can be solved by finding the sums until the start, destination and end. The
+reasoning behind this is harder without a piece of paper to draw it on, unfortunately
+but I'll try.
+
+The first difference we want to consider is that when going from start to dest in
+the direction of dest. That is, if `start < dest`, we go right, if not, we go left.
+This, hopefully clearly, is `|sum(start) - sum(dest)|`, we only want the intermediate
+elements.
+
+The second difference we want to find is the one going away from dest (initially, at
+least). That is, if `start < dest` we go left, if not, we go right.
+In this case, we have:
+
+ -  if `start < dest`, the difference is `sum(end) + sum(start) - sum(dest)`
+(we count everything from start until zero, and then we count from end until dest).
+
+ - if `start > dest`, it is flipped: `sum(end) - sum(start) + sum(dest)` using the
+   same reasoning as before.
+
+It might now be clear that the second difference is `sum(end) - difference_one` where
+difference one is the first difference.
+
+Runtime complexity is necessarily `O(N)` since we need to build the sum until the end.
+Space complexity is `O(1) `sum(end) - sum(start) + sum(dest)` using the
+   same reasoning as before.
+
+It might now be clear that the second difference is `sum(end) - difference_one` where
+difference one is the first difference.
+
+Runtime complexity is necessarily `O(N)` since we need to build the sum until the end.
+Space complexity is `O(1)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.00 | 40 - 94.38 |
+| Mem Usage (MB-%)| 6.2 - 97.06 | 2.1 - 100.00 | 38.6 - 76.00 | 14.8 - 98.70 |
+
 ## [1185. Day of the week.][1185] 
 
 These all use Pythons `datetime.date.weekday` algorithm for finding
@@ -2600,6 +2639,7 @@ array. Space complexity is `O(1)`.
 [1122]: https://leetcode.com/problems/relative-sort-array/
 [1137]: https://leetcode.com/problems/n-th-tribonacci-number/
 [1170]: https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/
+[1184]: https://leetcode.com/problems/distance-between-bus-stops/
 [1185]: https://leetcode.com/problems/day-of-the-week/
 [1189]: https://leetcode.com/problems/maximum-number-of-balloons/
 [1200]: https://leetcode.com/problems/minimum-absolute-difference/
