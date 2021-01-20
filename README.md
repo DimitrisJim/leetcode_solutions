@@ -611,6 +611,23 @@ Note: Rust :(
 | Runtime (ms-%)| 8 - 93.75 | 4 - 60.00 | 84 - 93.42 | 112 - 96.53 |
 | Mem Usage (MB-%)| 6.7 - 100.00 | 2 - 100.00 | 41.8 - 92.11 | 14.5 - 88.91 |
 
+## [697. Degree of an Array.][697]
+
+Build a counter of the numbers in the array in order to find the maximum degree
+along with which numbers have that maximum degree.
+
+After that we can iterate through the numbers array from the left (start) and 
+right (end) and look for the leftmost and rightmost occurences for each of the 
+numbers that has that maximum degree.
+
+The minimum difference `end - start` for each of the numbers with max degree is
+the result.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 20 - 100.00 | 4 - 100.00 | 84 - 98.22 | 196 - 99.93 |
+| Mem Usage (MB-%)| 9.8 - 22.22 | 2.2 - 100.00 | 44.5 - 36.89 | 15.2 - 98.41 |
+
 ## [700. Search in a BST][700]
 
 Straight-forward. Perform binary search. `C` code also contains 
@@ -2508,6 +2525,7 @@ array. Space complexity is `O(1)`.
 [690]: https://leetcode.com/problems/employee-importance
 [693]: https://leetcode.com/problems/binary-number-with-alternating-bits/
 [696]: https://leetcode.com/problems/count-binary-substrings/
+[697]: https://leetcode.com/problems/degree-of-an-array/
 [705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
