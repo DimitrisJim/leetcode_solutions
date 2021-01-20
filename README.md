@@ -999,6 +999,25 @@ is currently written as if using a Queue.**
 | Runtime (ms-%)| | 32 - 94.22 | 228 - 72.72 | 260 - 99.58 |
 | Mem Usage (MB-%)| | 5.6 - 84.39 | 50.2 - 29.84 | 18.7 - 91.13|
 
+## [937. Reorder Data in log files.][937]
+
+Separate into two arrays, one containing the logs that only have digits after the
+identifier and one with the rest (containing letters).
+
+The digits array doesn't need any processing.
+The letters array is sorted based on the string after the identifier and, if they
+compare equal, the identifier is used as a tie-braker (see C version for clear
+illustration of this).
+
+Splitting the arrays is `O(N)` while sorting the letters is `O(logM)` where `M`
+is the total number of rows in the logs array that are letter based. Auxiliary
+memory is `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 90.00 | 0 - 100.00 | 80 - 95.48 | 28 - 97.50 |
+| Mem Usage (MB-%)| 7.6 - 36.00 | 2.1 - 44.44 | 41.2 - 83.15 | 14.3 - 87.55 |
+
 ## [938. Range Sum of BST][938]
 
 **TODO: Improve Rust, don't know Ref/RefCell good enough 
@@ -2556,6 +2575,7 @@ array. Space complexity is `O(1)`.
 [917]: https://leetcode.com/problems/reverse-only-letters/
 [929]: https://leetcode.com/problems/unique-email-addresses/
 [933]: https://leetcode.com/problems/number-of-recent-calls
+[937]: https://leetcode.com/problems/reorder-data-in-log-files/
 [938]: https://leetcode.com/problems/range-sum-of-bst/
 [942]: https://leetcode.com/problems/di-string-match/
 [944]: https://leetcode.com/problems/delete-columns-to-make-sorted
