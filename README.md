@@ -397,6 +397,18 @@ Calculate it iteratively.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.37 | 20 - 98.15 |
 | Mem Usage (MB-%)| 5.4 - 86.96 | 2 - 48.78 | 38.3 - 56.54 | 14.1 - 34.89 |
 
+## [520. Detect Capital.][520]
+
+We can just check the second character and disambiguate which case we're examining.
+Then we just make sure all the following characters match the case.
+
+`O(N)` runtime complexity with `O(1)` space complexity.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 100.00 | 20 - 98.83 |
+| Mem Usage (MB-%)| 5.5 - 98.33 | 2 - 60.00 | 39.8 - 81.21 | 14.2 - 48.87 |
+
 ## [521. Longest Uncommon Subsequence.][521]
 
 If the strings are equal, all subsequences are the same, return -1.
@@ -2585,6 +2597,7 @@ array. Space complexity is `O(1)`.
 [496]: https://leetcode.com/problems/next-greater-element-
 [500]: https://leetcode.com/problems/keyboard-row
 [509]: https://leetcode.com/problems/fibonacci-number/
+[520]: https://leetcode.com/problems/detect-capital/
 [521]: https://leetcode.com/problems/longest-uncommon-subsequence-i/
 [530]: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 [566]: https://leetcode.com/problems/reshape-the-matrix/
