@@ -2412,6 +2412,20 @@ Go through each element in second array:
 | Runtime (ms-%)| 4 - 92.31 | 0 - 100.00 | 80 - 67.57 | 36 - 93.55 |
 | Mem Usage (MB-%)| 6.7 - 100.00 | 2.2 - 100.00 | 38.8 - 5.11 | 14.1 - 100.00 |
 
+## [1646. Get maximum in generated array.][1646]
+
+Initially thought there was a trick in order to immediately find the value in the
+array for a given `n`. According to the results, I doubt that now. 
+
+Build the array and while building hold onto the max seen.
+
+Space/Time complexity is `O(n)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 93.76 | 24 - 96.72 |
+| Mem Usage (MB-%)| 5.9 - 11.17 | 2 - 95.00 | 38.9 - 10.99 | 14 - 99.22 |
+
 ## [1652. Defuse the bomb.][1652]
 
 Use modular arithmetic (dividing by array lenght) to add correct elements.
@@ -2764,6 +2778,7 @@ array. Space complexity is `O(1)`.
 [1629]: https://leetcode.com/problems/slowest-key/
 [1636]: https://leetcode.com/problems/sort-array-by-increasing-frequency/
 [1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
+[1646]: https://leetcode.com/problems/get-maximum-in-generated-array/
 [1652]: https://leetcode.com/problems/defuse-the-bomb/
 [1656]: https://leetcode.com/problems/design-an-ordered-stream/
 [1662]: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent
