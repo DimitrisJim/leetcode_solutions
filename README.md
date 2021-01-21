@@ -317,6 +317,22 @@ Build sets and get intersection (or write it for `C` and `JS` cases.)
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 98.18 | 32 - 99.40 |
 | Mem Usage (MB-%)| 7.7 - 12.87 | 2.1 - 77.78 | 40.5 - 28.27 | 14.4 - 22.10 |
 
+## [383. Ransom Note][383]
+
+Use a counter to check that the required ammount of characters are present. 
+
+In C, Rust and JavaScript, an array of size 26 is filled up with the characters in the
+magazine and then the characters from the ransom note are subtracted. If at any point
+the value inside the array is zero, it means we've run out of characters.
+
+Runtime complexity is `O(N + M)` where `N` and `M` are the sizes of the strings given.
+Space complexity is `O(1)` since we only have 26 characters.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 99.57 | 40 - 86.90 |
+| Mem Usage (MB-%)| 6.4 - 96.59 | 2.1 - 100.00  | 41.2 - 91.14 | 14.1 - 99.69 |
+
 ## [387. Find Unique Character in String.][387]
 
 Build a Counter (in Python we use library supplied, in others, just use an array with
@@ -2634,6 +2650,7 @@ array. Space complexity is `O(1)`.
 [292]: https://leetcode.com/problems/nim-game/
 [344]: https://leetcode.com/problems/reverse-string/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
+[383]: https://leetcode.com/problems/ransom-note/
 [387]: https://leetcode.com/problems/first-unique-character-in-a-string/
 [389]: https://leetcode.com/problems/find-the-difference/
 [412]: https://leetcode.com/problems/fizz-buzz/
