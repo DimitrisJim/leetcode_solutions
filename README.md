@@ -656,6 +656,15 @@ in runtime/memory timings.
 | Runtime (ms-%)| 20 - 89.04 | 4 - 100.00 | 44 - 98.93 | 64 - 97.56|
 | Mem Usage (MB-%)| 15.1 - 73.25 | 2.6 - 57.14 | 44.4 - 76.63 | 15.8 - 94.95|
 
+## [704. Binary Search.][704]
+
+Well, binary search. `O(logn)` complexity, `O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 28 - 98.79 | 0 - 100.00 | 76 - 92.07 | 216 - 99.84 |
+| Mem Usage (MB-%)| 6.9 - 99.19 | 2.1 - 100.00 | 42.4 - 52.53 | 15.5 - 91.95 |
+
 ## [705. Design HashSet][705]
 
 Python contains implementations for both separate chaining and open addressing, so
@@ -2595,6 +2604,7 @@ array. Space complexity is `O(1)`.
 [693]: https://leetcode.com/problems/binary-number-with-alternating-bits/
 [696]: https://leetcode.com/problems/count-binary-substrings/
 [697]: https://leetcode.com/problems/degree-of-an-array/
+[704]: https://leetcode.com/problems/binary-search/
 [705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
