@@ -52,6 +52,23 @@ list.
 | Runtime (ms-%)| 0 - 100.00 | 4 - 100.00 | 84 - 92.62 | 32 - 91.62 |
 | Mem Usage (MB-%)| 6.3 - 47.94 | 2 - 83.19 | 40.1 - 91.86 | 14.1 - 83.79 |
 
+## [100. Same Tree][100]
+
+C recursively solves it while the others use the iterative approach. In all cases
+this really just involves traversing the same nodes and checking that their values
+are the same and they both have the same numbers of children. 
+
+Care is needed to handle case where one tree has been exhausted while the other tree
+still has nodes we haven't seen.
+
+Complexity is `O(N)` where N is the number of nodes since we perform constant 
+operations for each node. Not sure about space complexity of the top of my head.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 92.99 | 24 - 95.46 |
+| Mem Usage (MB-%)| 6 - 34.24 | 2 - 52.17 | 38.8 - 77.73 | 14.2 - 65.65 |
+
 ## [104. Maximum depth of Binary Tree][104]
 
 Rust contains both iterative and recursive approaches. C/Javascript use 
@@ -1371,14 +1388,7 @@ It might now be clear that the second difference is `sum(end) - difference_one` 
 difference one is the first difference.
 
 Runtime complexity is necessarily `O(N)` since we need to build the sum until the end.
-Space complexity is `O(1) `sum(end) - sum(start) + sum(dest)` using the
-   same reasoning as before.
-
-It might now be clear that the second difference is `sum(end) - difference_one` where
-difference one is the first difference.
-
-Runtime complexity is necessarily `O(N)` since we need to build the sum until the end.
-Space complexity is `O(1)`.
+Space complexity is `O(1).
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
@@ -2539,6 +2549,7 @@ array. Space complexity is `O(1)`.
 [1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
+[100]: https://leetcode.com/problems/same-tree/
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
