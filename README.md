@@ -301,6 +301,20 @@ Build sets and get intersection (or write it for `C` and `JS` cases.)
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 98.18 | 32 - 99.40 |
 | Mem Usage (MB-%)| 7.7 - 12.87 | 2.1 - 77.78 | 40.5 - 28.27 | 14.4 - 22.10 |
 
+## [387. Find Unique Character in String.][387]
+
+Build a Counter (in Python we use library supplied, in others, just use an array with
+26 slots to act as Counter) and then go through characters of `s` and find the first
+for which the count is equal to `1`.
+
+Runtime complexity is `O(N)` for all, space is `O(1)` I believe since we always have
+a collection with 26 elements regardless of string length.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 99.00 | 0 - 100.00 | 96 - 95.44 | 88 - 90.37 |
+| Mem Usage (MB-%)| 6.9 - 80.90 | 2 - 78.26 | 42.4 - 58.18 | 14.4 - 70.26 |
+
 ## [389. Find the difference.][389]
 
 Xor trick, different problem statement.
@@ -2589,6 +2603,7 @@ array. Space complexity is `O(1)`.
 [292]: https://leetcode.com/problems/nim-game/
 [344]: https://leetcode.com/problems/reverse-string/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
+[387]: https://leetcode.com/problems/first-unique-character-in-a-string/
 [389]: https://leetcode.com/problems/find-the-difference/
 [412]: https://leetcode.com/problems/fizz-buzz/
 [448]: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
