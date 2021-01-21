@@ -252,6 +252,22 @@ is `num % 9` with special cases if `num == 0` and `num % 9 == 0`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 99.49 | 20 - 99.19 |
 | Mem Usage (MB-%)| 5.7 - 39.50 | 2 - 100.00 | 39.9 - 84.01 | 14.2 - 36.59 |
 
+## [268. Missing Number,][268]
+
+Yet another variation of the xor trick. Since all numbers are in range `[0, n)` and
+we know only one is missing, we can use another variable ranging from `[0, n)` and
+xor it along with all the numbers in the numbers array. 
+
+Since numbers with the same value will be xored out, the missing number will be the
+one left.
+
+Runtime complexity is `O(N)`, space complexity is `O(1)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 16 - 92.23 | 0 - 100.00 | 80 - 91.77 | 120 - 96.29 |
+| Mem Usage (MB-%)| 6.5 - 75.34 | 2 - 97.30 | 41.3 - 34.19 | 15.3 - 82.34 |
+
 ## [283. Move zeroes.][283]
 
 In order to minimize the comparisons made, our `run` variable always begins scanning
@@ -2613,6 +2629,7 @@ array. Space complexity is `O(1)`.
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
 [258]: https://leetcode.com/problems/add-digits
+[268]: https://leetcode.com/problems/missing-number/
 [283]: https://leetcode.com/problems/move-zeroes
 [292]: https://leetcode.com/problems/nim-game/
 [344]: https://leetcode.com/problems/reverse-string/
