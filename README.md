@@ -1606,6 +1606,16 @@ vertically according to the case. `O(N)`.
 | Runtime (ms-%)| 4 - 98.64 | 0 - 100.00 | 76 - 89.95 | 52 - 96.32 |
 | Mem Usage (MB-%)| 6.4 - 13.61 | 2.1 - 100.00 | 40 - 5.60 | 14.1 - 100.00|
 
+## [1275. Find winner on a tic tac toe game.][1275]
+
+Mostly straighforward, fill a board up with the value and check if we have a
+winner.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.18 | 28 - 90.26 |
+| Mem Usage (MB-%)| 5.6 - 75.00 | 2 - 100.00 | 38.6 - 84.94 | 14.2 - 90.41 |
+
 ## [1281. Subtract the Product and Sum of Digits of an Integer][1281] 
 
 Continuously reduce `n` by `// 10` and add/multiply its modulo 
@@ -2777,6 +2787,7 @@ array. Space complexity is `O(1)`.
 [1252]: https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
 [1260]: https://leetcode.com/problems/shift-2d-grid/
 [1266]: https://leetcode.com/problems/minimum-time-visiting-all-points/
+[1275]: https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 [1287]: https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
