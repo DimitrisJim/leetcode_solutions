@@ -2669,6 +2669,7 @@ array. Space complexity is `O(1)`.
 [217]: https://leetcode.com/problems/contains-duplicate/
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
+[242]: https://leetcode.com/problems/valid-anagram/ 
 [257]: https://leetcode.com/problems/binary-tree-paths/
 [258]: https://leetcode.com/problems/add-digits
 [268]: https://leetcode.com/problems/missing-number/
@@ -2707,6 +2708,7 @@ array. Space complexity is `O(1)`.
 [693]: https://leetcode.com/problems/binary-number-with-alternating-bits/
 [696]: https://leetcode.com/problems/count-binary-substrings/
 [697]: https://leetcode.com/problems/degree-of-an-array/
+[700]: https://leetcode.com/problems/search-in-a-binary-search-tree/
 [704]: https://leetcode.com/problems/binary-search/
 [705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
@@ -2736,6 +2738,7 @@ array. Space complexity is `O(1)`.
 [905]: https://leetcode.com/problems/sort-array-by-parity/
 [908]: https://leetcode.com/problems/smallest-range-i/
 [917]: https://leetcode.com/problems/reverse-only-letters/
+[922]: https://leetcode.com/problems/sort-array-by-parity-ii/
 [929]: https://leetcode.com/problems/unique-email-addresses/
 [933]: https://leetcode.com/problems/number-of-recent-calls
 [937]: https://leetcode.com/problems/reorder-data-in-log-files/
@@ -2762,6 +2765,7 @@ array. Space complexity is `O(1)`.
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1122]: https://leetcode.com/problems/relative-sort-array/
 [1137]: https://leetcode.com/problems/n-th-tribonacci-number/
+[1160]: https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/
 [1170]: https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/
 [1184]: https://leetcode.com/problems/distance-between-bus-stops/
 [1185]: https://leetcode.com/problems/day-of-the-week/
