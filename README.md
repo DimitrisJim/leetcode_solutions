@@ -1247,6 +1247,29 @@ contribute in any way to our sum).
 | Runtime (ms-%)| 148 - 100.00 | 12 - 100.00 | 112 - 99.16 | 484 - 98.95 |
 | Mem Usage (MB-%)| 21.6 - 56.52 | 2.7 - 100.00 | 47.1 - 24.37 | 19 - 97.14 |
 
+## [989. Add to array from integer.][989]
+
+Generalized version of One Plus/Plus One problem. We start from the end of the array
+and start adding the digits in `K` from the right. We need to handle two cases, as
+with the case of Plus One. 
+
+If the sum of the digit with the value in the array is
+larger than nine, we add that sum `mod 10` to the array and increment `K` by one (`K`
+has been reduced `/ 10` by this point).
+
+If not (the sum is `< 9`) we just continue to the next digit in `K`.
+
+If `K` reached `0` or we reach the start of the array, we stop. We then need to check
+if `K` is zero or more values need to be added. If so, we create a temporary array
+out of the digits and prepend it (reversed!) to `A`.
+
+We then return either the new array or the original array `A`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 84 - 98.28 | 8 - 100.00 | 116 - 92.73 | 248 - 99.67 |
+| Mem Usage (MB-%)| 15.1 - 100.00 | 2.2 - 100.00 | 43.3 - 86.36 | 14.9 - 93.23 |
+
 ## [999. Available Captures for Rook.][999]
 
 Find the position of the rook and then just check it's row and column. (But from
@@ -2777,6 +2800,7 @@ array. Space complexity is `O(1)`.
 [976]: https://leetcode.com/problems/largest-perimeter-triangle/
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
 [985]: https://leetcode.com/problems/sum-of-even-numbers-after-queries
+[989]: https://leetcode.com/problems/add-to-array-form-of-integer/
 [999]: https://leetcode.com/problems/available-captures-for-rook
 [1002]: https://leetcode.com/problems/find-common-characters/
 [1009]: https://leetcode.com/problems/complement-of-base-10-integer/ 
