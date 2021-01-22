@@ -414,6 +414,16 @@ solution here.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 85.35 | 24 - 94.21 |
 | Mem Usage (MB-%)| 5.6 - 63.49 | 2 - 80.00 | 38.1 - 94.27 | 14 - 95.98 |
 
+## [485. Max Consecutive Ones][485]
+
+We have to scan the full array looking for the max consecutive number of ones. Runtime
+complexity is `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 36 - 95.44 | 0 - 100.00 | 80 - 92.82 | 332 - 96.94 |
+| Mem Usage (MB-%)| 7.4 - 97.54 | 2 - 85.71 | 41,6 - 32.50 | 14.3 - 92.44 |
+
 ## [496. Next greater element I.][496]
 
 Python has three solutions, brute force, with a bit of supporting structures and
@@ -2673,6 +2683,7 @@ array. Space complexity is `O(1)`.
 [448]: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 [461]: https://leetcode.com/problems/hamming-distance/
 [476]: https://leetcode.com/problems/number-complement/
+[485]: https://leetcode.com/problems/max-consecutive-ones/
 [496]: https://leetcode.com/problems/next-greater-element-
 [500]: https://leetcode.com/problems/keyboard-row
 [509]: https://leetcode.com/problems/fibonacci-number/
