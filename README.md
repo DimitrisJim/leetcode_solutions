@@ -241,6 +241,21 @@ of explaining).
 | Runtime (ms-%)| 0 - 100.00 | 4 - 61.40 | 84 - 95.92 | 28 - 99.36 |
 | Mem Usage (MB-%)| 5.8 - 85.24 | 2.1 - 100.00 | 40.9 - 64.49 | 14.5 - 69.02 |
 
+## [257. Binary Tree Paths,][257]
+
+Recursively build path by holding (and passing) the partially constructed path
+as an argument to the recursive function.
+
+The path is added to the result once we reach a leaf.
+
+Runtime complexity should be `O(N)` since we traverse each node. Space complexity
+is related to the number of branches.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.71 | 24 - 97.96 |
+| Mem Usage (MB-%)| 6.1 - 100.00 | 2 - 100.00 | 40.1 - 86.55 | 14 - 99.37 |
+
 ## [258. Add digits,][258]
 
 This is one of those cases where you need to examine what the results are in order
@@ -2644,6 +2659,7 @@ array. Space complexity is `O(1)`.
 [217]: https://leetcode.com/problems/contains-duplicate/
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
+[257]: https://leetcode.com/problems/binary-tree-paths/
 [258]: https://leetcode.com/problems/add-digits
 [268]: https://leetcode.com/problems/missing-number/
 [283]: https://leetcode.com/problems/move-zeroes
