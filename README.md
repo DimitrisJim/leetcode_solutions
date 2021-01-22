@@ -52,6 +52,22 @@ list.
 | Runtime (ms-%)| 0 - 100.00 | 4 - 100.00 | 84 - 92.62 | 32 - 91.62 |
 | Mem Usage (MB-%)| 6.3 - 47.94 | 2 - 83.19 | 40.1 - 91.86 | 14.1 - 83.79 |
 
+## [66. Plus One][66]
+
+Relatively straight-forward, if we encounter a `9`, we need to zero it and move
+left to the next item in the array. If it isn't a nine, we increment and return.
+
+Care is needed to detect when the array is basically full of `9`s in which case we
+need to prepend a `1` before we return. 
+
+Runtime complexity is `O(N)`, we perform constant operations for each item in the
+array. Space complexity is `O(1)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.75 | 24 - 97.53 |
+| Mem Usage (MB-%)| 5.8 - 99.54| 2 - 93.75 | 38.6 - 69.35 | 14.3 - 48.72 |
+
 ## [100. Same Tree][100]
 
 C recursively solves it while the others use the iterative approach. In all cases
@@ -2665,6 +2681,7 @@ array. Space complexity is `O(1)`.
 [1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
+[66]: https://leetcode.com/problems/plus-one/
 [100]: https://leetcode.com/problems/same-tree/
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
