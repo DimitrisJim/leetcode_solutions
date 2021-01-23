@@ -234,6 +234,25 @@ utilizing a stack.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.23 | 20 - 99.04 |
 | Mem Usage (MB-%)| 5.8 - 99.02 | 2 - 88.89 | 38.9 - 55.11 | 14.2 - 39.78 |
 
+## [232. Implement Queue using Stacks.][232]
+
+Only uses stack equivalent operations. Two lists are created, one that holds values
+pushed and one that holds values that will be popped. When time comes to pop/peek,
+we check to see if the list holding values to be popped is empty. 
+
+If it's emtpy, we continuously push the values popped from the other list (thereby
+restoring the FIFO principle). 
+
+If it isn't empty, we immediatelly just pop/peek from it.
+
+`is_empty` is `O(1)`. The rest are amortized `O(1)` operations (`push` definitely is,
+at least. I'm relatively certain `peek` and `pop` are too).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.36 | 20 - 98.63 |
+| Mem Usage (MB-%)| 5.8 - 96.97 | 1.9 - 100.00 | 38.4 - 67.68 | 14.1 - 98.99 |
+
 ## [237. Delete node in a Linked List][237]
 
 Swap contents of `node` with contents of `node.next`. Rust version not
@@ -2718,6 +2737,7 @@ array. Space complexity is `O(1)`.
 [206]: https://leetcode.com/problems/reverse-linked-list/
 [217]: https://leetcode.com/problems/contains-duplicate/
 [226]: https://leetcode.com/problems/invert-binary-tree/
+[232]: https://leetcode.com/problems/implement-queue-using-stacks
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
 [242]: https://leetcode.com/problems/valid-anagram/ 
 [257]: https://leetcode.com/problems/binary-tree-paths/
