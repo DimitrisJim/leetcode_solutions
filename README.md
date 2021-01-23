@@ -175,6 +175,18 @@ numbers is zero.
 | Runtime (ms-%)| 12 - 99.30 | 0 - 100.00 | 80 - 92.47 | 112 - 99.63 |
 | Mem Usage (MB-%)| 7.1 - 99.80 | 2.1 - 81.55 | 39.9 - 98.51 | 16.7 - 29.16 |
 
+## [155. Min Stack.][155]
+
+See each file for detailed comments. Basically, hold min around and update it if we
+pop it off at any point.
+
+All operations other than pop (which is `O(N)`) are done in `O(1)` or amortized `O(1)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 24 - 97.52 | 0 - 100.00 | 112 - 96.23 | 48 - 99.24 |
+| Mem Usage (MB-%)| 12.6 - 93.39 | 5.5 - 96.15 | 45.4 - 71.54 | 17.9 - 66.92 |
+
 ## [167. Two sum II input array is sorted.][167]
 
 Array is sorted, use two counters (start, end) and increase, reduce respectively
@@ -2732,6 +2744,7 @@ array. Space complexity is `O(1)`.
 [119]: https://leetcode.com/problems/pascals-triangle-ii/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [136]: https://leetcode.com/problems/single-number
+[155]: https://leetcode.com/problems/min-stack/
 [167]: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 [171]: https://leetcode.com/problems/excel-sheet-column-number/
 [206]: https://leetcode.com/problems/reverse-linked-list/
