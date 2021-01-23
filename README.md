@@ -6,14 +6,10 @@ Some small notes:
   Sometimes this makes me write code which is what you would call
   premature optimization (especially in Python.)
 - Rust seems to optimize very well and uniformly, leading 
-to `100%` execution/memory consistently.
-- This leads me to believe that these metrics are hoarser 
-than would be expected. Take them with a grain of salt (Especially
-the metrics on memory).
-- I'm using Firefox, not sure if this has any impact on the 
-  timings for Javascript.
-- Search for `TODO: Improve` for places where I think I've 
-messed up slightly.
+to `100%` execution/memory consistently. (Update: Low number of submissions
+  also has an effect.
+- Search for `TODO: Improve` for places where I think I've messed up slightly
+  (also see Revisit.md).
 - Problems that are new have skewed timings because of the initial low
   number of submissions.
 
@@ -234,6 +230,19 @@ compare its size against that of the size of the original array.)
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 24 - 41.52 | 0 - 100.00 | 76 - 98.14 | 108 - 96.99 |
 | Mem Usage (MB-%)| 17 - 10.73 | 2.7 - 84.62 | 45 - 54.84 | 20.1 - 81.21 |
+
+## [225. Implement Stack Using Queues.][225]
+
+Don't particularly like these problems (also see Queue using Stacks). I'll just
+add the Python solution, not really planning on adding others.
+
+Uses a single queue actually since I really couldn't see the point of using a
+second queue instead of rotating, adjusting to use second queue is straight-forward.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| N/A | N/A | N/A | 24 - 94.57 |
+| Mem Usage (MB-%)| N/A | N/A | N/A | 14.4 - 46.41 |
 
 ## [226. Invert Binary Tree][226]
 
@@ -2749,6 +2758,7 @@ array. Space complexity is `O(1)`.
 [171]: https://leetcode.com/problems/excel-sheet-column-number/
 [206]: https://leetcode.com/problems/reverse-linked-list/
 [217]: https://leetcode.com/problems/contains-duplicate/
+[225]: https://leetcode.com/problems/implement-stack-using-queues/
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [232]: https://leetcode.com/problems/implement-queue-using-stacks
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
