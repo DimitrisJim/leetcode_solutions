@@ -2186,6 +2186,16 @@ Can, at least, re-use the array we're given.
 | Runtime (ms-%)| 4 - 98.68 | 0 - 100.00 | 80 - 91.33 | 44 - 97.07 |
 | Mem Usage (MB-%)| 6.6 - 56.58 | 2.2 - 100.00 | 40.2 - 5.61 |14.3 - 100.00|
 
+## [1476. Subrectangle Queries.][1476]
+
+Can't see a non-O(N\*M) way to implement `update_subrectangle`, so, we brute force
+it there. `get_value` is an easy `O(1)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 32 - 100.00 | 8 - 100.00 | 100 - 97.37 | 156 - 86.78 |
+| Mem Usage (MB-%)| 10.2 - 85.71 | 3.1 - 93.75 | 45.2 - 11.18 | 15.8 - 99.72 |
+
 ## [1480. Running Sum of 1d Array][1480]
 
 Basically add as we go through the array. 
@@ -2924,6 +2934,7 @@ Runtime O(N), space O(1).
 [1464]: https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array
 [1470]: https://leetcode.com/problems/shuffle-the-array/
 [1475]: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
+[1476]: https://leetcode.com/problems/subrectangle-queries/
 [1480]: https://leetcode.com/problems/running-sum-of-1d-array/
 [1486]: https://leetcode.com/problems/xor-operation-in-an-array/
 [1491]: https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary
