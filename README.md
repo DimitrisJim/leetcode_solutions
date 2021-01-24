@@ -2741,6 +2741,20 @@ array. Space complexity is `O(1)`.
 | Runtime (ms-%)| 36 - 100.00 | 4 - 100.00 | 92 - 100.00 | 172 - 100.00 |
 | Mem Usage (MB-%)| 8 - 100.00 | 2.2 - 100.00 | 41.5 - 100.00 | 14.8 - 100.00 |
 
+## [1732. Find the highest altitude.][1732]
+
+Initialize max and height to zero. Go through gains and add to height, if height is
+larger than max, set max to height.
+
+Return max.
+
+Runtime O(N), space O(1).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 100.00 | 28 - 100.00 |
+| Mem Usage (MB-%)| 6 - 100.00 | 2.1 - 100.00 | 38.6 - 100.00 | 14.1 - 100.00 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
@@ -2953,3 +2967,4 @@ array. Space complexity is `O(1)`.
 [1716]: https://leetcode.com/problems/calculate-money-in-leetcode-bank/
 [1720]: https://leetcode.com/problems/decode-xored-array/
 [1725]: https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/
+[1732]: https://leetcode.com/problems/find-the-highest-altitude
