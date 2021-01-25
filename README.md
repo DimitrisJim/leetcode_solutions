@@ -2657,6 +2657,34 @@ Add the divmod of `n` by `2` continuously until `n` reaches `1` (last match).
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 85.89 | 16 - 99.96 |
 | Mem Usage (MB-%)| 5.5 - 78.38 | 2 - 91.18 | 38.5 - 76.57 | 14.2 - 45.53 |
 
+## [1689. Partition into minimum number of deci-binary numbers.][1689]
+
+Idea is simple after you view digits as points in a vector (at least,
+that's how I visualized it). 
+    
+We can continuously reduce by one each position until it reaches zero,
+no matter what the number is, at each step every single one of its positions
+will be reduced by one. As an example with `n = "93240032"`:
+  
+We can now create a deci-binary number that has a 1 for each position in n > 0
+and a zero if the position in n is 0:
+
+```    
+   "93240032"
+ - "11110011"  <-- deci-binary
+ = "82130021"
+```
+        
+This process can continue untill all the digits of the number are equal to zero.
+This leads to the minimal set of numbers since it is the minimal set of ones to
+reach the max digit (we can only increase by one, there's no faster way to reach
+a given digit.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 88 - 91.16 | 44 - 96.88 |
+| Mem Usage (MB-%)| 7.8 - 83.33 | 2.1 - 59.46 | 42.8 - 95.98 | 14.6 - 97.73 |
+
 ## [1694. Reformat phone numbers.][1694]
 
 For `Python` and `Rust`: First remove all `'-'` and `' '` characters from the
@@ -2972,6 +3000,7 @@ Runtime O(N), space O(1).
 [1684]: https://leetcode.com/problems/count-the-number-of-consistent-strings/
 [1688]: https://leetcode.com/problems/count-of-matches-in-tournament/
 [1694]: https://leetcode.com/problems/reformat-phone-number
+[1689]: https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/ 
 [1700]: https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
 [1704]: https://leetcode.com/problems/determine-if-string-halves-are-alike/
 [1710]: https://leetcode.com/problems/maximum-units-on-a-truck/
