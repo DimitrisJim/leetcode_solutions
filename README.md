@@ -1951,6 +1951,21 @@ Basically, two cases:
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 87.27 | 20 - 98.14 |
 | Mem Usage (MB-%)| 6.2 - 74.04 | 2.2 - 100.00 | 39 - 19.09 | 14.3 - 100.00 |
 
+## [1379. Find a corresponding node of a binary tree in a clone of that tree.][1379]
+
+Just traverse the cloned tree looking for a node with a value equal to the value of
+the target node.
+
+Note on Follow up: For this case, we can simply build a path in the original tree
+while looking for target and then follow that path in cloned to find its reference.
+
+Note: C and Rust versions aren't available.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| N/A | N/A | 296 - 94.16 | 592 - 97.39 |
+| Mem Usage (MB-%)| N/A | N/A | 59.4 - 70.94 | 23.9 - 96.23 |
+
 ## [1380. Lucky numbers in a Matrix][1380]
 
 Build a set to hold minimum values of each row and a 
@@ -2942,6 +2957,7 @@ Runtime O(N), space O(1).
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 [1370]: https://leetcode.com/problems/increasing-decreasing-string/
 [1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
+[1379]: https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/
 [1380]: https://leetcode.com/problems/lucky-numbers-in-a-matrix/
 [1385]: https://leetcode.com/problems/find-the-distance-value-between-two-arrays
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
