@@ -1705,6 +1705,21 @@ Continuously reduce `n` by `// 10` and add/multiply its modulo
 | Runtime (ms-%)| 0 - 100.00  | 0 - 100.00 | 72 - 86.84 | 20 - 98.44 |
 | Mem Usage (MB-%)| 5.7 - 14.29 | 2 - 100.00 | 38.5 - 20.85 | 14.1 - 99.96 |
 
+## [1282. Group the people given the group size they belong to.][1282] 
+
+Use a map to hold the groups as we build them. Once a group is filled up,
+add it to the result and reset the group in the map.
+
+Don't forget to add any pending groups after iterating through `groupSizes`.
+
+Runtime complexity is `O(N)` where `N` is the size of `groupSizes`, space 
+complexity is, I believe, similarly `O(N)`. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 24 - 100.00 | 0 - 100.00 | 84 - 100.00 | 72 - 88.83 |
+| Mem Usage (MB-%)| 9.7 - 80.00 | 2.1 - 72.00 | 43.9 - 84.29 | 14.2 - 98.32 |
+
 ## [1287. Element appearing more than 25% in sorted array.][1287]
 
 Calculate the threshold 25% corresponds to and go through the array counting lengths
@@ -2940,6 +2955,7 @@ Runtime O(N), space O(1).
 [1266]: https://leetcode.com/problems/minimum-time-visiting-all-points/
 [1275]: https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/
 [1281]: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
+[1282]: https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
 [1287]: https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/
 [1290]: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
 [1295]: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
