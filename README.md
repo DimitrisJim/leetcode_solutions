@@ -906,6 +906,20 @@ array. Then, gradually find the lines needed.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 90.28 | 20 - 99.40 |
 | Mem usage (mb-%)| 5.8 - 44.44 | 2 - 66.67 | 39.4 - 12.50 | 14.2 - 48.64 |
 
+## [807. Max increase to keep city skyline.][807]
+
+Max ammount that we can grow is `min(max_of_row, max_of_col)`. We can just find
+these values and compute the maximum increase.
+
+Pretty sure complexity is around `O(N*M)`, inner loop computing maximum for column only 
+runs once per column, this means that we have a significant lower term in our
+complexity equation.  
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 93.02 | 0 - 100.00 | 80 - 91.76 | 64 - 96.36 |
+| Mem usage (mb-%)| 6 - 97.67 | 2.1 - 86.67 | 39.1 - 92.86 | 14.3 - 61.22 |
+
 ## [811. Subdomain visit count.][811]
 
 Hold domains/subdomains in a Counter and count values after 
@@ -2895,6 +2909,7 @@ Runtime O(N), space O(1).
 [788]: https://leetcode.com/problems/rotated-digits
 [804]: https://leetcode.com/problems/unique-morse-code-words/
 [806]: https://leetcode.com/problems/number-of-lines-to-write-string/
+[807]: https://leetcode.com/problems/max-increase-to-keep-city-skyline/
 [811]: https://leetcode.com/problems/subdomain-visit-count/
 [812]: https://leetcode.com/problems/largest-triangle-area/
 [821]: https://leetcode.com/problems/shortest-distance-to-a-character/
