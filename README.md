@@ -1837,6 +1837,17 @@ definitely something better here.)
 | Runtime (ms-%)| 32 - 81.07 | 4 - 100.00 | 92 - 85.55 | 64 - 89.35|
 | Mem Usage (MB-%)| 10.4 | 2.1 - 100.00 | 42.3 - 5.85 | 14.5 - 13.10|
 
+## [1315. Sum of nodes with even valued grandparent.][1315]
+
+Traverse the tree normally, hold around the value of the parent of the node
+currently traversing on and if that node's children exist and the parent value
+is even, add them to the sum. Recurse.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 16 - 93.48 | 4 - 100.00 | 96 - 99.00 | 92 - 94.27 |
+| Mem Usage (MB-%)| 15.7 - 97.83 | 3 - 100.00 | 48.8 - 62.50 | 17.7 - 93.81 |
+
 ## [1317. Convert integer to the sum of the two non-zero integers.][1317]
 
 Start from the largest, smallest pair possible `(n-1, 1)` and either increase the 
@@ -2978,6 +2989,7 @@ Runtime O(N), space O(1).
 [1304]: https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero
 [1309]: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping
 [1313]: https://leetcode.com/problems/decompress-run-length-encoded-list/
+[1315]: https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/
 [1317]: https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/
 [1323]: https://leetcode.com/problems/maximum-69-number/
 [1332]: https://leetcode.com/problems/remove-palindromic-subsequences/
