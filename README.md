@@ -2140,6 +2140,18 @@ larger strings. Bail when you find a match.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 91.22 | 28 - 97.24 |
 | Mem Usage (MB-%)| 6 - 100.00 | 2 - 100.00 | 38.2 - 99.62 | 14.2 - 67.69 |
 
+## [1409. Queries on a permutation with key.][1409]
+
+Don't think there's much of a trick here, we go along with what the problem describes,
+finding the index and then swapping the position of the value queried. 
+
+Runtime complexity should be O(nm) where n is the size of the queries. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 73.33 | 0 - 100.00 | 76 - 99.25 | 48 - 93.41 |
+| Mem Usage (MB-%)| 6.1 - 98.33 | 2 - 81.82 | 40.1 - 67.91 | 14.4 - 84.89 |
+
 ## [1413. Minimum Value to get positive step by step sum.][1413]
 
 Start with an initial minimum guess of `1` and go through the values of the
@@ -3081,6 +3093,7 @@ Runtime O(N), space O(1).
 [1399]: https://leetcode.com/problems/count-largest-group/
 [1403]: https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
 [1408]: https://leetcode.com/problems/string-matching-in-an-array/
+[1409]: https://leetcode.com/problems/queries-on-a-permutation-with-key/
 [1413]: https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum
 [1417]: https://leetcode.com/problems/reformat-the-string/
 [1422]: https://leetcode.com/problems/maximum-score-after-splitting-a-string/
