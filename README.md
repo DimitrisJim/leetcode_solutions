@@ -2620,6 +2620,22 @@ though, need to use same tie-braking mechanism as C there.**
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 84 - 98.23 | 40 - 98.75 |
 | Mem Usage (MB-%)| 7.3 - 28.00 | 2 - 71.43 | 41.8 - 23.89 | 13.9 - 97.38 |
 
+## [1637. Widest vertical area between two points containing no points.][1637]
+
+We don't need the `y` axis to find greatest vertical distance, we need the `x` axis
+in sorted order. We can then find the max difference between two adjacent points.
+
+Note: Though it doesn't help much (at least not in any besides Python), we can also
+notice that we need distinct `x` values. We can use a set to filter duplicate x values
+while building the array holding them.
+
+This approach is only used in Python, in others, it didn't result in any benefit.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 200 - 92.00 | 24 - 90.00 | 172 - 98.66 | 800 - 95.57 |
+| Mem Usage (MB-%)| 28.6 - 64.00 | 9.6 - 96.00 | 62.6 - 32.89 | 55.3 - 19.34 |
+
 ## [1640. Check Array Formation Through Concatenation][1640]
 
 Build a set-like supporting structure for fast O(1) look-ups.
@@ -3063,6 +3079,7 @@ Runtime O(N), space O(1).
 [1624]: https://leetcode.com/problems/largest-substring-between-two-equal-characters
 [1629]: https://leetcode.com/problems/slowest-key/
 [1636]: https://leetcode.com/problems/sort-array-by-increasing-frequency/
+[1637]: https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/
 [1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
 [1646]: https://leetcode.com/problems/get-maximum-in-generated-array/
 [1652]: https://leetcode.com/problems/defuse-the-bomb/
