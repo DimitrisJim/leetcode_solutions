@@ -1910,6 +1910,24 @@ to reach our desired result `969`).
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 47.88 | 20 - 98.80 |
 | Mem Usage (MB-%)| 5.4 - 29.69 | 1.9 - 100.00 | 38.8 - 32.54 | 14.1 - 99.85 |
 
+## [1329. Sort the matrix diagonally.][1329]
+
+The trickiest part is finding how to nicely traverse the diagonals of the matrix.
+After doing that, we can collect each diagonal in a separate vector, sort it and
+then place it back into the matrix.
+
+I've implemented diagonal traversing via while loops. Starting from the leftmost
+bottom position, we decrease the row index and (after the row index reaches zero)
+icrease the column index. The inner while loops simply traverse the diagonal (each
+index is increased by one until we reach the end for either one).
+
+Can't really guess much on the complexity. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 20 - 91.92 | 0 - 100.00 | 84 - 99.46 | 76 - 96.70 |
+| Mem Usage (MB-%)| 8.5 - 90.91 | 2.2 - 90.38 | 41 - 92.90 | 14.6 - 52.14 |
+
 ## [1332. Remove palindromic subsequences.][1332]
 
 **Big** note to self: *Pay attention to the description*. It asks for
@@ -3046,6 +3064,7 @@ Runtime O(N), space O(1).
 [1315]: https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/
 [1317]: https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/
 [1323]: https://leetcode.com/problems/maximum-69-number/
+[1329]: https://leetcode.com/problems/sort-the-matrix-diagonally/
 [1332]: https://leetcode.com/problems/remove-palindromic-subsequences/
 [1337]: https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
 [1342]: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
