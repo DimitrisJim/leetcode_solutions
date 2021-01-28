@@ -1412,6 +1412,18 @@ keep it.
 | Runtime (ms-%)| 104 - 100.00 | 12 - 100.00 | 140 - 83.33 | 144 - 98.49 |
 | Mem Usage (MB-%)| 23 - 12.50 | 2.7 - 75.00 | 47.5 - 40.00 | 16.2 - 41.04 |
 
+## [1038. Binary Search Tree to greater sum tree.][1038]
+
+This is a depth first inorder traversal. We do need to go right though. Care is
+needed when traversing the left subtree; the accumulated value needs to be equal
+to the value accumulated after visiting `left` and equal to the parent value if
+the left subtree doesn't exist.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 92.61 | 24 - 96.32 |
+| Mem Usage (MB-%)| 5.9 - 100.00 | 2 - 100.00 | 39.2 - 17.24 | 14.1 - 87.18 |
+
 ## [1046. Last stone weight.][1046]
 
 This is the job for a heap that helps us retain sorted order after each pop/push.
@@ -2988,6 +3000,7 @@ Runtime O(N), space O(1).
 [1022]: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers
 [1025]: https://leetcode.com/problems/divisor-game/
 [1030]: https://leetcode.com/problems/matrix-cells-in-distance-order/
+[1038]: https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree
 [1046]: https://leetcode.com/problems/last-stone-weight/
 [1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 [1051]: https://leetcode.com/problems/height-checker
