@@ -560,6 +560,16 @@ I really like generators so I don't care.
 | Runtime (ms-%)| 8 - 97.44 | 0 - 100.00 | 128 - 14.84 | 48 - 96.33 |
 | Mem Usage (MB-%)| 10.8 - 20.51 | 2.9 - 25.00 | 46.2 - 9.03 | 16.3 - 32.45 |
 
+## [538. Convert BST to Greater Tree][538]
+
+Code used is exactly the same for [Binary Search Tree to Greater Sum Tree](1038).
+As such, see `1038.*` files for the code. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 16 - 92.86 | 0 - 100.00 | 100 - 100.00 | 72 - 98.64 |
+| Mem Usage (MB-%)| 13.7 - 100.00 | 2.9 - 83.33 | 47.7 - 28.72 | 16.7 - 80.07 |
+
 ## [557. Reverse Words in a String III][561]
 
 C mutates the string in-place because it's allowable there. 
@@ -2932,6 +2942,7 @@ Runtime O(N), space O(1).
 [520]: https://leetcode.com/problems/detect-capital/
 [521]: https://leetcode.com/problems/longest-uncommon-subsequence-i/
 [530]: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
+[538]: https://leetcode.com/problems/convert-bst-to-greater-tree
 [566]: https://leetcode.com/problems/reshape-the-matrix/
 [575]: https://leetcode.com/problems/distribute-candies
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
