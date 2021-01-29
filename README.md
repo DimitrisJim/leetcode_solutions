@@ -705,6 +705,19 @@ is present inside the set, if so, done.
 | Runtime (ms-%)| 4 - 98.11 | 0 - 100.00 | 104 - 97.44 | 68 - 97.46 |
 | Mem Usage (MB-%)| 25.6 - 18.87 | 3.3 - 80.00 | 48.7 - 22.16 | 16.3 - 94.07 |
 
+## [654. Maximum Binary Tree.][654]
+
+Work with ranges. Start by calling recursive function in full range. Find max and its
+index in the nums array and then recurse on `[start, id_max]` for the left subtree
+and `[id_max + 1, end]` for the right subtree.
+
+Create node and return.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 36 - 98.11 | 8 - 100.00 | 108 - 96.08 | 192 - 88.87 |
+| Mem Usage (MB-%)| 26.9 - 90.57 | 2.1 - 100.00 | 45.1 - 77.94 | 15.1 - 8.05 |
+
 ## [657. Robot Return to Origin][657]
 
 Count occurences and compare. If number of 'D's matches number 
@@ -2983,6 +2996,7 @@ Runtime O(N), space O(1).
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [637]: https://leetcode.com/problems/average-of-levels-in-binary-tree/
 [653]: https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
+[654]: https://leetcode.com/problems/maximum-binary-tree/
 [657]: https://leetcode.com/problems/robot-return-to-origin/
 [669]: https://leetcode.com/problems/trim-a-binary-search-tree/
 [682]: https://leetcode.com/problems/baseball-game/
