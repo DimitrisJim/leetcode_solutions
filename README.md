@@ -560,6 +560,19 @@ I really like generators so I don't care.
 | Runtime (ms-%)| 8 - 97.44 | 0 - 100.00 | 128 - 14.84 | 48 - 96.33 |
 | Mem Usage (MB-%)| 10.8 - 20.51 | 2.9 - 25.00 | 46.2 - 9.03 | 16.3 - 32.45 |
 
+## [535. Encode and Decode TinyURL.][535]
+
+As basic as it gets implementation. (Note: just returning the string as-is actually
+works, they don't test to guard against this).
+
+There's an issue with Rust in that the test code declares the coder as immutable
+thereby not allowing us to pass it mutably by reference.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | N/A | 84 - 93.40 | 24 - 97.30 |
+| Mem Usage (MB-%)| | N/A | 40 - 83.96 | 14.2 - 58.76 |
+
 ## [538. Convert BST to Greater Tree][538]
 
 Code used is exactly the same for [Binary Search Tree to Greater Sum Tree](1038).
@@ -2985,6 +2998,7 @@ Runtime O(N), space O(1).
 [520]: https://leetcode.com/problems/detect-capital/
 [521]: https://leetcode.com/problems/longest-uncommon-subsequence-i/
 [530]: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
+[535]: https://leetcode.com/problems/encode-and-decode-tinyurl/
 [538]: https://leetcode.com/problems/convert-bst-to-greater-tree
 [566]: https://leetcode.com/problems/reshape-the-matrix/
 [575]: https://leetcode.com/problems/distribute-candies
