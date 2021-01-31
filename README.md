@@ -1382,6 +1382,24 @@ This probably isn't the best way to go about it.
 | Runtime (ms-%)| 12 - 8.33 | 4 - 45.45 | 88 - 81.43 | 36 - 97.01 |
 | Mem Usage (MB-%)| 12.1 - 5.56 | 2 - 100.00 | 42.7 - 55.97 | 14 - 98.23 |
 
+## [1008. Construct Binary Search Tree from preorder traversal.][1008]
+
+Key insight is that left subtree is composed of values smaller than the parent 
+value  and right of values larger than parent value.
+
+During each recursive call, we pass bounds to the function indicating the values that
+should be considered for left/right subtrees. Initially, these denote the full array.
+Then we scan the array and find the maximum value that is smaller than our parent value
+, this is the bound for the values of the left subtree. The rest denote the values
+for the right subtree.
+
+With a base case of the bounds matching, we can recursively build our tree.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 99.36 | 32 - 92.64 |
+| Mem Usage (MB-%)| 8.1 - 60.78 | 2.1 - 66.67 | 40.3 - 19.23 | 14.3 - 46.43 |
+
 ## [1009. Complement of a base-10 integer.][1009]
 
 [Same as problem.][476]
@@ -3064,6 +3082,7 @@ Runtime O(N), space O(1).
 [989]: https://leetcode.com/problems/add-to-array-form-of-integer/
 [999]: https://leetcode.com/problems/available-captures-for-rook
 [1002]: https://leetcode.com/problems/find-common-characters/
+[1008]: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal
 [1009]: https://leetcode.com/problems/complement-of-base-10-integer/ 
 [1021]: https://leetcode.com/problems/remove-outermost-parentheses
 [1022]: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers
