@@ -2973,6 +2973,42 @@ Runtime O(N), space O(1).
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 100.00 | 28 - 100.00 |
 | Mem Usage (MB-%)| 6 - 100.00 | 2.1 - 100.00 | 38.6 - 100.00 | 14.1 - 100.00 |
 
+## [1742. Maximum Number of Balls in a box][1742]
+
+Go through range counting indices. Best trick is to not compute the indices for
+all numbers. Rather take advantage of fact that for a given number, we can compute
+the base index of its multiple of ten and then add to that the next nine values
+from [0-9].
+
+For example, given ranges `[39, 73]`, we can skip computing indices for all numbers
+and instead compute them for `[40, 50, 60, 70]`, i.e multiples of ten.
+The remaining numbers can be added by just adding the remainder (or, really, the 
+range from `[0, 9]` to that base number. In short, what we compute is:
+
+```python
+# 3 is quotent 30 // 10
+sum_digits(3) -> 3
+# 9 is the remainder of 39 % 10.
+add_to_counter_with_base(3, 9, 10)
+# 4 is quotent of 40 // 10
+sum_digits(4) -> 4
+# add full range from 0-9.
+add_to_counter_with_base(4, 0, 10)
+# 5 is quotent of 50 // 10
+# add full range from 0-9
+add_to_counter_with_base(5, 0, 10)
+# similarly for 60
+# seven is quotent of 70 // 10.
+sum_digits(7) -> 7
+# 3 is remainder of 73 % 10
+add_to_counter_with_base(7, 0, 3)
+```
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 92 - 99.58 | 156 - 99.80 |
+| Mem Usage (MB-%)| 5.6 - 58.82 | 2 - 59.09 | 38.6 - 90.72 | 14.4 - 33.47 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
@@ -3201,3 +3237,4 @@ Runtime O(N), space O(1).
 [1720]: https://leetcode.com/problems/decode-xored-array/
 [1725]: https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/
 [1732]: https://leetcode.com/problems/find-the-highest-altitude
+[1742]: https://leetcode.com/problems/maximum-number-of-balls-in-a-box/
