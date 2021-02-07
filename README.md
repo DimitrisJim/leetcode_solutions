@@ -3023,6 +3023,30 @@ smaller one.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 84 - 100.00 | 32 - 100.00 |
 | Mem Usage (MB-%)| 5.8 - 100 | 2.1 - 100.00 | 39.1 - 100.00 | 14.3 - 100.00 |
 
+## [1752. Check if array is sorted and rotated.][1752]
+
+Keep track of starting value in nums.
+
+Iterate through `nums` checking if the invariant (`nums[i-1] < nums[i]`) holds. If we
+reach the end, we have a sorted array with no rotations.
+
+If we don't reach the end (i.e `nums[i-1] > nums[i]`), we've reached a possible point
+where the array was rotated. In order for the array pre-rotation to be valid two
+things need to hold:
+
+ - same invariant (i.e `nums[i-1] < nums[i]`)
+ - all values must be `<= start`.
+
+If the first condition doesn't hold, the pre-rotated array wasn't sorted in non-decreasing
+order.
+If the second condition doesn't hold, the pre-rotated array wasn't sorted since `start`
+is smaller than an element that is found to its left. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 100.00 | 24 - 100.00 |
+| Mem Usage (MB-%)| 6.1 - 100.00 | 2.1 - 100.00 | 38.4 - 100.00 | 14 - 100.00 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
@@ -3253,3 +3277,4 @@ smaller one.
 [1732]: https://leetcode.com/problems/find-the-highest-altitude
 [1742]: https://leetcode.com/problems/maximum-number-of-balls-in-a-box/
 [1748]: https://leetcode.com/problems/sum-of-unique-elements/ 
+[1752]: https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
