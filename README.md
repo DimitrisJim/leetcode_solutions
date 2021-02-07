@@ -2981,9 +2981,10 @@ the base index of its multiple of ten and then add to that the next nine values
 from [0-9].
 
 For example, given ranges `[39, 73]`, we can skip computing indices for all numbers
-and instead compute them for `[40, 50, 60, 70]`, i.e multiples of ten.
-The remaining numbers can be added by just adding the remainder (or, really, the 
-range from `[0, 9]` to that base number. In short, what we compute is:
+and instead compute them for `[30, 40, 50, 60, 70]`, i.e multiples of ten.
+The remaining numbers can be added by adding the 
+range from `[0, 9]` to that base number, special cases apply for the initial multiple
+of ten and the final one (because we have remainders). Coarsely, what we compute is:
 
 ```python
 # 3 is quotent 30 // 10
@@ -3008,6 +3009,19 @@ add_to_counter_with_base(7, 0, 3)
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 92 - 99.58 | 156 - 99.80 |
 | Mem Usage (MB-%)| 5.6 - 58.82 | 2 - 59.09 | 38.6 - 90.72 | 14.4 - 33.47 |
+
+## [1748. Sum of unique elements][1748]
+
+Rust, Javascript, Python all use sets in order to keep track of seen numbers and
+unique numbers. All could use `C`s alternative of using a bit-array in order to
+keep track of these and reduce memory requirements. All in all, all run in `O(N)`
+and while `C`s memory complexity should also be `O(N)` it definitely is a much
+smaller one.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 84 - 100.00 | 32 - 100.00 |
+| Mem Usage (MB-%)| 5.8 - 100 | 2.1 - 100.00 | 39.1 - 100.00 | 14.3 - 100.00 |
 
 [1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
@@ -3238,3 +3252,4 @@ add_to_counter_with_base(7, 0, 3)
 [1725]: https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/
 [1732]: https://leetcode.com/problems/find-the-highest-altitude
 [1742]: https://leetcode.com/problems/maximum-number-of-balls-in-a-box/
+[1748]: https://leetcode.com/problems/sum-of-unique-elements/ 
