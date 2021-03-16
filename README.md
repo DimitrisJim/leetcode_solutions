@@ -3047,6 +3047,16 @@ is smaller than an element that is found to its left.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 100.00 | 24 - 100.00 |
 | Mem Usage (MB-%)| 6.1 - 100.00 | 2.1 - 100.00 | 38.4 - 100.00 | 14 - 100.00 |
 
+## [1773. Count items matching a rule.][1773]
+
+Find index which `ruleKey` corresponds to and then count items matching the `ruleValue`. This results in `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 60 - 100.00 | 12 - 100.00 | 84 - 100.00 | 240 - 100.00 |
+| Mem Usage (MB-%)| 13.6 - 100.00 | 4.4 - 100.00 | 42.4 - 100.00 | 20.7 - 50.00 |
+
+
 [1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
@@ -3278,3 +3288,4 @@ is smaller than an element that is found to its left.
 [1742]: https://leetcode.com/problems/maximum-number-of-balls-in-a-box/
 [1748]: https://leetcode.com/problems/sum-of-unique-elements/ 
 [1752]: https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
+[1773]: https://leetcode.com/problems/count-items-matching-a-rule
