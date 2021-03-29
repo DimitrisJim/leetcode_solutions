@@ -3047,6 +3047,18 @@ is smaller than an element that is found to its left.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 100.00 | 24 - 100.00 |
 | Mem Usage (MB-%)| 6.1 - 100.00 | 2.1 - 100.00 | 38.4 - 100.00 | 14 - 100.00 |
 
+## [1768. Merge Strings Alternatively.][1768]
+
+Zip strings and build until length of smallest. Then push what's left from the largest
+to the result.
+
+O(N) where N is size of largest string.
+
+| Stats/Lang  | C  | Rust  | JS  | Py | 
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 60 - 99.88 | 24 - 95.91 |
+| Mem Usage (MB-%)| 5.7 - 100.00 | 2.1 - 60.42 | 39.2 - 20.05 | 14.1 - 81.02 |
+
 ## [1773. Count items matching a rule.][1773]
 
 Find index which `ruleKey` corresponds to and then count items matching the `ruleValue`. This results in `O(N)`.
@@ -3288,4 +3300,5 @@ Find index which `ruleKey` corresponds to and then count items matching the `rul
 [1742]: https://leetcode.com/problems/maximum-number-of-balls-in-a-box/
 [1748]: https://leetcode.com/problems/sum-of-unique-elements/ 
 [1752]: https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
+[1768]: https://leetcode.com/problems/merge-strings-alternately/
 [1773]: https://leetcode.com/problems/count-items-matching-a-rule
