@@ -3068,6 +3068,16 @@ Find index which `ruleKey` corresponds to and then count items matching the `rul
 | Runtime (ms-%)| 60 - 100.00 | 12 - 100.00 | 84 - 100.00 | 240 - 100.00 |
 | Mem Usage (MB-%)| 13.6 - 100.00 | 4.4 - 100.00 | 42.4 - 100.00 | 20.7 - 50.00 |
 
+## [1779. Find nearest point that has the same x or y coordinate.][1779]
+
+`O(N)`, the main insight (i guess) is the fact that you don't really need to calculate one part of the manhattan distance
+since you know it will be zero (`xi == x <=> xi - x == 0`, similarly for `yi, y`).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 140 - 98.46 | 16 - 97.73 | 104 - 94.58 | 688 - 97.23 |
+| Mem Usage (MB-%)| 16.1 - 61.54 | 2.8 - 100.00 | 46.3 - 88.14 | 19.5 - 13.48 |
+
 ## [1812. Truncate sentence.][1812]
 
 Observe that if we map cols from `[a-h]` to `[1-8]` we have a nice property: cells for which
@@ -3332,5 +3342,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [1752]: https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
 [1768]: https://leetcode.com/problems/merge-strings-alternately/
 [1773]: https://leetcode.com/problems/count-items-matching-a-rule
+[1779]: https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/
 [1812]: https://leetcode.com/problems/determine-color-of-a-chessboard-square/
 [1816]: https://leetcode.com/problems/truncate-sentence/
+[1822]: https://leetcode.com/problems/sign-of-the-product-of-an-array
