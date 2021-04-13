@@ -3068,6 +3068,17 @@ Find index which `ruleKey` corresponds to and then count items matching the `rul
 | Runtime (ms-%)| 60 - 100.00 | 12 - 100.00 | 84 - 100.00 | 240 - 100.00 |
 | Mem Usage (MB-%)| 13.6 - 100.00 | 4.4 - 100.00 | 42.4 - 100.00 | 20.7 - 50.00 |
 
+## [1812. Truncate sentence.][1812]
+
+Observe that if we map cols from `[a-h]` to `[1-8]` we have a nice property: cells for which
+the parity is the same are black while those for which parity is different are white. Using this,
+solution is `O(1)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.14 | 24 - 96.62 |
+| Mem Usage (MB-%)| 5.4 - 75.00 | 1.9 - 96.55 | 38.4 - 78.42 | 14.1 - 90.58 |
+
 ## [1816. Truncate sentence.][1816]
 
 Simple `O(N)`, enumerate through chars counting spaces, when k reaches zero, return the index for that
@@ -3311,4 +3322,5 @@ iteration. Return string splitted/truncated on that index.
 [1752]: https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
 [1768]: https://leetcode.com/problems/merge-strings-alternately/
 [1773]: https://leetcode.com/problems/count-items-matching-a-rule
+[1812]: https://leetcode.com/problems/determine-color-of-a-chessboard-square/
 [1816]: https://leetcode.com/problems/truncate-sentence/
