@@ -3068,6 +3068,15 @@ Find index which `ruleKey` corresponds to and then count items matching the `rul
 | Runtime (ms-%)| 60 - 100.00 | 12 - 100.00 | 84 - 100.00 | 240 - 100.00 |
 | Mem Usage (MB-%)| 13.6 - 100.00 | 4.4 - 100.00 | 42.4 - 100.00 | 20.7 - 50.00 |
 
+## [1816. Truncate sentence.][1816]
+
+Simple `O(N)`, enumerate through chars counting spaces, when k reaches zero, return the index for that
+iteration. Return string splitted/truncated on that index.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 94.14 | 20 - 99.16 |
+| Mem Usage (MB-%)| 5.9 - 73.68 | 2 - 67.50 | 39.1 - 6.25 | 14 - 99.43 |
 
 [1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
@@ -3302,3 +3311,4 @@ Find index which `ruleKey` corresponds to and then count items matching the `rul
 [1752]: https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
 [1768]: https://leetcode.com/problems/merge-strings-alternately/
 [1773]: https://leetcode.com/problems/count-items-matching-a-rule
+[1816]: https://leetcode.com/problems/truncate-sentence/

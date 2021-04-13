@@ -21,3 +21,4 @@ session/
 
 # Ignore uthash folder.
 C/Algorithms/uthash/
+.vscode/settings.json
