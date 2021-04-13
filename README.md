@@ -3089,6 +3089,16 @@ iteration. Return string splitted/truncated on that index.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 94.14 | 20 - 99.16 |
 | Mem Usage (MB-%)| 5.9 - 73.68 | 2 - 67.50 | 39.1 - 6.25 | 14 - 99.43 |
 
+## [1822. Sing of the product of the array.][1822]
+
+No need to do the actual multiplications. Simply toggle a variable the amount of times a negative number is seen. If
+zero is encountered, zero is unconditionally returned. `O(N)` since we examine all values.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 92.86 | 56 - 93.29 |
+| Mem Usage (MB-%)| 6.3 - 35.90 | 2.1 - 53.33 | 39.8 - 47.25 | 14.4 - 70.94 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
