@@ -69,6 +69,15 @@ array. Space complexity is `O(1)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.75 | 24 - 97.53 |
 | Mem Usage (MB-%)| 5.8 - 99.54| 2 - 93.75 | 38.6 - 69.35 | 14.3 - 48.72 |
 
+## [88. Merge sorted array.][88]
+
+Place elements from `nums2` at the end of `nums1` (replacing zero elements) and sort it.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.93 | 28 - 96.98 |
+| Mem Usage (MB-%)| 6.2 - 39.46 | 2 - 66.67 | 38.5 - 92.89 | 14.2 - 85.77 |
+
 ## [100. Same Tree][100]
 
 C recursively solves it while the others use the iterative approach. In all cases
@@ -3128,6 +3137,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
 [66]: https://leetcode.com/problems/plus-one/
+[88]: https://leetcode.com/problems/merge-sorted-array/
 [100]: https://leetcode.com/problems/same-tree/
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
