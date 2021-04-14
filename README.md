@@ -2264,6 +2264,16 @@ that it will contain only one result due to the constraints.)
 | Runtime (ms-%)| 8 - 95.41 | 0 - 100.00 | 80 - 78.81 | 44 - 98.44 |
 | Mem Usage (MB-%)| 7.6 - 48.62 | 2.4 - 100.00 | 41.7 - 5.08 | 14.1 - 100.00|
 
+## [1437. Check if all 1s are at least k places away.][1437]
+
+Does an `O(N)` scan of the array. Looks for ones and counts the difference between consecutive ones,
+pretty straightforward.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 60 - 88.73 | 8 - 66.67 | 84 - 91.49 | 516 - 100.00 |
+| Mem Usage (MB-%)| 11.1 - 80.23 | 2.5 - 100.00 | 46.5 - 73.05 | 16.7 - 96.80 |
+
 ## [1441. Build an Array with stack operations][1441]
 
 Go through values of the target and build the operations. We build the 
