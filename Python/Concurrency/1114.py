@@ -20,7 +20,7 @@ class Foo:
     def second(self, printSecond: 'Callable[[], None]') -> None:
         with self.condition:
             # wait around until first increments turn.
-            if self.turn != 2:
+            while self.turn != 2:
                 self.condition.wait()
 
             # increment turn and notify third.
@@ -32,7 +32,7 @@ class Foo:
     def third(self, printThird: 'Callable[[], None]') -> None:
         # waits around until notify is called from second.
         with self.condition:
-            if self.turn != 3:
+            while self.turn != 3:
                 self.condition.wait()
         
         printThird()

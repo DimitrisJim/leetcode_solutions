@@ -16,7 +16,7 @@ to `100%` execution/memory consistently. (Update: Low number of submissions
 Additionally:
 
  - Python and C also have a Concurrency folder where attempts at the concurrency problems are
-added.
+added. I will not offer any sort of guarantees on those.
 
 ## [1. Two Sum.][1]
 
