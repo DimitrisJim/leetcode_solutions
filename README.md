@@ -3083,6 +3083,16 @@ since you know it will be zero (`xi == x <=> xi - x == 0`, similarly for `yi, y`
 | Runtime (ms-%)| 140 - 98.46 | 16 - 97.73 | 104 - 94.58 | 688 - 97.23 |
 | Mem Usage (MB-%)| 16.1 - 61.54 | 2.8 - 100.00 | 46.3 - 88.14 | 19.5 - 13.48 |
 
+## [1800. Maximum Ascending Subarray sum.][1800]
+
+Keep track of current sum and the max sum we've found so far. When we detect the end of a sequence, we just update the
+max sum if the current sum is larger. Care is needed to handle last element in the list of numbers. Overall, `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 90.78 | 24 - 99.12 |
+| Mem Usage (MB-%)| 5.8 - 75.00 | 2 - 96.15 | 38.5 - 55.32 | 14.2 - 75.50 |
+
 ## [1812. Truncate sentence.][1812]
 
 Observe that if we map cols from `[a-h]` to `[1-8]` we have a nice property: cells for which
@@ -3348,6 +3358,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [1768]: https://leetcode.com/problems/merge-strings-alternately/
 [1773]: https://leetcode.com/problems/count-items-matching-a-rule
 [1779]: https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/
+[1800]: https://leetcode.com/problems/maximum-ascending-subarray-sum
 [1812]: https://leetcode.com/problems/determine-color-of-a-chessboard-square/
 [1816]: https://leetcode.com/problems/truncate-sentence/
 [1822]: https://leetcode.com/problems/sign-of-the-product-of-an-array
