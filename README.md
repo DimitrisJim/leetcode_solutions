@@ -722,6 +722,18 @@ is represented by a `level` parameter of the recursive function.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 84 - 97.80 | 36 - 99.85 |
 | Mem Usage (MB-%)| 20.7 - 5.36 | 3 - 50.00 | 45 - 18.13 | 16.5 - 60.71 |
 
+## [643. Maximum average subarray I.][643]
+
+`O(N)`, the main thing to notice (I believe) is the fact that you do not need to calculate the
+full summation for the average each time (k terms added and divided by k). Instead, you can build
+the summation until `k` and then move along the array looking for the max. At the end of each loop
+we remove the first term of the summation and add the term we've currently looked at.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 100 - 100.00 | 12 - 100.00 | 92 - 97.89 | 780 - 96.34 |
+| Mem Usage (MB-%)| 10.5 - 50.75 | 2.4 - 33.33 | 47.9 - 37.19 | 18.1 - 10.88 |
+
 ## [653. Two Sum IV - Input is a BST.][653]
 
 Use a set to hold the values and traverse tree. For each node see if `k - node.value`
@@ -3198,6 +3210,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [606]: https://leetcode.com/problems/construct-string-from-binary-tree/
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [637]: https://leetcode.com/problems/average-of-levels-in-binary-tree/
+[643]: https://leetcode.com/problems/maximum-average-subarray-i/
 [653]: https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
 [654]: https://leetcode.com/problems/maximum-binary-tree/
 [657]: https://leetcode.com/problems/robot-return-to-origin/
