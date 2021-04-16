@@ -1055,6 +1055,15 @@ A binary search throug the semi-sorted array.
 | Runtime (ms-%)| 8 - 89.84 | 0 - 100.00 | 72 - 91.56 | 64 - 97.11 |
 | Mem usage (mb-%)| 6.6 - 30.47 | 2.1 - 75.00 | 39.1 - 77.91 | 15 - 88.20 |
 
+## [859. Buddy strings.][859]
+
+See comments in python file (`859.py`) for a better description. `O(N)` execution.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 100.00 | 24 - 98.49 |
+| Mem usage (mb-%)| 5.7 - 56.92 | 2.2 - 81.82 | 41.2 - 35.74 | 14.5 - 71.61 | 
+
 ## [867. Transpose Matrix.][867]
 
 Straight-forward transpose.
@@ -3255,6 +3264,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [824]: https://leetcode.com/problems/goat-latin/
 [832]: https://leetcode.com/problems/flipping-an-image/
 [852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
+[859]: https://leetcode.com/problems/buddy-strings/
 [867]: https://leetcode.com/problems/transpose-matrix/
 [868]: https://leetcode.com/problems/binary-gap/
 [872]: https://leetcode.com/problems/leaf-similar-trees/
