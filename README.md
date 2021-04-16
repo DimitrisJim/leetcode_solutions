@@ -269,6 +269,16 @@ utilizing a stack.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.23 | 20 - 99.04 |
 | Mem Usage (MB-%)| 5.8 - 99.02 | 2 - 88.89 | 38.9 - 55.11 | 14.2 - 39.78 |
 
+## [231. Power of two.][231]
+
+`x = 2 ** n <=> n = log2(x)`. For non-powers of two `log2(x)` is not an integer. This boils down
+to checking if `log2(x)` is an integer which can be done with `ceil(log2(x)) == log2(x)`. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 98.66 | 24 - 95.94 |
+| Mem Usage (MB-%)| 5.5 - 56.84 | 2.5 - 6.25 | 40.2 - 13.07 | 14.2 - 40.52 |
+
 ## [232. Implement Queue using Stacks.][232]
 
 Only uses stack equivalent operations. Two lists are created, one that holds values
@@ -3211,6 +3221,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [217]: https://leetcode.com/problems/contains-duplicate/
 [225]: https://leetcode.com/problems/implement-stack-using-queues/
 [226]: https://leetcode.com/problems/invert-binary-tree/
+[231]: https://leetcode.com/problems/power-of-two/
 [232]: https://leetcode.com/problems/implement-queue-using-stacks
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
 [242]: https://leetcode.com/problems/valid-anagram/ 
