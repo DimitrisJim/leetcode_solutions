@@ -464,6 +464,17 @@ in the form of a vector or set in order to find disappeared numbers.
 | Runtime (ms-%)| 92 - 98.94 | 8 - 98.04 | 96 - 99.71 | 312 - 99.29 |
 | Mem Usage (MB-%)| 18.4 - 18.62 | 2.6 - 43.14 | 47.4 - 47.02 | 24.7 - 17.49 |
 
+## [460. Minimum Changes to make alternating binary string.][460]
+
+Need to count changes both version of alternating strings (`'010101..', '101010..'`). Call
+a counting function that finds the counts for each of these cases and return the min value. Since
+we only iterate through `s`, runtime complexity is `O(N)`. Space complexity is `O(1)`. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 92.66 | 40 - 92.84 |
+| Mem Usage (MB-%)| 5.7 - 100.00 | 2 - 100.00 | 39.4 - 51.05 | 14.2 - 96.60 |
+
 ## [461. Hamming Distance][461]
 
 Get the xor of the two numbers (where bits differ) and then 
