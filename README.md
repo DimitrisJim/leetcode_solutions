@@ -3114,6 +3114,22 @@ since you know it will be zero (`xi == x <=> xi - x == 0`, similarly for `yi, y`
 | Runtime (ms-%)| 140 - 98.46 | 16 - 97.73 | 104 - 94.58 | 688 - 97.23 |
 | Mem Usage (MB-%)| 16.1 - 61.54 | 2.8 - 100.00 | 46.3 - 88.14 | 19.5 - 13.48 |
 
+## [1790. Check if one string swap can make strings equal.][1790]
+
+Check each of the characters in both string to verify that they differ in less than 2 positions (`O(N)`); if
+there's more than two mismatches in position, we'd need more than two swaps.
+
+After doing that we need to check that the possible switch involves the same characters. This could probably be done
+by keeping track of the indices of the mismatch but I've done it by using a set equality between strings (`O(N)`).
+
+Overall, runtime complexity is `O(N)` while space complexity is `O(1)` (because we only deal with 26 different characters
+as input, the size of the sets is always bound by that.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 93.86 | 24 - 94.90 |
+| Mem Usage (MB-%)| 5.4 - 93.26 | 2.1 - 55.17 | 40.2 - 20.55 | 14.3 - 20.60 |
+
 ## [1800. Maximum Ascending Subarray sum.][1800]
 
 Keep track of current sum and the max sum we've found so far. When we detect the end of a sequence, we just update the
@@ -3391,6 +3407,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [1768]: https://leetcode.com/problems/merge-strings-alternately/
 [1773]: https://leetcode.com/problems/count-items-matching-a-rule
 [1779]: https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/
+[1790]: https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/
 [1800]: https://leetcode.com/problems/maximum-ascending-subarray-sum
 [1812]: https://leetcode.com/problems/determine-color-of-a-chessboard-square/
 [1816]: https://leetcode.com/problems/truncate-sentence/
