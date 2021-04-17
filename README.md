@@ -405,6 +405,15 @@ exists but it is 4am and no.
 | Runtime (ms-%)| 4 - 97.77 | 4 - 100.00 | 244 - 76.58 | 56 - 98.86 |
 | Mem Usage (MB-%)| 6.5 - 13.41 | 2.6 - 5.00 | 49.4 - 43.63 | 14.4 - 13.70 |
 
+## [342. Power of four.][342]
+
+Exactly the same as Powers of three, only difference is that we use `log4(n)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 100.00 | 24 - 95.62 |
+| Mem Usage (MB-%)| 5.9 - 12.62 | 2.7 - 5.56 | 40 - 36.68 | 14.3 - 6.03 |
+
 ## [344. Reverse String][344]
 
 Typical swapping.
