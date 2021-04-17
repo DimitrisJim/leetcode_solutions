@@ -221,6 +221,36 @@ col = sum((charCodePoint - 64) * (pow(26, i)) for i in [0..n])
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 88 - 95.33 | 24 - 96.97 |
 | Mem Usage (MB-%)| 5.6 - 69.08 | 2 - 100.00 | 39.8 - 84.74 | 14.2 - 66.98 |
 
+## [190. Reverse Bits.][190]
+
+Count how many leading zeros exist in a 32bit padded (with zeros from MSB) version of the input number. Then just
+add the bits from the input number to the result. This is done by shifting the result left by one and adding `n & 1` to
+it and then shifting `n` to the right. Finally, we shift right as many times as we counted for the leading zeroes.
+
+Javascript: couldn't adapt same solution. TODO.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | - | 28 - 87.17 |
+| Mem Usage (MB-%)| 5.3 - 75.25 | 2 - 71.43 | - | 14.3 - 8.01 |
+
+## [191. Number of 1 bits.][191]
+
+Not much point in adding things here. The most efficient implementation is discussed in the [wiki page](https://en.wikipedia.org/wiki/Hamming_weight#Efficient_implementation) which also discusses a good strategy to optimize by using a cache of the result for all 16
+bit sequences (which we can use for 32bit numbers by viewing them as two 16bit sequences).
+
+For all intents and purposes, the algorithm I would run (if the language doesn't offer an implementation (rust, python do)) would be the
+common iterative `O(N)`:
+
+
+    int count = 0;
+    while (n) {
+        n &= n - 1;
+        count += 1;
+    }
+    return count;
+
+
 ## [206. Reverse Linked List][206]
 
 `C` contains both iterative and recursive. The rest use iterative.
@@ -3251,6 +3281,8 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [155]: https://leetcode.com/problems/min-stack/
 [167]: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 [171]: https://leetcode.com/problems/excel-sheet-column-number/
+[190]: https://leetcode.com/problems/reverse-bits/
+[191]: https://leetcode.com/problems/number-of-1-bits
 [206]: https://leetcode.com/problems/reverse-linked-list/
 [217]: https://leetcode.com/problems/contains-duplicate/
 [225]: https://leetcode.com/problems/implement-stack-using-queues/
