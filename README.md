@@ -394,6 +394,17 @@ Space/Time complexity is `O(1)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.79 | 20 - 98.68 |
 | Mem Usage (MB-%)| 5.5 - 41.79 | 1.9 - 75.00 | 38.2 - 76.88 | 13.9 - 97.16 |
 
+## [326. Powers of three.][326]
+
+Similar to powers of two. Find `log3(n)` and then check how close `round(log3(n))` is to `log3(n)`. Powers of
+three will have a value of `log3(n)` close to some integer `x`. I'm under the impression a better solution
+exists but it is 4am and no.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 97.77 | 4 - 100.00 | 244 - 76.58 | 56 - 98.86 |
+| Mem Usage (MB-%)| 6.5 - 13.41 | 2.6 - 5.00 | 49.4 - 43.63 | 14.4 - 13.70 |
+
 ## [344. Reverse String][344]
 
 Typical swapping.
@@ -3230,6 +3241,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [268]: https://leetcode.com/problems/missing-number/
 [283]: https://leetcode.com/problems/move-zeroes
 [292]: https://leetcode.com/problems/nim-game/
+[326]: https://leetcode.com/problems/power-of-three/
 [344]: https://leetcode.com/problems/reverse-string/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
 [383]: https://leetcode.com/problems/ransom-note/
