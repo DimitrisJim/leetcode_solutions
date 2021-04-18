@@ -28,6 +28,23 @@ that keeps track of the appropriate index to use when we finally find the match.
 | Runtime (ms-%)| 4 - 96.96 | 0 - 100.00 | 72 - 94.33 | 28 - 99.99 |
 | Mem Usage (MB-%)| 6 - 68.00 | 2.3 - 68.01 | 38.4 - 91.28 | 14.4 - 47.87 |
 
+## [7. Reverse Integer.][7]
+
+We can work with arrays of the digits in order to reverse the numbers. Care needs to be
+taken specifically for largest negative `i32 (0x80000000)` and for inputs that contain
+`10` digits in total (which, when reversed, might not fit in 32 bits).
+
+To combat first case, we can just bail early if `x == 0x80000000`. To combat the second case,
+we check the digits of the result against the maximum value allowed. If, at any point, we discover
+input the would result in a number too large to represent, we bail.
+
+Overall, this is `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 88 - 94.61 | 20 - 99.44 |
+| Mem Usage (MB-%)| 6 - 14.40 | 1.9 - 85.78 | 40.8 - 14.78 | 14.4 - 11.58 |
+
 ## [13. Roman to Integer.][13]
 
 Keep a set of the special cases and go through each character in `s`. If the character
@@ -3266,6 +3283,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 | Mem Usage (MB-%)| 6.3 - 35.90 | 2.1 - 53.33 | 39.8 - 47.25 | 14.4 - 70.94 | 
 
 [1]: https://leetcode.com/problems/two-sum/
+[7]: https://leetcode.com/problems/reverse-integer/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
 [66]: https://leetcode.com/problems/plus-one/
