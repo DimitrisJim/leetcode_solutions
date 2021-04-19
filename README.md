@@ -495,6 +495,16 @@ Space complexity is `O(1)` since we only have 26 characters.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 99.57 | 40 - 86.90 |
 | Mem Usage (MB-%)| 6.4 - 96.59 | 2.1 - 100.00  | 41.2 - 91.14 | 14.1 - 99.69 |
 
+## [384. Shuffle an Array.][384]
+
+Uses Fisher-Yates algorithm (the Durstenfeld's version) in order to shuffle sequence. This
+leads to `O(N)` execution.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 212 - 82.28 | 24 - 100.00 | 228 - 89.90 | 264 - 89.11 |
+| Mem Usage (MB-%)| 36.9 - 29.54 | 5.4 - 60.00 | 51.5 - 96.63 | 19.4 - 71.11 |
+
 ## [387. Find Unique Character in String.][387]
 
 Build a Counter (in Python we use library supplied, in others, just use an array with
@@ -3319,6 +3329,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [344]: https://leetcode.com/problems/reverse-string/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
 [383]: https://leetcode.com/problems/ransom-note/
+[384]: https://leetcode.com/problems/shuffle-an-array
 [387]: https://leetcode.com/problems/first-unique-character-in-a-string/
 [389]: https://leetcode.com/problems/find-the-difference/
 [405]: https://leetcode.com/problems/convert-a-number-to-hexadecimal/
