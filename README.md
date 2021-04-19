@@ -494,6 +494,15 @@ Build sets and get intersection (or write it for `C` and `JS` cases.)
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 98.18 | 32 - 99.40 |
 | Mem Usage (MB-%)| 7.7 - 12.87 | 2.1 - 77.78 | 40.5 - 28.27 | 14.4 - 22.10 |
 
+## [374. Guess number higher or lower.][374]
+
+Simple binary search for the number. `O(logn)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 88.26 | 20 - 98.89 |
+| Mem Usage (MB-%)| 5.5 - 52.67 | 1.9 - 66.67 | 38.3 - 81.91 | 14.2 - 42.20 |
+
 ## [383. Ransom Note][383]
 
 Use a counter to check that the required ammount of characters are present. 
@@ -3344,6 +3353,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [344]: https://leetcode.com/problems/reverse-string/
 [347]: https://leetcode.com/problems/top-k-frequent-elements/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
+[374]: https://leetcode.com/problems/guess-number-higher-or-lower
 [383]: https://leetcode.com/problems/ransom-note/
 [384]: https://leetcode.com/problems/shuffle-an-array
 [387]: https://leetcode.com/problems/first-unique-character-in-a-string/
