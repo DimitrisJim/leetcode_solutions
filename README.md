@@ -410,6 +410,15 @@ Runtime complexity is `O(N)`, space complexity is `O(1)`.
 | Runtime (ms-%)| 16 - 92.23 | 0 - 100.00 | 80 - 91.77 | 120 - 96.29 |
 | Mem Usage (MB-%)| 6.5 - 75.34 | 2 - 97.30 | 41.3 - 34.19 | 15.3 - 82.34 |
 
+## [278. First bad version.][278]
+
+Binary search, again.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 96.69 | 24 - 93.25 |
+| Mem Usage (MB-%)| 5.5 - 53.47 | 2 - 81.08 | 38.4 - 45.85 | 14.1 - 73.36 |
+
 ## [283. Move zeroes.][283]
 
 In order to minimize the comparisons made, our `run` variable always begins scanning
