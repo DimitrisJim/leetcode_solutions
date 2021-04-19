@@ -470,6 +470,21 @@ Typical swapping.
 | Runtime (ms-%)| 44 - 96.89 | 16 - 94.12 | 100 - 96.48 | 184 - 96.43 |
 | Mem Usage (MB-%)| 12.4 - 74.64 | 5.4 - 98.82 | 45.5 - 79.32 | 18.7 - 14.37 |
 
+## [347. Top k frequent elements.][347]
+
+Counting + Building a k-element heap. Complexity of operation is `O(NlogK)` instead of
+`O(NlogN)`. Python contains a built-in version of this `Counter.most_common` so Rust is
+probably the best place to look for each of these steps layed out sequentially.
+
+C: Not up for implementing my own binary heap (probably should and just keep it around).
+Javascript: Priority Queue available seems somewhat broken to me? I can't seem to get it to
+work for some reason.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 0 - 100.00 | | 88 - 98.51 |
+| Mem Usage (MB-%)| | 2.4 - 65.63 | | 18.7 - 76.49 |
+
 ## [349. Intersection of two arrays.][349]
 
 Build sets and get intersection (or write it for `C` and `JS` cases.)
@@ -3327,6 +3342,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [326]: https://leetcode.com/problems/power-of-three/
 [342]: https://leetcode.com/problems/power-of-four/
 [344]: https://leetcode.com/problems/reverse-string/
+[347]: https://leetcode.com/problems/top-k-frequent-elements/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
 [383]: https://leetcode.com/problems/ransom-note/
 [384]: https://leetcode.com/problems/shuffle-an-array
