@@ -70,6 +70,20 @@ list.
 | Runtime (ms-%)| 0 - 100.00 | 4 - 100.00 | 84 - 92.62 | 32 - 91.62 |
 | Mem Usage (MB-%)| 6.3 - 47.94 | 2 - 83.19 | 40.1 - 91.86 | 14.1 - 83.79 |
 
+## [35. Search insert position.][35]
+
+Again, binary searching for the right spot, i.e `O(logN)`.
+
+Start points to position in list for which all elements with index smaller than start have a value
+than target and all elements with index larger than it have a `value >= target`.
+
+When finished, start will either point to target or the leftmost position in which to insert it.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.11 | 40 - 97.25 |
+| Mem Usage (MB-%)| 6 - 85.77 | 2 - 100.00| 38.7 - 72.22| 15.1 - 52.12 |
+
 ## [66. Plus One][66]
 
 Relatively straight-forward, if we encounter a `9`, we need to zero it and move
@@ -3329,6 +3343,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [7]: https://leetcode.com/problems/reverse-integer/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
+[35]: https://leetcode.com/problems/search-insert-position/
 [66]: https://leetcode.com/problems/plus-one/
 [88]: https://leetcode.com/problems/merge-sorted-array/
 [100]: https://leetcode.com/problems/same-tree/
