@@ -126,6 +126,19 @@ operations for each node. Not sure about space complexity of the top of my head.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 92.99 | 24 - 95.46 |
 | Mem Usage (MB-%)| 6 - 34.24 | 2 - 52.17 | 38.8 - 77.73 | 14.2 - 65.65 |
 
+## [102. Binary Tree level order traversal.][102]
+
+There's a similar problem to this one, I remember it. All in all, use a stack where we
+keep nodes/level tuples. DFS traversal and use the level saved for each node as index in
+the results vec/list that holds the result values. `O(N)` space/memory.
+
+C: Too much hassle with 2D arrays but I hope I'll get back to it.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 0 - 100.00 | 80 - 85.22 | 24 - 98.58 |
+| Mem Usage (MB-%)| | 2 - 97.96 | 40.3 - 44.58 | 14.5 - 88.37 |
+
 ## [104. Maximum depth of Binary Tree][104]
 
 Rust contains both iterative and recursive approaches. C/Javascript use 
@@ -3358,6 +3371,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [66]: https://leetcode.com/problems/plus-one/
 [88]: https://leetcode.com/problems/merge-sorted-array/
 [100]: https://leetcode.com/problems/same-tree/
+[102]: https://leetcode.com/problems/binary-tree-level-order-traversal/
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
