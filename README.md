@@ -164,10 +164,21 @@ of `(lower_than_mid, mid, higher_than_mid)`. Using this we can then use:
 
 Recursively solving this is straight-forward.
 
-| Stats/Lang  | C  | Rust  | JS  | Py |
+| Stats/Lang  | C | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 8 - 94.69 | 0 - 100.00 | 84 - 95.62 | 56 - 99.93 |
 | Mem Usage (MB-%)| 18 - 59.59 | 2.9 - 71.43 | 41.7 - 93.78 | 16.6 - 22.27 |
+
+## [111. Minimum depth of binary tree.][111]
+
+Typical depth first recursion. We can stop recursing when we reach a depth which is bigger
+than a minimum we've already found, though. Worse case complexity is still `O(N)` as is the
+memory complexity.
+
+| Stats/Lang  | C | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 132 - 99.58 | 32 - 97.73 | 232 - 99.61 | 468 - 93.47 |
+| Mem Usage (MB-%)| 75.4 - 99.16 | 11.4 - 100.00 | 75.4 - 17.90 | 49.3 - 72.86 |
 
 ## [118. Pascal's triangle.][118]
 
@@ -177,7 +188,7 @@ finding a row](https://en.wikipedia.org/wiki/Pascal%27s_triangle#Calculating_a_r
 Not sure about complexity here. Since for each `n` we perform `1 + 2 + 3 + .... + n`
 iterations, though, I believe it must be around `O(n^2)`.
 
-| Stats/Lang  | C  | Rust  | JS  | Py |
+| Stats/Lang  | C | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.32 | 24 - 95.43 |
 | Mem Usage (MB-%)| 5.9 - 95.86 | 2.3 - 6.67 | 38.6 - 21.82 | 14.3 - 59.05 |
@@ -3350,6 +3361,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+[111]: https://leetcode.com/problems/minimum-depth-of-binary-tree/
 [118]: https://leetcode.com/problems/pascals-triangle/
 [119]: https://leetcode.com/problems/pascals-triangle-ii/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
