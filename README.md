@@ -624,6 +624,19 @@ result of `i / 3` and see if that is divided by `5`.
 | Runtime (ms-%)| 8 - 69.37 | 0 - 100.00 | 76 - 96.82 | 34 - 92.74 |
 | Mem Usage (MB-%)| 7 - 86.04 | 2.6 - 95.24 | 41.4 - 5.36 | 15 - 73.21 |
 
+## [429. N-ary Tree Level Order Traversal.][429]
+
+Similar to problem [Binary Tree Level Order Traversal][102]. The only difference being
+that we know iterate through all children and add them to the stack. (implicit or explicit one.)
+Complexity is the same, `O(N)` runtime/memory.
+
+Rust: not available.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | N/A | 92 - 94.98 | 44 - 95.28 |
+| Mem Usage (MB-%)| - | N/A | 43.7 - 26.96 | 16 - 87.08 |
+
 ## [448. Find all numbers disappeared in an array.][448]
 
 Couldn't see (yet) how to do it with `O(1)` space. For now, I use `O(N)` space
@@ -3410,6 +3423,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [389]: https://leetcode.com/problems/find-the-difference/
 [405]: https://leetcode.com/problems/convert-a-number-to-hexadecimal/
 [412]: https://leetcode.com/problems/fizz-buzz/
+[429]: https://leetcode.com/problems/n-ary-tree-level-order-traversal/
 [448]: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 [461]: https://leetcode.com/problems/hamming-distance/
 [476]: https://leetcode.com/problems/number-complement/
