@@ -45,6 +45,17 @@ Overall, this is `O(N)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 88 - 94.61 | 20 - 99.44 |
 | Mem Usage (MB-%)| 6 - 14.40 | 1.9 - 85.78 | 40.8 - 14.78 | 14.4 - 11.58 |
 
+## [9. Remove Element.][9]
+
+Use a swap-remove. As found in Rusts `Vec.swap_remove`. Basically, replace the
+value you want to remove with the value at the end of the list/array. This way,
+`O(1)` removes can be achieved. Overall complexity is `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.77 | 28 - 90.92 |
+| Mem Usage (MB-%)| 6.1 - 39.77 | 2.1 - 67.18 | 38.6 - 60.38 | 14.3 - 46.75 |
+
 ## [13. Roman to Integer.][13]
 
 Keep a set of the special cases and go through each character in `s`. If the character
@@ -3378,6 +3389,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 
 [1]: https://leetcode.com/problems/two-sum/
 [7]: https://leetcode.com/problems/reverse-integer/
+[9]: https://leetcode.com/problems/remove-element/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
 [35]: https://leetcode.com/problems/search-insert-position/
