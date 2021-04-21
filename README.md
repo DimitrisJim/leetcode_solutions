@@ -2372,6 +2372,20 @@ are also present in the set.
 | Runtime (ms-%)| 16 - 100.00 | 0 - 100.00 | 76 - 96.19 | 116 - 95.12 |
 | Mem Usage (MB-%)| 7 - 17.65 | 2.1 - 100.00 | 40.7 - 87.20 | 14.3 - 49.67 |
 
+## [1381. Design a stack with increment operation.][1381]
+
+The implementation is pretty straight-forward for all cases. I do feel like I'm
+missing something (due to the Python timings). All operations are `O(1)` (`C` malloc
+initialization, not sure what the complexity is there, though), except for 
+`increment` which is `O(k)`.
+
+TODO: Check again.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 32 - 91.07 | 4 - 100.00 | 124 - 88.82 | 112 - 76.56 |
+| Mem Usage (MB-%)| 13.7 - 85.71 | 2.9 - 50.00 | 46.3 - 50.31 | 14.7 - 98.36 |
+
 ## [1385. Find the distance between two arrays.][1385]
 
 Go through fist array and for each value make top and bottom bounds for 
@@ -3579,6 +3593,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [1374]: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
 [1379]: https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/
 [1380]: https://leetcode.com/problems/lucky-numbers-in-a-matrix/
+[1381]: https://leetcode.com/problems/design-a-stack-with-increment-operation/
 [1385]: https://leetcode.com/problems/find-the-distance-value-between-two-arrays
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1394]: https://leetcode.com/problems/find-lucky-integer-in-an-array/
