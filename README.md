@@ -622,6 +622,21 @@ Xor trick, different problem statement.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 98.01 | 28 - 92.43 |
 | Mem Usage (MB-%)| 5.7 - 96.92 | 2 - 100.00 | 39 - 96.03 | 14.1 - 94.66 |
 
+## [404. Sum of left leaves.][404]
+
+Relatively straight-forward, recurse on tree and while branching on the children
+check if the left child is a leaf. If so, add its value, if not, recurse on it.
+On right, we immediately recurse.
+
+All solutions have used recursion, translating into stack based solution is easy.
+
+This visits each node once, so `O(N)` time and space complexity.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 99.26 | 28 - 89.99 |
+| Mem Usage (MB-%)| 6.3 - 91.09 | 2.2 - 77.78 | 40.1 - 43.18 | 14.7 - 81.31 |
+
 ## [405. Convert a number to hexadecimal.][405]
 
 Use a small table `[0, 1, 2, ..., 14, 15] => ['0', '1', '2', ..., 'e', 'f']` to translate between
@@ -3460,6 +3475,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [384]: https://leetcode.com/problems/shuffle-an-array
 [387]: https://leetcode.com/problems/first-unique-character-in-a-string/
 [389]: https://leetcode.com/problems/find-the-difference/
+[404]: https://leetcode.com/problems/sum-of-left-leaves/
 [405]: https://leetcode.com/problems/convert-a-number-to-hexadecimal/
 [412]: https://leetcode.com/problems/fizz-buzz/
 [429]: https://leetcode.com/problems/n-ary-tree-level-order-traversal/
