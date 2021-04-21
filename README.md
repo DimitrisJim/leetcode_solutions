@@ -95,6 +95,18 @@ When finished, start will either point to target or the leftmost position in whi
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.11 | 40 - 97.25 |
 | Mem Usage (MB-%)| 6 - 85.77 | 2 - 100.00| 38.7 - 72.22| 15.1 - 52.12 |
 
+## [64. Summary Ranges.][64]
+
+Keep a tracker around to track the sequence as it increases. If at any point, the number in
+the array doesn't match the tracker, a new sequence should be added. Care is needed when
+ending the loop to accound for two cases (ended on a single number or while going through a
+range). Overall, `O(N)` time and space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.06 | 24 - 93.79 |
+| Mem Usage (MB-%)| 5.7 - 73.33 | 2.1 - 54.55 | 38.2 - 92.51 | 14.4 - 16.10 |
+
 ## [66. Plus One][66]
 
 Relatively straight-forward, if we encounter a `9`, we need to zero it and move
@@ -3393,6 +3405,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
 [35]: https://leetcode.com/problems/search-insert-position/
+[64]: https://leetcode.com/problems/summary-ranges
 [66]: https://leetcode.com/problems/plus-one/
 [88]: https://leetcode.com/problems/merge-sorted-array/
 [100]: https://leetcode.com/problems/same-tree/
