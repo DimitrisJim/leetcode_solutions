@@ -45,16 +45,19 @@ Overall, this is `O(N)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 88 - 94.61 | 20 - 99.44 |
 | Mem Usage (MB-%)| 6 - 14.40 | 1.9 - 85.78 | 40.8 - 14.78 | 14.4 - 11.58 |
 
-## [9. Remove Element.][9]
+## [9. Palindrome Number.][9]
 
-Use a swap-remove. As found in Rusts `Vec.swap_remove`. Basically, replace the
-value you want to remove with the value at the end of the list/array. This way,
-`O(1)` removes can be achieved. Overall complexity is `O(N)`.
+Common string version, transform to string and then go through from both ends
+trying to find a mismatch. `O(num_of_digits)` basically.
+
+Without transforming to string: You could do something similar by divmoding to
+find the first digits and divmoding again to find last. At least, that's what
+I'm thinking now. TODO: look this up.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.77 | 28 - 90.92 |
-| Mem Usage (MB-%)| 6.1 - 39.77 | 2.1 - 67.18 | 38.6 - 60.38 | 14.3 - 46.75 |
+| Runtime (ms-%)| 4 - 92.79 | 0 - 100.00 | 196 - 96.90 | 48 - 94.22 |
+| Mem Usage (MB-%)| 6.2 - 10.13 | 2.2 - 31.71 | 49.1 - 36.11 | 14.2 - 49.05 |
 
 ## [13. Roman to Integer.][13]
 
@@ -81,6 +84,16 @@ list.
 | Runtime (ms-%)| 0 - 100.00 | 4 - 100.00 | 84 - 92.62 | 32 - 91.62 |
 | Mem Usage (MB-%)| 6.3 - 47.94 | 2 - 83.19 | 40.1 - 91.86 | 14.1 - 83.79 |
 
+## [27. Remove Element.][27]
+
+Use a swap-remove. As found in Rusts `Vec.swap_remove`. Basically, replace the
+value you want to remove with the value at the end of the list/array. This way,
+`O(1)` removes can be achieved. Overall complexity is `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.77 | 28 - 90.92 |
+| Mem Usage (MB-%)| 6.1 - 39.77 | 2.1 - 67.18 | 38.6 - 60.38 | 14.3 - 46.75 |
 ## [35. Search insert position.][35]
 
 Again, binary searching for the right spot, i.e `O(logN)`.
@@ -3446,9 +3459,10 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 
 [1]: https://leetcode.com/problems/two-sum/
 [7]: https://leetcode.com/problems/reverse-integer/
-[9]: https://leetcode.com/problems/remove-element/
+[9]: https://leetcode.com/problems/palindrome-number/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
+[27]: https://leetcode.com/problems/remove-element/
 [35]: https://leetcode.com/problems/search-insert-position/
 [64]: https://leetcode.com/problems/summary-ranges
 [66]: https://leetcode.com/problems/plus-one/

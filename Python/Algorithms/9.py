@@ -1,13 +1,13 @@
 class Solution:
-    def removeElement(self, nums, val: int) -> int:
-        start, finish = 0, len(nums)
-        while start < finish:
-            # replace with last element of list
-            if nums[start] == val:
-                end = nums.pop()
-                finish -= 1
-                if start < finish:
-                    nums[start] = end
-            else:
-                start += 1
-        return finish
+    def isPalindrome(self, n):
+        if n < 0:
+            return False
+        s = str(n)
+        length = len(s)
+        i, j = 0, length-1
+        while i < j:
+            if s[i] != s[j]:
+                return False
+            i += 1
+            j -= 1
+        return True

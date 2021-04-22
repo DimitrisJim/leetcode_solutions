@@ -1,19 +1,18 @@
 impl Solution {
-    pub fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
-        let mut start = 0;
-        let mut finish = nums.len();
-        
-        while start < finish {
-            if nums[start] == val {
-                let end = nums.pop().unwrap();
-                finish -= 1;
-                if start < finish {
-                    nums[start] = end;
-                }
-            } else {
-                start += 1;
-            }
+    pub fn is_palindrome(x: i32) -> bool {
+        if x < 0 {
+            return false;
         }
-        finish as i32
+        
+        let v: Vec<_> = x.to_string().chars().collect();
+        let (mut i, mut j) = (0, v.len() - 1);
+        while i < j {
+            if v[i] != v[j] {
+                return false;
+            }
+            i += 1;
+            j -= 1;
+        }
+        true
     }
 }
