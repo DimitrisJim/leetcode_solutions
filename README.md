@@ -1852,6 +1852,22 @@ we just keep track of three values during each iteration.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.31 | 24 - 93.78 |
 | Mem Usage (MB-%)| 5.3 - 100.00 | 2 - 88.89 | 38.3 - 79.62 | 14.1 - 69.63 |
 
+## [1146. Snapshot Array.][1146]
+
+Keep an array of maps around. The maps associate, for each index of the array
+a specific snapshot to value. Care is only needed when calling `get` to make sure
+we return the right `snap_id` (one which equals the given `snap_id` or a snapshot
+in the map with the largest value that's smaller than `snap_id`, i.e, the most recent
+snapshot for that index). As a result, get is `O(number_of_snaps)`.
+
+The results for Javascript, that uses the same logic, are.. interesting. 
+TODO: See again, also, add `C` when you're up for dealing with `uthash`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 48 - 100.00 | 388 - 35.90 | 376 - 95.81 |
+| Mem Usage (MB-%)| | 26.4 - 25.00 | | 54.1 - 10.26 |
+
 ## [1160. Find Words That can be Formed by Characters.][1160]
 
 **TODO: See again.**
@@ -3572,6 +3588,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1122]: https://leetcode.com/problems/relative-sort-array/
 [1137]: https://leetcode.com/problems/n-th-tribonacci-number/
+[1146]: https://leetcode.com/problems/snapshot-array/
 [1160]: https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/
 [1170]: https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/
 [1184]: https://leetcode.com/problems/distance-between-bus-stops/
