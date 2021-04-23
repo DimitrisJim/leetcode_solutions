@@ -918,6 +918,20 @@ Option for Rust isn't available yet unfortunately.
 | Runtime (ms-%)| 20 - 14.63 | N/A | 100 - 55.56 | 32 - 100.00 |
 | Mem Usage (MB-%)| 24.4 - 9.76 | N/A | 43.7 - 9.69 | 15.8 - 57.01 |
 
+## [605. Can place flowers.][605]
+
+In short, we need to go through the array in three pairs `i-1, i, i+1` and check
+if we can place a flower there. Main trick we can utilize is to increment `i` by
+more than one in specific cases.
+
+See Python file for step by step comments on what is done. Overall, `O(N)` (eh, `N/2`)
+in the worse case.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 12 - 98.04 | 0 - 100.00 | 80 - 90.99 | 148 - 99.49 |
+| Mem Usage (MB-%)| 7 - 100.00 | 2.1 - 100.00 | 40.5 - 79.19 | 14.6 - 70.07 |
+
 ## [606. Construct string from binary tree.][606]
 
 Preorder traversal through the tree and build the string. If we don't have a left
@@ -3540,6 +3554,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [559]: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
 [561]: https://leetcode.com/problems/array-partition-i/
 [590]: https://leetcode.com/problems/n-ary-tree-postorder-traversal
+[605]: https://leetcode.com/problems/can-place-flowers/
 [606]: https://leetcode.com/problems/construct-string-from-binary-tree/
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [637]: https://leetcode.com/problems/average-of-levels-in-binary-tree/
