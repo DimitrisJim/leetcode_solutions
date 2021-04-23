@@ -1150,6 +1150,19 @@ not sure.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 84 - 65.67 | 44 - 81.10 |
 | Mem Usage (MB-%)| 6.2 - 14.75 | 2.2 - 100.00 | 38.8 - 11.69 | 14.1 - 100.00 |
 
+## [744. Find smallest letter greater than target.][744]
+
+We can immediately handle the wrap-around case by checking if `target` is `>=` than
+the last element in the sorted vector. If that is the case, we immediately return the
+first element.
+
+If not, just traverse the array and find the character.
+
+| Stats/Lang  | C | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 96.63 | 100 - 94.06 |
+| Mem Usage (MB-%)| 6 - 64.29 | 2.7 - 40.00 | 41.2 - 12.36 | 14.3 - 84.93 |
+
 ## [748. Shortest completing word][748]
 
 To be frank, don't think things are good here. Might need to place this problem in
@@ -3545,6 +3558,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [705]: https://leetcode.com/problems/design-hashset
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
+[744]: https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 [748]: https://leetcode.com/problems/shortest-completing-word/
 [766]: https://leetcode.com/problems/toeplitz-matrix/
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
