@@ -717,6 +717,16 @@ Rust: not available.
 | Runtime (ms-%)| - | N/A | 92 - 94.98 | 44 - 95.28 |
 | Mem Usage (MB-%)| - | N/A | 43.7 - 26.96 | 16 - 87.08 |
 
+## [434. Number of segments in a string.][434]
+
+Split string on whitespace and filter empty items on resulting iterable. C needs to
+manually step through the string. `O(N)` time (and space).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 95.61 | 20 - 98.30 |
+| Mem Usage (MB-%)| 5.4 - 96.43 | 2 - 100.00 | 38.1 - 94.74 | 14.1 - 65.77 |
+
 ## [448. Find all numbers disappeared in an array.][448]
 
 Couldn't see (yet) how to do it with `O(1)` space. For now, I use `O(N)` space
@@ -3567,6 +3577,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [405]: https://leetcode.com/problems/convert-a-number-to-hexadecimal/
 [412]: https://leetcode.com/problems/fizz-buzz/
 [429]: https://leetcode.com/problems/n-ary-tree-level-order-traversal/
+[434]: https://leetcode.com/problems/number-of-segments-in-a-string/
 [448]: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 [461]: https://leetcode.com/problems/hamming-distance/
 [476]: https://leetcode.com/problems/number-complement/
