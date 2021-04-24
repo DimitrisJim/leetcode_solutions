@@ -162,6 +162,20 @@ operations for each node. Not sure about space complexity of the top of my head.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 92.99 | 24 - 95.46 |
 | Mem Usage (MB-%)| 6 - 34.24 | 2 - 52.17 | 38.8 - 77.73 | 14.2 - 65.65 |
 
+## [101. Symmetric Tree.][101]
+
+Walk both subtrees in a symmetric way (when we walk left on one, we walk right on
+the other and vise versa). This relationship can be captured either via a normal
+stack or the call stack of a function.
+
+Python, Rust, Javascript use a list/vector to order the traversal down both branches while
+C is recursive. `O(N)` for either case (memory and runtime)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 84 - 90.33 | 28 - 92.94 |
+| Mem Usage (MB-%)| 6.7 - 98.62 | 2 - 73.53 | 40.6 - 35.90 | 14.6 - 10.69 |
+
 ## [102. Binary Tree level order traversal.][102]
 
 There's a similar problem to this one, I remember it. All in all, use a stack where we
@@ -3495,6 +3509,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [66]: https://leetcode.com/problems/plus-one/
 [88]: https://leetcode.com/problems/merge-sorted-array/
 [100]: https://leetcode.com/problems/same-tree/
+[101]: https://leetcode.com/problems/symmetric-tree/
 [102]: https://leetcode.com/problems/binary-tree-level-order-traversal/
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
