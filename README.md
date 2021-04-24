@@ -84,6 +84,21 @@ list.
 | Runtime (ms-%)| 0 - 100.00 | 4 - 100.00 | 84 - 92.62 | 32 - 91.62 |
 | Mem Usage (MB-%)| 6.3 - 47.94 | 2 - 83.19 | 40.1 - 91.86 | 14.1 - 83.79 |
 
+## [24. Swap nodes in pairs.][24]
+
+Relatively straight-forward though the swapping is easy to get wrong. Keep track
+of previous in line (to point to new next), the current pairs (cur, next) we are
+swapping and perform the swap.
+
+This touches each node once so `O(N)` time with `O(1)` space.
+
+Rust: I probably need to read Too Many Linked Lists, again.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | - | 72 - 92.46 | 20 - 99.11 |
+| Mem Usage (MB-%)| 5.8 - 60.54 | - | 38.7 - 71.53 | 14.3 - 48.70 |
+
 ## [27. Remove Element.][27]
 
 Use a swap-remove. As found in Rusts `Vec.swap_remove`. Basically, replace the
@@ -3503,6 +3518,7 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [9]: https://leetcode.com/problems/palindrome-number/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
+[24]: https://leetcode.com/problems/swap-nodes-in-pairs/
 [27]: https://leetcode.com/problems/remove-element/
 [35]: https://leetcode.com/problems/search-insert-position/
 [64]: https://leetcode.com/problems/summary-ranges
