@@ -3532,6 +3532,16 @@ Use a set to filter characters and check that set size is equal to 26.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 97.22 | 16 - 99.92 |
 | Mem Usage (MB-%)| 5.6 - 97.71 | 2 - 97.14 | 40.4 - 13.63 | 13.9 - 99.13 | 
 
+## [1837. Sum of digits in base k.][1837]
+
+Find the digits of the representation in base-k by taking `n mod k`. Sum the digits and
+add whatever remains in the end of `n` (where `n` will be `< k`).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 100.00 | 24 - 100.00 |
+| Mem Usage (MB-%)| 5.4 - 100.00 | 2 - 100.00 | 38.6 - 100.00 | 14 - 100.00 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [7]: https://leetcode.com/problems/reverse-integer/
 [9]: https://leetcode.com/problems/palindrome-number/
@@ -3800,3 +3810,4 @@ Use a set to filter characters and check that set size is equal to 26.
 [1816]: https://leetcode.com/problems/truncate-sentence/
 [1822]: https://leetcode.com/problems/sign-of-the-product-of-an-array
 [1832]: https://leetcode.com/problems/check-if-the-sentence-is-pangram
+[1837]: https://leetcode.com/problems/sum-of-digits-in-base-k/
