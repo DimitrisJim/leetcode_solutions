@@ -3523,6 +3523,15 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 92.86 | 56 - 93.29 |
 | Mem Usage (MB-%)| 6.3 - 35.90 | 2.1 - 53.33 | 39.8 - 47.25 | 14.4 - 70.94 | 
 
+## [1832. Check if the sentence is pangram.][1832]
+
+Use a set to filter characters and check that set size is equal to 26.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 97.22 | 16 - 99.92 |
+| Mem Usage (MB-%)| 5.6 - 97.71 | 2 - 97.14 | 40.4 - 13.63 | 13.9 - 99.13 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [7]: https://leetcode.com/problems/reverse-integer/
 [9]: https://leetcode.com/problems/palindrome-number/
@@ -3790,3 +3799,4 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 [1812]: https://leetcode.com/problems/determine-color-of-a-chessboard-square/
 [1816]: https://leetcode.com/problems/truncate-sentence/
 [1822]: https://leetcode.com/problems/sign-of-the-product-of-an-array
+[1832]: https://leetcode.com/problems/check-if-the-sentence-is-pangram
