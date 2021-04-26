@@ -824,6 +824,17 @@ Calculate it iteratively.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.37 | 20 - 98.15 |
 | Mem Usage (MB-%)| 5.4 - 86.96 | 2 - 48.78 | 38.3 - 56.54 | 14.1 - 34.89 |
 
+## [515. Find largest value in each tree row.][515]
+
+Straight-forward. Keep an array of maxes and recurse/iterate while holding on to 
+a variable denoting the level. Update the maxes array using that level. Uses DFS and
+visits all nodes. `O(N)` space and time complexity.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 80 - 98.94 | 40 - 93.53 |
+| Mem Usage (MB-%)| 14.7 - 8.33 | 3 - 100.00 | 44.2 - 8.80 | 16.5 - 57.81 |
+
 ## [520. Detect Capital.][520]
 
 We can just check the second character and disambiguate which case we're examining.
@@ -3614,6 +3625,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [496]: https://leetcode.com/problems/next-greater-element-
 [500]: https://leetcode.com/problems/keyboard-row
 [509]: https://leetcode.com/problems/fibonacci-number/
+[515]: https://leetcode.com/problems/find-largest-value-in-each-tree-row/
 [520]: https://leetcode.com/problems/detect-capital/
 [521]: https://leetcode.com/problems/longest-uncommon-subsequence-i/
 [530]: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
