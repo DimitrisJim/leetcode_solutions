@@ -3523,6 +3523,16 @@ zero is encountered, zero is unconditionally returned. `O(N)` since we examine a
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 92.86 | 56 - 93.29 |
 | Mem Usage (MB-%)| 6.3 - 35.90 | 2.1 - 53.33 | 39.8 - 47.25 | 14.4 - 70.94 | 
 
+## [1827. Minimum operations to make the array increasing.][1827]
+
+Step through array in pairs and increment by one if equal and by their difference + 1 if
+earlier pair is largest. `O(n)` time, `O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 98.73 | 0 - 100.00 | 72 - 97.45 | 116 - 96.62 |
+| Mem Usage (MB-%)| 6.5 - 59.49 | 2 - 92.31 | 39.9 - 94.91 | 15 - 83.39 | 
+
 ## [1832. Check if the sentence is pangram.][1832]
 
 Use a set to filter characters and check that set size is equal to 26.
@@ -3809,5 +3819,6 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [1812]: https://leetcode.com/problems/determine-color-of-a-chessboard-square/
 [1816]: https://leetcode.com/problems/truncate-sentence/
 [1822]: https://leetcode.com/problems/sign-of-the-product-of-an-array
+[1827]: https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing
 [1832]: https://leetcode.com/problems/check-if-the-sentence-is-pangram
 [1837]: https://leetcode.com/problems/sum-of-digits-in-base-k/
