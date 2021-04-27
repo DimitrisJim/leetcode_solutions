@@ -1917,7 +1917,7 @@ At least, that's my naive first stab at it.
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100 | 0 - 100| 72 - 79.62|32 - 45.31|
-| Mem Usage (MB-%)|5.8 - 14.33|0 - 100|38.6 - 8.88|14.1 - 99.95|
+| Mem Usage (MB-%)| 5.8 - 14.33 | 0 - 100 | 38.6 - 8.88 | 14.1 - 99.95 |
 
 ## [1122. Relative sort array.][1122]
 
@@ -1931,6 +1931,31 @@ to return a default value.)
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 4 - 88.20 | 0 - 100.00 | 72 - 97.44 |28 - 97.20|
 | Mem Usage (MB-%)| 6.2 - 51.22 | 2 - 81.25 | 38.5 - 90.28 | 14.3 - 58.12|
+
+## [1128. Number of equivalent domino pairs.][1128]
+
+We first build a count of the pairs and then count their combinations. 
+
+The count can be built if a mapping supports lists as keys or, if we create a bijection
+between the domino pairs and indices in an array. The first approach is used in Python
+while the second in the rest (and my bijection isn't perfect but it suffices.)
+
+After that we can use each count to count the number of combinations in for each pair.
+The typical factorial equation is used to compute this:
+
+```
+(k + n - 1)! / k! * (n - 1)!
+# which can be reduced, with k == 2 in our case to:
+(n * (n - 1)) / 2
+```
+
+All in all, this is an `O(N)` time complexity algorithm with `O(1)` space (the # of pairs is
+45 in total.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 32 - 100.00 | 4 - 100.00 | 92 - 93.75 | 212 - 100.00 |
+| Mem Usage (MB-%)| 11.7 - 100.00 | 4.2 - 100.00 | 48.1 - 48.21 | 23.7 - 76.65 |
 
 ## [1137. N-th tribonacci number.][1137]
 
@@ -3713,6 +3738,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [1103]: https://leetcode.com/problems/distribute-candies-to-people/
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
 [1122]: https://leetcode.com/problems/relative-sort-array/
+[1128]: https://leetcode.com/problems/number-of-equivalent-domino-pairs/
 [1137]: https://leetcode.com/problems/n-th-tribonacci-number/
 [1146]: https://leetcode.com/problems/snapshot-array/
 [1160]: https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/
