@@ -826,6 +826,18 @@ in the sets.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.03 | 24 - 92.53 |
 | Mem Usage (MB-%)| 5.8 - 20.69 | 2 - 100.00 | 38.6 - 33.83 | 14.1 - 44.11 |
 
+## [504. Base 7.][504]
+
+Find the digits by continuously taking `num mod 7` and reducing `num` by `/ 7`. This is done on
+the absolute value of the number, the sign is removed and its presence is tracked in a boolean flag.
+
+After that, we only need to build the resulting string. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.32 | 24 - 95.12 |
+| Mem Usage (MB-%)| 5.6 - 75.00 | 2 - 85.71 | 39.3 - 6.12 | 14.3 - 43.06 |
+
 ## [509. Fibonacci Number][509]
 
 Calculate it iteratively.
@@ -3661,6 +3673,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [485]: https://leetcode.com/problems/max-consecutive-ones/
 [496]: https://leetcode.com/problems/next-greater-element-
 [500]: https://leetcode.com/problems/keyboard-row
+[504]: https://leetcode.com/problems/base-7
 [509]: https://leetcode.com/problems/fibonacci-number/
 [515]: https://leetcode.com/problems/find-largest-value-in-each-tree-row/
 [520]: https://leetcode.com/problems/detect-capital/
