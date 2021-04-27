@@ -664,6 +664,17 @@ Xor trick, different problem statement.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 98.01 | 28 - 92.43 |
 | Mem Usage (MB-%)| 5.7 - 96.92 | 2 - 100.00 | 39 - 96.03 | 14.1 - 94.66 |
 
+## [392. Is subsequence.][392]
+
+Continuously search in the string `t` for the characters of `s`. Use bounds to not search
+from the beginning for every char of `s` (and result in `O(nm)` complexity). `O(n)` time
+complexity and `O(1)` space complexity.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.25 | 24 - 95.69 |
+| Mem Usage (MB-%)| 5.5 - 97.97 | 2 - 100.00 | 37.8 - 99.55 | 14.2 - 73.80 |
+
 ## [404. Sum of left leaves.][404]
 
 Relatively straight-forward, recurse on tree and while branching on the children
@@ -3638,6 +3649,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [384]: https://leetcode.com/problems/shuffle-an-array
 [387]: https://leetcode.com/problems/first-unique-character-in-a-string/
 [389]: https://leetcode.com/problems/find-the-difference/
+[392]: https://leetcode.com/problems/is-subsequence/
 [404]: https://leetcode.com/problems/sum-of-left-leaves/
 [405]: https://leetcode.com/problems/convert-a-number-to-hexadecimal/
 [412]: https://leetcode.com/problems/fizz-buzz/
