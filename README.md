@@ -750,6 +750,19 @@ in the form of a vector or set in order to find disappeared numbers.
 | Runtime (ms-%)| 92 - 98.94 | 8 - 98.04 | 96 - 99.71 | 312 - 99.29 |
 | Mem Usage (MB-%)| 18.4 - 18.62 | 2.6 - 43.14 | 47.4 - 47.02 | 24.7 - 17.49 |
 
+## [451. Sort characters by frequency.][451]
+
+Count the characters, sort them by count, build the string. 
+
+The `O(N)` traversal of the string dominates the `O(klogk)` of the sort 
+due to the second being applied to an `k` which has a maximum value 
+of `count(letters + digits)`. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 88 - 92.53 | 24 - 99.90 |
+| Mem Usage (MB-%)| 6.5 - 78.57 | 2.2 - 93.75 | 41.3 - 88.19 | 15.6 - 39.61 |
+
 ## [460. Minimum Changes to make alternating binary string.][460]
 
 Need to count changes both version of alternating strings (`'010101..', '101010..'`). Call
@@ -3668,6 +3681,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [429]: https://leetcode.com/problems/n-ary-tree-level-order-traversal/
 [434]: https://leetcode.com/problems/number-of-segments-in-a-string/
 [448]: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+[451]: https://leetcode.com/problems/sort-characters-by-frequency
 [461]: https://leetcode.com/problems/hamming-distance/
 [476]: https://leetcode.com/problems/number-complement/
 [485]: https://leetcode.com/problems/max-consecutive-ones/
