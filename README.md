@@ -151,6 +151,27 @@ array. Space complexity is `O(1)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.75 | 24 - 97.53 |
 | Mem Usage (MB-%)| 5.8 - 99.54| 2 - 93.75 | 38.6 - 69.35 | 14.3 - 48.72 |
 
+## [78. Subsets.][78]
+
+Trick also utilized in Knuth 4A, view subsets as bitstrings of length `size(input)` with members
+being denoted by a set bit for the appropriate position. That is, for input of the form `[1, 2, 3, 4]`
+we'd have:
+
+```
+0000 0001 0010 0100 1000 0011 0101 1001 0110 1010 1100 0111 ...
+```
+
+where these denote the subsets:
+
+```
+{0}, {1}, {2}, {3}, {4}, {1, 2}, {1, 3}, {1, 4}, {2, 3}, {3, 4}, {1, 2, 3} ...
+```
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 99.13 | 0 - 100.00 | 72 - 98.13 | 28 - 92.84 |
+| Mem Usage (MB-%)| 6.5 - 65.22 | 2 - 90.00 | 39.6 - 73.46 | 14.4 - 51.70 |
+
 ## [88. Merge sorted array.][88]
 
 Place elements from `nums2` at the end of `nums1` (replacing zero elements) and sort it.
@@ -3678,6 +3699,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [35]: https://leetcode.com/problems/search-insert-position/
 [64]: https://leetcode.com/problems/summary-ranges
 [66]: https://leetcode.com/problems/plus-one/
+[78]: https://leetcode.com/problems/subsets/
 [88]: https://leetcode.com/problems/merge-sorted-array/
 [100]: https://leetcode.com/problems/same-tree/
 [101]: https://leetcode.com/problems/symmetric-tree/
