@@ -109,6 +109,18 @@ value you want to remove with the value at the end of the list/array. This way,
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.77 | 28 - 90.92 |
 | Mem Usage (MB-%)| 6.1 - 39.77 | 2.1 - 67.18 | 38.6 - 60.38 | 14.3 - 46.75 |
+
+## [28. Implement Strstr.][28]
+
+After handling special edge cases (`needle == ""` and `len(needle) > len(haystack)`) we
+go through the haystack and compare sub-slices. Need to break out early if a subslice doesn't
+match. Worse case is still `O(nm)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.08 | 24 - 95.52 |
+| Mem Usage (MB-%)| 5.8 - 95.27 | 2.2 - 58.11 | 39.4 - 41.95 | 14.5 - 24.15 |
+
 ## [35. Search insert position.][35]
 
 Again, binary searching for the right spot, i.e `O(logN)`.
@@ -3696,6 +3708,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
 [24]: https://leetcode.com/problems/swap-nodes-in-pairs/
 [27]: https://leetcode.com/problems/remove-element/
+[28]: https://leetcode.com/problems/implement-strstr/
 [35]: https://leetcode.com/problems/search-insert-position/
 [64]: https://leetcode.com/problems/summary-ranges
 [66]: https://leetcode.com/problems/plus-one/
