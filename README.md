@@ -3645,6 +3645,16 @@ as input, the size of the sets is always bound by that.)
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 93.86 | 24 - 94.90 |
 | Mem Usage (MB-%)| 5.4 - 93.26 | 2.1 - 55.17 | 40.2 - 20.55 | 14.3 - 20.60 |
 
+## [1796. Second largest digit in a string.][1796]
+
+Go through digits and find the second maximum value. Pretty straight-forward, `O(N)` runtime with
+`O(1)` space complexity.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 98.50 | 28 - 97.85 |
+| Mem Usage (MB-%)| 5.7 - 82.69 | 2 - 100.00 | 39.1 - 97.50 | 14 - 93.74 |
+
 ## [1800. Maximum Ascending Subarray sum.][1800]
 
 Keep track of current sum and the max sum we've found so far. When we detect the end of a sequence, we just update the
@@ -3987,6 +3997,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [1773]: https://leetcode.com/problems/count-items-matching-a-rule
 [1779]: https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/
 [1790]: https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/
+[1796]: https://leetcode.com/problems/second-largest-digit-in-a-string/
 [1800]: https://leetcode.com/problems/maximum-ascending-subarray-sum
 [1812]: https://leetcode.com/problems/determine-color-of-a-chessboard-square/
 [1816]: https://leetcode.com/problems/truncate-sentence/
