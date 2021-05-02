@@ -28,6 +28,20 @@ that keeps track of the appropriate index to use when we finally find the match.
 | Runtime (ms-%)| 4 - 96.96 | 0 - 100.00 | 72 - 94.33 | 28 - 99.99 |
 | Mem Usage (MB-%)| 6 - 68.00 | 2.3 - 68.01 | 38.4 - 91.28 | 14.4 - 47.87 |
 
+## [2. Add Two Numbers.][2]
+
+Traverse each list and build the counts as we go. Reuse one of the lists instead of
+allocating new nodes all the time. All in all, this has `O(N)` worse case runtime complexity
+where `N` is the size of the largest linked list.
+
+Rust: Not sure how exactly I should do this :(.
+TODO: Revisit.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 95.93 | - | 120 - 97.43 | 56 - 98.88 |
+| Mem Usage (MB-%)| 7.2 - 96.67 | - | 44 - 72.19 | 14.2 - 90.81 |
+
 ## [7. Reverse Integer.][7]
 
 We can work with arrays of the digits in order to reverse the numbers. Care needs to be
@@ -3702,6 +3716,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 | Mem Usage (MB-%)| 5.4 - 100.00 | 2 - 100.00 | 38.6 - 100.00 | 14 - 100.00 | 
 
 [1]: https://leetcode.com/problems/two-sum/
+[2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
 [9]: https://leetcode.com/problems/palindrome-number/
 [13]: https://leetcode.com/problems/roman-to-integer/
