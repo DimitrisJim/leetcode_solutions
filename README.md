@@ -352,6 +352,19 @@ numbers is zero.
 | Runtime (ms-%)| 12 - 99.30 | 0 - 100.00 | 80 - 92.47 | 112 - 99.63 |
 | Mem Usage (MB-%)| 7.1 - 99.80 | 2.1 - 81.55 | 39.9 - 98.51 | 16.7 - 29.16 |
 
+## [141. Linked list cycle.][141]
+
+You could use two pointers, one ahead of the other and keep iterating until they
+meet (or a `None/NULL/null` is encountered). If doing destructive mutations on the
+linked list was allowed, you could alter the next pointer of all nodes to a dummy
+node and iterate until you meet that or a `None/NULL/null` (but I doubt that
+would be a good idea in general).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 99.80 | N/A | 80 - 94.82 | 44 - 97.97 |
+| Mem Usage (MB-%)| 7.7 - 95.40 | N/A | 41 - 72.35 | 17.5 - 91.05 |
+
 ## [155. Min Stack.][155]
 
 See each file for detailed comments. Basically, hold min around and update it if we
@@ -3750,6 +3763,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [119]: https://leetcode.com/problems/pascals-triangle-ii/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [136]: https://leetcode.com/problems/single-number
+[141]: https://leetcode.com/problems/linked-list-cycle/
 [155]: https://leetcode.com/problems/min-stack/
 [167]: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 [171]: https://leetcode.com/problems/excel-sheet-column-number/
