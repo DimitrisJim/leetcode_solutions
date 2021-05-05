@@ -1185,6 +1185,21 @@ we remove the first term of the summation and add the term we've currently looke
 | Runtime (ms-%)| 100 - 100.00 | 12 - 100.00 | 92 - 97.89 | 780 - 96.34 |
 | Mem Usage (MB-%)| 10.5 - 50.75 | 2.4 - 33.33 | 47.9 - 37.19 | 18.1 - 10.88 |
 
+## [645. Set Mismatch.][645]
+
+My solution is in Python where a Set and the sum until `n` is used in order to find these.
+Did peek at solution that plays around with the indices and sets them to negatives. This is a solid
+trick to remember whenever dealing with arrays holding sequences that can be used to index it (or 
+holding sequences of values that can be transformed into the range `0..array.len()`).
+
+First approach with Sets uses `O(n)` runtime complexity and `O(n)` space. Second approach uses two
+iterations but `O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 20 - 97.47 | 0 - 100.00 | 84 - 94.77 | 192 - 71.13 |
+| Mem Usage (MB-%)| 7.1 - 79.75| 2.1 - 100.00 | 42.2 - 68.11 | 15.2 - 97.92 |
+
 ## [653. Two Sum IV - Input is a BST.][653]
 
 Use a set to hold the values and traverse tree. For each node see if `k - node.value`
@@ -3825,6 +3840,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [637]: https://leetcode.com/problems/average-of-levels-in-binary-tree/
 [643]: https://leetcode.com/problems/maximum-average-subarray-i/
+[645]: https://leetcode.com/problems/set-mismatch/
 [653]: https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
 [654]: https://leetcode.com/problems/maximum-binary-tree/
 [657]: https://leetcode.com/problems/robot-return-to-origin/
