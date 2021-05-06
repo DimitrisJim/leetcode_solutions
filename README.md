@@ -1077,6 +1077,19 @@ element in `nums` and place it in new position based on `r` and `c`.
 | Runtime (ms-%)| 36 - 100.00 | 0 - 100.00 | 96 - 96.50 | 84 - 99.31 |
 | Mem Usage (MB-%)| 11.4 - 100.00 | 2.3 - 100.00 | 44.6 - 51.05 | 15.2 - 59.61 |
 
+## [572. Subtree of another tree.][572]
+
+Traverse tree until a node with value equal to `subRoot.val` is encountered. Then check if
+subtrees match using recursion. This could probably be improved by building a list of the
+`subRoot` values and checking the nodes against that.
+
+Rust: Need to come back to this, refcells with references are still difficult for me.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 99.17 | - | 92 - 98.19 | 132 - 81.28 |
+| Mem Usage (MB-%)| 10.9 - 98.33 | - | 44.9 - 90.86 | 15 - 88.52 |
+
 ## [575. Distribute Candies][575]
 
 Use a set and compare its size with the ammount prescribed (Goes south for `C`
@@ -3830,6 +3843,7 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [535]: https://leetcode.com/problems/encode-and-decode-tinyurl/
 [538]: https://leetcode.com/problems/convert-bst-to-greater-tree
 [566]: https://leetcode.com/problems/reshape-the-matrix/
+[572]: https://leetcode.com/problems/subtree-of-another-tree
 [575]: https://leetcode.com/problems/distribute-candies
 [589]: https://leetcode.com/problems/n-ary-tree-preorder-traversal
 [559]: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
