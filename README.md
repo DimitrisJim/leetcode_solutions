@@ -3766,6 +3766,17 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 100.00 | 24 - 100.00 |
 | Mem Usage (MB-%)| 5.4 - 100.00 | 2 - 100.00 | 38.6 - 100.00 | 14 - 100.00 | 
 
+## [1844. Replace all digits with characters.][1844]
+
+Straight-forward traversal through the characters of the input string. `O(n)` time
+complexity and `O(N)/O(1)` space complexity for languages that don't and do allow
+mutation of strings respectively.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.54 | 24 - 97.22 |
+| Mem Usage (MB-%)| 5.6 - 88.89 | 2 - 95.24 | 38.5 - 60.19 | 14.2 - 43.57 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -4049,3 +4060,4 @@ add whatever remains in the end of `n` (where `n` will be `< k`).
 [1827]: https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing
 [1832]: https://leetcode.com/problems/check-if-the-sentence-is-pangram
 [1837]: https://leetcode.com/problems/sum-of-digits-in-base-k/
+[1844]: https://leetcode.com/problems/replace-all-digits-with-characters/
