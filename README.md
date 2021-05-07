@@ -3706,6 +3706,17 @@ max sum if the current sum is larger. Care is needed to handle last element in t
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 90.78 | 24 - 99.12 |
 | Mem Usage (MB-%)| 5.8 - 75.00 | 2 - 96.15 | 38.5 - 55.32 | 14.2 - 75.50 |
 
+## [1805. Number of different integers in a string.][1805]
+
+Split/trim strings and use a set to count unique elements. `C` version shouldn't have
+been difficult just a bit of a pain. All in all, leads to `O(N)` execution and spacetime
+complexity.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 0 - 100.00 | 72 - 96.63 | 20 - 99.50 |
+| Mem Usage (MB-%)| - | 0 - 100.00 | 38.5 - 95.04 | 14.4 - 27.93 |
+
 ## [1812. Truncate sentence.][1812]
 
 Observe that if we map cols from `[a-h]` to `[1-8]` we have a nice property: cells for which
@@ -4054,6 +4065,7 @@ mutation of strings respectively.
 [1790]: https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/
 [1796]: https://leetcode.com/problems/second-largest-digit-in-a-string/
 [1800]: https://leetcode.com/problems/maximum-ascending-subarray-sum
+[1805]: https://leetcode.com/problems/number-of-different-integers-in-a-string/
 [1812]: https://leetcode.com/problems/determine-color-of-a-chessboard-square/
 [1816]: https://leetcode.com/problems/truncate-sentence/
 [1822]: https://leetcode.com/problems/sign-of-the-product-of-an-array
