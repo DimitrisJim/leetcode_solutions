@@ -430,6 +430,22 @@ common iterative `O(N)`:
     }
     return count;
 
+## [199. Binary Tree Right Side View.][199]
+
+Traverse tree rightwards assigning levels to each node encountered. By using a stack
+we can always push the rightmost values first and register them as we encounter them. 
+For each new level, we always register the rightmost node present in that level.
+
+Overall needs `O(N)` execution time (since we traverse the full tree) and `O(N)` worse
+case memory.
+
+C: Could easily do this if I didn't despise having to manually track dynamic memory.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 0 - 100.00 | 72 - 99.10 | 20 - 99.43 |
+| Mem Usage (MB-%)| - | 2.1 - 66.67 | 40.3 - 63.83 | 14.4 - 19.91 |
+
 ## [201. Bitwise and of numbers range.][201]
 
 First interesting property, took me some time to notice.
@@ -3819,6 +3835,7 @@ mutation of strings respectively.
 [171]: https://leetcode.com/problems/excel-sheet-column-number/
 [190]: https://leetcode.com/problems/reverse-bits/
 [191]: https://leetcode.com/problems/number-of-1-bits
+[199]: https://leetcode.com/problems/binary-tree-right-side-view/
 [201]: https://leetcode.com/problems/bitwise-and-of-numbers-range/
 [206]: https://leetcode.com/problems/reverse-linked-list/
 [217]: https://leetcode.com/problems/contains-duplicate/
