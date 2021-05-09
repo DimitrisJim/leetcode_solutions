@@ -1202,6 +1202,20 @@ is represented by a `level` parameter of the recursive function.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 84 - 97.80 | 36 - 99.85 |
 | Mem Usage (MB-%)| 20.7 - 5.36 | 3 - 50.00 | 45 - 18.13 | 16.5 - 60.71 |
 
+## [641. Design Circular Deque.][641]
+
+Two common approaches for this: a doubly linked list (see Python) or a circular
+buffer/list (see C/Rust/Javascript). The main difference is in memory requirements since
+a doubly linked list needs to store references to front/back for all nodes.
+
+All in all, memory footprint for both is `O(N)` and both display `O(1)` complexity for
+all operations.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 20 - 100.00 | 4 - 100.00 | 104 - 100.00 | 64 - 91.50 |
+| Mem Usage (MB-%)| 12.5 - 80.00 | 2.4 - 66.67 | 45.9 - 77.14 | 15.1 - 43.28 |
+
 ## [643. Maximum average subarray I.][643]
 
 `O(N)`, the main thing to notice (I believe) is the fact that you do not need to calculate the
@@ -3892,6 +3906,7 @@ mutation of strings respectively.
 [606]: https://leetcode.com/problems/construct-string-from-binary-tree/
 [617]: https://leetcode.com/problems/merge-two-binary-trees/
 [637]: https://leetcode.com/problems/average-of-levels-in-binary-tree/
+[641]: https://leetcode.com/problems/design-circular-deque/
 [643]: https://leetcode.com/problems/maximum-average-subarray-i/
 [645]: https://leetcode.com/problems/set-mismatch/
 [653]: https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
