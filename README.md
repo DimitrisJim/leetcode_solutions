@@ -365,6 +365,19 @@ would be a good idea in general).
 | Runtime (ms-%)| 4 - 99.80 | N/A | 80 - 94.82 | 44 - 97.97 |
 | Mem Usage (MB-%)| 7.7 - 95.40 | N/A | 41 - 72.35 | 17.5 - 91.05 |
 
+## [144. Binary Tree Preorder Traversal.][144]
+
+Iterative approach for Python/Rust/Javascript. C uses recursive in order to avoid
+managing memory for stack needed in that case (which is implicitly provided in recursive
+case).
+
+All display `O(N)` runtime/memory complexity.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 94.45 | 24 - 94.50 |
+| Mem Usage (MB-%)| 6 - 52.38 | 2 - 55.56 | 38.7 - 62.16 | 14 - 91.16 |
+
 ## [155. Min Stack.][155]
 
 See each file for detailed comments. Basically, hold min around and update it if we
@@ -3844,6 +3857,7 @@ mutation of strings respectively.
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [136]: https://leetcode.com/problems/single-number
 [141]: https://leetcode.com/problems/linked-list-cycle/
+[144]: https://leetcode.com/problems/binary-tree-preorder-traversal/
 [155]: https://leetcode.com/problems/min-stack/
 [167]: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 [171]: https://leetcode.com/problems/excel-sheet-column-number/
