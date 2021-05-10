@@ -207,6 +207,17 @@ Place elements from `nums2` at the end of `nums1` (replacing zero elements) and 
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.93 | 28 - 96.98 |
 | Mem Usage (MB-%)| 6.2 - 39.46 | 2 - 66.67 | 38.5 - 92.89 | 14.2 - 85.77 |
 
+## [94. Binary Tree Inorder Traversal.][94]
+
+Python + JS use iterative approach. C + Rust use recursive. With C, going iterative is
+relatively trivial, for Rust, not so much (and I'm really not sure how you'd do it without
+having TreeNode be clone'able [and even that sounds like a nasty approach]).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 93.61 | 12 - 95.37 |
+| Mem Usage (MB-%)| 5.7 - 95.00 | 1.9 - 94.29 | 38.5 - 79.11 | 13.3 - 75.85 |
+
 ## [100. Same Tree][100]
 
 C recursively solves it while the others use the iterative approach. In all cases
@@ -3845,6 +3856,7 @@ mutation of strings respectively.
 [66]: https://leetcode.com/problems/plus-one/
 [78]: https://leetcode.com/problems/subsets/
 [88]: https://leetcode.com/problems/merge-sorted-array/
+[94]: https://leetcode.com/problems/binary-tree-inorder-traversal/
 [100]: https://leetcode.com/problems/same-tree/
 [101]: https://leetcode.com/problems/symmetric-tree/
 [102]: https://leetcode.com/problems/binary-tree-level-order-traversal/
