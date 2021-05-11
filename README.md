@@ -389,6 +389,19 @@ All display `O(N)` runtime/memory complexity.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 94.45 | 24 - 94.50 |
 | Mem Usage (MB-%)| 6 - 52.38 | 2 - 55.56 | 38.7 - 62.16 | 14 - 91.16 |
 
+## [145. Binary Tree Postorder Traversal.][145]
+
+Iterative approach for Python/Javascript. C and Rust use recursive solutions. For C, the
+changes in order to make it iterative are relatively trivial, for Rust, not sure how easily you could
+make it work iteratively.
+
+All display `O(N)` runtime/memory complexity.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.51 | 24 - 94.52 |
+| Mem Usage (MB-%)| 5.9 - 61.46 | 2 - 94.12 | 38.6 - 59.70 | 14.1 - 74.99 |
+
 ## [155. Min Stack.][155]
 
 See each file for detailed comments. Basically, hold min around and update it if we
@@ -3870,6 +3883,7 @@ mutation of strings respectively.
 [136]: https://leetcode.com/problems/single-number
 [141]: https://leetcode.com/problems/linked-list-cycle/
 [144]: https://leetcode.com/problems/binary-tree-preorder-traversal/
+[145]: https://leetcode.com/problems/binary-tree-postorder-traversal/
 [155]: https://leetcode.com/problems/min-stack/
 [167]: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 [171]: https://leetcode.com/problems/excel-sheet-column-number/
