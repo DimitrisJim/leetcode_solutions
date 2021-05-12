@@ -2060,6 +2060,18 @@ keep it.
 | Runtime (ms-%)| 104 - 100.00 | 12 - 100.00 | 140 - 83.33 | 144 - 98.49 |
 | Mem Usage (MB-%)| 23 - 12.50 | 2.7 - 75.00 | 47.5 - 40.00 | 16.2 - 41.04 |
 
+## [1037. Valid Boomerang.][1037]
+
+Check that the slopes for the two points are different (`y2 - y1 / x2 - x1`). Need
+to check for edge cases first though (`x2 - x1 != 0`) and filter easy cases where
+we know that they will be on the same line (two points being equal, all x's or all y's
+for the points match.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.55 | 24 - 96.82 |
+| Mem Usage (MB-%)| 5.6 - 62.96 | 2 - 85.71 | 38.8 - 39.66 | 14.3 - 14.43 |
+
 ## [1038. Binary Search Tree to greater sum tree.][1038]
 
 This is a depth first inorder traversal. We do need to go right though. Care is
@@ -4012,6 +4024,7 @@ mutation of strings respectively.
 [1022]: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers
 [1025]: https://leetcode.com/problems/divisor-game/
 [1030]: https://leetcode.com/problems/matrix-cells-in-distance-order/
+[1037]: https://leetcode.com/problems/valid-boomerang/
 [1038]: https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree
 [1046]: https://leetcode.com/problems/last-stone-weight/
 [1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
