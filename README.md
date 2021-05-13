@@ -305,6 +305,22 @@ Recursively solving this is straight-forward.
 | Runtime (ms-%)| 8 - 94.69 | 0 - 100.00 | 84 - 95.62 | 56 - 99.93 |
 | Mem Usage (MB-%)| 18 - 59.59 | 2.9 - 71.43 | 41.7 - 93.78 | 16.6 - 22.27 |
 
+## [110. Balanced Binary Tree.][110]
+
+Need to go through tree and calculate differences between subtrees for every given node.
+Doing this naively results in a lot of repetition of work (think fibonacci). So, a cache
+can be utilized that holds the height for a given node.
+
+Approaches here use recursion, C version is TODO for when I'm up for using uthash again. Got
+Rust version to work but cache requires raw pointers as keys, I feel a better approach should
+exists and I'm under the impression an iterative solution would be better. As such, that is
+another TODO.
+
+| Stats/Lang  | C | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 4 - 100.00 | 92 - 77.70 | 40 - 97.82 |
+| Mem Usage (MB-%)| - | 2.9 - 12.50 | 43 - 62.04 | 18.9 - 48.15 |
+
 ## [111. Minimum depth of binary tree.][111]
 
 Typical depth first recursion. We can stop recursing when we reach a depth which is bigger
@@ -3899,6 +3915,7 @@ mutation of strings respectively.
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+[110]: https://leetcode.com/problems/balanced-binary-tree/
 [111]: https://leetcode.com/problems/minimum-depth-of-binary-tree/
 [118]: https://leetcode.com/problems/pascals-triangle/
 [119]: https://leetcode.com/problems/pascals-triangle-ii/
