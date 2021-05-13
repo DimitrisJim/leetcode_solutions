@@ -332,6 +332,19 @@ memory complexity.
 | Runtime (ms-%)| 132 - 99.58 | 32 - 97.73 | 232 - 99.61 | 468 - 93.47 |
 | Mem Usage (MB-%)| 75.4 - 99.16 | 11.4 - 100.00 | 75.4 - 17.90 | 49.3 - 72.86 |
 
+## [112. Path Sum.][112]
+
+Rust and Python have iterative solutions while C/Javascript have recursive. The idea
+in both cases is the same, recurse while holding on to the current sum and, when we 
+reach a leaf, check if sums match.
+
+`O(N)` both space and runtime complexity.
+
+| Stats/Lang  | C | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 96.72 | 0 - 100.00 | 80 - 97.72 | 36 - 93.49 |
+| Mem Usage (MB-%)| 8.4 - 15.54 | 2.5 - 92.31 | 42.2 - 31.94 | 16 - 24.23 |
+
 ## [118. Pascal's triangle.][118]
 
 Becomes easy once you look up on Pascal's Triangle and find the [formula for
@@ -3917,6 +3930,7 @@ mutation of strings respectively.
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 [110]: https://leetcode.com/problems/balanced-binary-tree/
 [111]: https://leetcode.com/problems/minimum-depth-of-binary-tree/
+[112]: https://leetcode.com/problems/path-sum/
 [118]: https://leetcode.com/problems/pascals-triangle/
 [119]: https://leetcode.com/problems/pascals-triangle-ii/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
