@@ -1087,6 +1087,17 @@ As such, see `1038.*` files for the code.
 | Runtime (ms-%)| 16 - 92.86 | 0 - 100.00 | 100 - 100.00 | 72 - 98.64 |
 | Mem Usage (MB-%)| 13.7 - 100.00 | 2.9 - 83.33 | 47.7 - 28.72 | 16.7 - 80.07 |
 
+## [551. Student Attendance Record I.][551]
+
+Iterate through characters with two counters. One counts occurences of `A`s and returns
+if the count reaches `2`. The second counts consecutive occurences of `L`s and returns if
+it equals `3`. Overall, `O(N)` runtime and `O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 93.62 | 20 - 99.19 |
+| Mem Usage (MB-%)| 5.5 - 73.81 | 2 - 77.78 | 38.8 - 41.49 | 14 - 90.13 |
+
 ## [557. Reverse Words in a String III][561]
 
 C mutates the string in-place because it's allowable there. 
@@ -3947,6 +3958,7 @@ mutation of strings respectively.
 [530]: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 [535]: https://leetcode.com/problems/encode-and-decode-tinyurl/
 [538]: https://leetcode.com/problems/convert-bst-to-greater-tree
+[551]: https://leetcode.com/problems/student-attendance-record-i/
 [566]: https://leetcode.com/problems/reshape-the-matrix/
 [572]: https://leetcode.com/problems/subtree-of-another-tree
 [575]: https://leetcode.com/problems/distribute-candies
