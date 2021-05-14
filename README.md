@@ -345,6 +345,25 @@ reach a leaf, check if sums match.
 | Runtime (ms-%)| 4 - 96.72 | 0 - 100.00 | 80 - 97.72 | 36 - 93.49 |
 | Mem Usage (MB-%)| 8.4 - 15.54 | 2.5 - 92.31 | 42.2 - 31.94 | 16 - 24.23 |
 
+## [113. Path Sum II.][113]
+
+Rust and Python have iterative solutions while Javascript have recursive. The idea
+in both cases is the same, recurse while holding on to the current sum, the level (depth) and
+the path of nodes encountered. When we encounter a level with value `<=` then the length of the
+list of nodes (path), we trim the path to bring the path to the correct position.
+
+When we reach a leaf, check if sums match and, if they do, yield/store the path.
+
+`O(N)` both space and runtime complexity.
+
+TODO: `C` version isn't hard just requires manual management for the arrays holding paths, list
+of paths which I've burned out doing over and over.
+
+| Stats/Lang  | C | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 0 - 100.00 | 88 - 95.02 | 36 - 97.12 |
+| Mem Usage (MB-%)| - | 2.5 - 100.00 | 49.6 - 25.25 | 14.9 - 99.21 |
+
 ## [118. Pascal's triangle.][118]
 
 Becomes easy once you look up on Pascal's Triangle and find the [formula for
@@ -3931,6 +3950,7 @@ mutation of strings respectively.
 [110]: https://leetcode.com/problems/balanced-binary-tree/
 [111]: https://leetcode.com/problems/minimum-depth-of-binary-tree/
 [112]: https://leetcode.com/problems/path-sum/
+[113]: https://leetcode.com/problems/path-sum-ii/
 [118]: https://leetcode.com/problems/pascals-triangle/
 [119]: https://leetcode.com/problems/pascals-triangle-ii/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
