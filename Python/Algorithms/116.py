@@ -10,7 +10,7 @@ class Node:
 
 
 class Solution:
-    def connect(self, root: 'Node') -> 'Node':
+    def connect(self, root):
         def recursive_connect(node):
             left, right = node.left, node.right
 
