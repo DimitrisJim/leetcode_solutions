@@ -377,6 +377,31 @@ iterations, though, I believe it must be around `O(n^2)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.32 | 24 - 95.43 |
 | Mem Usage (MB-%)| 5.9 - 95.86 | 2.3 - 6.67 | 38.6 - 21.82 | 14.3 - 59.05 |
 
+## [116. Populating next right pointers in each node.][116]
+
+The only issue is when you need to link two "cousins" (children of uncle nodes) together.
+In order to do that, we just use `node->next` that has been filled in previous recursion/iteration
+to go to the uncle and access his children. Care needs to be taken on what we link right has priority
+on the left side while left has priority on the right side, i.e:
+
+```
+# link 3 to 4 but if 3 doesn't exist, link 9 to 4 and
+# if 4 doesn't exist, link 3 or 9 to 5.
+   
+        root
+        /  \
+       4    7
+      / \  / \
+     9  3 4   5
+```
+
+Complexity is `O(N)` both runtime and space (counting implicit call stack).
+
+| Stats/Lang  | C | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 12 - 83.52 | N/A | 92 - 95.75 | 52 - 97.91  |
+| Mem Usage (MB-%)| 8.8 - 97.80 | N/A | 45.2 - 72.90 | 15.5 - 99.07 |
+
 ## [119. Pascal's triangle II.][119]
 
 Becomes easy once you look up on Pascal's Triangle and find the [formula for
@@ -3951,6 +3976,7 @@ mutation of strings respectively.
 [111]: https://leetcode.com/problems/minimum-depth-of-binary-tree/
 [112]: https://leetcode.com/problems/path-sum/
 [113]: https://leetcode.com/problems/path-sum-ii/
+[116]: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 [118]: https://leetcode.com/problems/pascals-triangle/
 [119]: https://leetcode.com/problems/pascals-triangle-ii/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
