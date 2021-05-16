@@ -412,6 +412,31 @@ finding a row](https://en.wikipedia.org/wiki/Pascal%27s_triangle#Calculating_a_r
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.83 | 24 - 96.72 |
 | Mem Usage (MB-%)| 5.9 - 65.63 | 2.4 - 5.00 | 38.3 - 82.37 | 14.3 - 54.93 |
 
+## [121. Best time to buy and sell stock.][121]
+
+Continuously holds the minimum encountered thus far. When a
+value is not smaller, we see if it exceeds the max_price as
+has been set thus far. For example:
+
+    [1, 2, 3, 0, 20, 0, 30, 5, 6]
+
+min_price is initialized to `prices[0]` first (by default, the minimum
+encountered thus far). Our max_price during the iteration tracks the
+following subtractions:
+
+    price == 1: => min_price = 1, max_price = 0 (dummy iteration, really)
+    price == 2: => min_price = 1, max_price = 1 (2 - 1)
+    price == 3: => min_price = 1, max_price = 2 (3 - 1)
+    ....
+    price == 30 => min_price = 0, max_price = 30 (30 - 0). (Final answer)  
+
+Runs in O(N) with O(1) space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 96 - 100.00 | 8 - 97.35 | 92 - 93.75 | 952 - 83.52 |
+| Mem Usage (MB-%)| 13 - 43.30 | 3.1 - 23.18 | 48.5 - 90.30 | 25 - 95.24 |
+
 ## [122. Best time to buy and sell stock II.][122]
 
 Buy on local minimums and sell on local maximums. This can be done by going through
