@@ -3976,6 +3976,24 @@ mutation of strings respectively.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.54 | 24 - 97.22 |
 | Mem Usage (MB-%)| 5.6 - 88.89 | 2 - 95.24 | 38.5 - 60.19 | 14.2 - 43.57 | 
 
+## [1863. Sum of all subset xor totals.][1863]
+
+View subsequences as bitstrings where bit set
+indicates we should pick a specific index.
+We essentially generate the following sequence:
+
+    0, 01, 10, 11, 001, 010, 100, 011, 101, 110, 111
+
+and use that to index into the array (via `k & (1 << i)`)
+which checks if the the i'th bit is set.
+
+If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 4 - 100.00 | 80 - 100.00 | 152 - 100.00 |
+| Mem Usage (MB-%)| 5.4 - 100.00 | 2 - 100.00 | 38.4 - 100.00 | 14.1 - 100.00 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -4272,3 +4290,4 @@ mutation of strings respectively.
 [1832]: https://leetcode.com/problems/check-if-the-sentence-is-pangram
 [1837]: https://leetcode.com/problems/sum-of-digits-in-base-k/
 [1844]: https://leetcode.com/problems/replace-all-digits-with-characters/
+[1863]: https://leetcode.com/problems/sum-of-all-subset-xor-totals/
