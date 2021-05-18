@@ -3976,6 +3976,18 @@ mutation of strings respectively.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.54 | 24 - 97.22 |
 | Mem Usage (MB-%)| 5.6 - 88.89 | 2 - 95.24 | 38.5 - 60.19 | 14.2 - 43.57 | 
 
+## [1859. Sorting the sentence.][1859]
+
+Get number of strings by calling len after splitting. Pre-allocate vector to hold
+strings and put strings as encountered in correct position. O(n) both space and time.
+
+`C` too much hassle for me to get a join implemented now.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 0 - 100.00 | 72 - 97.39 | 28 - 92.23 |
+| Mem Usage (MB-%)| - | 2.1 - 58.33 | 38.4 - 52.29 | 13.9 - 98.94 | 
+
 ## [1863. Sum of all subset xor totals.][1863]
 
 View subsequences as bitstrings where bit set
@@ -4290,4 +4302,5 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [1832]: https://leetcode.com/problems/check-if-the-sentence-is-pangram
 [1837]: https://leetcode.com/problems/sum-of-digits-in-base-k/
 [1844]: https://leetcode.com/problems/replace-all-digits-with-characters/
+[1859]: https://leetcode.com/problems/sorting-the-sentence
 [1863]: https://leetcode.com/problems/sum-of-all-subset-xor-totals/
