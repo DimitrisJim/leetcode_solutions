@@ -2977,6 +2977,20 @@ in order to not be under `1`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 82.35 | 24 - 96.60 |
 | Mem Usage (MB-%)| 5.8 - 100.00 | 2 - 100.00 | 37.9 - 97.39 | 14 - 96.50|
 
+## [1414. Find the minimum number of fibonacci numbers whose sum is K.][1414]
+
+Initially, I believed this was a dp-problem. Solving it like that (though possible)
+was actually not the best way. Apparently, greedily subtracting largest possible
+fibonacci number from `k` continuously yields the correct result.
+
+Though I am sure this results in a possible answer (we simply subtract a fibonacci number from a
+sum of n fibonacci numbers) I am still unsure why it is optimal.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 100.00 | 28 - 95.34 |
+| Mem Usage (MB-%)| 5.4 - 72.73 | 2 - 100.00 | 38.7 - 100.00 | 14.3 - 11.66 |
+
 ## [1417. Reformat the string.][1417]
 
 Build a list of characters and numbers. If their lengths don't differ by a maximum
@@ -4226,6 +4240,7 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [1408]: https://leetcode.com/problems/string-matching-in-an-array/
 [1409]: https://leetcode.com/problems/queries-on-a-permutation-with-key/
 [1413]: https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum
+[1414]: https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/
 [1417]: https://leetcode.com/problems/reformat-the-string/
 [1422]: https://leetcode.com/problems/maximum-score-after-splitting-a-string/
 [1431]: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
