@@ -3990,6 +3990,21 @@ mutation of strings respectively.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.54 | 24 - 97.22 |
 | Mem Usage (MB-%)| 5.6 - 88.89 | 2 - 95.24 | 38.5 - 60.19 | 14.2 - 43.57 | 
 
+## [1854. Maximum population year.][1854]
+
+Iterate through all the logs and build a counter that holds number of people alive for each
+year. After that, we only need to traverse this array to find max value for min year.
+
+Since logs are bounded in size (maximum 100 elements), the inner loop while iterating through
+the logs is basically a constant term in the complexity (similarly, the counter used to count
+occurences). It does not depend on the input size `N`. As such, this is `O(N)` runtime and `O(1)`
+space complexity.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 97.89 | 32 - 98.79 |
+| Mem Usage (MB-%)| 6.3 - 27.50 | | 39 - 71.90 | 14.2 - 65.92 | 
+
 ## [1859. Sorting the sentence.][1859]
 
 Get number of strings by calling len after splitting. Pre-allocate vector to hold
@@ -4317,5 +4332,6 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [1832]: https://leetcode.com/problems/check-if-the-sentence-is-pangram
 [1837]: https://leetcode.com/problems/sum-of-digits-in-base-k/
 [1844]: https://leetcode.com/problems/replace-all-digits-with-characters/
+[1854]: https://leetcode.com/problems/maximum-population-year/
 [1859]: https://leetcode.com/problems/sorting-the-sentence
 [1863]: https://leetcode.com/problems/sum-of-all-subset-xor-totals/
