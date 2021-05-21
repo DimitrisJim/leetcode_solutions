@@ -451,6 +451,16 @@ A toggle for the action is used to differentiate the cases (buying/selling).
 | Runtime (ms-%)| 4 - 97.15 | 0 - 100.00 | 76 - 92.04 | 52 - 96.93 |
 | Mem Usage (MB-%)| 6.9 - 46.64 | 2.1 - 76.47 | 39.2 - 72.89 | 15.1 - 54.54 |
 
+## [133. Clone graph.][133]
+
+Recurse on neighbors and gradually build the graph, need to keep track of what we've visited
+in order to not recurse like crazy. Both time and space complexity should be `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 87.32 | N/A | 72 - 98.91 | 32 - 92.73 |
+| Mem Usage (MB-%)| 6.9 - 76.06 | N/A | 39.7 - 98.91 | 14.7 - 26.45 |
+
 ## [136. Single Number][136]
 
 Pretty well known xor trick. Based on the property that xor of two equal
@@ -4064,6 +4074,7 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [118]: https://leetcode.com/problems/pascals-triangle/
 [119]: https://leetcode.com/problems/pascals-triangle-ii/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+[133]: https://leetcode.com/problems/clone-graph
 [136]: https://leetcode.com/problems/single-number
 [141]: https://leetcode.com/problems/linked-list-cycle/
 [144]: https://leetcode.com/problems/binary-tree-preorder-traversal/
