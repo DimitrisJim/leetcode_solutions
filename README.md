@@ -177,6 +177,16 @@ array. Space complexity is `O(1)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.75 | 24 - 97.53 |
 | Mem Usage (MB-%)| 5.8 - 99.54| 2 - 93.75 | 38.6 - 69.35 | 14.3 - 48.72 |
 
+## [74. Search a 2d matrix.][74]
+
+Perform a binary search on each of the rows. `O(nlogn)` runtime and `O(1)` space. Also solves
+problem `240` but not so efficiently.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.05 | 32 - 98.77 |
+| Mem Usage (MB-%)| 6.1 - 84.76 | 2.1 - 78.57 | 38.5 - 87.74 | 14.8 - 62.06 |
+
 ## [78. Subsets.][78]
 
 Trick also utilized in Knuth 4A, view subsets as bitstrings of length `size(input)` with members
@@ -4057,6 +4067,7 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [35]: https://leetcode.com/problems/search-insert-position/
 [64]: https://leetcode.com/problems/summary-ranges
 [66]: https://leetcode.com/problems/plus-one/
+[74]: https://leetcode.com/problems/search-a-2d-matrix/
 [78]: https://leetcode.com/problems/subsets/
 [88]: https://leetcode.com/problems/merge-sorted-array/
 [94]: https://leetcode.com/problems/binary-tree-inorder-traversal/
