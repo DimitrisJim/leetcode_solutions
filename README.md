@@ -733,6 +733,17 @@ available.
 | Runtime (ms-%)| 4 - 95.10 | N/A | 80 - 94.74 | 20 - 100.00 |
 | Mem Usage (MB-%)| 6.3 - 99.87 | N/A | 40.2 - 84.74 | 14.7 - 19.26 |
 
+## [240. Search a 2-d matrix II.][240]
+
+Start from bottom left corner. Eliminate rows by checking if `target < row[0]` and columns by
+checking if `target > row[0]`. (All values on the right of `target` if `target < row[0]` must be
+larger while if `target > row[0]` columns to the right will contain larger values.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 48 - 91.20 | 0 - 100.00 | 316 - 72.89 | 152 - 97.52 |
+| Mem Usage (MB-%)| 9.1 - 92.00 | 2.5 - 78.95 | 41.7 - 81.98 | 20.4 - 97.73 |
+
 ## [242. Valid anagram.][242]
 
 All except for C use a counter. No idea why `Rust` can't go lower than `4` though
@@ -4114,6 +4125,7 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [231]: https://leetcode.com/problems/power-of-two/
 [232]: https://leetcode.com/problems/implement-queue-using-stacks
 [237]: https://leetcode.com/problems/delete-node-in-a-linked-list
+[240]: https://leetcode.com/problems/search-a-2d-matrix-ii/
 [242]: https://leetcode.com/problems/valid-anagram/ 
 [257]: https://leetcode.com/problems/binary-tree-paths/
 [258]: https://leetcode.com/problems/add-digits
