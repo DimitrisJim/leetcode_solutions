@@ -4010,6 +4010,16 @@ mutation of strings respectively.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.54 | 24 - 97.22 |
 | Mem Usage (MB-%)| 5.6 - 88.89 | 2 - 95.24 | 38.5 - 60.19 | 14.2 - 43.57 | 
 
+## [1848. Minimum distance to the target element.][1848]
+
+Iterate through the list and find the value whose index yields the minimum difference.
+`O(N)` time and `O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 91.67 | 0 - 100.00 | 72 - 94.62 | 48 - 96.71 |
+| Mem Usage (MB-%)| 6 - 90.28 | 2 - 91.89 | 38.8 - 50.14 | 14.2 - 14.2 - 97.36 | 
+
 ## [1854. Maximum population year.][1854]
 
 Iterate through all the logs and build a counter that holds number of people alive for each
@@ -4354,6 +4364,7 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [1832]: https://leetcode.com/problems/check-if-the-sentence-is-pangram
 [1837]: https://leetcode.com/problems/sum-of-digits-in-base-k/
 [1844]: https://leetcode.com/problems/replace-all-digits-with-characters/
+[1848]: https://leetcode.com/problems/minimum-distance-to-the-target-element/
 [1854]: https://leetcode.com/problems/maximum-population-year/
 [1859]: https://leetcode.com/problems/sorting-the-sentence
 [1863]: https://leetcode.com/problems/sum-of-all-subset-xor-totals/
