@@ -672,7 +672,7 @@ compare its size against that of the size of the original array.)
 | Runtime (ms-%)| 24 - 41.52 | 0 - 100.00 | 76 - 98.14 | 108 - 96.99 |
 | Mem Usage (MB-%)| 17 - 10.73 | 2.7 - 84.62 | 45 - 54.84 | 20.1 - 81.21 |
 
-## [217. Contains Duplicates II.][219]
+## [219. Contains Duplicates II.][219]
 
 Keep track of the most recent index seen in a map. When we encounter a value already contained
 in the map, check if the diff of the indices is smaller than `k`. If so, return `true`, else, update
@@ -683,8 +683,26 @@ list size.
 
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| -  0 - 100.00 | 76 - 99.60 | 88 - 91.05 |
+| Runtime (ms-%)| - | 0 - 100.00 | 76 - 99.60 | 88 - 91.05 |
 | Mem Usage (MB-%)| - | 4.2 - 28.57 | 44.5 - 58.12 | 21.8 - 54.83 | 
+
+## [220. Contains Duplicate III.][220]
+
+Sort the numbers array after transforming it into a list holding [index, value] pairs
+(enumerate its values). After doing that, we can start from the beginning and check
+pairs for which the difference in value is `<= t`, larger values aren't considered.
+
+For each pair for which `v2 - v1 <= t`, we check if the diff of their indices is
+` <= k`. 
+
+Worse case is `O(N ** 2)` but that manifests only for extremely large values of `t`.
+Note: I'm under the impression that another way might exist. My lackluster memory timings
+and not being able to crack 90% with Python hints at this.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 16 - 100.00 | 0 - 100.00 | 108 - 92.61 | 104 - 82.89 |
+| Mem Usage (MB-%)| 8 - 7.69 | 2.4 - 33.33 | 45.6 - 6.82 | 18.1 - 11.80 | 
 
 ## [225. Implement Stack Using Queues.][225]
 
@@ -4136,6 +4154,8 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [201]: https://leetcode.com/problems/bitwise-and-of-numbers-range/
 [206]: https://leetcode.com/problems/reverse-linked-list/
 [217]: https://leetcode.com/problems/contains-duplicate/
+[219]: https://leetcode.com/problems/contains-duplicate-ii
+[220]: https://leetcode.com/problems/contains-duplicate-iii/
 [225]: https://leetcode.com/problems/implement-stack-using-queues/
 [226]: https://leetcode.com/problems/invert-binary-tree/
 [231]: https://leetcode.com/problems/power-of-two/
