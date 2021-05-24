@@ -12,6 +12,8 @@ to `100%` execution/memory consistently. (Update: Low number of submissions
   (also see Revisit.md).
 - Problems that are new have skewed timings because of the initial low
   number of submissions.
+- I might skip some `C` problems when the time needed to create the structures far outweights the benefit.
+  Most times it is relatively straight-forward after a solution has been found.
 
 Additionally:
 
@@ -669,6 +671,20 @@ compare its size against that of the size of the original array.)
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 24 - 41.52 | 0 - 100.00 | 76 - 98.14 | 108 - 96.99 |
 | Mem Usage (MB-%)| 17 - 10.73 | 2.7 - 84.62 | 45 - 54.84 | 20.1 - 81.21 |
+
+## [217. Contains Duplicates II.][219]
+
+Keep track of the most recent index seen in a map. When we encounter a value already contained
+in the map, check if the diff of the indices is smaller than `k`. If so, return `true`, else, update
+the `index` to hold the newly seen index. `O(N)` both space and runtime complexity.
+
+For C: uthash can easily be used. A list-as-a-map cannot, as far as I can see, values contained exceed
+list size. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| -  0 - 100.00 | 76 - 99.60 | 88 - 91.05 |
+| Mem Usage (MB-%)| - | 4.2 - 28.57 | 44.5 - 58.12 | 21.8 - 54.83 | 
 
 ## [225. Implement Stack Using Queues.][225]
 
