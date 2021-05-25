@@ -995,6 +995,22 @@ complexity and `O(1)` space complexity.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.25 | 24 - 95.69 |
 | Mem Usage (MB-%)| 5.5 - 97.97 | 2 - 100.00 | 37.8 - 99.55 | 14.2 - 73.80 |
 
+## [400. Nth digit.][400]
+
+Pre-compute number of digits until `9, 99, 999, 9999, ..., 99999999` and store them
+in an array. To find the k-th digit we then need to find where in that array `n` lies and
+perform some simple arithmetic in order to find the number and digit that `n` denotes.
+
+We grab the largest value in the array which is smaller than `n`. This sets our lower bound.
+To find the number we just need to find out how many numbers are contained in `n - largest_value`
+digits and what's left after that. That can be done with a pretty a simple divmod. All in all,
+this is `O(1)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.83 | 12 - 100.00 |
+| Mem Usage (MB-%)| 5.7 - 50.00 | 2 - 60.00 | 37.9 - 100.00 | 14.2 -41.10 |
+
 ## [404. Sum of left leaves.][404]
 
 Relatively straight-forward, recurse on tree and while branching on the children
@@ -4179,6 +4195,7 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [387]: https://leetcode.com/problems/first-unique-character-in-a-string/
 [389]: https://leetcode.com/problems/find-the-difference/
 [392]: https://leetcode.com/problems/is-subsequence/
+[400]: https://leetcode.com/problems/nth-digit/
 [404]: https://leetcode.com/problems/sum-of-left-leaves/
 [405]: https://leetcode.com/problems/convert-a-number-to-hexadecimal/
 [412]: https://leetcode.com/problems/fizz-buzz/
