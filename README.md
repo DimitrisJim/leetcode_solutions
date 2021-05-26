@@ -884,6 +884,16 @@ exists but it is 4am and no.
 | Runtime (ms-%)| 4 - 97.77 | 4 - 100.00 | 244 - 76.58 | 56 - 98.86 |
 | Mem Usage (MB-%)| 6.5 - 13.41 | 2.6 - 5.00 | 49.4 - 43.63 | 14.4 - 13.70 |
 
+## [338. Counting bits.][338]
+
+Straight-forward dp solution. num of bits for `n` is equal to num of bits `n >> 1` plus one if the shifted
+value was a `1`. We can use tabulation to hold the values and gradually fill it up. `O(N)` runtime.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 36 - 96.89 | 4 - 94.74 | 84 - 99.78 | 72 - 96.85 |
+| Mem Usage (MB-%)| 10.4 - 86.65 | 2.4 - 100.00 | 44.5 - 77.83 | 20.9 - 40.74 |
+
 ## [342. Power of four.][342]
 
 Exactly the same as Powers of three, only difference is that we use `log4(n)`.
@@ -4185,6 +4195,7 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [283]: https://leetcode.com/problems/move-zeroes
 [292]: https://leetcode.com/problems/nim-game/
 [326]: https://leetcode.com/problems/power-of-three/
+[338]: https://leetcode.com/problems/counting-bits/
 [342]: https://leetcode.com/problems/power-of-four/
 [344]: https://leetcode.com/problems/reverse-string/
 [347]: https://leetcode.com/problems/top-k-frequent-elements/
