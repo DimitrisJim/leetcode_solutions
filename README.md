@@ -179,6 +179,16 @@ array. Space complexity is `O(1)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.75 | 24 - 97.53 |
 | Mem Usage (MB-%)| 5.8 - 99.54| 2 - 93.75 | 38.6 - 69.35 | 14.3 - 48.72 |
 
+## [70. Climbing stairs.][70]
+
+Pretty much similar to finding the `n`th fibonacci number. `O(N)` time with `O(1)` space (we only need
+to keep track of previous two values.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 96.42 | 24 - 92.99 |
+| Mem Usage (MB-%)| 5.4 - 99.04 | 2 - 87.23 | 38.3 - 74.43  | 13.8 - 99.83 |
+
 ## [74. Search a 2d matrix.][74]
 
 Perform a binary search on each of the rows. `O(nlogn)` runtime and `O(1)` space. Also solves
@@ -4160,6 +4170,7 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [35]: https://leetcode.com/problems/search-insert-position/
 [64]: https://leetcode.com/problems/summary-ranges
 [66]: https://leetcode.com/problems/plus-one/
+[70]: https://leetcode.com/problems/climbing-stairs
 [74]: https://leetcode.com/problems/search-a-2d-matrix/
 [78]: https://leetcode.com/problems/subsets/
 [88]: https://leetcode.com/problems/merge-sorted-array/
