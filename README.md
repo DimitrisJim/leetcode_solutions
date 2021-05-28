@@ -1662,6 +1662,18 @@ If not, just traverse the array and find the character.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 96.63 | 100 - 94.06 |
 | Mem Usage (MB-%)| 6 - 64.29 | 2.7 - 40.00 | 41.2 - 12.36 | 14.3 - 84.93 |
 
+## [746. Min cost climbing stairs.][746]
+
+Dynamic Programming with tabulation. Solutions for step `n` is the minimum between the solutions at
+one step `n-1` and the two steps `n-2` back, plus the cost of the step at `n`. 
+
+`O(N)` runtime and space complexity. 
+
+| Stats/Lang  | C | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 97.35 | 48 - 97.19 |
+| Mem Usage (MB-%)| 5.9 - 60.49 | 0 - 100.00 | 39.8 - 56.16 | 14.1 - 99.68 |
+
 ## [748. Shortest completing word][748]
 
 To be frank, don't think things are good here. Might need to place this problem in
@@ -4257,6 +4269,7 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [709]: https://leetcode.com/problems/to-lower-case/
 [728]: https://leetcode.com/problems/self-dividing-numbers
 [744]: https://leetcode.com/problems/find-smallest-letter-greater-than-target/
+[746]: https://leetcode.com/problems/min-cost-climbing-stairs/
 [748]: https://leetcode.com/problems/shortest-completing-word/
 [766]: https://leetcode.com/problems/toeplitz-matrix/
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
