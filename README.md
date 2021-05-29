@@ -151,6 +151,39 @@ When finished, start will either point to target or the leftmost position in whi
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.11 | 40 - 97.25 |
 | Mem Usage (MB-%)| 6 - 85.77 | 2 - 100.00| 38.7 - 72.22| 15.1 - 52.12 |
 
+## [53. Maximum Subarray.][53]
+
+Can keep track of largest running sum while going through the array. Initially, I used a table to keep track
+of the values seen as the following code illustrates:
+
+```python
+def maxSubArray(self, nums: List[int]) -> int:
+    length, maximum = len(nums), nums[0]
+    table = [0] * len(nums)
+    table[0] = nums[0]
+    
+    for i in range(1, length):
+        cur, prev = nums[i], table[i-1]
+        if (s := cur + prev) > cur:
+            table[i] = s
+        else:
+            table[i] = cur
+        if table[i] > maximum:
+            maximum = table[i]
+    return maximum
+```
+
+Of course, after closer examination, we can see we only need to know the previous value in order to keep track of the
+running sum (we always access `table[i-1]` and `table[i]`, hinting that one variable whose value we update could do the
+trick.)
+
+Uses `O(N)` time and `O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 97.38 | 0 - 100.00 | 68 - 99.79 | 60 - 89.66 |
+| Mem Usage (MB-%)| 6.2 - 97.47 | 2.1 - 97.32 | 38.9 - 87.32 | 14.9 - 78.41 |
+
 ## [64. Summary Ranges.][64]
 
 Keep a tracker around to track the sequence as it increases. If at any point, the number in
@@ -4168,6 +4201,7 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [27]: https://leetcode.com/problems/remove-element/
 [28]: https://leetcode.com/problems/implement-strstr/
 [35]: https://leetcode.com/problems/search-insert-position/
+[53]: https://leetcode.com/problems/maximum-subarray
 [64]: https://leetcode.com/problems/summary-ranges
 [66]: https://leetcode.com/problems/plus-one/
 [70]: https://leetcode.com/problems/climbing-stairs
