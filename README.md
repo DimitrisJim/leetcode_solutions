@@ -3688,6 +3688,31 @@ Go through each element in second array:
 | Runtime (ms-%)| 4 - 92.31 | 0 - 100.00 | 80 - 67.57 | 36 - 93.55 |
 | Mem Usage (MB-%)| 6.7 - 100.00 | 2.2 - 100.00 | 38.8 - 5.11 | 14.1 - 100.00 |
 
+## [1641. Count sorted vowel strings.][1641]
+
+The verbose initial solution can be seen in the Python file. There, a dictionary is created to
+hold the values. After closer examination I realized a mapping is really not needed when we
+have 3-4 variables we need to keep track of. 
+
+For each of the characters, for step `n+1` its value is determined by adding the sum of the next
+character in the sequence to what that character already holds. In essence:
+
+```python
+u = 1
+o += u
+i += o
+e += i
+a += a
+```
+
+Using the previous relation in a while loop gets us our result (the value of `a`). `O(N)` runtime and
+`O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 96.77 | 20 - 99.64 |
+| Mem Usage (MB-%)| 5.5 - 65.12 | 1.9 - 92.31 | 38.1 - 98.62 | 14.4 - 30.55 |
+
 ## [1646. Get maximum in generated array.][1646]
 
 Initially thought there was a trick in order to immediately find the value in the
@@ -4464,6 +4489,7 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [1636]: https://leetcode.com/problems/sort-array-by-increasing-frequency/
 [1637]: https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/
 [1640]: https://leetcode.com/problems/check-array-formation-through-concatenation
+[1641]: https://leetcode.com/problems/count-sorted-vowel-strings
 [1646]: https://leetcode.com/problems/get-maximum-in-generated-array/
 [1652]: https://leetcode.com/problems/defuse-the-bomb/
 [1656]: https://leetcode.com/problems/design-an-ordered-stream/
