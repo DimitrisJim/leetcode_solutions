@@ -184,6 +184,17 @@ Uses `O(N)` time and `O(1)` space.
 | Runtime (ms-%)| 4 - 97.38 | 0 - 100.00 | 68 - 99.79 | 60 - 89.66 |
 | Mem Usage (MB-%)| 6.2 - 97.47 | 2.1 - 97.32 | 38.9 - 87.32 | 14.9 - 78.41 |
 
+## [58. Length of last word.][58]
+
+If the length is easily (`O(1)`) available, walk the string backwards and return the second time we reach
+a space. If length isn't available, traverse until the end continuously updating the count per word and return
+the final value of count stored. All in all, `O(N)` runtime with `O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.72 | 20 - 98.80 |
+| Mem Usage (MB-%)| 5.8 - 55.26 | 2.1 - 78.18 | 38.5 - 58.54 | 14.4 - 6.90 |
+
 ## [64. Summary Ranges.][64]
 
 Keep a tracker around to track the sequence as it increases. If at any point, the number in
@@ -4238,6 +4249,7 @@ Has `O(N)` time and space complexity.
 [28]: https://leetcode.com/problems/implement-strstr/
 [35]: https://leetcode.com/problems/search-insert-position/
 [53]: https://leetcode.com/problems/maximum-subarray
+[58]: https://leetcode.com/problems/length-of-last-word/
 [64]: https://leetcode.com/problems/summary-ranges
 [66]: https://leetcode.com/problems/plus-one/
 [70]: https://leetcode.com/problems/climbing-stairs
