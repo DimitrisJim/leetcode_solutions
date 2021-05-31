@@ -4216,6 +4216,17 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 | Runtime (ms-%)| 4 - 100.00 | 4 - 100.00 | 80 - 100.00 | 152 - 100.00 |
 | Mem Usage (MB-%)| 5.4 - 100.00 | 2 - 100.00 | 38.4 - 100.00 | 14.1 - 100.00 | 
 
+## [1880. Check if word equals summation of two words.][1880]
+
+Transform strings into ints as described and check the equality. Nothing fancy here. 
+Has `O(N)` time and space complexity.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 100.00 | 20 - 100.00 |
+| Mem Usage (MB-%)| 5.8 - 100.00 | 2 - 100.00 | 38.4 - 100.00 | 14.1 - 100.00 | 
+
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -4528,3 +4539,4 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 [1854]: https://leetcode.com/problems/maximum-population-year/
 [1859]: https://leetcode.com/problems/sorting-the-sentence
 [1863]: https://leetcode.com/problems/sum-of-all-subset-xor-totals/
+[1880]: https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/
