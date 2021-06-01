@@ -4240,6 +4240,15 @@ If I'm not mistaken, this trick is described in Knuth's most recent book (4A?)
 | Runtime (ms-%)| 4 - 100.00 | 4 - 100.00 | 80 - 100.00 | 152 - 100.00 |
 | Mem Usage (MB-%)| 5.4 - 100.00 | 2 - 100.00 | 38.4 - 100.00 | 14.1 - 100.00 | 
 
+## [1876. Substrings of size three with distinct characters.][1876]
+
+Go through the string in pairs of 3s and check them. `O(N)` runtime and `O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.35 | 24 - 99.11 |
+| Mem Usage (MB-%)| 5.5 - 95.00 | 1.9 - 100.00 | 39.3 - 79.08 | 14 - 89.81 | 
+
 ## [1880. Check if word equals summation of two words.][1880]
 
 Transform strings into ints as described and check the equality. Nothing fancy here. 
@@ -4565,4 +4574,5 @@ Has `O(N)` time and space complexity.
 [1854]: https://leetcode.com/problems/maximum-population-year/
 [1859]: https://leetcode.com/problems/sorting-the-sentence
 [1863]: https://leetcode.com/problems/sum-of-all-subset-xor-totals/
+[1876]: https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/
 [1880]: https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/
