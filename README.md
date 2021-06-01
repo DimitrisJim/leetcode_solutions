@@ -2614,6 +2614,19 @@ the cost we need to count (note that no matter their distance.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 74.31 | 24 - 95.45 |
 | Mem Usage (MB-%)| 5.8 - 63.86 | 2 - 94.23 | 37.8 - 96.26 | 14.1 - 78.87|
 
+## [1221. Split a string in balanced strings.][1221]
+
+Couple of variables needed to track what character a new sequence of balanced pairs
+starts with along with how many occurences of that character we've seen. After that we
+just decrement when we see a different char and increment when we see the same char.
+
+All in all, `O(N)` runtime and `O(1)` memory.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 94.44 | 24 - 95.29 |
+| Mem Usage (MB-%)| 5.5 - 63.69 | 2 - 95.45 | 38 - 96.47 | 14.3 - 10.74 |
+
 ## [1237. Find positive integer solution for equation.][1237]
 
 Use the fact that the function is increasing to bail early in second 
@@ -4431,6 +4444,7 @@ Has `O(N)` time and space complexity.
 [1200]: https://leetcode.com/problems/minimum-absolute-difference/
 [1207]: https://leetcode.com/problems/unique-number-of-occurrences/
 [1217]: https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
+[1221]: https://leetcode.com/problems/split-a-string-in-balanced-strings/
 [1237]: https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/
 [1252]: https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
 [1260]: https://leetcode.com/problems/shift-2d-grid/
