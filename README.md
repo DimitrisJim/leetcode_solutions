@@ -1204,6 +1204,16 @@ complexity is `O(N)`.
 | Runtime (ms-%)| 36 - 95.44 | 0 - 100.00 | 80 - 92.82 | 332 - 96.94 |
 | Mem Usage (MB-%)| 7.4 - 97.54 | 2 - 85.71 | 41,6 - 32.50 | 14.3 - 92.44 |
 
+## [495. Teemo attacking.][495]
+
+Just iterate through the timeseries and the seconds as we go. `O(N)` time complexity
+and `O(1)` space complexity.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 28 - 100.00 | 4 - 100.00 | 72 - 100.00 | 240 - 93.39 |
+| Mem Usage (MB-%)| 7.1 - 100.00 | 2.2 - 33.33 | 42.5 - 92.77 | 16.2 - 5.97 |
+
 ## [496. Next greater element I.][496]
 
 Python has three solutions, brute force, with a bit of supporting structures and
@@ -4344,6 +4354,7 @@ Has `O(N)` time and space complexity.
 [461]: https://leetcode.com/problems/hamming-distance/
 [476]: https://leetcode.com/problems/number-complement/
 [485]: https://leetcode.com/problems/max-consecutive-ones/
+[495]: https://leetcode.com/problems/teemo-attacking/
 [496]: https://leetcode.com/problems/next-greater-element-
 [500]: https://leetcode.com/problems/keyboard-row
 [504]: https://leetcode.com/problems/base-7
