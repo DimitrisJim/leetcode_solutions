@@ -1104,6 +1104,19 @@ To handle 2's complement (infinite 1's to the left), we simply bound the loop to
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 90.67 | 24 - 94.23 |
 | Mem Usage (MB-%)| 5.4 - 85.25 | 2 - 100.00 | 38.4 - 90.67 | 14.3 - 11.14 |
 
+## [409. Longest Palindrome.][409]
+
+Build a counter out of the characters and then add all even counts and all odd minus one counts.
+If we encounter an odd along the way, we add `1` (to be placed in the middle) to get longest
+palindrome.
+
+Runtime/memory complexity is `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 95.79 | 28 - 89.22 |
+| Mem Usage (MB-%)| 5.7 - 100.00 | 2 - 80.00 | 39.6 - 82.30 | 14.2 - 81.53 |
+
 ## [412. Fizz-buzz.][412]
 
 Straight-forward translation of statement, only trick is not performing `i % 3` and
@@ -4346,6 +4359,7 @@ Has `O(N)` time and space complexity.
 [400]: https://leetcode.com/problems/nth-digit/
 [404]: https://leetcode.com/problems/sum-of-left-leaves/
 [405]: https://leetcode.com/problems/convert-a-number-to-hexadecimal/
+[409]: https://leetcode.com/problems/longest-palindrome/
 [412]: https://leetcode.com/problems/fizz-buzz/
 [429]: https://leetcode.com/problems/n-ary-tree-level-order-traversal/
 [434]: https://leetcode.com/problems/number-of-segments-in-a-string/
