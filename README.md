@@ -1607,6 +1607,16 @@ all leaves.
 | Runtime (ms-%)| 12 - 76.47 | 0 - 100.00 | 88 - 86.70 | 40 - 97.47 |
 | Mem Usage (MB-%)| 10.6 - 64.71 | 2.9 - 87.50 | 44.2 - 83.74 | 14.1 - 46.08 |
 
+## [674. Longest continuous increasing subsequence.][674]
+
+Iterate through array and keep track of longest sequence encountered. `O(N)` runtime
+and `O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 87.79 | 68 - 93.20 |
+| Mem Usage (MB-%)| 6.4 - 65.67 | 2.3 - 80.00 | 39 - 95.35 | 15.4 - 57.78 |
+
 ## [682. Baseball Game][682]
 
 While loop your way through the operations, make sure you skip performing an
@@ -4398,6 +4408,7 @@ Has `O(N)` time and space complexity.
 [654]: https://leetcode.com/problems/maximum-binary-tree/
 [657]: https://leetcode.com/problems/robot-return-to-origin/
 [669]: https://leetcode.com/problems/trim-a-binary-search-tree/
+[674]: https://leetcode.com/problems/longest-continuous-increasing-subsequence
 [682]: https://leetcode.com/problems/baseball-game/
 [690]: https://leetcode.com/problems/employee-importance
 [693]: https://leetcode.com/problems/binary-number-with-alternating-bits/
