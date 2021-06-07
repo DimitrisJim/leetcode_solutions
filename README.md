@@ -966,6 +966,17 @@ Typical swapping.
 | Runtime (ms-%)| 44 - 96.89 | 16 - 94.12 | 100 - 96.48 | 184 - 96.43 |
 | Mem Usage (MB-%)| 12.4 - 74.64 | 5.4 - 98.82 | 45.5 - 79.32 | 18.7 - 14.37 |
 
+## [345. Reverse vowels of a string.][345]
+
+Use `start` and `end` trackers and swap on encountering two vowels. Where mutating the
+string is allowed (Rust, C), it's done. Overall `O(N)` runtime for all and `O(1)/O(N)`
+for where we can mutate the string or not respectively.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 84 - 99.45 | 44 - 94.72 |
+| Mem Usage (MB-%)| 6.5 - 100.00 | 2.5 - 90.91 | 43.2 - 99.59 | 15.1 - 71.47 |
+
 ## [347. Top k frequent elements.][347]
 
 Counting + Building a k-element heap. Complexity of operation is `O(NlogK)` instead of
@@ -4358,6 +4369,7 @@ Has `O(N)` time and space complexity.
 [338]: https://leetcode.com/problems/counting-bits/
 [342]: https://leetcode.com/problems/power-of-four/
 [344]: https://leetcode.com/problems/reverse-string/
+[345]: https://leetcode.com/problems/reverse-vowels-of-a-string/
 [347]: https://leetcode.com/problems/top-k-frequent-elements/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
 [374]: https://leetcode.com/problems/guess-number-higher-or-lower
