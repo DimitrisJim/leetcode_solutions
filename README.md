@@ -4303,6 +4303,20 @@ Has `O(N)` time and space complexity.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 100.00 | 20 - 100.00 |
 | Mem Usage (MB-%)| 5.8 - 100.00 | 2 - 100.00 | 38.4 - 100.00 | 14.1 - 100.00 | 
 
+## [1893. Check if all the integers in a range are covered.][1893]
+
+Sort the input ranges and then step through them. Whenever we encounter a range in which
+`left` is contained, advance left to the end of the range `+ 1`. Similarly for `right` with
+the difference that we reduce until the start of the range `-1`. This is done until `left > right`
+or we've run out of ranges.
+
+In the end, if `left > right`, we've covered our range. `O(nlogn)` runtime due to sorting, `O(1)` extra
+space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 64 - 100.00 | 28 - 99.93 |
+| Mem Usage (MB-%)| 6.2 - 100.00 | 2 - 100.00 | 40.1 - 18.02 | 14.3 - 60.94 | 
 
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
@@ -4624,3 +4638,4 @@ Has `O(N)` time and space complexity.
 [1863]: https://leetcode.com/problems/sum-of-all-subset-xor-totals/
 [1876]: https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/
 [1880]: https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/
+[1893]: https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered
