@@ -4318,6 +4318,19 @@ space.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 64 - 100.00 | 28 - 99.93 |
 | Mem Usage (MB-%)| 6.2 - 100.00 | 2 - 100.00 | 40.1 - 18.02 | 14.3 - 60.94 | 
 
+## [1897. Redistribute characters to make all strings equal.][1897]
+
+Build a count of the characters and check, for each character count, that `count % words_length`
+is equal to zero. If it is, all characters can be evenly distributed with no odd chars left out.
+
+Space is constant (same array regardless of input) while time complexity is `O(N*s)` where `N`
+is the number of elements in the array and `s` is the string size.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 80 - 99.25 | 48 - 99.40 |
+| Mem Usage (MB-%)| 6.9 - 31.25 | 2 - 100.00 | 40.8 - 92.48 | 14.3 - 89.13| 
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -4639,3 +4652,4 @@ space.
 [1876]: https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/
 [1880]: https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/
 [1893]: https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered
+[1897]: https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/
