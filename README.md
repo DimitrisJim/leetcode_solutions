@@ -4127,6 +4127,15 @@ as input, the size of the sets is always bound by that.)
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 93.86 | 24 - 94.90 |
 | Mem Usage (MB-%)| 5.4 - 93.26 | 2.1 - 55.17 | 40.2 - 20.55 | 14.3 - 20.60 |
 
+## [1791. Find center of star graph.][1791]
+
+Find the common node in `edges[0]` and `edges[1]`. `O(1)` space/time.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 168 - 92.23 | 16 - 95.45 | 108 - 96.41 | 760 - 97.72 |
+| Mem Usage (MB-%)| 25.6 - 98.06 | 8.8 - 100.00 | 51.8 - 96.65 | 50 - 96.41 |
+
 ## [1796. Second largest digit in a string.][1796]
 
 Go through digits and find the second maximum value. Pretty straight-forward, `O(N)` runtime with
@@ -4635,6 +4644,7 @@ is the number of elements in the array and `s` is the string size.
 [1773]: https://leetcode.com/problems/count-items-matching-a-rule
 [1779]: https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/
 [1790]: https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/
+[1791]: https://leetcode.com/problems/find-center-of-star-graph/
 [1796]: https://leetcode.com/problems/second-largest-digit-in-a-string/
 [1800]: https://leetcode.com/problems/maximum-ascending-subarray-sum
 [1805]: https://leetcode.com/problems/number-of-different-integers-in-a-string/
