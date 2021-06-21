@@ -4340,6 +4340,19 @@ is the number of elements in the array and `s` is the string size.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 80 - 99.25 | 48 - 99.40 |
 | Mem Usage (MB-%)| 6.9 - 31.25 | 2 - 100.00 | 40.8 - 92.48 | 14.3 - 89.13| 
 
+## [1902. Largest odd number in string.][1902]
+
+Make a little set of the odd numbers (or a ten element array to use as a set) and go through
+the string backwards. When we first encounter an odd number, we return.
+
+Time complexity is `O(N)` while space complexity is constant (except for Rust where I `.cloned()` the
+string to make my life easier.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 84 - 100.00 | 32 - 100.00 |
+| Mem Usage (MB-%)| 8.6 - 100.00 | 2.4 - 100.00 | 42.6 - 100.00 | 15.3 - 20.00 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -4663,3 +4676,4 @@ is the number of elements in the array and `s` is the string size.
 [1880]: https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/
 [1893]: https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered
 [1897]: https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/
+[1902]: https://leetcode.com/problems/largest-odd-number-in-string/
