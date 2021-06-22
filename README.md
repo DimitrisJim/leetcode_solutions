@@ -2264,6 +2264,19 @@ We then return either the new array or the original array `A`.
 | Runtime (ms-%)| 84 - 98.28 | 8 - 100.00 | 116 - 92.73 | 248 - 99.67 |
 | Mem Usage (MB-%)| 15.1 - 100.00 | 2.2 - 100.00 | 43.3 - 86.36 | 14.9 - 93.23 |
 
+## [997. Find the town judge.][997]
+
+Use a list/array to keep track of who respects who (if we find someone as respecting someone else, we
+mark its entry with `-1` to ignore it thereafter). It then boils down to traversing the list and checking
+if an entry has `n-1` people respecting them.
+
+Runtime/memory complexity is `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 136 - 97.83 | 12 - 100.00 | 96 - 99.53 | 708 - 95.84 |
+| Mem Usage (MB-%)| 16.5 - 14.13 | 2.8 - 37.50 | 45.9 - 92.09 | 19 - 62.15 |
+
 ## [999. Available Captures for Rook.][999]
 
 Find the position of the rook and then just check it's row and column. (But from
@@ -4522,6 +4535,7 @@ string to make my life easier.)
 [977]: https://leetcode.com/problems/squares-of-a-sorted-array/
 [985]: https://leetcode.com/problems/sum-of-even-numbers-after-queries
 [989]: https://leetcode.com/problems/add-to-array-form-of-integer/
+[997]: https://leetcode.com/problems/find-the-town-judge/
 [999]: https://leetcode.com/problems/available-captures-for-rook
 [1002]: https://leetcode.com/problems/find-common-characters/
 [1008]: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal
