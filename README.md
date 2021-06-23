@@ -3125,6 +3125,16 @@ values of second array to satisfy in order for `| arr1[i] - arr2[j] <= d |`.
 | Runtime (ms-%)| 8 - 85.71 | 0 - 100.00 | 88 - 87.00 | 76 - 89.36 |
 | Mem Usage (MB-%)| 6.1 - 64.29 | 2.1 - 100.00 | 39.2 - 99.00 | 14.1 - 98.84 |
 
+## [1386. Sort integers by the power value.][1386]
+
+TODO: Revisit. Seems like rust has a better approach (tabulation, I'd guess). Couldn't be
+bothered with `C` because of the cache, could use array with max length `hi * 3 + 1` I'd guess.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 24 - 42.86 | 116 - 87.97 | 56 - 99.03 |
+| Mem Usage (MB-%)| | 2 - 85.71 | 45.2 - 20.30 | 14.5 - 67.13 |
+
 ## [1389. Create target array in the given order.][1389]
 
 O(N^2) is actually best option here, no secret fancy solutions. Continuously
@@ -4608,6 +4618,7 @@ string to make my life easier.)
 [1380]: https://leetcode.com/problems/lucky-numbers-in-a-matrix/
 [1381]: https://leetcode.com/problems/design-a-stack-with-increment-operation/
 [1385]: https://leetcode.com/problems/find-the-distance-value-between-two-arrays
+[1386]: https://leetcode.com/problems/sort-integers-by-the-power-value
 [1389]: https://leetcode.com/problems/create-target-array-in-the-given-order/
 [1394]: https://leetcode.com/problems/find-lucky-integer-in-an-array/
 [1399]: https://leetcode.com/problems/count-largest-group/
