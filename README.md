@@ -3581,6 +3581,18 @@ simply a string). Then go through it backwards and insert separator
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 92.14 | 20 - 99.24 |
 | Mem Usage (MB-%)| 5.5 - 87.50 | 2 - 88.89 | 38.5 - 71.43 | 14.1 - 86.04 |
 
+## [1557. Minimum Number of Vertices to Reach All Nodes]
+
+Return nodes with in-degree 0. Python uses sets to find them, the rest use an
+array to count counts and then returns those for which `count == 0`.
+
+Space and runtime complexity is `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 276 - 100.00 | 24 - 100.00 | 172 - 96.46 | 1144 - 90.57 |
+| Mem Usage (MB-%)| 38.1 - 33.33 | 9 - 37.50 | 62.3 - 92.04 | 53.3 - 30.91 |
+
 ## [1560. Most visited sector in a circular track.][1560]
 
 The idea here is that we don't need to count everything. There may be many cycles
@@ -4632,6 +4644,7 @@ string to make my life easier.)
 [1544]: https://leetcode.com/problems/make-the-string-great
 [1550]: https://leetcode.com/problems/three-consecutive-odds
 [1556]: https://leetcode.com/problems/thousand-separator/
+[1557]: https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/
 [1560]: https://leetcode.com/problems/most-visited-sector-in-a-circular-track/
 [1572]: https://leetcode.com/problems/matrix-diagonal-sum/
 [1582]: https://leetcode.com/problems/special-positions-in-a-binary-matrix
