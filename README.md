@@ -1364,6 +1364,24 @@ As such, see `1038.*` files for the code.
 | Runtime (ms-%)| 16 - 92.86 | 0 - 100.00 | 100 - 100.00 | 72 - 98.64 |
 | Mem Usage (MB-%)| 13.7 - 100.00 | 2.9 - 83.33 | 47.7 - 28.72 | 16.7 - 80.07 |
 
+## [539. Minimum Time Difference.][539]
+
+Idea is transform times into a continuous range of ints (i.e 0 - 1440) by multiplying hours
+by `60`. After doing that we can go through transformed values and find minimum. Since time wraps
+around we need to check if the maximum value and the minimum value are closer than the minimum found
+after traversing array.
+
+Using a set to check for duplicates (and return early if one is found) appears to be a good optimization.
+Overall, this uses `O(N)` additional space and runs in `O(NlogN)` due to the sorting.
+
+Note for C: This can easily be translated there. Dealing with sets is a pain though and I'm not into it
+anymore.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 0 - 100.00 | 84 - 99.11 | 52 - 99.37 |
+| Mem Usage (MB-%)| | 3.1 - 100.00 | 41.6 - 62.83 | 16.9 - 92.87 |
+
 ## [551. Student Attendance Record I.][551]
 
 Iterate through characters with two counters. One counts occurences of `A`s and returns
@@ -4501,6 +4519,7 @@ string to make my life easier.)
 [530]: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 [535]: https://leetcode.com/problems/encode-and-decode-tinyurl/
 [538]: https://leetcode.com/problems/convert-bst-to-greater-tree
+[539]: https://leetcode.com/problems/minimum-time-difference/ 
 [551]: https://leetcode.com/problems/student-attendance-record-i/
 [566]: https://leetcode.com/problems/reshape-the-matrix/
 [572]: https://leetcode.com/problems/subtree-of-another-tree
