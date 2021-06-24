@@ -1915,6 +1915,22 @@ approach. C iterates through elements.
 | Runtime (ms-%)| 12 - 67.03 | 0 - 100.00 | 80 - 86.11 | 40 - 99.08|
 | Mem usage (mb-%)| 7.2 - 72.54 | 2.1 - 100.00 | 40.2 - 18.30 | 13.9 - 100.00 |
 
+## [845. Longest Mountain in Array.][845]
+
+Step through array and attempt to perform an up-down motion through the values. We need
+at least one up and one down step in order to register a mountain, in other situations we
+don't have one.
+
+When we find a mountain we advance the counter by the number of `up + down - 1` steps performed. This way
+we can check if the end of the `down` part of a mountain starts the `up` part of another mountain.
+
+This uses no extra storage and performs `O(N)` loops. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 12 - 100.00 | 0 - 100.00 | 64 - 100.00 | 156 - 94.06 |
+| Mem usage (mb-%)| 6.6 - 90.91 | 2.1 - 100.00 | 41.1 - 40.82 | 15.1 - 99.73 |
+
 ## [852. Peak index in a Mountain Array.][852]
 
 A binary search throug the semi-sorted array. 
@@ -4530,6 +4546,7 @@ string to make my life easier.)
 [821]: https://leetcode.com/problems/shortest-distance-to-a-character/
 [824]: https://leetcode.com/problems/goat-latin/
 [832]: https://leetcode.com/problems/flipping-an-image/
+[845]: https://leetcode.com/problems/longest-mountain-in-array
 [852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
 [859]: https://leetcode.com/problems/buddy-strings/
 [867]: https://leetcode.com/problems/transpose-matrix/
