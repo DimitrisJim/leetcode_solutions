@@ -151,6 +151,16 @@ When finished, start will either point to target or the leftmost position in whi
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.11 | 40 - 97.25 |
 | Mem Usage (MB-%)| 6 - 85.77 | 2 - 100.00| 38.7 - 72.22| 15.1 - 52.12 |
 
+## [50. Pow(x, n).][50]
+
+Uses binary exponentiation (exponentiation by squaring) to cut down on the number 
+of multiplications performed to `O(logn)`. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.48 | 24 - 96.07 |
+| Mem Usage (MB-%)| 5.5 - 61.56 | 2 - 88.89 | 40.5 - 8.33 | 14 - 92.69 |
+
 ## [53. Maximum Subarray.][53]
 
 Can keep track of largest running sum while going through the array. Initially, I used a table to keep track
@@ -4432,6 +4442,7 @@ string to make my life easier.)
 [27]: https://leetcode.com/problems/remove-element/
 [28]: https://leetcode.com/problems/implement-strstr/
 [35]: https://leetcode.com/problems/search-insert-position/
+[50]: https://leetcode.com/problems/powx-n/
 [53]: https://leetcode.com/problems/maximum-subarray
 [58]: https://leetcode.com/problems/length-of-last-word/
 [64]: https://leetcode.com/problems/summary-ranges
