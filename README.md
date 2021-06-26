@@ -1026,6 +1026,19 @@ Build sets and get intersection (or write it for `C` and `JS` cases.)
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 98.18 | 32 - 99.40 |
 | Mem Usage (MB-%)| 7.7 - 12.87 | 2.1 - 77.78 | 40.5 - 28.27 | 14.4 - 22.10 |
 
+## [367. Valid perfect square.][367]
+
+Use babylonian method to find a good approximation of the root and then check that
+`approx * approx == num`. Using `root = pow(num, 0.5)` seemed like it was going against
+the point.
+
+Same notes as in problem 50 - Sqrt(x) apply.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 98.82 | 24 - 95.16 |
+| Mem Usage (MB-%)| 5.4 - 64.94 | 1.9 - 81.82 | 38.8 - 12.48 | 14.4 - 6.53 |
+
 ## [374. Guess number higher or lower.][374]
 
 Simple binary search for the number. `O(logn)`.
@@ -4517,6 +4530,7 @@ string to make my life easier.)
 [345]: https://leetcode.com/problems/reverse-vowels-of-a-string/
 [347]: https://leetcode.com/problems/top-k-frequent-elements/
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
+[367]: https://leetcode.com/problems/valid-perfect-square/
 [374]: https://leetcode.com/problems/guess-number-higher-or-lower
 [383]: https://leetcode.com/problems/ransom-note/
 [384]: https://leetcode.com/problems/shuffle-an-array
