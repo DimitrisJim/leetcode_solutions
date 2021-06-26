@@ -233,6 +233,21 @@ array. Space complexity is `O(1)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.75 | 24 - 97.53 |
 | Mem Usage (MB-%)| 5.8 - 99.54| 2 - 93.75 | 38.6 - 69.35 | 14.3 - 48.72 |
 
+## [69. Sqrt(x).][69]
+
+Use [babylonian method](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method) 
+for finding square roots. Initial guess is `x / 2` and we converge by taking the arithmetic mean of
+`guess, x / guess` until `guess * guess` is `<= x`.
+
+I am not sure about the complexity, a quick search yields `O(log(log(n/m)))` where `n` is our input
+and `m` is the error during the approximation. Since we don't mind large errors (require integer result)
+`n/m` small (i.e nearing `n`).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 99.77 | 28 - 94.96 |
+| Mem Usage (MB-%)| 5.5 - 90.98 | 2 - 91.18 | 40.2 - 21.04 | 14.3 - 6.07 |
+
 ## [70. Climbing stairs.][70]
 
 Pretty much similar to finding the `n`th fibonacci number. `O(N)` time with `O(1)` space (we only need
@@ -4447,6 +4462,7 @@ string to make my life easier.)
 [58]: https://leetcode.com/problems/length-of-last-word/
 [64]: https://leetcode.com/problems/summary-ranges
 [66]: https://leetcode.com/problems/plus-one/
+[69]: https://leetcode.com/problems/sqrtx/
 [70]: https://leetcode.com/problems/climbing-stairs
 [74]: https://leetcode.com/problems/search-a-2d-matrix/
 [78]: https://leetcode.com/problems/subsets/
