@@ -4460,6 +4460,16 @@ string to make my life easier.)
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 84 - 100.00 | 32 - 100.00 |
 | Mem Usage (MB-%)| 8.6 - 100.00 | 2.4 - 100.00 | 42.6 - 100.00 | 15.3 - 20.00 | 
 
+## [1912. Maximum product difference between two pairs.][1912]
+
+Find 2 largest (`a, b`) and 2 smallest (`c, d`) and return `a * b - c * d`. `O(N)` where `N` is
+size of the array.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 20 - 98.33 | 0 - 100.00 | 80 - 94.71 | 160 - 94.50 |
+| Mem Usage (MB-%)| 7.2 - 65.00 | 2.1 - 50.00 | 41.5 - 79.74 | 15.4 - 83.12 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -4792,3 +4802,4 @@ string to make my life easier.)
 [1893]: https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered
 [1897]: https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/
 [1902]: https://leetcode.com/problems/largest-odd-number-in-string/
+[1912]: https://leetcode.com/problems/maximum-product-difference-between-two-pairs/
