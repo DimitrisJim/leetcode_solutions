@@ -4460,6 +4460,29 @@ string to make my life easier.)
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 84 - 100.00 | 32 - 100.00 |
 | Mem Usage (MB-%)| 8.6 - 100.00 | 2.4 - 100.00 | 42.6 - 100.00 | 15.3 - 20.00 | 
 
+## [1908. Remove one element to make the array strictly increasing.][1908]
+
+Traverse array looking for a pair `nums[i], nums[i+1]` for which `nums[i] >= nums[i+1]`. Now, we need
+to decide which of the two values should be removed and continue checking. If we've already removed a
+value at some point in the past, we can bail immediately.
+
+To choose which of `a (nums[i])` or `b (nums[i+1])` we should remove, we look at the value left of `a` and
+the value right of `b`. Removals are basically tracked with a boolean flag and what we remove is controlled
+by our counter.
+
+If the value left of `a` is larger than `b`, we remove `b` if the value on the right
+of `b` is larger than `a` (meaning we'd have a sequence like `4, 5, 1, 7`). If the value on the right of `b`
+isn't larger, we bail, nothing can be done in this case (i.e `(5, 10, 1, 2)`). 
+
+If the value left of `a` isn't larger than `b` then `a` is removed. 
+
+All in all, this is `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 81.82 | 0 - 100.00 | 68 - 98.43 | 44 - 96.90 |
+| Mem Usage (MB-%)| 5.9 - 100.00 | 2 - 60.00 | 39.4 - 66.93 | 14.5 - 50.11 | 
+
 ## [1912. Maximum product difference between two pairs.][1912]
 
 Find 2 largest (`a, b`) and 2 smallest (`c, d`) and return `a * b - c * d`. `O(N)` where `N` is
@@ -4802,4 +4825,5 @@ size of the array.
 [1893]: https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered
 [1897]: https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/
 [1902]: https://leetcode.com/problems/largest-odd-number-in-string/
+[1908]: https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing
 [1912]: https://leetcode.com/problems/maximum-product-difference-between-two-pairs/
