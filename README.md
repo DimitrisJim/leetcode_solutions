@@ -4493,6 +4493,18 @@ size of the array.
 | Runtime (ms-%)| 20 - 98.33 | 0 - 100.00 | 80 - 94.71 | 160 - 94.50 |
 | Mem Usage (MB-%)| 7.2 - 65.00 | 2.1 - 50.00 | 41.5 - 79.74 | 15.4 - 83.12 | 
 
+## [1920. Build array from permutation.][1920]
+
+I'm building a new array here, so `O(N)` both space and time complexity.
+
+TODO: Tried for over an hour to work out how an `O(1)` approach would work. Definitely
+uses some index tricks but I can't figure it out. Need to check it again in the futuro.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 40 - 100.00 | 4 - 100.00 | 100 - 100.00 | 112 - 100.00 |
+| Mem Usage (MB-%)| 10 - 100.00 | 2 - 100.00 | 43 - 100.00 | 14.4 - 33.33 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -4827,3 +4839,4 @@ size of the array.
 [1902]: https://leetcode.com/problems/largest-odd-number-in-string/
 [1908]: https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing
 [1912]: https://leetcode.com/problems/maximum-product-difference-between-two-pairs/
+[1920]: https://leetcode.com/problems/build-array-from-permutation/
