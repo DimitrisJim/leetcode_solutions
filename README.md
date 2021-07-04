@@ -289,6 +289,17 @@ where these denote the subsets:
 | Runtime (ms-%)| 4 - 99.13 | 0 - 100.00 | 72 - 98.13 | 28 - 92.84 |
 | Mem Usage (MB-%)| 6.5 - 65.22 | 2 - 90.00 | 39.6 - 73.46 | 14.4 - 51.70 |
 
+## [83. Remove duplicates from sorted list.][83]
+
+Traverse and update the next pointers/references. `O(N)` time.
+
+Rust: LinkedList chaos.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | - | 72 - 99.25 | 36 - 94.09 |
+| Mem Usage (MB-%)| 6.4 - 93.20 | - | 40.6 - 44.91 | 14 - 94.35 |
+
 ## [88. Merge sorted array.][88]
 
 Place elements from `nums2` at the end of `nums1` (replacing zero elements) and sort it.
@@ -4524,6 +4535,7 @@ uses some index tricks but I can't figure it out. Need to check it again in the 
 [70]: https://leetcode.com/problems/climbing-stairs
 [74]: https://leetcode.com/problems/search-a-2d-matrix/
 [78]: https://leetcode.com/problems/subsets/
+[83]: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 [88]: https://leetcode.com/problems/merge-sorted-array/
 [94]: https://leetcode.com/problems/binary-tree-inorder-traversal/
 [100]: https://leetcode.com/problems/same-tree/
