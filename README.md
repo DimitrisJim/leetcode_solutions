@@ -1883,6 +1883,22 @@ most comments.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 94.16 | 20 - 99.86 |
 | Mem Usage (MB-%)| 5.7 - 45.71 | 2 - 66.67 | 38 - 100.00 | 14.1 - 90.83 |
 
+## [797. All paths from source to target.][797]
+
+Perform a dfs without tracking visited nodes. Since we have a DAG, we needn't worry about
+recursing infinitely. We just need to incrementally build a path indicating our current
+visit from the source and keep track of it when we encounter our destination.
+
+Python contains both recursive and iterative, Rust and Javascript contain iterative. C is
+similar but, once again, manual memory allocation.
+
+This follows every single edge so it should be `O(E)`. 
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 8 - 100.00 | 100 - 97.30 | 92 - 96.32 |
+| Mem Usage (MB-%)| - | 2.7 - 100.00 | 46.6 - 52.13 | 15.5 - 91.83 |
+
 ## [804. Unique Morse Code Words.][804]
 
 Build the morse code words and add them to a set. After adding 
@@ -4667,6 +4683,7 @@ uses some index tricks but I can't figure it out. Need to check it again in the 
 [771]: https://leetcode.com/problems/jewels-and-stones/ 
 [783]: https://leetcode.com/problems/minimum-distance-between-bst-nodes/
 [788]: https://leetcode.com/problems/rotated-digits
+[797]: https://leetcode.com/problems/all-paths-from-source-to-target/
 [804]: https://leetcode.com/problems/unique-morse-code-words/
 [806]: https://leetcode.com/problems/number-of-lines-to-write-string/
 [807]: https://leetcode.com/problems/max-increase-to-keep-city-skyline/
