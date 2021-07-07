@@ -1982,6 +1982,18 @@ approach. C iterates through elements.
 | Runtime (ms-%)| 12 - 67.03 | 0 - 100.00 | 80 - 86.11 | 40 - 99.08|
 | Mem usage (mb-%)| 7.2 - 72.54 | 2.1 - 100.00 | 40.2 - 18.30 | 13.9 - 100.00 |
 
+## [841. Keys and rooms.][841]
+
+DFS from room zero and check if we can reach all rooms (# of visited == # of rooms). `O(N)` space and runtime
+where `N` is total number of rooms.
+
+Note: C is the same, manual allocation makes me too bored to implement now.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 0 - 100.00 | 76 - 91.87 | 60 - 92.21 |
+| Mem usage (mb-%)| - | 2.1 - 100.00 | 40.2 - 79.95 | 14.8 - 81.62 |
+
 ## [845. Longest Mountain in Array.][845]
 
 Step through array and attempt to perform an up-down motion through the values. We need
@@ -4663,6 +4675,7 @@ uses some index tricks but I can't figure it out. Need to check it again in the 
 [821]: https://leetcode.com/problems/shortest-distance-to-a-character/
 [824]: https://leetcode.com/problems/goat-latin/
 [832]: https://leetcode.com/problems/flipping-an-image/
+[841]: https://leetcode.com/problems/keys-and-rooms/
 [845]: https://leetcode.com/problems/longest-mountain-in-array
 [852]: https://leetcode.com/problems/peak-index-in-a-mountain-array/
 [859]: https://leetcode.com/problems/buddy-strings/
