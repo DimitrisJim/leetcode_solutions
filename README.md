@@ -1431,6 +1431,16 @@ anymore.
 | Runtime (ms-%)| | 0 - 100.00 | 84 - 99.11 | 52 - 99.37 |
 | Mem Usage (MB-%)| | 3.1 - 100.00 | 41.6 - 62.83 | 16.9 - 92.87 |
 
+## [547. Number of provinces.][547]
+
+Dfs on nodes. Adjacency matrix representation doesn't help at all with this but meh. We still traverse
+O(V**2) times.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 24 - 80.00 | 0 - 100.00 | 72 - 97.31 | 180 - 91.43 |
+| Mem Usage (MB-%)| 7 - 50.00 | 2.1 - 100.00 | 39.9 - 98.59 | 14.7 - 72.30 |
+
 ## [551. Student Attendance Record I.][551]
 
 Iterate through characters with two counters. One counts occurences of `A`s and returns
@@ -4662,6 +4672,7 @@ uses some index tricks but I can't figure it out. Need to check it again in the 
 [535]: https://leetcode.com/problems/encode-and-decode-tinyurl/
 [538]: https://leetcode.com/problems/convert-bst-to-greater-tree
 [539]: https://leetcode.com/problems/minimum-time-difference/ 
+[547]: https://leetcode.com/problems/number-of-provinces/
 [551]: https://leetcode.com/problems/student-attendance-record-i/
 [566]: https://leetcode.com/problems/reshape-the-matrix/
 [572]: https://leetcode.com/problems/subtree-of-another-tree
