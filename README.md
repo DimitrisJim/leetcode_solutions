@@ -1705,6 +1705,22 @@ operation if it is followed by a `"C"`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 92.51 | 32 - 96.73|
 | Mem Usage (MB-%)| 6.2 - 55.17 | 2.1 - 100.00 | 38.9 - 90.64 | 14.4 - 53.20 |
 
+## [684. Reduntant Connection.][684]
+
+Use a disjoint set union structure and track cycles (where `find(a) == find(b)`). Iterate
+through all edges and hold on to the last one that would create a cycle. Overall, this
+runs in `O(E)` and has memory requirements of the same order.
+
+Alternatively, we could transform into adjacency list representation, run dfs and
+check for back-edges. Since we get and edge list, the union-find solution is
+probably better.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 93.97 | 52 - 88.08 |
+| Mem Usage (MB-%)| 6.2 - 61.06 | 2.1 - 89.47 | 40.8 - 80.98 | 14.7 - 95.83 |
+
+
 ## [690. Employee Importance][690]
 
 Transform employees into a dictionary keyed by the id. Then we can build a list of
@@ -4667,6 +4683,7 @@ uses some index tricks but I can't figure it out. Need to check it again in the 
 [669]: https://leetcode.com/problems/trim-a-binary-search-tree/
 [674]: https://leetcode.com/problems/longest-continuous-increasing-subsequence
 [682]: https://leetcode.com/problems/baseball-game/
+[684]: https://leetcode.com/problems/redundant-connection/
 [690]: https://leetcode.com/problems/employee-importance
 [693]: https://leetcode.com/problems/binary-number-with-alternating-bits/
 [696]: https://leetcode.com/problems/count-binary-substrings/
