@@ -4570,6 +4570,15 @@ uses some index tricks but I can't figure it out. Need to check it again in the 
 | Runtime (ms-%)| 40 - 100.00 | 4 - 100.00 | 100 - 100.00 | 112 - 100.00 |
 | Mem Usage (MB-%)| 10 - 100.00 | 2 - 100.00 | 43 - 100.00 | 14.4 - 33.33 | 
 
+## [1929. Concatenation of Array.][1929]
+
+Yeah, not really challenging. Just extend the nums array. `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 32 - 100.00 | 4 - 100.00 | 100 - 100.00 | 76 - 100.00 |
+| Mem Usage (MB-%)| 9.9 - 100.00 | 2.1 - 100.00 | 41.6 - 100.00 | 14.4 - 100.00 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -4910,3 +4919,4 @@ uses some index tricks but I can't figure it out. Need to check it again in the 
 [1908]: https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing
 [1912]: https://leetcode.com/problems/maximum-product-difference-between-two-pairs/
 [1920]: https://leetcode.com/problems/build-array-from-permutation/
+[1929]: https://leetcode.com/problems/concatenation-of-array/
