@@ -1059,6 +1059,17 @@ Simple binary search for the number. `O(logn)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 88.26 | 20 - 98.89 |
 | Mem Usage (MB-%)| 5.5 - 52.67 | 1.9 - 66.67 | 38.3 - 81.91 | 14.2 - 42.20 |
 
+## [377. Combination sum IV.][377]
+
+Tabulation solution looks magical, as always, so recursive solution in python file would probably
+be a better place to start. Not sure about complexity, I'd need to think it through
+longer (I should probably write a big list of DP problems I've solved.)
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.04 | 28 - 99.28 |
+| Mem Usage (MB-%)| 5.8 - 64.71 | 2 - 100.00 | 40.7 - 21.67 | 14.1 - 95.74 |
+
 ## [383. Ransom Note][383]
 
 Use a counter to check that the required ammount of characters are present. 
@@ -4652,6 +4663,7 @@ Yeah, not really challenging. Just extend the nums array. `O(N)`.
 [349]: https://leetcode.com/problems/intersection-of-two-arrays/
 [367]: https://leetcode.com/problems/valid-perfect-square/
 [374]: https://leetcode.com/problems/guess-number-higher-or-lower
+[377]: https://leetcode.com/problems/combination-sum-iv/
 [383]: https://leetcode.com/problems/ransom-note/
 [384]: https://leetcode.com/problems/shuffle-an-array
 [387]: https://leetcode.com/problems/first-unique-character-in-a-string/
