@@ -1,6 +1,11 @@
-## O(N**2), this isn't such a bad a solution but running it shows I'm missing
-# something. Might just need to check solutions.
+"""
+O(N**2), this isn't such a bad a solution but running it shows I'm missing
+something. Might just need to check solutions.
 
+Thought of it! We re-compute the powers of `j` from the beginning all the time,
+we can shed time if we precompute powers until `n` and keep them in an array. 
+Just index them afterwards.
+"""
 class Solution:
     def countTriples(self, n):
         count = 0

@@ -4581,6 +4581,24 @@ uses some index tricks but I can't figure it out. Need to check it again in the 
 | Runtime (ms-%)| 40 - 100.00 | 4 - 100.00 | 100 - 100.00 | 112 - 100.00 |
 | Mem Usage (MB-%)| 10 - 100.00 | 2 - 100.00 | 43 - 100.00 | 14.4 - 33.33 | 
 
+## [1925. Count square sum triples.][1925]
+
+Precompute `n` array of powers from `1..n`. Loop through (`i` counter) for 
+all powers from `3..n-1`, then through the powers from `i..n` and try and
+see if you get a value that maches the expected result.
+
+That can be done in one of two ways:
+ 
+ 1. Compute `sqrt(pows[i] + pows[j])` and check if it is a perfect squate.
+ 2. Use a set and check if `pows[i] + pows[j]` is in that set.
+
+The first approach appears to be the fastest.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 3 - 88.89 | 2 - 88.00 | 68 - 98.38 | 136 - 94.74 |
+| Mem Usage (MB-%)| 5.8 - 22.22 | 1.9 - 92.00 | 40.9 - 19.46 | 14.1 - 77.35 |
+
 ## [1929. Concatenation of Array.][1929]
 
 Yeah, not really challenging. Just extend the nums array. `O(N)`.
@@ -4931,4 +4949,5 @@ Yeah, not really challenging. Just extend the nums array. `O(N)`.
 [1908]: https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing
 [1912]: https://leetcode.com/problems/maximum-product-difference-between-two-pairs/
 [1920]: https://leetcode.com/problems/build-array-from-permutation/
+[1925]: https://leetcode.com/problems/count-square-sum-triples/
 [1929]: https://leetcode.com/problems/concatenation-of-array/
