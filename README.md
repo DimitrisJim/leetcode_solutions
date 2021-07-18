@@ -4599,6 +4599,17 @@ The first approach appears to be the fastest.
 | Runtime (ms-%)| 3 - 88.89 | 2 - 88.00 | 68 - 98.38 | 136 - 94.74 |
 | Mem Usage (MB-%)| 5.8 - 22.22 | 1.9 - 92.00 | 40.9 - 19.46 | 14.1 - 77.35 |
 
+## [1926. Nearest exit from entrance in maze.][1926]
+
+Use breadth first search to find the shortest exit.
+
+C: Fixing deque and a set/2d array to hold visited positions is a hassle.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 48 - 100.00 | 120 - 89.02 | 780 - 95.42 |
+| Mem Usage (MB-%)| - | 3.3 - 33.33 | 49.9 - 35.37 | 15.6 - 41.52 | 
+
 ## [1929. Concatenation of Array.][1929]
 
 Yeah, not really challenging. Just extend the nums array. `O(N)`.
@@ -4950,4 +4961,5 @@ Yeah, not really challenging. Just extend the nums array. `O(N)`.
 [1912]: https://leetcode.com/problems/maximum-product-difference-between-two-pairs/
 [1920]: https://leetcode.com/problems/build-array-from-permutation/
 [1925]: https://leetcode.com/problems/count-square-sum-triples/
+[1926]: https://leetcode.com/problems/nearest-exit-from-entrance-in-maze
 [1929]: https://leetcode.com/problems/concatenation-of-array/
