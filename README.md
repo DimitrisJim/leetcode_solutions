@@ -4619,6 +4619,15 @@ Yeah, not really challenging. Just extend the nums array. `O(N)`.
 | Runtime (ms-%)| 32 - 100.00 | 4 - 100.00 | 100 - 100.00 | 76 - 100.00 |
 | Mem Usage (MB-%)| 9.9 - 100.00 | 2.1 - 100.00 | 41.6 - 100.00 | 14.4 - 100.00 | 
 
+## [1935. Maximum number of words you can type.][1935]
+
+Simple counting problem. `O(N)` time and `O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 100.00 | 28 - 100.00 |
+| Mem Usage (MB-%)| 5.6 - 100.00 | 2 - 100.00 | 40.4 - 100.00 | 14.2 - 100.00 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -4963,3 +4972,4 @@ Yeah, not really challenging. Just extend the nums array. `O(N)`.
 [1925]: https://leetcode.com/problems/count-square-sum-triples/
 [1926]: https://leetcode.com/problems/nearest-exit-from-entrance-in-maze
 [1929]: https://leetcode.com/problems/concatenation-of-array/
+[1935]: https://leetcode.com/problems/maximum-number-of-words-you-can-type/
