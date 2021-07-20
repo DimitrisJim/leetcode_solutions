@@ -87,6 +87,20 @@ just add the character seen.
 | Runtime (ms-%)| 4 - 89.64 | 0 - 100.00 | 152 - 95.49 | 36 - 97.76 |
 | Mem Usage (MB-%)| 5.7 - 98.67 | 2 - 92.20 | 44.4 - 92.17 | 14 - 94.68 |
 
+## [14. Longest common prefix.][14]
+
+First string is initialized as the prefix. We iterate through the rest of the strings
+and continuously reduce this prefix. Process stops when all strings have been seen or
+if the prefix becomes empty at some point during the iteration.
+
+Space complexity it `O(1)`, time complexity is `O(NM)` where `N` is the number of
+strings and `M` the length of the strings.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 97.82 | 28 - 94.45 |
+| Mem Usage (MB-%)| 5.8 - 96.22 | 2.1 - 75.69 | 39.7 - 62.36 | 14 - 99.12 |
+
 ## [21. Merge two sorted lists.][21]
 
 For `Rust`, go through both linked lists and build vector of values, then, build
@@ -4633,6 +4647,7 @@ Simple counting problem. `O(N)` time and `O(1)` space.
 [7]: https://leetcode.com/problems/reverse-integer/
 [9]: https://leetcode.com/problems/palindrome-number/
 [13]: https://leetcode.com/problems/roman-to-integer/
+[14]: https://leetcode.com/problems/longest-common-prefix/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists
 [24]: https://leetcode.com/problems/swap-nodes-in-pairs/
 [27]: https://leetcode.com/problems/remove-element/
