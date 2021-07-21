@@ -151,6 +151,17 @@ match. Worse case is still `O(nm)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 99.08 | 24 - 95.52 |
 | Mem Usage (MB-%)| 5.8 - 95.27 | 2.2 - 58.11 | 39.4 - 41.95 | 14.5 - 24.15 |
 
+## [31. Next Permutation.][31]
+
+This basically uses the algorithm described [here](https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order).
+In short, find index `i` such that for all `j` > `i` `nums[j] > nums[j+1]`. Swap the value with the smallest value that's larger
+than the value at index `i`. Reverse the contents of the array for `j > i`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 98.86 | 0 - 100.00 | 76 - 94.00 | 28 - 99.78 |
+| Mem Usage (MB-%)| 6.1 - 78.86 | 2 - 56.25 | 40.5 - 28.99 | 14.3 - 52.14 |
+
 ## [35. Search insert position.][35]
 
 Again, binary searching for the right spot, i.e `O(logN)`.
@@ -4652,6 +4663,7 @@ Simple counting problem. `O(N)` time and `O(1)` space.
 [24]: https://leetcode.com/problems/swap-nodes-in-pairs/
 [27]: https://leetcode.com/problems/remove-element/
 [28]: https://leetcode.com/problems/implement-strstr/
+[31]: https://leetcode.com/problems/next-permutation/
 [35]: https://leetcode.com/problems/search-insert-position/
 [50]: https://leetcode.com/problems/powx-n/
 [53]: https://leetcode.com/problems/maximum-subarray
