@@ -244,6 +244,19 @@ the final value of count stored. All in all, `O(N)` runtime with `O(1)` space.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 99.72 | 20 - 98.80 |
 | Mem Usage (MB-%)| 5.8 - 55.26 | 2.1 - 78.18 | 38.5 - 58.54 | 14.4 - 6.90 |
 
+## [61. Unique paths.][61]
+
+DP with tabulation. Start with an initial value of `1` in 2d table position `[0][0]` (start) and then add 
+values from the left and top as the table is traversed (signifying moves made right and down). 
+Final answer is at last position (end.)
+
+Space and time complexity is `O(mn)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 98.41 | 20 - 99.30 |
+| Mem Usage (MB-%)| 5.8 - 24.15 | 2 - 94.44 | 39.6 - 23.46 | 14.2 - 65.47 |
+
 ## [64. Summary Ranges.][64]
 
 Keep a tracker around to track the sequence as it increases. If at any point, the number in
@@ -4683,6 +4696,7 @@ Simple counting problem. `O(N)` time and `O(1)` space.
 [50]: https://leetcode.com/problems/powx-n/
 [53]: https://leetcode.com/problems/maximum-subarray
 [58]: https://leetcode.com/problems/length-of-last-word/
+[62]: https://leetcode.com/problems/unique-paths
 [64]: https://leetcode.com/problems/summary-ranges
 [66]: https://leetcode.com/problems/plus-one/
 [69]: https://leetcode.com/problems/sqrtx/
