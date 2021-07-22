@@ -176,6 +176,20 @@ When finished, start will either point to target or the leftmost position in whi
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.11 | 40 - 97.25 |
 | Mem Usage (MB-%)| 6 - 85.77 | 2 - 100.00| 38.7 - 72.22| 15.1 - 52.12 |
 
+## [46. Permutations.][46]
+
+This basically uses the algorithm described [here](https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order).
+In short, find index `i` such that for all `j` > `i` `nums[j] > nums[j+1]`. Swap the value with the smallest value that's larger
+than the value at index `i`. Reverse the contents of the array for `j > i`.
+
+The only difference between this problem and `31.` is that here we stick it all in a loop and we sort the sequence before
+we enter the loop (in order to start from 'smallest' permutation).
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 95.45 | 0 - 100.00 | 80 - 96.09 | 32 - 97.03 |
+| Mem Usage (MB-%)| 7.1 - 85.61 | 2.1 - 86.49 | 41.8 - 49.81 | 14.3 - 70.48 |
+
 ## [50. Pow(x, n).][50]
 
 Uses binary exponentiation (exponentiation by squaring) to cut down on the number 
@@ -4665,6 +4679,7 @@ Simple counting problem. `O(N)` time and `O(1)` space.
 [28]: https://leetcode.com/problems/implement-strstr/
 [31]: https://leetcode.com/problems/next-permutation/
 [35]: https://leetcode.com/problems/search-insert-position/
+[46]: https://leetcode.com/problems/permutations/
 [50]: https://leetcode.com/problems/powx-n/
 [53]: https://leetcode.com/problems/maximum-subarray
 [58]: https://leetcode.com/problems/length-of-last-word/
