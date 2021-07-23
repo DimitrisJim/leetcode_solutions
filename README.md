@@ -252,10 +252,28 @@ Final answer is at last position (end.)
 
 Space and time complexity is `O(mn)`.
 
+Note: there's definitely a space optimization here. Only work with 2 rows at a time.
+
 | Stats/Lang  | C  | Rust  | JS  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 64 - 98.41 | 20 - 99.30 |
 | Mem Usage (MB-%)| 5.8 - 24.15 | 2 - 94.44 | 39.6 - 23.46 | 14.2 - 65.47 |
+
+## [63. Unique paths II.][63]
+
+DP with tabulation. Start with an initial value of `1` in 2d table position `[0][0]` (start) and then add 
+values from the left and top as the table is traversed (signifying moves made right and down). Make sure
+to ignore positions with obstacles and to only add if we came from free positions.
+Final answer is at last position (end.)
+
+Space and time complexity is `O(mn)`.
+
+Note: there's definitely a space optimization here. Only work with 2 rows at a time.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 68 - 98.42 | 36 - 94.99 |
+| Mem Usage (MB-%)| 6 - 71.08 | 2.1 - 60.00 | 39.5 - 45.34 | 14.1 - 94.87 |
 
 ## [64. Summary Ranges.][64]
 
@@ -4697,6 +4715,7 @@ Simple counting problem. `O(N)` time and `O(1)` space.
 [53]: https://leetcode.com/problems/maximum-subarray
 [58]: https://leetcode.com/problems/length-of-last-word/
 [62]: https://leetcode.com/problems/unique-paths
+[63]: https://leetcode.com/problems/unique-paths-ii/
 [64]: https://leetcode.com/problems/summary-ranges
 [66]: https://leetcode.com/problems/plus-one/
 [69]: https://leetcode.com/problems/sqrtx/
