@@ -4698,6 +4698,15 @@ Simple counting problem. `O(N)` time and `O(1)` space.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 100.00 | 28 - 100.00 |
 | Mem Usage (MB-%)| 5.6 - 100.00 | 2 - 100.00 | 40.4 - 100.00 | 14.2 - 100.00 | 
 
+## [1941. Check if all characters have equal number of occurences.][1941]
+
+Again a simple counting problem, `O(N)` time and `O(1)` space.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 100.00 | 24 - 100.00 |
+| Mem Usage (MB-%)| 6 - 100.00 | 2.1 - 100.00 | 40.2 - 100.00 | 14.2 - 66.66 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -5048,3 +5057,4 @@ Simple counting problem. `O(N)` time and `O(1)` space.
 [1926]: https://leetcode.com/problems/nearest-exit-from-entrance-in-maze
 [1929]: https://leetcode.com/problems/concatenation-of-array/
 [1935]: https://leetcode.com/problems/maximum-number-of-words-you-can-type/
+[1941]: https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences
