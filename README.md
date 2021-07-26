@@ -4707,6 +4707,19 @@ Again a simple counting problem, `O(N)` time and `O(1)` space.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 100.00 | 24 - 100.00 |
 | Mem Usage (MB-%)| 6 - 100.00 | 2.1 - 100.00 | 40.2 - 100.00 | 14.2 - 66.66 | 
 
+## [1945. Sum of digits of string after convert.][1945]
+
+Lots of conversions but not something really tricky. Need to take care to always work
+with individual digits.  `O(N)` time and `O(N)` space.
+
+C: Not up for getting into the hairy details of constant transformation between chars
+and digits which we need to store in arrays.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 0 - 100.00 | 80 - 100.00 | 32 - 100.00 |
+| Mem Usage (MB-%)| | 2.1 - 100.00 | 41.6 - 100.00 | 14.2 - 100.00 | 
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -5058,3 +5071,4 @@ Again a simple counting problem, `O(N)` time and `O(1)` space.
 [1929]: https://leetcode.com/problems/concatenation-of-array/
 [1935]: https://leetcode.com/problems/maximum-number-of-words-you-can-type/
 [1941]: https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences
+[1945]: https://leetcode.com/problems/sum-of-digits-of-string-after-convert/
