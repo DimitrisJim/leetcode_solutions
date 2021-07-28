@@ -4399,6 +4399,19 @@ Go through digits and find the second maximum value. Pretty straight-forward, `O
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 98.50 | 28 - 97.85 |
 | Mem Usage (MB-%)| 5.7 - 82.69 | 2 - 100.00 | 39.1 - 97.50 | 14 - 93.74 |
 
+## [1797. Design Authentication manager.][1797]
+
+Use a map to handle the tokens and with a slight amount of logic keep them updated. Feels
+like I'm missing something obvious here (e.g a better way to store data in order to not
+hold on to stale-expired tokens).
+
+All ops except for `count_unexpired`, which is `O(N)`, are `O(1)`
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 20 - 100.00 | 160 - 93.33 | 246 - 71.63 |
+| Mem Usage (MB-%)| - | 3.3 - 100.00 | 48.2 - 80.00 | 15.5 - 83.72 |
+
 ## [1800. Maximum Ascending Subarray sum.][1800]
 
 Keep track of current sum and the max sum we've found so far. When we detect the end of a sequence, we just update the
@@ -5045,6 +5058,7 @@ and digits which we need to store in arrays.
 [1790]: https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/
 [1791]: https://leetcode.com/problems/find-center-of-star-graph/
 [1796]: https://leetcode.com/problems/second-largest-digit-in-a-string/
+[1797]: https://leetcode.com/problems/design-authentication-manager/
 [1800]: https://leetcode.com/problems/maximum-ascending-subarray-sum
 [1805]: https://leetcode.com/problems/number-of-different-integers-in-a-string/
 [1812]: https://leetcode.com/problems/determine-color-of-a-chessboard-square/
