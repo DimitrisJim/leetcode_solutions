@@ -3207,6 +3207,16 @@ Xor with 1 if even (to drop the 1) and right shift by 1 to divide by two. Count.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 76 - 78.28 | 28 - 78.69 |
 | Mem Usage (MB-%)| 5.5 - 27.87 | 2 - 100.00 | 38.8 - 29.88 | 14.1 - 99.98 |
 
+## [1346. Check if n and its double exist.][1346] 
+
+This follows a pretty common trick whereby you add items into a set and check new
+number against those in the set to see if the condition you're looking for holds.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 0 - 100.00 | 72 - 90.38 | 44 - 96.77 |
+| Mem Usage (MB-%)| - | 2.4 - 5.88 | 40.6 - 23.06 | 14.3 - 51.18 |
+
 ## [1351. Count Negative Numbers in a Sorted Matrix][1351]
 
 **TODO: Describe logic. Overview of steps as seen in 1351.py**
@@ -4970,6 +4980,7 @@ and digits which we need to store in arrays.
 [1332]: https://leetcode.com/problems/remove-palindromic-subsequences/
 [1337]: https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
 [1342]: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
+[1346]: https://leetcode.com/problems/check-if-n-and-its-double-exist/
 [1351]: https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix
 [1356]: https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/
 [1365]: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
