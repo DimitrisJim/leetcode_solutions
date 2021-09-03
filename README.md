@@ -4743,6 +4743,27 @@ and digits which we need to store in arrays.
 | Runtime (ms-%)| | 0 - 100.00 | 80 - 100.00 | 32 - 100.00 |
 | Mem Usage (MB-%)| | 2.1 - 100.00 | 41.6 - 100.00 | 14.2 - 100.00 | 
 
+## [1974. Minimum time to type word using special typewriter.][1974]
+
+End result is going to be `len(s) + rotations`. `len(s)` signifies the seconds needed to print
+out each individual characters. `rotations` is calculated as follows:
+
+For each character `c` is `s` and the next character `c2` in s, we need to find
+`minimum(c->c2, c2->c)` where the arrows signify distance between `c` and `c2` clockwise and
+counterclockwise.
+
+This is generally easy since we're in a cycle. `c->c2` is simply `|ord(c) - ord(c2)|` while `c2->c` will
+be `26 - |ord(c) - ord(c2)|` (since we have 26 characters).
+
+In addition to the previous, we need to handle the special case that the word doesn't start with an `'a'`.
+
+All in all, the operation is `O(N)` with `O(1)` space requirements.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.33 | 24 - 97.62 |
+| Mem Usage (MB-%)| 5.5 - 86.67 | 2.1 - 69.23 | 38.3 - 98.00 | 14.1 - 73.63 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -5097,3 +5118,4 @@ and digits which we need to store in arrays.
 [1935]: https://leetcode.com/problems/maximum-number-of-words-you-can-type/
 [1941]: https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences
 [1945]: https://leetcode.com/problems/sum-of-digits-of-string-after-convert/
+[1974]: https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
