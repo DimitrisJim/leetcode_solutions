@@ -4764,6 +4764,15 @@ All in all, the operation is `O(N)` with `O(1)` space requirements.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.33 | 24 - 97.62 |
 | Mem Usage (MB-%)| 5.5 - 86.67 | 2.1 - 69.23 | 38.3 - 98.00 | 14.1 - 73.63 |
 
+## [2235. Add two integers.][2235]
+
+Yeah.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 61 - 14.21 |
+| Mem Usage (MB-%)| 5.4 - 68.06 | 2.1 - 58.29 | 1.9 - 100.00 | 13.9 - 8.78 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -5119,3 +5128,4 @@ All in all, the operation is `O(N)` with `O(1)` space requirements.
 [1941]: https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences
 [1945]: https://leetcode.com/problems/sum-of-digits-of-string-after-convert/
 [1974]: https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
+[2235]: https://leetcode.com/problems/add-two-integers
