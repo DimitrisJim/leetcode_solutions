@@ -4764,6 +4764,15 @@ All in all, the operation is `O(N)` with `O(1)` space requirements.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.33 | 24 - 97.62 |
 | Mem Usage (MB-%)| 5.5 - 86.67 | 2.1 - 69.23 | 38.3 - 98.00 | 14.1 - 73.63 |
 
+## [2114. Maximum Number of Words Found in Sentence.][2114]
+
+Iterate, split, count. 
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 3 - 99.09 | 0 - 100.00 | 3 - 86.74 | 49 - 83.94 |
+| Mem Usage (MB-%)| 6.7 - 15.00 | 2.1 - 83.54 | 4.1 - 42.80 | 13.8 - 99.06 |
+
 ## [2235. Add two integers.][2235]
 
 Yeah.
@@ -5128,4 +5137,5 @@ Yeah.
 [1941]: https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences
 [1945]: https://leetcode.com/problems/sum-of-digits-of-string-after-convert/
 [1974]: https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
+[2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2235]: https://leetcode.com/problems/add-two-integers
