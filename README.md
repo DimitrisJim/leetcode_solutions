@@ -4784,6 +4784,17 @@ Iterate, split, count.
 | Runtime (ms-%)| 3 - 99.09 | 0 - 100.00 | 3 - 86.74 | 49 - 83.94 |
 | Mem Usage (MB-%)| 6.7 - 15.00 | 2.1 - 83.54 | 4.1 - 42.80 | 13.8 - 99.06 |
 
+
+## [2160. Minimum sum of four digit number after splitting digits.][2160]
+
+Split digits, sort and add 1st with 3rd and 2nd with 4th (minimum sum will always
+be found by starting both splits with smallest possible digit)
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 90.09 |
+| Mem Usage (MB-%)| 5.6 - 48.57 | 2.1 - 40.00 | 1.9 - 11.72 | 13.9 - 56.28 |
+
 ## [2235. Add two integers.][2235]
 
 Yeah.
@@ -5150,4 +5161,5 @@ Yeah.
 [1974]: https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
 [2011]: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
+[2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
 [2235]: https://leetcode.com/problems/add-two-integers
