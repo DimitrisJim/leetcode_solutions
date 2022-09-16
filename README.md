@@ -4804,6 +4804,15 @@ Yeah.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 61 - 14.21 |
 | Mem Usage (MB-%)| 5.4 - 68.06 | 2.1 - 58.29 | 1.9 - 100.00 | 13.9 - 8.78 |
 
+## [2236. Root Equals Sum Of Children.][2236]
+
+Yeah, again.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 92.37 |
+| Mem Usage (MB-%)| 5.6 - 74.30 | 2 - 69.01 | 1.9 - 94.48 | 13.8 - 94.80 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -5163,3 +5172,4 @@ Yeah.
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
 [2235]: https://leetcode.com/problems/add-two-integers
+[2236]: https://leetcode.com/problems/root-equals-sum-of-children/
