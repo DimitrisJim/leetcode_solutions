@@ -4795,6 +4795,16 @@ be found by starting both splits with smallest possible digit)
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 90.09 |
 | Mem Usage (MB-%)| 5.6 - 48.57 | 2.1 - 40.00 | 1.9 - 11.72 | 13.9 - 56.28 |
 
+## [2194. Cells in a range on an excel sheet.][2194]
+
+Find the differences between rows/cols and iterate through possible pair. Obligatory
+`O(N^2)` solution.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 3 - 85.71 | 39 - 97.26 |
+| Mem Usage (MB-%)| 6.7 - 42.86 | 2.2 - 46.15 | 3.1 - 87.76 | 13.9 - 21.52 |
+
 ## [2235. Add two integers.][2235]
 
 Yeah.
@@ -5171,5 +5181,6 @@ Yeah, again.
 [2011]: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
+[2194]: https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet
 [2235]: https://leetcode.com/problems/add-two-integers
 [2236]: https://leetcode.com/problems/root-equals-sum-of-children/
