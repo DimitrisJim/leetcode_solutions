@@ -4823,6 +4823,17 @@ Yeah, again.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 92.37 |
 | Mem Usage (MB-%)| 5.6 - 74.30 | 2 - 69.01 | 1.9 - 94.48 | 13.8 - 94.80 |
 
+## [2325. Decode the message.][2325]
+
+For languages that have it, use a map to create the mapping of characters to their secret character.
+For C, use two arrays for a similar effect. For all cases, we iterate through both strings and perform
+O(1) ops so the runtime is `O(N)`.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 24 - 99.85 |
+| Mem Usage (MB-%)| 5.9 - 89.66 | 2.1 - 58.33 | 2.6 - 69.29 | 13.8 - 82.69 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -5184,3 +5195,4 @@ Yeah, again.
 [2194]: https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet
 [2235]: https://leetcode.com/problems/add-two-integers
 [2236]: https://leetcode.com/problems/root-equals-sum-of-children/
+[2325]: https://leetcode.com/problems/decode-the-message
