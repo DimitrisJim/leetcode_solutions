@@ -4834,6 +4834,16 @@ O(1) ops so the runtime is `O(N)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 24 - 99.85 |
 | Mem Usage (MB-%)| 5.9 - 89.66 | 2.1 - 58.33 | 2.6 - 69.29 | 13.8 - 82.69 |
 
+## [2367. Smallest even multiple.][2367]
+
+Loops through triples of nums, if at any point the difference is above the diff, we break.
+`O(N^3)` solution despite that.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 38 - 97.00 |
+| Mem Usage (MB-%)| 5.9 - 19.80 | 2.1 - 78.43 | 2.2 - 54.83 | 13.9 - 19.84 |
+
 ## [2413. Smallest even multiple.][2413]
 
 Check if even/odd. If odd return `n * 2`, if even return `n`.
@@ -5205,4 +5215,5 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [2235]: https://leetcode.com/problems/add-two-integers
 [2236]: https://leetcode.com/problems/root-equals-sum-of-children/
 [2325]: https://leetcode.com/problems/decode-the-message
+[2367]: https://leetcode.com/problems/number-of-arithmetic-triplets/
 [2413]: https://leetcode.com/problems/smallest-even-multiple/
