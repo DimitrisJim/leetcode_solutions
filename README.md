@@ -4775,6 +4775,15 @@ ammount of ops is done for each operation.
 | Runtime (ms-%)| 5 - 79.28 | 0 - 100.00 | 0 - 100.00 | 56 - 91.04 |
 | Mem Usage (MB-%)| 6.8 - 8.84 | 2.1 - 93.42 | 3.5 - 15.61 | 13.8 - 56.21 |
 
+## [2037. Minimum number of moves to seat everyone.][2037]
+
+Sort both input arrays and then iterate over them pairwise and sum. `O(NlogN)`.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 7 - 86.54 | 0 - 100.00 | 5 - 93.44 | 71 - 87.34 |
+| Mem Usage (MB-%)| 5.9 - 100.00 | 2.1 - 60.00 | 3.3 - 85.25 | 13.8 - 97.72 |
+
 ## [2114. Maximum Number of Words Found in Sentence.][2114]
 
 Iterate, split, count. 
@@ -4783,7 +4792,6 @@ Iterate, split, count.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 3 - 99.09 | 0 - 100.00 | 3 - 86.74 | 49 - 83.94 |
 | Mem Usage (MB-%)| 6.7 - 15.00 | 2.1 - 83.54 | 4.1 - 42.80 | 13.8 - 99.06 |
-
 
 ## [2160. Minimum sum of four digit number after splitting digits.][2160]
 
@@ -5209,6 +5217,7 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [1945]: https://leetcode.com/problems/sum-of-digits-of-string-after-convert/
 [1974]: https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
 [2011]: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
+[2037]: https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
 [2194]: https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet
