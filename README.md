@@ -4852,6 +4852,17 @@ Loops through triples of nums, if at any point the difference is above the diff,
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 38 - 97.00 |
 | Mem Usage (MB-%)| 5.9 - 19.80 | 2.1 - 78.43 | 2.2 - 54.83 | 13.9 - 19.84 |
 
+## [2389. Longest subsequence with limited sum.][2389]
+
+Sort nums and create a new array of partial sums. Iterate through the queries and perform a
+binary search on the partial sums array to find the index for which all elements in the partial
+sums array are `<=` to the value of the query. Return that.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 29 - 95.74 | 0 - 100.00 | 16 - 72.99 | 123 - 90.30 |
+| Mem Usage (MB-%)| 7.9 - 78.72 | 2.3 - 8.79 | 5.4 - 88.15 | 14.1 - 98.03 |
+
 ## [2413. Smallest even multiple.][2413]
 
 Check if even/odd. If odd return `n * 2`, if even return `n`.
@@ -5225,4 +5236,5 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [2236]: https://leetcode.com/problems/root-equals-sum-of-children/
 [2325]: https://leetcode.com/problems/decode-the-message
 [2367]: https://leetcode.com/problems/number-of-arithmetic-triplets/
+[2389]: https://leetcode.com/problems/longest-subsequence-with-limited-sum/
 [2413]: https://leetcode.com/problems/smallest-even-multiple/
