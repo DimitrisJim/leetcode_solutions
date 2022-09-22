@@ -4764,6 +4764,16 @@ All in all, the operation is `O(N)` with `O(1)` space requirements.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.33 | 24 - 97.62 |
 | Mem Usage (MB-%)| 5.5 - 86.67 | 2.1 - 69.23 | 38.3 - 98.00 | 14.1 - 73.63 |
 
+## [2006. Count Number of Pairs with absolute difference k.][2006]
+
+Create a counter for all the numbers in `nums`. Then loop through all the numbers in `nums` and check if
+`num - k` or `num + k` is in it. Add the count for each to the total count and decrement the count for the
+`num` we just checked. This is `O(N)` time and `O(N)` space.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 92.22 | 0 - 100.00 | 5 - 91.03 | 66 - 97.16 |
+| Mem Usage (MB-%)| 5.8 - 78.89 | 2.1 - 88.24 | 4.1 - 16.67 | 13.8 - 98.06 |
 
 ## [2011. Final Value of Variable After Performing Operations][2011]
 
@@ -5227,6 +5237,7 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [1941]: https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences
 [1945]: https://leetcode.com/problems/sum-of-digits-of-string-after-convert/
 [1974]: https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
+[2006]: https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/
 [2011]: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
 [2037]: https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
