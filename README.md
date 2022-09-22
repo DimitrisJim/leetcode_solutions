@@ -4852,6 +4852,17 @@ Yeah, again.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 92.37 |
 | Mem Usage (MB-%)| 5.6 - 74.30 | 2 - 69.01 | 1.9 - 94.48 | 13.8 - 94.80 |
 
+## [2315. Count Asterisks.][2315]
+
+Keep a flag to denote when we are between two `'|'` and count the stars otherwise. `O(N)` where `N` is the
+length of the string.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 32 - 94.05 |
+| Mem Usage (MB-%)| 5.5 - 72.09 | 1.9 - 88.89 | 1.9 - 95.40 | 13.8 - 55.63 |
+
+
 ## [2325. Decode the message.][2325]
 
 For languages that have it, use a map to create the mapping of characters to their secret character.
@@ -5257,6 +5268,7 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [2220]: https://leetcode.com/problems/minimum-bit-flips-to-convert-number
 [2235]: https://leetcode.com/problems/add-two-integers
 [2236]: https://leetcode.com/problems/root-equals-sum-of-children/
+[2315]: https://leetcode.com/problems/count-asterisks
 [2325]: https://leetcode.com/problems/decode-the-message
 [2367]: https://leetcode.com/problems/number-of-arithmetic-triplets/
 [2389]: https://leetcode.com/problems/longest-subsequence-with-limited-sum/
