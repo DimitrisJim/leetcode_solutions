@@ -4823,6 +4823,17 @@ Find the differences between rows/cols and iterate through possible pair. Obliga
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 3 - 85.71 | 39 - 97.26 |
 | Mem Usage (MB-%)| 6.7 - 42.86 | 2.2 - 46.15 | 3.1 - 87.76 | 13.9 - 21.52 |
 
+[2220. Minimum bit flips to convert number.][2220]
+
+Find smallest, count diff until smallest is zero using `&`, then count ones in largest (whatever remains of it). 
+Reduce by shifting right by `1`. Complexity is `O(d)` where `d` is the number of binary digits in the
+largest number.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 31 - 95.09 |
+| Mem Usage (MB-%)| 5.5 - 67.42 | 2 - 89.47 | 2 - 80.00 | 13.8 - 96.77 |
+
 ## [2235. Add two integers.][2235]
 
 Yeah.
@@ -5243,6 +5254,7 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
 [2194]: https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet
+[2220]: https://leetcode.com/problems/minimum-bit-flips-to-convert-number
 [2235]: https://leetcode.com/problems/add-two-integers
 [2236]: https://leetcode.com/problems/root-equals-sum-of-children/
 [2325]: https://leetcode.com/problems/decode-the-message
