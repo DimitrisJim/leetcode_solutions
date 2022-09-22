@@ -4794,6 +4794,17 @@ Sort both input arrays and then iterate over them pairwise and sum. `O(NlogN)`.
 | Runtime (ms-%)| 7 - 86.54 | 0 - 100.00 | 5 - 93.44 | 71 - 87.34 |
 | Mem Usage (MB-%)| 5.9 - 100.00 | 2.1 - 60.00 | 3.3 - 85.25 | 13.8 - 97.72 |
 
+## [2103. Rings and Rods.][2103]
+
+Create a vector of rods and for each, each value will denote a bitmap of the rings that
+are placed on it. Then, for each rod, we check if the value of the bitmap is equal to of
+all rings or'ed together, if so, we increment the count.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 92.33 |
+| Mem Usage (MB-%)| 5.7 - 54.17 | 2 - 100.00 | 1.9 - 95.45 | 13.9 - 64.60 |
+
 ## [2114. Maximum Number of Words Found in Sentence.][2114]
 
 Iterate, split, count. 
@@ -5262,6 +5273,7 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [2006]: https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/
 [2011]: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
 [2037]: https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/
+[2103]: https://leetcode.com/problems/rings-and-rods/
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
 [2194]: https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet
