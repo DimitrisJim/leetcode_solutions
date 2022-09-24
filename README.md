@@ -4823,6 +4823,19 @@ be found by starting both splits with smallest possible digit)
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 90.09 |
 | Mem Usage (MB-%)| 5.6 - 48.57 | 2.1 - 40.00 | 1.9 - 11.72 | 13.9 - 56.28 |
+ 
+## [2176. Count equal and divide pairs.][2176]
+
+Python only for now, its late: created zipped array of values with their indices and sort. Go through
+the array and check if the value is equal to the previous value and if the index difference is divisible
+by `k`. If so, increment the count. Worse case, this is `O(N^2)`.
+
+TODO: Do the rest.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | - | - | 68 - 98.17 |
+| Mem Usage (MB-%)| - | - | - | 13.9 - 71.66 |
 
 ## [2194. Cells in a range on an excel sheet.][2194]
 
@@ -5276,6 +5289,7 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [2103]: https://leetcode.com/problems/rings-and-rods/
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
+[2176]: https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array
 [2194]: https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet
 [2220]: https://leetcode.com/problems/minimum-bit-flips-to-convert-number
 [2235]: https://leetcode.com/problems/add-two-integers
