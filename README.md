@@ -4743,6 +4743,18 @@ and digits which we need to store in arrays.
 | Runtime (ms-%)| | 0 - 100.00 | 80 - 100.00 | 32 - 100.00 |
 | Mem Usage (MB-%)| | 2.1 - 100.00 | 41.6 - 100.00 | 14.2 - 100.00 | 
 
+## [1967. Number of strings that appear as substrings in word.][1967]
+
+Use `in`, `string.Contains`, `String.contains` and `strstr` to check if the substring
+is in the word. Should be `O(N*M)` where `N` is the number of words and `M` is the length of the
+string.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 31 - 98.97 |
+| Mem Usage (MB-%)| 2.2 - 37.50 | 2 - 83.33 | 2.5 - 97.67 | 13.8 - 79.47 | 
+
+
 ## [1974. Minimum time to type word using special typewriter.][1974]
 
 End result is going to be `len(s) + rotations`. `len(s)` signifies the seconds needed to print
@@ -5282,6 +5294,7 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [1935]: https://leetcode.com/problems/maximum-number-of-words-you-can-type/
 [1941]: https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences
 [1945]: https://leetcode.com/problems/sum-of-digits-of-string-after-convert/
+[1967]: https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/
 [1974]: https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
 [2006]: https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/
 [2011]: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
