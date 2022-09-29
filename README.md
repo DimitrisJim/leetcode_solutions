@@ -4827,6 +4827,15 @@ all rings or'ed together, if so, we increment the count.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 92.33 |
 | Mem Usage (MB-%)| 5.7 - 54.17 | 2 - 100.00 | 1.9 - 95.45 | 13.9 - 64.60 |
 
+## [2108. Find First Palindromic String in the Array.][2108]
+
+Go through the array and bail early when you find a palindrome. Relatively straight-forward.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 30 - 98.04 | 3 - 100.00 | 23 - 75.82 | 70 - 97.30 |
+| Mem Usage (MB-%)| 9.8 - 35.29 | 2.1 - 94.12 | 7.6 - 31.87 | 13.9 - 68.33 |
+
 ## [2114. Maximum Number of Words Found in Sentence.][2114]
 
 Iterate, split, count. 
