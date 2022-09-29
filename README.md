@@ -623,6 +623,15 @@ A toggle for the action is used to differentiate the cases (buying/selling).
 | Runtime (ms-%)| 4 - 97.15 | 0 - 100.00 | 76 - 92.04 | 52 - 96.93 |
 | Mem Usage (MB-%)| 6.9 - 46.64 | 2.1 - 76.47 | 39.2 - 72.89 | 15.1 - 54.54 |
 
+## [125. Valid Palindrome.][125]
+
+Strip unwanted characters, transform to uppercase and check if the remaining characters form a palindrome.
+
+| Stats/Lang  | C  | Rust  | Go | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 3 - 82.32 | 37 - 99.32 |
+| Mem Usage (MB-%)| 6.3 - 73.04 | 2.2 - 91.42 | 3.3 - 45.58 | 15.3 - 24.50 |
+
 ## [133. Clone graph.][133]
 
 Recurse on neighbors and gradually build the graph, need to keep track of what we've visited
@@ -5000,6 +5009,7 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [118]: https://leetcode.com/problems/pascals-triangle/
 [119]: https://leetcode.com/problems/pascals-triangle-ii/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+[125]: https://leetcode.com/problems/valid-palindrome/
 [133]: https://leetcode.com/problems/clone-graph
 [136]: https://leetcode.com/problems/single-number
 [141]: https://leetcode.com/problems/linked-list-cycle/
