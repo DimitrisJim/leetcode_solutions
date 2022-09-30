@@ -4980,6 +4980,15 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 32 - 100.00 |
 | Mem Usage (MB-%)| 5.6 - 100.00 | 2.1 - 100.00 | 2 - 100.00 | 13.8 - 100.00 |
 
+## [2418. Sort the people.][2418]
+
+Sort `(name, height)` pair by height and return names. `O(NlogN)` due to sort.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 28 - 97.50 | 8 - 95.00 | 24 - 93.04 | 119 - 94.64 |
+| Mem Usage (MB-%)| 10.8 - 57.50 | 2.3 - 90.83 | 6.8 - 92.41 | 14.3 - 89.83 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -5355,3 +5364,4 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [2367]: https://leetcode.com/problems/number-of-arithmetic-triplets/
 [2389]: https://leetcode.com/problems/longest-subsequence-with-limited-sum/
 [2413]: https://leetcode.com/problems/smallest-even-multiple/
+[2418]: https://leetcode.com/problems/sort-the-people
