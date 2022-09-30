@@ -1795,6 +1795,18 @@ and `O(1)` space.
 | Runtime (ms-%)| 4 - 100.00 | 0 - 100.00 | 76 - 87.79 | 68 - 93.20 |
 | Mem Usage (MB-%)| 6.4 - 65.67 | 2.3 - 80.00 | 39 - 95.35 | 15.4 - 57.78 |
 
+## [680. Valid Palindrome II.][680]
+
+Start typically by comparing characters via two counters, start and end. When a different character
+is encountered, compare the substrings `s[start+1:end]` and its reverse, if that isn't
+equal compare `s[start:end-1]` with its reverse. Essentially, skip the character for the two cases
+that appear (either from start, or from end). Overall, `O(N)`.
+
+| Stats/Lang  | C  | Rust  | JS  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 16 - 91.53 | 0 - 100.00 | 13 - 96.03 | 94 - 97.78 |
+| Mem Usage (MB-%)| 9.3 - 33.90 | 2.4 - 34.48 | 10 - 5.05 | 14.5 - 49.54 |
+
 ## [682. Baseball Game][682]
 
 While loop your way through the operations, make sure you skip performing an
@@ -5098,6 +5110,7 @@ Check if even/odd. If odd return `n * 2`, if even return `n`.
 [657]: https://leetcode.com/problems/robot-return-to-origin/
 [669]: https://leetcode.com/problems/trim-a-binary-search-tree/
 [674]: https://leetcode.com/problems/longest-continuous-increasing-subsequence
+[680]: https://leetcode.com/problems/valid-palindrome-ii/
 [682]: https://leetcode.com/problems/baseball-game/
 [684]: https://leetcode.com/problems/redundant-connection/
 [690]: https://leetcode.com/problems/employee-importance
