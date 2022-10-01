@@ -4937,6 +4937,15 @@ Yeah, again.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 92.37 |
 | Mem Usage (MB-%)| 5.6 - 74.30 | 2 - 69.01 | 1.9 - 94.48 | 13.8 - 94.80 |
 
+## [2255. Count prefixes of a given string.][2255]
+
+Pretty much exactly the same as [2185][2185].
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 6 - 96.88 | 2 - 100.00 | 3 - 93.44 | 53 - 98.74 |
+| Mem Usage (MB-%)| 6.8 - 84.38 | 2.3 - 42.86 | 3.8 - 72.13 | 14.1 - 91.03 |
+
 ## [2315. Count Asterisks.][2315]
 
 Keep a flag to denote when we are between two `'|'` and count the stars otherwise. `O(N)` where `N` is the
@@ -5369,6 +5378,7 @@ Sort `(name, height)` pair by height and return names. `O(NlogN)` due to sort.
 [2220]: https://leetcode.com/problems/minimum-bit-flips-to-convert-number
 [2235]: https://leetcode.com/problems/add-two-integers
 [2236]: https://leetcode.com/problems/root-equals-sum-of-children/
+[2255]: https://leetcode.com/problems/count-prefixes-of-a-given-string
 [2315]: https://leetcode.com/problems/count-asterisks
 [2325]: https://leetcode.com/problems/decode-the-message
 [2367]: https://leetcode.com/problems/number-of-arithmetic-triplets/
