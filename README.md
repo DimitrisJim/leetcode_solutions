@@ -4889,6 +4889,15 @@ TODO: Do the rest.
 | Runtime (ms-%)| - | - | - | 68 - 98.17 |
 | Mem Usage (MB-%)| - | - | - | 13.9 - 71.66 |
 
+## [2185. Counting words with a given prefix.][2185]
+
+Straight-forward, complexity `O(N)`.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 3 - 93.10 | 0 - 100.00 | 0 - 100.00 | 39 - 96.80 |
+| Mem Usage (MB-%)| 6.5 - 79.31 | 2.1 - 88.89 | 3.5 - 84.34 | 14 - 67.28 |
+
 ## [2194. Cells in a range on an excel sheet.][2194]
 
 Find the differences between rows/cols and iterate through possible pair. Obligatory
@@ -5355,6 +5364,7 @@ Sort `(name, height)` pair by height and return names. `O(NlogN)` due to sort.
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
 [2176]: https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array
+[2185]: https://leetcode.com/problems/counting-words-with-a-given-prefix/
 [2194]: https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet
 [2220]: https://leetcode.com/problems/minimum-bit-flips-to-convert-number
 [2235]: https://leetcode.com/problems/add-two-integers
