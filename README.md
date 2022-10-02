@@ -4764,6 +4764,16 @@ and digits which we need to store in arrays.
 | Runtime (ms-%)| | 0 - 100.00 | 80 - 100.00 | 32 - 100.00 |
 | Mem Usage (MB-%)| | 2.1 - 100.00 | 41.6 - 100.00 | 14.2 - 100.00 | 
 
+## [1961. Check if string is a prefix of an array.][1961]
+
+Can either build the prefixes until we match with the given string or gradually
+remove prefixes from the string until it is empty. 
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 36 - 93.75 |
+| Mem Usage (MB-%)| 5.6 - 100.00 | 2.1 - 66.67 | 2.4 - 94.74 | 13.9 - 67.19 | 
+
 ## [1967. Number of strings that appear as substrings in word.][1967]
 
 Use `in`, `string.Contains`, `String.contains` and `strstr` to check if the substring
@@ -4774,7 +4784,6 @@ string.
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 31 - 98.97 |
 | Mem Usage (MB-%)| 2.2 - 37.50 | 2 - 83.33 | 2.5 - 97.67 | 13.8 - 79.47 | 
-
 
 ## [1974. Minimum time to type word using special typewriter.][1974]
 
@@ -5363,6 +5372,7 @@ Sort `(name, height)` pair by height and return names. `O(NlogN)` due to sort.
 [1935]: https://leetcode.com/problems/maximum-number-of-words-you-can-type/
 [1941]: https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences
 [1945]: https://leetcode.com/problems/sum-of-digits-of-string-after-convert/
+[1961]: https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/
 [1967]: https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/
 [1974]: https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
 [2000]: https://leetcode.com/problems/reverse-prefix-of-word/
