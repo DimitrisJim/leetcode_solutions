@@ -4977,6 +4977,16 @@ O(1) ops so the runtime is `O(N)`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 24 - 99.85 |
 | Mem Usage (MB-%)| 5.9 - 89.66 | 2.1 - 58.33 | 2.6 - 69.29 | 13.8 - 82.69 |
 
+## [2351. First letter to appear twice.][2351]
+
+Use sets and return when the first check for membership is true. (I.e, set already contains
+character). `O(N)`.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 30 - 94.03 |
+| Mem Usage (MB-%)| 5.4 - 99.43 | 2.2 - 30.49 | 1.9 - 41.18 | 13.8 - 94.46 |
+
 ## [2367. Smallest even multiple.][2367]
 
 Loops through triples of nums, if at any point the difference is above the diff, we break.
@@ -5401,6 +5411,7 @@ the counter.
 [2255]: https://leetcode.com/problems/count-prefixes-of-a-given-string
 [2315]: https://leetcode.com/problems/count-asterisks
 [2325]: https://leetcode.com/problems/decode-the-message
+[2351]: https://leetcode.com/problems/first-letter-to-appear-twice
 [2367]: https://leetcode.com/problems/number-of-arithmetic-triplets/
 [2389]: https://leetcode.com/problems/longest-subsequence-with-limited-sum/
 [2413]: https://leetcode.com/problems/smallest-even-multiple/
