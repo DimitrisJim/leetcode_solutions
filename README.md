@@ -5016,6 +5016,16 @@ Sort `(name, height)` pair by height and return names. `O(NlogN)` due to sort.
 | Runtime (ms-%)| 28 - 97.50 | 8 - 95.00 | 24 - 93.04 | 119 - 94.64 |
 | Mem Usage (MB-%)| 10.8 - 57.50 | 2.3 - 90.83 | 6.8 - 92.41 | 14.3 - 89.83 |
 
+## [2427. Number of common factors.][2427]
+
+Go through values from `[1:(min(a, b)/2 + 1)]` and check if `a % i == 0 && b % i == 0`. If so, increment
+the counter.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 34 - 100.00 |
+| Mem Usage (MB-%)| 5.7 - 100.00 | 2.1 - 100.00 | 1.9 - 100.00 | 13.9 - 66.67 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -5395,3 +5405,4 @@ Sort `(name, height)` pair by height and return names. `O(NlogN)` due to sort.
 [2389]: https://leetcode.com/problems/longest-subsequence-with-limited-sum/
 [2413]: https://leetcode.com/problems/smallest-even-multiple/
 [2418]: https://leetcode.com/problems/sort-the-people
+[2427]: https://leetcode.com/problems/number-of-common-factors
