@@ -2679,6 +2679,16 @@ counting their differences.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 95.33 | 16 - 100.00 |
 | Mem Usage (MB-%)| 5.7 - 70.92 | 2 - 40.00 | 38.4 - 81.16 | 14.1 - 69.05 |
 
+## [1071. Greatest common divisor of strings.][1071]
+
+Basically euclidean but for strings, mod is defined as slicing from the smaller string
+from the larger string as many times as possible (using `starts_with/HasPrefix/strncmp`).
+
+| Stats/Lang  | C  | Rust  | Go | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 34 - 93.75 |
+| Mem Usage (MB-%)| 5.8 - 90.00 | 2 - 59.26 | 2.3 - 83.67 | 13.8 - 75.49 |
+
 ## [1078. Occurences after Bigram.][1078]
 
 Split the string and go through the words comparing. Use a while loop to skip over
@@ -5246,6 +5256,7 @@ the counter.
 [1046]: https://leetcode.com/problems/last-stone-weight/
 [1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 [1051]: https://leetcode.com/problems/height-checker
+[1071]: https://leetcode.com/problems/greatest-common-divisor-of-strings
 [1078]: https://leetcode.com/problems/occurrences-after-bigram
 [1103]: https://leetcode.com/problems/distribute-candies-to-people/
 [1108]: https://leetcode.com/problems/defanging-an-ip-address/
