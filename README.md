@@ -4865,6 +4865,16 @@ Sort both input arrays and then iterate over them pairwise and sum. `O(NlogN)`.
 | Runtime (ms-%)| 7 - 86.54 | 0 - 100.00 | 5 - 93.44 | 71 - 87.34 |
 | Mem Usage (MB-%)| 5.9 - 100.00 | 2.1 - 60.00 | 3.3 - 85.25 | 13.8 - 97.72 |
 
+## [2089. Find target indices after sorting array.][2089]
+
+Sort array and iterate, straight forward. `O(NlogN)`.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 3 - 93.40 | 0 - 100.00 | 0 - 100.00 | 48 - 95.31 |
+| Mem Usage (MB-%)| 5.8 - 95.28 | 2.1 - 61.90 | 2.8 - 81.08 | 13.8 - 97.69 |
+
+
 ## [2103. Rings and Rods.][2103]
 
 Create a vector of rods and for each, each value will denote a bitmap of the rings that
@@ -5420,6 +5430,7 @@ the counter.
 [2006]: https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/
 [2011]: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
 [2037]: https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/
+[2089]: https://leetcode.com/problems/find-target-indices-after-sorting-array/
 [2103]: https://leetcode.com/problems/rings-and-rods/
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
