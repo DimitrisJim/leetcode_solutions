@@ -4806,6 +4806,15 @@ All in all, the operation is `O(N)` with `O(1)` space requirements.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 72 - 89.33 | 24 - 97.62 |
 | Mem Usage (MB-%)| 5.5 - 86.67 | 2.1 - 69.23 | 38.3 - 98.00 | 14.1 - 73.63 |
 
+## [1979. Find greatest common divisor of array.][1979]
+
+Find min/max by iteration and then just calculate the GCD using Euclid's algorithm.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 4 - 96.88 | 0 - 100.00 | 3 - 97.56 | 60 - 93.13 |
+| Mem Usage (MB-%)| 6.2 - 22.92 | 2.2 - 7.14 | 3 - 100.00 | 13.9 - 98.13 |
+
 ## [2000. Reverse prefix of word.][2000]
 
 Pretty straightforward. For C, which allows in-place manipulation, we have `O(N)` time and `O(1)` space, for
@@ -5395,6 +5404,7 @@ the counter.
 [1961]: https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/
 [1967]: https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/
 [1974]: https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
+[1979]: https://leetcode.com/problems/find-greatest-common-divisor-of-array
 [2000]: https://leetcode.com/problems/reverse-prefix-of-word/
 [2006]: https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/
 [2011]: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
