@@ -162,6 +162,17 @@ than the value at index `i`. Reverse the contents of the array for `j > i`.
 | Runtime (ms-%)| 4 - 98.86 | 0 - 100.00 | 76 - 94.00 | 28 - 99.78 |
 | Mem Usage (MB-%)| 6.1 - 78.86 | 2 - 56.25 | 40.5 - 28.99 | 14.3 - 52.14 |
 
+## [34. Find first and last position of element in sorted array.][34]
+
+Use binary searches to find start/end. 
+
+C: todo, too bored to implement binary search (again!)
+
+| Stats/Lang  | C  | Rust  | Go | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 0 - 100.00 | 6 - 91.00 | 75 - 99.81 |
+| Mem Usage (MB-%)| - | 2.3 - 78.42 | 3.9 - 99.90 | 15.4 - 49.40 |
+
 ## [35. Search insert position.][35]
 
 Again, binary searching for the right spot, i.e `O(logN)`.
@@ -5076,6 +5087,7 @@ the counter.
 [27]: https://leetcode.com/problems/remove-element/
 [28]: https://leetcode.com/problems/implement-strstr/
 [31]: https://leetcode.com/problems/next-permutation/
+[34]: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 [35]: https://leetcode.com/problems/search-insert-position/
 [46]: https://leetcode.com/problems/permutations/
 [50]: https://leetcode.com/problems/powx-n/
