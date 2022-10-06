@@ -4915,6 +4915,15 @@ Iterate, split, count.
 | Runtime (ms-%)| 3 - 99.09 | 0 - 100.00 | 3 - 86.74 | 49 - 83.94 |
 | Mem Usage (MB-%)| 6.7 - 15.00 | 2.1 - 83.54 | 4.1 - 42.80 | 13.8 - 99.06 |
 
+## [2119. A number after a double reversal.][2119]
+
+Check if last digit is a zero (which would get ignored), edge case is `num == 0`.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 91.09 |
+| Mem Usage (MB-%)| 5.5 - 51.89 | 2.2 - 20.00 | 1.9 - 12.24 | 13.7 - 95.03 |
+
 ## [2160. Minimum sum of four digit number after splitting digits.][2160]
 
 Split digits, sort and add 1st with 3rd and 2nd with 4th (minimum sum will always
@@ -5445,6 +5454,7 @@ the counter.
 [2089]: https://leetcode.com/problems/find-target-indices-after-sorting-array/
 [2103]: https://leetcode.com/problems/rings-and-rods/
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
+[2119]: https://leetcode.com/problems/a-number-after-a-double-reversal/
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
 [2176]: https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array
 [2185]: https://leetcode.com/problems/counting-words-with-a-given-prefix/
