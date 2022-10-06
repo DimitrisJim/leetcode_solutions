@@ -4933,7 +4933,18 @@ be found by starting both splits with smallest possible digit)
 |:-----------:|:--:|:-----:|:---:|:--:|
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 90.09 |
 | Mem Usage (MB-%)| 5.6 - 48.57 | 2.1 - 40.00 | 1.9 - 11.72 | 13.9 - 56.28 |
- 
+
+## [2169. Count operations to obtain zero.][2169]
+
+Continuously reduce numbers while they are both larger than `1`. If one drops to zero, return the
+number of ops we keep track of, else return the sum of the ops with whatever remains of the number
+not equal to one.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 60 - 88.36 |
+| Mem Usage (MB-%)| 5.6 - 16.20 | 2 - 76.92 | 1.9 - 53.33 | 13.9 - 63.79 |
+
 ## [2176. Count equal and divide pairs.][2176]
 
 Python only for now, its late: created zipped array of values with their indices and sort. Go through
@@ -5456,6 +5467,7 @@ the counter.
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2119]: https://leetcode.com/problems/a-number-after-a-double-reversal/
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
+[2169]: https://leetcode.com/problems/count-operations-to-obtain-zero/
 [2176]: https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array
 [2185]: https://leetcode.com/problems/counting-words-with-a-given-prefix/
 [2194]: https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet
