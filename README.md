@@ -4876,6 +4876,16 @@ Sort both input arrays and then iterate over them pairwise and sum. `O(NlogN)`.
 | Runtime (ms-%)| 7 - 86.54 | 0 - 100.00 | 5 - 93.44 | 71 - 87.34 |
 | Mem Usage (MB-%)| 5.9 - 100.00 | 2.1 - 60.00 | 3.3 - 85.25 | 13.8 - 97.72 |
 
+## [2042. Check if numbers are ascending in a sentence.][2042]
+
+Go through parsing the integers and compare, most of the hassle is in the locating/parsing of
+the numbers.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 34 - 90.10 |
+| Mem Usage (MB-%)| 5.8 - 23.53 | 2 - 100.00 | 1.9 - 96.97 | 14 - 11.64 |
+
 ## [2089. Find target indices after sorting array.][2089]
 
 Sort array and iterate, straight forward. `O(NlogN)`.
@@ -5484,6 +5494,7 @@ the counter.
 [2006]: https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/
 [2011]: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
 [2037]: https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/
+[2042]: https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/
 [2089]: https://leetcode.com/problems/find-target-indices-after-sorting-array/
 [2103]: https://leetcode.com/problems/rings-and-rods/
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
