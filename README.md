@@ -4886,6 +4886,15 @@ the numbers.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 34 - 90.10 |
 | Mem Usage (MB-%)| 5.8 - 23.53 | 2 - 100.00 | 1.9 - 96.97 | 14 - 11.64 |
 
+## [2057. Smallest index with equal values.][2057]
+
+Pretty straight-forward, I do feel like I'm missing some trick, though.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 10 - 82.50 | 0 - 100.00 | 7 - 97.50 | 87 - 95.09 |
+| Mem Usage (MB-%)| 6 - 70.00 | 2.1 - 66.67 | 4.2 - 67.50 | 13.9 - 8.83 |
+
 ## [2089. Find target indices after sorting array.][2089]
 
 Sort array and iterate, straight forward. `O(NlogN)`.
@@ -5495,6 +5504,7 @@ the counter.
 [2011]: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
 [2037]: https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/
 [2042]: https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/
+[2057]: https://leetcode.com/problems/smallest-index-with-equal-value/
 [2089]: https://leetcode.com/problems/find-target-indices-after-sorting-array/
 [2103]: https://leetcode.com/problems/rings-and-rods/
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
