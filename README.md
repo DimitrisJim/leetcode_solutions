@@ -4924,6 +4924,18 @@ Check if last digit is a zero (which would get ignored), edge case is `num == 0`
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 33 - 91.09 |
 | Mem Usage (MB-%)| 5.5 - 51.89 | 2.2 - 20.00 | 1.9 - 12.24 | 13.7 - 95.03 |
 
+## [2124. Check if all a's appear before all b's.][2124]
+
+Go through until meeting first `'b'` and then using a flag check if there are any `'a'`s after that.
+Alternatively, for cases where we can (`C` and `Rust`) we can advance the string/iterator and then
+re-advance after finding the `'b'` and breaking if we find an `'a'`.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 37 - 85.22 |
+| Mem Usage (MB-%)| 5.6 - 41.03 | 2 - 91.67 | 2 - 75.76 | 13.9 - 52.26 |
+
+
 ## [2160. Minimum sum of four digit number after splitting digits.][2160]
 
 Split digits, sort and add 1st with 3rd and 2nd with 4th (minimum sum will always
@@ -5476,6 +5488,7 @@ the counter.
 [2103]: https://leetcode.com/problems/rings-and-rods/
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2119]: https://leetcode.com/problems/a-number-after-a-double-reversal/
+[2124]: https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
 [2169]: https://leetcode.com/problems/count-operations-to-obtain-zero/
 [2176]: https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array
