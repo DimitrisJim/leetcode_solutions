@@ -5015,6 +5015,16 @@ Pretty much exactly the same as [2185][2185].
 | Runtime (ms-%)| 6 - 96.88 | 2 - 100.00 | 3 - 93.44 | 53 - 98.74 |
 | Mem Usage (MB-%)| 6.8 - 84.38 | 2.3 - 42.86 | 3.8 - 72.13 | 14.1 - 91.03 |
 
+## [2278. Percentage of letter in string.][2278]
+
+Relatively straight-forward, just need to do appropriate conversions for the strongly typed languages.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 36 - 84.79 |
+| Mem Usage (MB-%)| 5.5 - 51.56 | 2 - 96.00 | 2 - 59.18 | 13.8 - 96.18 |
+
+
 ## [2315. Count Asterisks.][2315]
 
 Keep a flag to denote when we are between two `'|'` and count the stars otherwise. `O(N)` where `N` is the
@@ -5475,6 +5485,7 @@ the counter.
 [2235]: https://leetcode.com/problems/add-two-integers
 [2236]: https://leetcode.com/problems/root-equals-sum-of-children/
 [2255]: https://leetcode.com/problems/count-prefixes-of-a-given-string
+[2278]: https://leetcode.com/problems/percentage-of-letter-in-string/
 [2315]: https://leetcode.com/problems/count-asterisks
 [2325]: https://leetcode.com/problems/decode-the-message
 [2351]: https://leetcode.com/problems/first-letter-to-appear-twice
