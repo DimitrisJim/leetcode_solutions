@@ -997,6 +997,13 @@ is `num % 9` with special cases if `num == 0` and `num % 9 == 0`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 80 - 99.49 | 20 - 99.19 |
 | Mem Usage (MB-%)| 5.7 - 39.50 | 2 - 100.00 | 39.9 - 84.01 | 14.2 - 36.59 |
 
+## [263. Ugly Number.][263]
+
+| Stats/Lang  | C  | Rust  | Go | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 21 - 99.88 |
+| Mem Usage (MB-%)| 5.4 - 97.68 | 2.1 - 61.11 | 2.1 - 6.30 | 14 - 12.36 |
+
 ## [268. Missing Number,][268]
 
 Yet another variation of the xor trick. Since all numbers are in range `[0, n)` and
@@ -5205,6 +5212,7 @@ the counter.
 [242]: https://leetcode.com/problems/valid-anagram/ 
 [257]: https://leetcode.com/problems/binary-tree-paths/
 [258]: https://leetcode.com/problems/add-digits
+[263]: https://leetcode.com/problems/ugly-number
 [268]: https://leetcode.com/problems/missing-number/
 [283]: https://leetcode.com/problems/move-zeroes
 [292]: https://leetcode.com/problems/nim-game/
