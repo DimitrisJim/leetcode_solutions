@@ -5151,6 +5151,17 @@ the counter.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 34 - 100.00 |
 | Mem Usage (MB-%)| 5.7 - 100.00 | 2.1 - 100.00 | 1.9 - 100.00 | 13.9 - 66.67 |
 
+## [2441. Largest positive integer that exists with its negative.][2441]
+
+Sort (by absolute value) and go through pairwise looking for matching pairs, `O(NlogN)`. Another approach
+is using a set and checking for membership of the negative of the current value, `O(N)` (but timings
+didn't really back it up so most, except for Python, contain the sorting solution.)
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 22 - 82.61 | 4 - 72.97 | 25 - 88.41 | 125 - 98.65 |
+| Mem Usage (MB-%)| 6.9 - 13.04 | 2.1 - 91.89 | 5.8 - 97.10 | 14.1 - 91.31 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -5544,3 +5555,4 @@ the counter.
 [2413]: https://leetcode.com/problems/smallest-even-multiple/
 [2418]: https://leetcode.com/problems/sort-the-people
 [2427]: https://leetcode.com/problems/number-of-common-factors
+[2441]: https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/
