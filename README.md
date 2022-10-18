@@ -5116,6 +5116,13 @@ sums array are `<=` to the value of the query. Return that.
 | Runtime (ms-%)| 29 - 95.74 | 0 - 100.00 | 16 - 72.99 | 123 - 90.30 |
 | Mem Usage (MB-%)| 7.9 - 78.72 | 2.3 - 8.79 | 5.4 - 88.15 | 14.1 - 98.03 |
 
+## [2399. Check distances between same letters.][2399]
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 40 - 97.49 |
+| Mem Usage (MB-%)| 6.1 - 19.81 | 2 - 100.00 | 2.4 - 100.00 | 13.8 - 98.39 |
+
 ## [2413. Smallest even multiple.][2413]
 
 Check if even/odd. If odd return `n * 2`, if even return `n`.
@@ -5533,6 +5540,7 @@ the counter.
 [2351]: https://leetcode.com/problems/first-letter-to-appear-twice
 [2367]: https://leetcode.com/problems/number-of-arithmetic-triplets/
 [2389]: https://leetcode.com/problems/longest-subsequence-with-limited-sum/
+[2399]: https://leetcode.com/problems/check-distances-between-same-letters/
 [2413]: https://leetcode.com/problems/smallest-even-multiple/
 [2418]: https://leetcode.com/problems/sort-the-people
 [2427]: https://leetcode.com/problems/number-of-common-factors
