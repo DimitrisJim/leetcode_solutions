@@ -5073,6 +5073,14 @@ length of the string.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 32 - 94.05 |
 | Mem Usage (MB-%)| 5.5 - 72.09 | 1.9 - 88.89 | 1.9 - 95.40 | 13.8 - 55.63 |
 
+## [2319. Check if matrix is x matrix.][2319]
+
+Traverse the matrix normally and simply check that positions do or don't have zeros. Worse case is `O(N^2)`.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 52 - 95.08 | | 31 - 100.00 | 284 - 94.06 |
+| Mem Usage (MB-%)| 7.6 - 98.36 | | 6.7 - 82.05 | 14.9 - 56.51 |
 
 ## [2325. Decode the message.][2325]
 
@@ -5547,6 +5555,7 @@ didn't really back it up so most, except for Python, contain the sorting solutio
 [2255]: https://leetcode.com/problems/count-prefixes-of-a-given-string
 [2278]: https://leetcode.com/problems/percentage-of-letter-in-string/
 [2315]: https://leetcode.com/problems/count-asterisks
+[2319]: https://leetcode.com/problems/check-if-matrix-is-x-matrix
 [2325]: https://leetcode.com/problems/decode-the-message
 [2351]: https://leetcode.com/problems/first-letter-to-appear-twice
 [2367]: https://leetcode.com/problems/number-of-arithmetic-triplets/
