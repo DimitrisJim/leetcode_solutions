@@ -5079,8 +5079,8 @@ Traverse the matrix normally and simply check that positions do or don't have ze
 
 | Stats/Lang  | C  | Rust  | Go  | Py |
 |:-----------:|:--:|:-----:|:---:|:--:|
-| Runtime (ms-%)| 52 - 95.08 | | 31 - 100.00 | 284 - 94.06 |
-| Mem Usage (MB-%)| 7.6 - 98.36 | | 6.7 - 82.05 | 14.9 - 56.51 |
+| Runtime (ms-%)| 52 - 95.08 | 0 - 100.00 | 31 - 100.00 | 284 - 94.06 |
+| Mem Usage (MB-%)| 7.6 - 98.36 | 2.3 - 25.00 | 6.7 - 82.05 | 14.9 - 56.51 |
 
 ## [2325. Decode the message.][2325]
 
