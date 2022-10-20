@@ -4961,6 +4961,16 @@ re-advance after finding the `'b'` and breaking if we find an `'a'`.
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 0 - 100.00 | 37 - 85.22 |
 | Mem Usage (MB-%)| 5.6 - 41.03 | 2 - 91.67 | 2 - 75.76 | 13.9 - 52.26 |
 
+## [2154. Keep multiplying found values by two.][2154]
+
+Build a set and continuously multiply while original is found in it, `O(N)` worse case.
+
+C: Too bored to build the set.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| | 0 - 100.00 | 0 - 100.00 | 55 - 99.67 |
+| Mem Usage (MB-%)| | 2.1 - 30.00 | 4.5 - 27.08 | 14 - 57.70 |
 
 ## [2160. Minimum sum of four digit number after splitting digits.][2160]
 
@@ -5544,6 +5554,7 @@ didn't really back it up so most, except for Python, contain the sorting solutio
 [2114]: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 [2119]: https://leetcode.com/problems/a-number-after-a-double-reversal/
 [2124]: https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/
+[2154]: https://leetcode.com/problems/keep-multiplying-found-values-by-two
 [2160]: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
 [2169]: https://leetcode.com/problems/count-operations-to-obtain-zero/
 [2176]: https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array
