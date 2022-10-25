@@ -5025,7 +5025,19 @@ Find the differences between rows/cols and iterate through possible pair. Obliga
 | Runtime (ms-%)| 0 - 100.00 | 0 - 100.00 | 3 - 85.71 | 39 - 97.26 |
 | Mem Usage (MB-%)| 6.7 - 42.86 | 2.2 - 46.15 | 3.1 - 87.76 | 13.9 - 21.52 |
 
-[2220. Minimum bit flips to convert number.][2220]
+## [2206. Divide array into equal pairs.][2206]
+
+Use a set and continuously add/remove elements as you see them, i.e if its in, remove, if not
+add it. By the end, if the set is empty, we have an equal number of pairs. Complexity `O(N)`.
+
+C: Too bored to make the set, as usual.
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| - | 0 - 100.00 | 7 - 95.56 | 97 - 90.09 |
+| Mem Usage (MB-%)| - | 2.1 - 83.33 | 4.7 - 72.22 | 13.9 - 99.13 |
+
+## [2220. Minimum bit flips to convert number.][2220]
 
 Find smallest, count diff until smallest is zero using `&`, then count ones in largest (whatever remains of it). 
 Reduce by shifting right by `1`. Complexity is `O(d)` where `d` is the number of binary digits in the
@@ -5560,6 +5572,7 @@ didn't really back it up so most, except for Python, contain the sorting solutio
 [2176]: https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array
 [2185]: https://leetcode.com/problems/counting-words-with-a-given-prefix/
 [2194]: https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet
+[2206]: https://leetcode.com/problems/divide-array-into-equal-pairs/
 [2220]: https://leetcode.com/problems/minimum-bit-flips-to-convert-number
 [2235]: https://leetcode.com/problems/add-two-integers
 [2236]: https://leetcode.com/problems/root-equals-sum-of-children/
