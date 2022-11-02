@@ -5192,6 +5192,15 @@ didn't really back it up so most, except for Python, contain the sorting solutio
 | Runtime (ms-%)| 22 - 82.61 | 4 - 72.97 | 25 - 88.41 | 125 - 98.65 |
 | Mem Usage (MB-%)| 6.9 - 13.04 | 2.1 - 91.89 | 5.8 - 97.10 | 14.1 - 91.31 |
 
+## [2455. Average value of even numbers that are divisible by three.][2455]
+
+Sum and divide, straight-forward O(N).
+
+| Stats/Lang  | C  | Rust  | Go  | Py |
+|:-----------:|:--:|:-----:|:---:|:--:|
+| Runtime (ms-%)| 8 - 90.59 | 0 - 100.00 | 3 - 100.00 | 74 - 99.30 |
+| Mem Usage (MB-%)| 6.6 - 18.82 | 2.1 - 76.64 | 4.1 - 100.00 | 14 - 93.49 |
+
 [1]: https://leetcode.com/problems/two-sum/
 [2]: https://leetcode.com/problems/add-two-numbers/
 [7]: https://leetcode.com/problems/reverse-integer/
@@ -5589,3 +5598,4 @@ didn't really back it up so most, except for Python, contain the sorting solutio
 [2418]: https://leetcode.com/problems/sort-the-people
 [2427]: https://leetcode.com/problems/number-of-common-factors
 [2441]: https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/
+[2455]: https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/
